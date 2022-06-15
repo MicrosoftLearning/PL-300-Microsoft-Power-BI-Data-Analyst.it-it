@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8876507a0ec5ecb2e4e3d048285d075202550f05
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 585b145f177e4e0792054e11f83911c0fad49430
+ms.sourcegitcommit: 9f66e4932aaf188d3be327646561dc7fe8e5c7a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839853"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "143996844"
 ---
 # <a name="pl-300-microsoft-power-bi-data-analyst"></a>PL-300: Microsoft Power BI Data Analyst
 
@@ -12,7 +12,7 @@ Questo repository contiene gli esercizi dell'esercitazione pratica per il corso 
 
 - **Si è un Microsoft Certified Trainer?** - Esaminare la [guida per utenti di GitHub per Microsoft Certified Trainer](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **È necessario compilare manualmente le istruzioni del lab?** - Le istruzioni sono disponibili nel repository [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build)
-- **Per sapere quali sono i lab associati ai moduli,** vedere la [pagina GitHub](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/)
+- **Per sapere quali sono i lab associati ai moduli,** vedere la [pagina GitHub](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)
 
 ## <a name="what-are-we-doing"></a>Quali attività vengono svolte?
 
