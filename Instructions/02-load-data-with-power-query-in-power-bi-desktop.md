@@ -2,12 +2,12 @@
 lab:
   title: Caricare i dati in Power BI Desktop
   module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8a19b8b1b243cc4c04bee3375f161098287dbf9d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 8e8373127cbc8023c0c299e3b2c75b4a82986308
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139840056"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071891"
 ---
 # <a name="load-data-in-power-bi-desktop"></a>**Caricare i dati in Power BI Desktop**
 
@@ -130,7 +130,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
     *È ora possibile filtrare le righe della query per recuperare solo i dipendenti che sono venditori.*
 
-4. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione, dal gruppo **Gestisci colonne** fare clic sulla freccia rivolta verso il basso **Scegli colonne** e quindi selezionare **Vai a colonna**.
+4. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione fare clic sulla freccia rivolta verso il basso **Gestisci colonne**, fare clic sulla freccia rivolta verso il basso **Scegli colonne** e quindi selezionare **Vai a colonna**.
 
     ![Immagine 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +156,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
     *Ogni trasformazione creata comporta una logica di passaggio aggiuntiva. È possibile modificare o eliminare passaggi. È anche possibile selezionare un passaggio per visualizzare un'anteprima dei risultati della query in quella fase della trasformazione.*
 
-10. Per rimuovere colonne, nella scheda **Home** della barra multifunzione, dall'interno del gruppo **Gestisci colonne** fare clic sull'icona **Scegli colonne**.
+10. Per rimuovere colonne, nella scheda **Home** della barra multifunzione, fare clic sul gruppo **Gestisci colonne** e quindi fare clic sull'icona **Scegli colonne**.
 
     ![Immagine 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +216,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
 23. Usare i passaggi precedenti per rinominare la colonna **EmailAddress** in **UPN**.
 
-    *UPN è l'acronimo di User Principal Name, ovvero nome dell'entità utente. I valori in questa colonna verranno usati quando si configurerà la sicurezza a livello di riga nel lab **Modellare i dati in Power BI Desktop - Parte 2**.*
+    *UPN è l'acronimo di User Principal Name, ovvero nome dell'entità utente.*
 
 24. Nella parte inferiore sinistra della barra di stato verificare che la query includa cinque colonne e 18 righe.
 
@@ -349,7 +349,6 @@ In questa attività verrà configurata la query **Reseller**.
     ![Figura 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. Fare clic con il pulsante destro del mouse sull'intestazione di colonna **Business Type** e quindi scegliere **Sostituisci valori**.
 
@@ -648,7 +647,7 @@ In questa attività verrà aggiornata la query **Product** tramite il merge dell
 
     ![Immagine 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. Per eseguire il merge della query **ColorFormats**, nella scheda della barra multifunzione **Home** fare clic su **Merge di query** nel gruppo **Combina**.
+2. Per eseguire il merge della query **ColorFormats**, nella scheda della barra multifunzione **Home** fare clic sulla freccia rivolta verso il basso **Combina** e quindi fare clic su **Merge di query**.
 
     ![Immagine 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -748,4 +747,4 @@ In questa attività si completerà il lab.
 
 5. Se si intende iniziare il lab successivo, lasciare aperto Power BI Desktop.
 
-    *Le tabelle e le relazioni del modello di dati verranno configurate nel lab **Modellare i dati in Power BI Desktop - Parte 1**.*
+    *Le tabelle e le relazioni del modello di dati verranno configurate nel lab **Modellare i dati in Power BI Desktop**.*

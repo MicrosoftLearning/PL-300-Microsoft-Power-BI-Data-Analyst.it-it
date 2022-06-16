@@ -2,12 +2,12 @@
 lab:
   title: Creare calcoli DAX in Power BI Desktop - Parte 2
   module: Module 5 - Create Model Calculations using DAX in Power BI
-ms.openlocfilehash: 80cfdfcfcb2072277760670c549cebaaca434cb9
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 01d7f76dff212103ec9d08e6fe284356be9887f5
+ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839560"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "146071616"
 ---
 # <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Creare calcoli DAX in Power BI Desktop - Parte 2**
 
@@ -73,7 +73,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Figura 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
+1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
 
 1. Selezionare il file **Sales Analysis**.
 
@@ -125,13 +125,11 @@ In questa attività verrà creato un oggetto visivo matrice per supportare il te
 
     *Si ricorderà che la gerarchia **Regions** include i livelli **Group**, **Country** e **Region**.*
 
-7. Per formattare l'oggetto visivo, sotto il riquadro **Visualizzazioni** selezionare il riquadro **Formato**.
+7. Per formattare l'oggetto visivo, nel riquadro **Visualizzazioni** selezionare il riquadro **Formato**.
 
     ![Immagine 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. Nella casella **Cerca** immettere **Con rientri**.
-
-    ![Immagine 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. Impostare la proprietà **Layout con rientri** su **Disattivato**.
 
@@ -151,7 +149,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 1. Aggiungere una misura alla tabella **Sales** basata sull'espressione seguente:
 
-    *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt**.*
+    *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt**.*
 
 
     **DAX**

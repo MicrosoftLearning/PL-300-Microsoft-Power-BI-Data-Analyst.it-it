@@ -2,12 +2,12 @@
 lab:
   title: Creare un dashboard di Power BI
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 777dc5fb86f71c926a347c736896834fdf2baed2
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
+ms.openlocfilehash: 2ddb086b004fca3fa322e10570f9163342514808
+ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139840033"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "146109912"
 ---
 # <a name="create-a-power-bi-dashboard"></a>**Creare un dashboard di Power BI**
 
@@ -61,7 +61,7 @@ In questa attività si accederà a Power BI per configurare l'ambiente per il la
 
     ![Figura 42](Linked_image_Files/09-create-power-bi-dashboard_image2.png)
 
-2. Nella finestra del browser Microsoft Edge passare a **https://powerbi.com**.
+2. Nella finestra del browser Microsoft Edge passare a **https://powerbi.microsoft.com**.
 
     *Suggerimento: è anche possibile usare l'elemento preferito Servizio Power BI sulla barra dei preferiti di Microsoft Edge.*
 
@@ -115,7 +115,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Immagine 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
-8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\09-create-power-bi-dashboard\Starter**.
+8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\08-create-power-bi-dashboard\Starter**.
 
 9. Selezionare il file **Sales Analysis**.
 
@@ -159,7 +159,7 @@ In questa attività si creerà un set di dati per configurare l'ambiente per il 
 
     ![Figura 5](Linked_image_Files/09-create-power-bi-dashboard_image16.png)
 
-4. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Solution**.
+4. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\08-create-power-bi-dashboard\Solution**.
 
 5. Selezionare il file **Sales Analysis.pbix** e quindi fare clic su **Apri**.
 
@@ -181,7 +181,7 @@ In questa attività verrà creato il dashboard **Sales Monitoring**. Si aggiunge
 
 4. Per creare un dashboard e aggiungere un oggetto visivo, passare il cursore sull'oggetto visivo **Sales and Profit Margin by Month** (colonna/riga).
 
-5. Nell'angolo superiore destro fare clic sulla puntina da disegno.
+5. Nell'angolo inferiore destro fare clic sulla puntina da disegno.
 
     ![Immagine 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
@@ -193,7 +193,7 @@ In questa attività verrà creato il dashboard **Sales Monitoring**. Si aggiunge
 
     ![Immagine 1](Linked_image_Files/09-create-power-bi-dashboard_image20.png)
 
-8. Aprire il riquadro **Navigazione** e quindi aprire il dashboard **Sales Monitoring**.
+8. Aprire il riquadro **Navigazione**, selezionare **Area di lavoro personale** e quindi aprire il dashboard **Sales Monitoring**.
 
     ![Immagine 44](Linked_image_Files/09-create-power-bi-dashboard_image21.png)
 
@@ -337,7 +337,7 @@ In questa attività si aprirà il file di Power BI Desktop **Sales Analysis**, s
 
 2. Al termine dell'aggiornamento, salvare il file di Power BI Desktop.
 
-3. Per pubblicare il file nell'area di lavoro, nel gruppo **Condividi** della scheda della barra multifunzione **Home** fare clic su **Pubblica**.
+3. Per pubblicare il file nell'area di lavoro personale, nel gruppo **Condividi** della scheda della barra multifunzione **Home** fare clic su **Pubblica** e quindi fare clic su **Seleziona** per pubblicare.
 
     ![Immagine 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
@@ -351,11 +351,11 @@ In questa attività si aprirà il file di Power BI Desktop **Sales Analysis**, s
 
 ## <a name="exercise-3-review-the-dashboard"></a>**Esercizio 3: Esaminare il dashboard**
 
-In questo esercizio si esaminerà il dashboard per verificare le vendite aggiornate e l'attivazione dell'avviso.
+In questo esercizio si esaminerà il dashboard per verificare le vendite aggiornate.
 
 ### <a name="task-1-review-the-dashboard"></a>**Attività 1: Esaminare il dashboard**
 
-In questa attività si esaminerà il dashboard per verificare le vendite aggiornate e l'attivazione dell'avviso.
+In questa attività si esaminerà il dashboard per verificare le vendite aggiornate.
 
 1. Nella finestra del browser Microsoft Edge esaminare il dashboard **Sales Monitoring** nel servizio Power BI.
 
@@ -367,22 +367,6 @@ In questa attività si esaminerà il dashboard per verificare le vendite aggiorn
 
     ![Immagine 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-    *Dovrebbe essere stato attivato anche l'avviso nel riquadro **Sales YTD**. Dopo un breve periodo di tempo, l'avviso dovrebbe notificare che le vendite superano il valore soglia configurato.*
+    
 
-4. Si noti che il riquadro **Sales YTD** è stato aggiornato in **$37M**.
-
-5. Verificare che il riquadro **Sales YTD** visualizzi un'icona di notifica di avviso.
-
-    *Se la notifica non viene visualizzata, potrebbe essere necessario premere **F5** per ricaricare il browser. Se la notifica non viene ancora visualizzata, attendere alcuni minuti.*
-
-    ![Figura 35](Linked_image_Files/09-create-power-bi-dashboard_image51.png)
-
-    *Le notifiche di avviso vengono visualizzate nel riquadro del dashboard e possono essere inviate tramite posta elettronica e notifiche push alle app per dispositivi mobili, inclusa Apple Watch.*
-
-6. Nell'angolo in alto a destra della pagina Web fare clic sull'icona **Notifiche**.
-
-    ![Immagine 58](Linked_image_Files/09-create-power-bi-dashboard_image52.png)
-
-7. Nel riquadro **Tutte le notifiche** esaminare i dettagli della notifica di avviso.
-
-8. Per chiudere il riquadro, fare clic su **Chiudi**.
+4. Per chiudere il riquadro, fare clic su **Chiudi**.
