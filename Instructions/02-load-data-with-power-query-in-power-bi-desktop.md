@@ -2,12 +2,12 @@
 lab:
   title: Caricare i dati in Power BI Desktop
   module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8e8373127cbc8023c0c299e3b2c75b4a82986308
-ms.sourcegitcommit: d88b7941fe3805f0bc2979ea864c5483ec289c75
+ms.openlocfilehash: aced37b7bfdd2ccf94a9d3e7bdb8f8ff7013c125
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "146071891"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650226"
 ---
 # <a name="load-data-in-power-bi-desktop"></a>**Caricare i dati in Power BI Desktop**
 
@@ -23,7 +23,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 

@@ -2,28 +2,27 @@
 lab:
   title: Applicare la sicurezza a livello di riga
   module: Module 12 - Row-Level Security
-ms.openlocfilehash: 6ccc19e9835dca06ec613e386c82fb0270a28ed5
-ms.sourcegitcommit: 51f448b208842f1333cb683b7775618edb41c126
+ms.openlocfilehash: f47cc7c54428589aaa9d6b37afd9ee4d11c5884e
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "141580174"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146650109"
 ---
 # <a name="enforce-row-level-security"></a>**Applicare la sicurezza a livello di riga**
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In questo lab verrà creata una relazione molti-a-molti tra la tabella **Salesperson** e la tabella **Sales**. Verrà anche applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati di vendita per le rispettive aree assegnate.
+In questo lab verrà applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati di vendita per le rispettive aree assegnate.
 
 Contenuto del lab:
 
-- Configurare relazioni molti-a-molti
 
 - Applicare la sicurezza a livello di riga
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
