@@ -2,12 +2,12 @@
 lab:
   title: Creare un dashboard di Power BI
   module: Module 8 - Create Dashboards
-ms.openlocfilehash: 2ddb086b004fca3fa322e10570f9163342514808
-ms.sourcegitcommit: f09183b2093a7f8de629f89b54d70bcad85598b6
+ms.openlocfilehash: 0f8abb8670c71f5063dc28032daa321bf4b742f9
+ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "146109912"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "147015357"
 ---
 # <a name="create-a-power-bi-dashboard"></a>**Creare un dashboard di Power BI**
 
@@ -23,7 +23,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
