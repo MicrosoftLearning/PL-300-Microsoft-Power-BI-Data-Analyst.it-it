@@ -68,7 +68,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Immagine 6](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image3.png)
 
-1. Fare clic su **Esplora report**.
+1. Fare clic su **Sfoglia report**.
 
     ![Figura 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
@@ -94,7 +94,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Save** (Salva).
+1. Fare clic su **Salva**.
 
     ![Figura 2](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image8.png)
 
@@ -108,7 +108,7 @@ In questa attività si applicherà la sicurezza a livello di riga per assicurars
 
 2. Nel riquadro **Campi** selezionare la tabella **Salesperson (Performance)**.
 
-3. Esaminare i dati. Si noti che il valore UPN di Michael Blythe (EmployeeKey 281) è: **michael-blythe@adventureworks.com**
+3. Esaminare i dati. Si noti che il valore UPN di Michael Blythe (EmployeeKey 281) è: **michael-blythe@adventureworks.com**.
 
     *Si ricordi che Michael Blythe è assegnato a tre aree di vendita: US Northeast, US Central e US Southeast.*
 
@@ -126,17 +126,17 @@ In questa attività si applicherà la sicurezza a livello di riga per assicurars
 
     ![Immagine 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-8. Per assegnare un filtro per la tabella **Salesperson (Performance)** , fare clic sul carattere puntini di sospensione (...) e quindi selezionare **Aggiungi filtro \| [UPN]** .
+8. Per assegnare un filtro per la tabella **Salesperson (Performance)**, fare clic sul carattere puntini di sospensione (...) e quindi selezionare **Aggiungi filtro \| [UPN]**.
 
     ![Immagine 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
 
-9. Nella casella **Espressione DAX filtro tabella** modificare l'espressione sostituendo **"Value"** con **USERPRINCIPALNAME()** .
+9. Nella casella **Espressione DAX filtro tabella** modificare l'espressione sostituendo **"Value"** con **USERPRINCIPALNAME()**.
 
     ![Immagine 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
     *USERPRINCIPALNAME() è una funzione DAX (Data Analysis Expressions) che restituisce il nome dell'utente autenticato. La tabella **Salesperson (Performance)** verrà quindi filtrata in base al nome dell'entità utente (UPN) dell'utente che esegue una query sul modello.*
 
-10. Fare clic su **Save** (Salva).
+10. Fare clic su **Salva**.
 
     ![Immagine 5706](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image26.png)
 
@@ -144,7 +144,7 @@ In questa attività si applicherà la sicurezza a livello di riga per assicurars
 
     ![Immagine 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
-12. Nella finestra **Visualizza come ruoli** selezionare l'elemento **Altro utente** e quindi nella casella corrispondente immettere: **michael-blythe@adventureworks.com**
+12. Nella finestra **Visualizza come ruoli** selezionare l'elemento **Altro utente** e quindi nella casella corrispondente immettere: **michael-blythe@adventureworks.com**.
 
 13. Selezionare il ruolo **Salespeople**.
 
@@ -180,7 +180,7 @@ In questa attività si applicherà la sicurezza a livello di riga per assicurars
 
 20. Quando viene richiesto di confermare l'eliminazione, fare clic su **Sì, elimina**.
 
-21. Fare clic su **Save** (Salva).
+21. Fare clic su **Salva**.
 
     ![Figura 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 

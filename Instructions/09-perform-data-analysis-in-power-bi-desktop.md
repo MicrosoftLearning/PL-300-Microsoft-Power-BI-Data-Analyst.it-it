@@ -275,7 +275,7 @@ In questa attività verrà creata una previsione per determinare i possibili ric
 
 10. Configurare le proprietà di previsione seguenti:
 
-    - Unità: Mesi
+    - Unità: mesi
 
     - Lunghezza previsione: 1 mese
 

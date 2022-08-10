@@ -111,7 +111,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Figura 36](Linked_image_Files/09-create-power-bi-dashboard_image8.png)
 
-7. Fare clic su **Esplora report**.
+7. Fare clic su **Sfoglia report**.
 
     ![Immagine 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
@@ -137,7 +137,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
 15. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-16. Fare clic su **Save** (Salva).
+16. Fare clic su **Salva**.
 
     ![Figura 9](Linked_image_Files/09-create-power-bi-dashboard_image13.png)
 

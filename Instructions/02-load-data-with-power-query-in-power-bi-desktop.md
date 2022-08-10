@@ -70,7 +70,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Immagine 10](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image3.png)
 
-1. Fare clic su **Esplora report**.
+1. Fare clic su **Sfoglia report**.
 
     ![Immagine 11](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image4.png)
 
@@ -104,7 +104,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Save** (Salva).
+1. Fare clic su **Salva**.
 
     ![Immagine 15](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image9.png)
 
@@ -134,7 +134,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
     ![Immagine 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
-    *Suggerimento: Questa tecnica è utile quando una query contiene molte colonne. Se le colonne non sono troppe, è possibile scorrere semplicemente in orizzontale per trovare la colonna a cui si è interessati.*
+    *Suggerimento: questa tecnica è utile quando una query contiene molte colonne. Se le colonne non sono troppe, è possibile scorrere semplicemente in orizzontale per trovare la colonna a cui si è interessati.*
 
 5. Nella finestra **Vai a colonna**, per ordinare l'elenco in base al nome della colonna, fare clic sul pulsante di ordinamento **AZ** e quindi selezionare **Nome**.
 
@@ -160,11 +160,11 @@ In questa attività verrà configurata la query **Salesperson**.
 
     ![Immagine 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
-11. Nella finestra **Scegli colonne**, per deselezionare tutte le colonne, deselezionare l'opzione **(Seleziona tutte le colonne)** .
+11. Nella finestra **Scegli colonne**, per deselezionare tutte le colonne, deselezionare l'opzione **(Seleziona tutte le colonne)**.
 
     ![Immagine 102](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image19.png)
 
-12. Per includere colonne, selezionare le sei colonne seguenti:
+12. Per includere colonne, selezionare le 6 colonne seguenti:
 
     - EmployeeKey
 
@@ -300,7 +300,7 @@ In questa attività verrà configurata la query **Product**.
 
 12. Espandere la colonna **DimProductCategory** e quindi introdurre solo la colonna **EnglishProductCategoryName**.
 
-13. Rinominare le quattro colonne seguenti:
+13. Rinominare le 4 colonne seguenti:
 
     - **EnglishProductName** in **Product**
 
@@ -310,7 +310,7 @@ In questa attività verrà configurata la query **Product**.
 
     - **EnglishProductCategoryName** in **Category**
 
-14. Nella barra di stato verificare che la query includa sei colonne e 397 righe.
+14. Nella barra di stato verificare che la query includa 6 colonne e 397 righe.
 
     ![Immagine 5651](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image35.png)
 
@@ -366,7 +366,7 @@ In questa attività verrà configurata la query **Reseller**.
 
     ![Immagine 6](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image41.png)
 
-9. Rinominare le quattro colonne seguenti:
+9. Rinominare le 4 colonne seguenti:
 
     - **BusinessType** in **Business Type** (includere uno spazio)
 
@@ -376,7 +376,7 @@ In questa attività verrà configurata la query **Reseller**.
 
     - **EnglishCountryRegionName** in **Country-Region**
 
-10. Nella barra di stato verificare che la query includa sei colonne e 701 righe.
+10. Nella barra di stato verificare che la query includa 6 colonne e 701 righe.
 
     ![Immagine 5657](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image42.png)
 
@@ -412,7 +412,7 @@ In questa attività verrà configurata la query **Region**.
 
     - **SalesTerritoryGroup** in **Group**
 
-6. Nella barra di stato verificare che la query includa quattro colonne e 10 righe.
+6. Nella barra di stato verificare che la query includa 4 colonne e 10 righe.
 
     ![Immagine 5661](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image45.png)
 
@@ -462,7 +462,7 @@ In questa attività verrà configurata la query **Sales**.
 
     ![Immagine 5665](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image48.png)
 
-7. Nella casella **Formula colonna personalizzata** immettere l'espressione seguente (dopo il simbolo di uguale):
+7. Nella casella **Formula colonna personalizzata** immettere l'espressione seguente (dopo il simbolo di uguale).
 
 8. Per praticità, è possibile copiare l'espressione dal file **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt**.
 
@@ -669,7 +669,7 @@ In questa attività verrà aggiornata la query **Product** tramite il merge dell
 
     *È possibile configurare i livelli di privacy per l'origine dati per determinare se i dati possono essere condivisi tra le origini. L'impostazione di ogni origine dati come **Azienda** consente la condivisione dei dati, se necessario. Si noti che le origini dati private non possono mai essere condivise con altre origini dati. Questo non significa che i dati privati non possono essere condivisi, ma che il motore di Power Query non può condividere i dati tra le origini.*
 
-7. Fare clic su **Save** (Salva).
+7. Fare clic su **Salva**.
 
     ![Immagine 5692](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image75.png)
 

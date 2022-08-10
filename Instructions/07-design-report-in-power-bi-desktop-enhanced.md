@@ -113,7 +113,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Immagine 7](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image7.png)
 
-7. Fare clic su **Esplora report**.
+7. Fare clic su **Sfoglia report**.
 
     ![Immagine 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
@@ -139,7 +139,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
 15. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-16. Fare clic su **Save** (Salva).
+16. Fare clic su **Salva**.
 
     ![Figura 2](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image12.png)
 

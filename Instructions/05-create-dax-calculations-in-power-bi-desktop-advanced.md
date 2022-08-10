@@ -69,7 +69,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Immagine 10](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
 
-1. Fare clic su **Esplora report**.
+1. Fare clic su **Sfoglia report**.
 
     ![Figura 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
@@ -95,7 +95,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Save** (Salva).
+1. Fare clic su **Salva**.
 
     ![Figura 2](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image8.png)
 
@@ -178,7 +178,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 4. Nel riquadro **Campi** verificare che sia selezionata la misura **Sales All Region** (quando è selezionata, lo sfondo sarà grigio scuro), quindi nella barra della formula sostituire il nome della misura e la formula con la formula seguente:
 
-    *Suggerimento: Per sostituire la formula esistente, copiare prima il frammento di codice. Quindi fare clic all'interno della barra della formula e premere **CTRL+A** per selezionare tutto il testo. Quindi premere **CTRL+V** per incollare il frammento di codice per sovrascrivere il testo selezionato. Quindi premere **INVIO**.*
+    *Suggerimento: per sostituire la formula esistente, copiare prima il frammento di codice. Quindi fare clic all'interno della barra della formula e premere **CTRL+A** per selezionare tutto il testo. Quindi premere **CTRL+V** per incollare il frammento di codice per sovrascrivere il testo selezionato. Quindi premere **INVIO**.*
 
 
     **DAX**

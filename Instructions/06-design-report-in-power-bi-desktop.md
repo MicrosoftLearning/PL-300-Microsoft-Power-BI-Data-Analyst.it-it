@@ -137,7 +137,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Figura 31](Linked_image_Files/07-design-report-in-power-bi-desktop_image6.png)
 
-7. Fare clic su **Esplora report**.
+7. Fare clic su **Sfoglia report**.
 
     ![Immagine 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
@@ -163,7 +163,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
 15. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-16. Fare clic su **Save** (Salva).
+16. Fare clic su **Salva**.
 
     ![Immagine 4](Linked_image_Files/07-design-report-in-power-bi-desktop_image11.png)
 
@@ -177,7 +177,7 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     ![Figura 36](Linked_image_Files/07-design-report-in-power-bi-desktop_image13.png)
 
-    *Suggerimento: e anche possibile fare doppio clic sul nome della pagina per rinominarla.*
+    *Suggerimento: è anche possibile fare doppio clic sul nome della pagina per rinominarla.*
 
 2. Rinominare la pagina come **Panoramica**, quindi premere **INVIO**.
 
@@ -321,7 +321,7 @@ In questa attività si progetterà la seconda pagina del report. Completata la p
 
 ![Immagine della pagina 2, che comprende un filtro dei dati e una matrice.](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
-*Importante: Nei casi in cui siano già state fornite istruzioni dettagliate nelle altre attività del lab, i passaggi presenteranno indicazioni più concise. Se sono necessarie istruzioni dettagliate, tornare a fare riferimento alle altre attività in questo lab.*
+*Importante: nei casi in cui siano già state fornite istruzioni dettagliate nelle altre attività del lab, i passaggi presenteranno indicazioni più concise. Se sono necessarie istruzioni dettagliate, tornare a fare riferimento alle altre attività in questo lab.*
 
 1. Per creare una nuova pagina, fare clic sull'icona con il segno più in basso a sinistra.
 
@@ -341,7 +341,7 @@ In questa attività si progetterà la seconda pagina del report. Completata la p
 
     ![Immagine 44](Linked_image_Files/07-design-report-in-power-bi-desktop_image40.png)
 
-6. Aggiungere un oggetto visivo matrice, ridimensionarlo e posizionarlo in modo da riempire lo spazio rimanente della pagina del report
+6. Aggiungere un oggetto visivo matrice, ridimensionarlo e posizionarlo in modo da riempire lo spazio rimanente della pagina del report.
 
     ![Immagine 45](Linked_image_Files/07-design-report-in-power-bi-desktop_image41.png)
 

@@ -79,11 +79,11 @@ In questa attività verrà innanzitutto salvato il file di Power BI Desktop.
 
     ![Immagine 14](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image4.png)
 
-1. Fare clic su **Save** (Salva).
+1. Fare clic su **Salva**.
 
     ![Figura 17](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image5.png)
 
-    Suggerimento: È anche possibile salvare il file facendo clic sull'icona **Salva** in alto a sinistra.
+    Suggerimento: è anche possibile salvare il file facendo clic sull'icona **Salva** in alto a sinistra.
 
     ![Figura 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image6.png)
 

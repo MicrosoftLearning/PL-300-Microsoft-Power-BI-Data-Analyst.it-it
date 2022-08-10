@@ -71,7 +71,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Immagine 48](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image3.png)
 
-1. Fare clic su **Esplora report**.
+1. Fare clic su **Sfoglia report**.
 
     ![Immagine 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
 
@@ -97,7 +97,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Save** (Salva).
+1. Fare clic su **Salva**.
 
     ![Immagine 13](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image8.png)
 
@@ -119,7 +119,7 @@ In questa attività verrà creata la tabella **Salesperson** (relazione diretta 
 
     *La barra della formula supporta l'immissione di una formula DAX valida. Include funzionalità quali il completamento automatico, IntelliSense e la codifica a colori, che consentono di immettere la formula in modo veloce e accurato.*
 
-    *Questa definizione di tabella crea una copia della tabella **Salesperson (Performance)** . Vengono copiati solo i dati, ma non vengono copiate proprietà del modello come visibilità, formattazione e così via.*
+    *Questa definizione di tabella crea una copia della tabella **Salesperson (Performance)**. Vengono copiati solo i dati, ma non vengono copiate proprietà del modello come visibilità, formattazione e così via.*
 
     *Suggerimento: si consiglia di immettere "spazi", ovvero ritorni a capo e tabulazioni, per specificare le formule in un formato intuitivo e di facile lettura, soprattutto quando le formule sono lunghe e complesse. Per immettere un ritorno a capo, premere **MAIUSC+INVIO**. Lo spazio è facoltativo.*
 
@@ -155,11 +155,11 @@ In questa attività verrà creata la tabella **Salesperson** (relazione diretta 
 
 10. Nel diagramma del modello selezionare la tabella **Salesperson**.
 
-11. Nel riquadro **Proprietà** nella casella **Descrizione** immettere: **Salesperson related to Sales**
+11. Nel riquadro **Proprietà** nella casella **Descrizione** immettere: **Salesperson related to Sales**.
 
     *Ricordare che le descrizioni vengono visualizzate come descrizioni comandi nel riquadro **Campi** al passaggio del mouse su una tabella o un campo.*
 
-12. Per la tabella **Salesperson (Performance)** impostare la descrizione su: **Salesperson related to region(s)**
+12. Per la tabella **Salesperson (Performance)** impostare la descrizione su: **Salesperson related to region(s)**.
 
     *Il modello di dati offre ora due alternative durante l'analisi dei venditori. La tabella **Salesperson** consente di analizzare le vendite effettuate da un venditore, mentre la tabella **Salesperson (Performance)** consente di analizzare le vendite effettuate nelle aree di vendita assegnate al venditore.*
 
@@ -250,7 +250,7 @@ In questa attività verranno aggiunte altre colonne per abilitare filtri e raggr
 
 7. Per aggiungere un oggetto visivo matrice alla nuova pagina del report, nel riquadro **Visualizzazioni** selezionare il tipo di oggetto visivo matrice.
 
-    *Suggerimento: È possibile posizionare il puntatore su ogni icona per visualizzare una descrizione comando che specifica il tipo di oggetto visivo.*
+    *Suggerimento: è possibile posizionare il puntatore su ogni icona per visualizzare una descrizione comando che specifica il tipo di oggetto visivo.*
 
     ![Immagine 51](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image23.png)
 
