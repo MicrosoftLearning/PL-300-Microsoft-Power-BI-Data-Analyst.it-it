@@ -195,7 +195,7 @@ In questa attività verrà creato un grafico a dispersione che può essere anima
 
 4. Nel riquadro **Filtri** aggiungere il campo **Product \| Category** nell'area **Filtri** in questa pagina.
 
-5. Nella scheda del filtro filtrare per **Bikes**.
+5. Nella scheda del filtro filtrare per **Motociclette**.
 
     ![Immagine 40](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image18.png)
 
@@ -255,7 +255,7 @@ In questa attività verrà creata una previsione per determinare i possibili ric
 
   
 
-6. Aggiungere anche il campo **Product \| Category** nell'area **Filtri in questa pagina** e filtrare per **Bikes**.
+6. Aggiungere anche il campo **Product \| Category** nell'area **Filtri in questa pagina** e filtrare per **Motociclette**.
 
     ![Immagine 48](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image25.png)
 

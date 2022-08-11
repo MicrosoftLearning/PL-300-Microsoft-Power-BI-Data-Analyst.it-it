@@ -253,7 +253,7 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     *Se trascinati in un oggetto visivo, i campi vengono aggiunti alle aree predefinite. Per una maggiore precisione, è possibile trascinare i campi direttamente nelle aree, come mostrato di seguito.*
 
-26. Dal riquadro **Campi** trascinare il campo **Sales \| Profit Margin** nell'area **Linea asse y**.
+26. Dal riquadro **Campi** trascinare il campo **Vendite \| Profit Margin** nell'area **Linea asse y**.
 
     ![Immagine 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 

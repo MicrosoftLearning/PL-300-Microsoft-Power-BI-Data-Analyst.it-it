@@ -217,7 +217,7 @@ In questa attività verrà creato il dashboard **Sales Monitoring**. Si aggiunge
 
     ![Immagine 11](Linked_image_Files/09-create-power-bi-dashboard_image24.png)
 
-15. Si noti la risposta **(Blank)**.
+15. Si noti la risposta **(Vuoto)**.
 
     ![Immagine 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
