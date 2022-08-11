@@ -377,7 +377,7 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
 
     *Probabilmente di ricorda che nel lab **Modellare i dati in Power BI Desktop** è stata impostata la colonna **Unit Price** per il riepilogo in base al **Media**. Il risultato visualizzato nell'oggetto visivo matrice è il prezzo unitario medio mensile (somma dei valori del prezzo unitario divisa per il numero di prezzi unitari).*
 
-2. Nel riquadro Campi dell'oggetto visivo sotto il riquadro **Visualizzazioni** nell'area **Valori** è possibile osservare che è presente **Unit Price**.
+2. Nel riquadro Campi dell'oggetto visivo sotto il riquadro **Visualizzazioni** nell'area **Valori** è possibile osservare che è presente **Prezzo unitario**.
 
     ![Immagine 28](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image36.png)
 
@@ -405,7 +405,7 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
 
 6. Aggiungere la misura **Avg Price** all'oggetto visivo matrice.
 
-7. Si noti che viene prodotto lo stesso risultato della colonna **Unit Price** (ma con formattazione diversa).
+7. Si noti che viene prodotto lo stesso risultato della colonna **Prezzo unitario** (ma con formattazione diversa).
 
 8. Nella finestra **Valori** aprire il menu di scelta rapida del campo **AVG Price** e osservare che non è possibile modificare la tecnica di aggregazione.
 
