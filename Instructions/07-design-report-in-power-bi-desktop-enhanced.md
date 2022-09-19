@@ -2,13 +2,9 @@
 lab:
   title: Progettare un report in Power BI Desktop - Parte 2
   module: Module 7 - Create Reports
-ms.openlocfilehash: 72d571e81320d4c0311f9e566d1805725439f961
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650208"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-2"></a>**Progettare un report in Power BI Desktop - Parte 2**
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
@@ -27,7 +23,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -63,7 +59,7 @@ In questa attività si accederà a Power BI per configurare l'ambiente per il la
 
     ![Figura 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
 
-1. Nella finestra del browser Microsoft Edge passare a **https://powerbi.microsoft.com**.
+1. Nella finestra del browser Microsoft Edge passare a **https://powerbi.com**.
 
     *Suggerimento: è anche possibile usare l'elemento preferito Servizio Power BI sulla barra dei preferiti di Microsoft Edge.*
 
@@ -117,7 +113,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Immagine 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
 
-8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter**.
+8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\08-design-report-in-power-bi-desktop-enhanced\Starter**.
 
 9. Selezionare il file **Sales Analysis**.
 
@@ -179,7 +175,7 @@ In questa attività verranno sincronizzati i filtri dei dati **Year** e **Region
 
 ## <a name="exercise-2-configure-drill-through"></a>**Esercizio 2: Configurare il drill-through**
 
-In questo esercizio si creerà una nuova pagina che verrà configurata come pagina di drill-through. Completata la progettazione, la pagina sarà simile alla seguente:
+In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
 
 ![Immagine della nuova pagina, che comprende un oggetto visivo scheda e un oggetto visivo tabella.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -245,13 +241,13 @@ In questa attività si creerà una nuova pagina che verrà configurata come pagi
 
     - Sales \| Profit Margin
 
-12. Configurare le opzioni di formato per l'oggetto visivo e nella sezione **Valori** impostare la proprietà **Dimensione testo** su **20pt**.
+12. Configurare le opzioni di formato per l'oggetto visivo e nella sezione **Griglia** impostare la proprietà **Dimensione testo** su **20pt**.
 
     *La progettazione della pagina di drill-through è quasi completa. Nell'esercizio successivo si apporteranno miglioramenti alla pagina con la formattazione condizionale.*
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**Esercizio 3: Aggiungere la formattazione condizionale**
 
-In questo esercizio la pagina di drill-through verrà ottimizzata con la formattazione condizionale. Completata la progettazione, la pagina sarà simile alla seguente:
+In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
 
 ![Immagine di una pagina aggiornata che mostra icone e valori con formattazione a colori.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -307,11 +303,11 @@ In questa attività la pagina di drill-through verrà ottimizzata con la formatt
 
 9. Configurare la formattazione condizionale del colore di sfondo per il campo **Colore**.
 
-10. Nella finestra **Colore di sfondo - Colore** selezionare **Valore campo** nell'elenco a discesa **Stile formato**.
+10. Nella finestra **Colore di sfondo - Colore** selezionare **Valore campo** nell'elenco a discesa **Formatta per**.
 
-    
+    ![Immagine 113](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image35.png)
 
-11. Nell'elenco a discesa **Specificare il campo su cui basare questo elemento** selezionare **Product \| Formattazione \| Formato del colore di sfondo**.
+11. Nell'elenco a discesa **In base al campo** selezionare **Product \| Formattazione \| Formato del colore di sfondo**.
 
     ![Immagine 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -325,7 +321,7 @@ In questa attività la pagina di drill-through verrà ottimizzata con la formatt
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>**Esercizio 4: Aggiungere segnalibri e pulsanti**
 
-In questo esercizio la pagina **My Performance** viene ottimizzata con pulsanti che consentono all'utente del report di selezionare il tipo di oggetto visivo da visualizzare. Completata la progettazione, la pagina sarà simile alla seguente:
+In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
 
 ![Immagine di una pagina aggiornata 3, che mostra due pulsanti e solo due oggetti visivi.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
@@ -377,7 +373,7 @@ In questa attività verranno aggiunti due segnalibri, per visualizzare gli ogget
 
     ![Immagine 123](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image46.png)
 
-12. Configurare il secondo segnalibro in modo da ignorare i filtri (opzione **Dati** disattivata) e aggiornare il segnalibro.
+12. Configurare il secondo segnalibro in modo da ignorare i filtri (opzione**Dati** disattivata) e aggiornare il segnalibro.
 
 13. Nel riquadro **Selezione** è sufficiente visualizzare l'oggetto visivo nascosto per rendere visibili entrambi gli oggetti visivi.
 
@@ -401,15 +397,15 @@ In questa attività verranno aggiunti due pulsanti e a ognuno di essi verranno a
 
 2. Posizionare il pulsante direttamente sotto il filtro dei dati **Year**.
 
-3. Selezionare il pulsante e quindi nel riquadro **Pulsante Formato** fare clic su **Generale** e impostare la proprietà **Titolo** su **Sì**.
+3. Selezionare il pulsante e quindi nel riquadro **Pulsante Formato** impostare la proprietà **Testo pulsante** su **Sì**.
 
     ![Immagine 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49.png)
 
-4. Espandere la sezione **Titolo** e quindi immettere **Bar Chart** nella casella **Testo**.
+4. Espandere la sezione **Testo pulsante**, quindi immettere **Bar Chart** nella casella **Testo pulsante**.
 
 5. Espandere la sezione **Sfondo** e quindi impostare un colore complementare come colore di sfondo.
 
-6. Fare clic su **Pulsante** e impostare la proprietà **Action** su **Sì**.
+6. **Attivare** la proprietà **Azione**, situata nella parte inferiore dell'elenco.
 
     ![Immagine 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
@@ -471,7 +467,7 @@ In questo esercizio si esaminerà il report nel servizio Power BI.
 
 In questa attività si esaminerà il report nel servizio Power BI.
 
-1. Nella finestra del browser Microsoft Edge, nel servizio Power BI, nel riquadro **Navigazione** selezionare **Area di lavoro personale** e quindi fare clic sul report **Sales Analysis**.
+1. Nella finestra del browser Microsoft Edge, nel servizio Power BI, nel riquadro **Navigazione** fare clic sul report **Sales Analysis**.
 
 2. Per testare il report di drill-through, nella pagina **Overview**, nell'oggetto visivo **Quantity by category** fare clic con il pulsante destro del mouse sulla barra **Clothing** e quindi scegliere **Drill-through \| Product Details**.
 

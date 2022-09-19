@@ -2,18 +2,14 @@
 lab:
   title: Modellare i dati in Power BI Desktop
   module: Module 4 - Design a Data Model in Power BI
-ms.openlocfilehash: 1617d6a1a50e37a5dc7d9094eaa86057b2ddeee2
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "147015366"
 ---
+
+
 # <a name="model-data-in-power-bi-desktop"></a>**Modellare i dati in Power BI Desktop**
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In questo lab si inizierà a sviluppare il modello di dati. Il processo includerà la creazione di relazioni tra le tabelle e poi la configurazione delle proprietà delle tabelle e delle colonne per migliorare l'accessibilità e l'usabilità del modello di dati. Verranno anche create gerarchie e misure rapide.
+In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
 
 Contenuto del lab:
 
@@ -26,7 +22,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -162,15 +158,15 @@ In questa attività verranno create le relazioni del modello.
 
 14. Nell'elenco a discesa **Cardinalità** si noti che è selezionata l'opzione **Uno a molti (1:*)**.
 
-    *La cardinalità è stata rilevata automaticamente, perché Power BI rileva che la colonna **ProductKey** della tabella **Product** contiene valori univoci. Le relazioni uno-a-molti rappresentano la cardinalità più comune e tutte le relazioni create in questo lab saranno di questo tipo.*
+    *La cardinalità è stata rilevata automaticamente, perché Power BI rileva che la colonna **ProductKey** della tabella **Product** contiene valori univoci. Le relazioni uno-a-molti rappresentano la cardinalità più comune e tutte le relazioni create in questo lab saranno di questo tipo. Nel lab **Modellare i dati in Power BI Desktop - Parte 2** si userà una cardinalità molti-a-molti.*
 
 15. Nell'elenco a discesa **Direzione filtro incrociato** si noti che è selezionata l'opzione **Singola**.
 
-    *La direzione di filtro singola indica che i filtri vengono propagati dal lato "uno" al lato "molti". In questo caso, significa che i filtri applicati alla tabella **Product** verranno propagati alla tabella **Sales**, ma non nell'altra direzione.*
+    *La direzione di filtro singola indica che i filtri vengono propagati dal lato "uno" al lato "molti". In questo caso, significa che i filtri applicati alla tabella **Product** verranno propagati alla tabella **Sales**, ma non nell'altra direzione. Nel lab **Modellare i dati in Power BI Desktop - Parte 2** si userà una relazione bidirezionale.*
 
 16. Si noti che è selezionata l'opzione **Imposta come relazione attiva**.
 
-    *Le relazioni attive propagheranno i filtri. È possibile contrassegnare una relazione come inattiva, in modo che i filtri non vengano propagati. Le relazioni inattive possono esistere quando sono presenti più percorsi di relazione tra le tabelle. In tal caso, i calcoli del modello possono usare funzioni speciali per attivarle.*
+    *Le relazioni attive propagheranno i filtri. È possibile contrassegnare una relazione come inattiva, in modo che i filtri non vengano propagati. Le relazioni inattive possono esistere quando sono presenti più percorsi di relazione tra le tabelle. In tal caso, i calcoli del modello possono usare funzioni speciali per attivarle. Nel lab **Modellare i dati in Power BI Desktop - Parte 2** si userà una relazione inattiva.*
 
 17. Fare clic su **OK**.
 
@@ -210,10 +206,11 @@ In questa attività verranno create le relazioni del modello.
 
     - Da **Salesperson \| EmployeeKey** a **Sales \| EmployeeKey**
 
-25. Nel diagramma disporre le tabelle in modo che la tabella **Sales** sia posizionata al centro del diagramma e che le tabelle correlate siano disposte attorno ad essa. Posizionare le tabelle disconnesse a lato.
+    *In questo lab, le tabelle **SalespersonRegion** e **Targets** rimarranno disconnesse. Esiste una relazione molti-a-molti tra i venditori e le aree. Questo sarà lo scenario avanzato a cui si lavorerà nel lab **Modellare i dati in Power BI Desktop, Parte 2**.*
+
+25. In the diagram, arrange the tables so that the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
 
     ![Immagine 340](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image23.png)
-
 
 26. Salvare il file di Power BI Desktop.
 
@@ -313,7 +310,13 @@ In questa attività verrà configurata la tabella **Reseller**.
 
     ![Immagine 353](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image34.png)
 
-3. Impostare la **Categoria dati** per le colonne **Country-Region**, **State-Province** e **City** (non il livello di gerarchia) su **Paese**, **Stato o provincia** e **Città** rispettivamente. 
+3. Categorizzare le tre colonne seguenti:
+
+    - **Country-Region** come **Country/Region**
+
+    - **State-Province** come **State or Province**
+
+    - **City** come **City**
 
 ### <a name="task-4-configure-the-sales-table"></a>**Attività 4: Configurare la tabella Sales**
 
@@ -335,7 +338,7 @@ In questa attività verrà configurata la tabella **Sales**.
 
 5. Selezionare la colonna **Unit Price**.
 
-6. Nel riquadro **Proprietà**, nella sezione **Formattazione**, impostare la proprietà **Posizioni decimali** su **2**.
+6. Nel riquadro **Proprietà**, nella sezione **Formattazione**, impostare l'interruttore per la proprietà **Posizioni decimali** su **2**.
 
 7. Nel gruppo **Avanzate** (potrebbe essere necessario scorrere verso il basso per individuarlo), nell'elenco a discesa **Riepiloga per** selezionare **Media**.
 
@@ -345,7 +348,7 @@ In questa attività verrà configurata la tabella **Sales**.
 
 ### <a name="task-5-bulk-update-properties"></a>**Attività 5: Aggiornamento delle proprietà in blocco**
 
-In questa attività verranno aggiornate più colonne con singoli aggiornamenti in blocco. Questo approccio verrà usato per nascondere le colonne e formattare i valori delle colonne.
+In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
 1. Nel riquadro **Campi** selezionare la colonna **Product \| ProductKey**.
 
@@ -383,7 +386,7 @@ In questa attività verranno aggiornate più colonne con singoli aggiornamenti i
 
     *Le colonne sono state nascoste perché vengono usate dalle relazioni o verranno usate nella configurazione della sicurezza a livello di riga o nella logica di calcolo.*
 
-    *Nel lab **Creare calcoli DAX in Power BI Desktop - Parte 1** si userà **SalesOrderNumber** in un calcolo.*
+    *Nel lab **Modellare i dati in Power BI Desktop - Parte 2** si definirà la sicurezza a livello di riga usando la colonna **UPN**. Nel lab **Creare calcoli DAX in Power BI Desktop - Parte 1** si userà **SalesOrderNumber** in un calcolo.*
 
 4. Selezionare le tre colonne seguenti:
 
@@ -452,193 +455,8 @@ In questa attività si passerà alla visualizzazione Report per esaminare l'inte
     ![Immagine 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image45.png)
 
 
-## <a name="exercise-4-create-quick-measures"></a>**Esercizio 4: Creare misure rapide**
 
-In questo esercizio si creeranno due misure rapide.
-
-### <a name="task-1-create-quick-measures"></a>**Attività 1: Creare misure rapide**
-
-In questa attività verranno create due misure rapide per calcolare il profitto e il margine di profitto.
-
-1. Nel riquadro **Campi** fare clic con il pulsante destro del mouse sulla tabella **Sales** e quindi scegliere **Nuova misura rapida**.
-
-    ![Immagine 366](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image46.png)
-
-2. Nella finestra **Misure rapide**, nell'elenco a discesa **Calcolo**, dall'interno del gruppo **Operazioni matematiche** selezionare **Sottrazione**.
-
-    ![Immagine 367](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image47.png)
-
-3. Nel riquadro **Campi** della finestra **Misure rapide** espandere la tabella **Sales**.
-
-4. Trascinare il campo **Sales** nella casella **Valore di base**.
-
-5. Trascinare il campo **Cost** nella casella **Valore da sottrarre**.
-
-    ![Immagine 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
-
-6. Fare clic su **OK**.
-
-    ![Immagine 369](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image49.png)
-
-    *Una misura rapida crea automaticamente la formula per il calcolo. Sono semplici e veloci da creare per calcoli semplici e comuni. Si creeranno misure senza usare questo strumento nel lab **Creare calcoli DAX in Power BI Desktop - Parte 1**.*
-
-7. Nel riquadro **Campi**, all'interno della tabella **Sales**, notare la nuova misura.
-
-    ![Immagine 370](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image50.png)
-
-    *Le misure sono contrassegnate dall'icona a forma di calcolatrice.*
-
-8. Per rinominare la misura, fare clic con il pulsante destro del mouse su di essa e quindi scegliere **Rinomina**.
-
-    ![Immagine 371](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image51.png)
-
-    *Suggerimento: per rinominare un campo, è anche possibile fare doppio clic su di esso oppure selezionarlo e premere **F2**.*
-
-9. Rinominare la misura in **Profit** e quindi premere **INVIO**.
-
-10. Nella tabella **Sales** aggiungere una seconda misura rapida in base ai requisiti seguenti:
-
-    - Usare l'operazione matematica **Divisione**
-
-    - Impostare **Numeratore** sul campo **Sales \| Profit**
-
-    - Impostare **Denominatore** sul campo **Sales \| Sales**
-
-    - Rinominare la misura **Profit Margin**
-
-    ![Immagine 372](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image52.png)
-
-    ![Immagine 373](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image53.png)
-
-11. Verificare che sia selezionata la misura **Profit Margin**, quindi sulla barra multifunzione contestuale **Strumenti misura** impostare il formato su **Percentuale**, con due posizioni decimali.
-
-    ![Immagine 374](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image54.png)
-
-12. Per testare le due misure, selezionare prima l'oggetto visivo Tabella nella pagina del report.
-
-13. Nel riquadro **Campi** selezionare le due misure.
-
-    ![Immagine 375](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image55.png)
-
-14. Fare clic e trascinare la guida a destra per allargare l'oggetto visivo Tabella.
-
-    ![Immagine 376](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image56.png)
-
-15. Verificare che le misure producano un risultato ragionevole formattato correttamente.
-
-    ![Immagine 378](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image57.png)
-
-### <a name="task-2-create-a-many-to-many-relationship"></a>**Attività 2: Creare una relazione molti-a-molti**
-
-In questa attività verrà creata una relazione molti-a-molti tra la tabella **Salesperson** e la tabella **Sales**.
-
-1. In Power BI Desktop, nella visualizzazione Report, nel riquadro **Campi** selezionare i due campi seguenti per creare un oggetto visivo Tabella:
-
-    - Salesperson \| Salesperson
-
-    - Sales \| Sales
-
-    *Nei lab viene usata una notazione abbreviata per fare riferimento a un campo, simile al seguente: **Salesperson \| Salesperson** . In questo esempio, **Salesperson** è il nome della tabella e **Salesperson** è il nome del campo.*
-
-    ![Immagine 1](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image9.png)
-
-    *Nella tabella vengono visualizzate le vendite effettuate da ogni venditore. Tuttavia, esiste un'altra relazione tra i venditori e le vendite. Alcuni venditori appartengono a una, due o più aree di vendita. Inoltre, le aree di vendita possono avere più venditori assegnati.*
-
-    *Dal punto di vista della gestione delle prestazioni, le vendite di un venditore (basate sulle rispettive aree assegnate) devono essere analizzate e confrontate con gli obiettivi di vendita. Nell'esercizio successivo verranno create le relazioni per supportare questa analisi.*
-
-2. Si noti che Michael Blythe ha realizzato vendite per quasi 9 milioni di dollari.
-
-3. Passare alla vista Modello.
-
-    ![Immagine 10](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image10.png)
-
-4. Trascinare la tabella **SalespersonRegion** per posizionarla tra le tabelle **Region** e **Salesperson**.
-
-5. Usare la tecnica di trascinamento della selezione per creare le due relazioni tra modelli seguenti:
-
-    - Da **Salesperson \| EmployeeKey** a **SalespersonRegion \| EmployeeKey**
-
-    - Da **Region \| SalesTerritoryKey** a **SalespersonRegion \| SalesTerritoryKey**
-
-    *La tabella **SalespersonRegion** può essere considerata una tabella ponte.*
-
-6. Passare alla visualizzazione Report e notare che l'oggetto visivo non è stato aggiornato. Il risultato delle vendite per Michael Blythe non è cambiato.
-
-7. Tornare alla visualizzazione Modello e quindi seguire le direzioni del filtro delle relazioni (punta della freccia) dalla tabella **Salesperson**.
-
-    *Tenere presente che la tabella **Salesperson** filtra la tabella **Sales**. Filtra anche la tabella **SalespersonRegion**, ma non continua la propagazione dei filtri alla tabella **Region** (la freccia punta nella direzione sbagliata).*
-
-    ![Immagine 380](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image11.png)
-
-8. Per modificare la relazione tra le tabelle **Region** e **SalespersonRegion**, fare doppio clic sulla relazione.
-
-9. Nella finestra **Modifica relazione**, nell'elenco a discesa **Direzione filtro incrociato** selezionare **Entrambe**.
-
-10. Selezionare la casella di controllo **Applica filtro di sicurezza in entrambe le direzioni**.
-
-    ![Immagine 381](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image12.png)
-
-11. Fare clic su **OK**.
-
-    ![Immagine 335](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image13.png)
-
-12. Si noti che la relazione ha una freccia con due punte.
-
-    ![Immagine 382](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image14.png)
-
-13. Passare alla visualizzazione Report e notare che i valori delle vendite non sono ancora cambiati.
-
-    *Il problema è ora correlato al fatto che esistono due possibili percorsi di propagazione dei filtri tra le tabelle **Salesperson** e **Sales**. Questa ambiguità viene risolta internamente, in base a una valutazione "minor numero di tabelle". Per essere chiari, è sconsigliabile progettare modelli con questo tipo di ambiguità. Il problema verrà in parte risolto più avanti in questo lab ed entro la fine del lab **Creare calcoli DAX in Power BI Desktop - Parte 1**.*
-
-14. Passare alla vista Modello.
-
-15. Per forzare la propagazione dei filtri tramite la tabella ponte, modificare (fare doppio clic) la relazione tra le tabelle **Salesperson** e **Sales**.
-
-16. Nella finestra **Modifica relazione** deselezionare la casella di controllo **Imposta come relazione attiva**.
-
-    ![Immagine 383](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image15.png)
-
-17. Fare clic su **OK**.
-
-    ![Immagine 5696](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image16.png)
-
-    *La propagazione del filtro seguirà ora l'unico percorso attivo.*
-
-18. Nel diagramma si noti che la relazione inattiva è rappresentata da una linea tratteggiata.
-
-    ![Immagine 5697](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image17.png)
-
-19. Passare alla visualizzazione Report e notare che le vendite di Michael Blythe sono ora pari a circa 22 milioni di dollari.
-
-    ![Immagine 5698](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image18.png)
-
-20. Si noti anche che le vendite per ogni venditore, se sommate, sarebbero maggiori del totale della tabella.
-
-    *Questa è un'osservazione comune che riguarda le relazioni molti-a-molti, a causa del conteggio doppio, triplo e così via dei risultati delle vendite internazionali. Si consideri Brian Welcker, il secondo venditore elencato. L'importo delle vendite da lui realizzate è uguale all'importo totale delle vendite. Si tratta del risultato corretto semplicemente perché è il responsabile delle vendite e quindi le sue vendite vengono misurate in base alle vendite di tutte le aree.*
-
-    *Mentre la relazione molti-a-molti a questo punto funziona, ora non è possibile analizzare le vendite effettuate da un venditore (perché la relazione è inattiva). Sarà possibile riattivare la relazione quando si introdurrà una tabella calcolata che consentirà di analizzare le vendite effettuate nelle aree assegnate al venditore (per l'analisi delle prestazioni) nel lab **Creare calcoli DAX in Power BI Desktop - Parte 1**.*
-
-21. Passare alla visualizzazione Modello e quindi nel diagramma selezionare la tabella **Salesperson**.
-
-22. Nel riquadro **Proprietà**, nella casella **Nome** sostituire il testo con **Salesperson (prestazioni)**.
-
-    *La tabella rinominata ora riflette lo scopo: viene usata per segnalare e analizzare le prestazioni dei venditori in base alle vendite delle aree di vendita assegnate.*
-
-### <a name="task-3-relate-the-targets-table"></a>**Attività 3: Correlare la tabella Targets**
-
-In questa attività verrà creata una relazione con la tabella **Targets**
-
-1. Creare una relazione dalla colonna **Salesperson (Performance) \| EmployeeID** alla colonna **Targets \| EmployeeID**.
-
-2. Nella visualizzazione Report aggiungere il campo **Targets \| Target** all'oggetto visivo tabella.
-
-3. Ridimensionare l'oggetto visivo tabella in modo che tutte le colonne siano visibili.
-
-    ![Immagine 5699](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image19.png)
-
-    *È ora possibile visualizzare le vendite e i target, ma prestare attenzione per due motivi. In primo luogo, non è presente alcun filtro per un periodo di tempo, quindi i target includono anche importi target futuri. In secondo luogo, i target non sono additivi, quindi il totale non deve essere visualizzato. Può essere disabilitato formattando l'oggetto visivo o rimosso usando la logica di calcolo. Si seguirà il secondo approccio nel lab **Creare calcoli DAX in Power BI Desktop - Parte 2** creando una misura di destinazione che restituisce BLANK quando viene filtrato più di un venditore.*
-
-### <a name="task-4-finish-up"></a>**Attività 4: Completare il lab**
+### <a name="task-2-finish-up"></a>**Attività 2: Completare il lab**
 
 In questa attività si completerà il lab.
 
@@ -647,3 +465,5 @@ In questa attività si completerà il lab.
 2. Se viene richiesto di applicare le query, fare clic su **Applica più tardi**.
 
 3. Se si intende iniziare il lab successivo, lasciare aperto Power BI Desktop.
+
+    *Si migliorerà il modello di dati configurando una relazione molti-a-molti e la sicurezza a livello di riga nel lab **Modellare i dati in Power BI Desktop - Parte 2**.*
