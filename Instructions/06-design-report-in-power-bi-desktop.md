@@ -2,18 +2,14 @@
 lab:
   title: Progettare un report in Power BI Desktop - Parte 1
   module: Module 7 - Create Reports
-ms.openlocfilehash: 426892501790aaecbe21ed2e7f9161c4490c9e3b
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650217"
 ---
+
+
 # <a name="design-a-report-in-power-bi-desktop-part-1"></a>**Progettare un report in Power BI Desktop - Parte 1**
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In questo lab si creerà un report di tre pagine. Il report verrà quindi pubblicato in Power BI e qui sarà possibile aprirlo e interagire con esso.
+In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
 
 Contenuto del lab:
 
@@ -23,7 +19,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -59,7 +55,7 @@ In questa attività si accederà a Power BI per configurare l'ambiente per il la
 
     ![Immagine 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. Nella finestra del browser Microsoft Edge passare a **https://powerbi.microsoft.com**.
+1. Nella finestra del browser Microsoft Edge passare a **https://powerbi.com**.
 
     *Suggerimento: è anche possibile usare l'elemento preferito Servizio Power BI sulla barra dei preferiti di Microsoft Edge.*
 
@@ -92,7 +88,7 @@ In questa attività si abiliteranno gli oggetti visivi della mappa e della mappa
 
     ![Immagine 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scorrere la pagina verso il basso fino a Impostazioni di integrazione. Fare clic sulla freccia per espandere l'opzione Oggetti visivi della mappa e della mappa colorata.
+1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
 
     ![Immagine 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
@@ -141,7 +137,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Immagine 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter**.
+8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter**.
 
 9. Selezionare il file **Sales Analysis**.
 
@@ -169,7 +165,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
 ### <a name="task-4-design-page-1"></a>**Attività 4: Progettare la pagina 1**
 
-In questa attività si progetterà la prima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
+In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
 
 ![Immagine della pagina 1, che comprende un logo, due filtri dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
@@ -230,6 +226,21 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     ![Figura 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
+17. Per formattare il filtro dei dati, aprire il riquadro **Formato** sotto il riquadro **Visualizzazioni**.
+
+    ![Immagine 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
+
+18. Espandere quindi il gruppo **Comandi di selezione**.
+
+    ![Figura 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
+
+19. Impostare **Mostra l'opzione "Seleziona tutto"** su **Sì**.
+
+    ![Figura 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
+
+20. Nel filtro dei dati **Region** si noti che il primo elemento è ora **Seleziona tutto**.
+
+    *Se selezionata, questa opzione seleziona tutti gli elementi e in caso contrario, li deseleziona. Consente agli utenti del report di impostare gli elementi dei filtri dei dati necessari.*
 
 21. Deselezionare il filtro dei dati facendo clic su un'area vuota della pagina del report.
 
@@ -247,13 +258,13 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     - Sales \| Sales
 
-25. Nel riquadro dei campi dell'oggetto visivo (non nel riquadro **Campi**: il riquadro dei campi dell'oggetto visivo è sotto il riquadro **Visualizzazioni**) si noti che i campi sono assegnati alle aree **Asse X** e **Colonna asse y**.
+25. Nel riquadro dei campi dell'oggetto visivo (non nel riquadro **Campi**: il riquadro dei campi dell'oggetto visivo è sotto il riquadro **Visualizzazioni**) si noti che i campi sono assegnati alle aree **Asse condiviso** e **Valori colonna**.
 
     ![Figura 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
 
     *Se trascinati in un oggetto visivo, i campi vengono aggiunti alle aree predefinite. Per una maggiore precisione, è possibile trascinare i campi direttamente nelle aree, come mostrato di seguito.*
 
-26. Dal riquadro **Campi** trascinare il campo **Vendite \| Profit Margin** nell'area **Linea asse y**.
+26. Dal riquadro **Campi** trascinare il campo **Sales \| Profit Margin** nell'area **Valori riga**.
 
     ![Immagine 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -261,7 +272,7 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     *L'ultimo mese dell'anno, giugno 2020, non presenta (ancora) alcuna vendita. Per impostazione predefinita, l'oggetto visivo ha eliminato i mesi con vendite VUOTE. Ora l'oggetto visivo verrà configurato in modo da visualizzare tutti i mesi.*
 
-28. Nell'area **Asse X** del riquadro dei campi dell'oggetto visivo fare clic sulla freccia rivolta verso il basso in corrispondenza del campo **Month** e quindi selezionare **Mostra elementi senza dati**.
+28. Nell'area **Asse condiviso** del riquadro dei campi dell'oggetto visivo fare clic sulla freccia rivolta verso il basso in corrispondenza del campo **Month**, quindi selezionare **Mostra elementi senza dati**.
 
     ![Immagine 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -305,7 +316,7 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     ![Immagine 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. Espandere il gruppo **Barre** e quindi il gruppo **Colori**, quindi impostare la proprietà **Colore predefinito** su un colore appropriato, a complemento del grafico a linee o dell'istogramma.
+39. Espandere il gruppo **Colori dati**, quindi impostare la proprietà **Colore predefinito** su un colore appropriato, a complemento del grafico a linee o dell'istogramma.
 
 40. **Attivare** la proprietà **Etichette dati**.
 
@@ -317,7 +328,7 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
 ### <a name="task-5-design-page-2"></a>**Attività 5: Progettare la pagina 2**
 
-In questa attività si progetterà la seconda pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
+In questo lab si creerà un report di tre pagine.
 
 ![Immagine della pagina 2, che comprende un filtro dei dati e una matrice.](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
@@ -332,10 +343,11 @@ In questa attività si progetterà la seconda pagina del report. Completata la p
     ![Immagine 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
+‎ 
 
 3. Aggiungere un filtro dei dati basato sul campo **Region \| Region**.
 
-4. Usare il riquadro **Formato** per abilitare l'opzione "Seleziona tutto" (nel gruppo **Selezione**).
+4. Usare il riquadro **Formato** per abilitare l'opzione "Seleziona tutto" (nel gruppo **Comandi di selezione**).
 
 5. Ridimensionare e posizionare il filtro dei dati in modo che si trovi sul lato sinistro della pagina del report, a circa metà altezza della pagina.
 
@@ -391,7 +403,7 @@ In questa attività si progetterà la seconda pagina del report. Completata la p
 
 ### <a name="task-6-design-page-3"></a>**Attività 6: Progettare la pagina 3**
 
-In questa attività si progetterà la terza e ultima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
+Il report verrà quindi pubblicato in Power BI e qui sarà possibile aprirlo e interagire con esso.
 
 ![Immagine della pagina 3, che comprende un filtro dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -401,7 +413,7 @@ In questa attività si progetterà la terza e ultima pagina del report. Completa
     
     ![Immagine del campo Salesperson nel riquadro dei filtri.](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. Selezionare **Michael Blythe**. I dati nella pagina del report **My Performance** verranno ora filtrati per visualizzare solo i dati di Michael Blythe.
+1. Select <bpt id="p1">**</bpt>Michael Blythe<ept id="p1">**</ept>. Data on the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> report page will now be filtered to display data for Michael Blythe only.
 
 1. Aggiungere un filtro dei dati a discesa basato sul campo **Date \| Year**, quindi ridimensionarlo e posizionarlo nell'angolo in alto a sinistra della pagina.
 
@@ -429,7 +441,7 @@ In questa attività si progetterà la terza e ultima pagina del report. Completa
 
 1. Formattare l'oggetto visivo:
 
-    - Nel gruppo **Valori callout** aumentare la proprietà **Dimensione testo** a **28pt**
+    - Nel gruppo **Etichette dati** aumentare la proprietà **Dimensione testo** a **28pt**
 
     - Nel gruppo **Sfondo** impostare il **Colore** su un colore grigio chiaro
 

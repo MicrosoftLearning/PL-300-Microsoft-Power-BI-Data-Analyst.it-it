@@ -1,19 +1,14 @@
 ---
 lab:
   title: Caricare i dati in Power BI Desktop
-  module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: aced37b7bfdd2ccf94a9d3e7bdb8f8ff7013c125
-ms.sourcegitcommit: 9ea1e7e21b9b3c718030c94b1693d153a2010ec7
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146650226"
+  module: 'Module 3 - Clean, Transform, and Load Data in Power BI'
 ---
+
 # <a name="load-data-in-power-bi-desktop"></a>**Caricare i dati in Power BI Desktop**
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In questo lab si inizieranno ad applicare trasformazioni a ognuna delle query create nel lab precedente. Le query verranno quindi applicate per caricare ognuna come tabella nel modello di dati.
+In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
 
 Contenuto del lab:
 
@@ -23,7 +18,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
+This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -130,7 +125,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
     *È ora possibile filtrare le righe della query per recuperare solo i dipendenti che sono venditori.*
 
-4. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione fare clic sulla freccia rivolta verso il basso **Gestisci colonne**, fare clic sulla freccia rivolta verso il basso **Scegli colonne** e quindi selezionare **Vai a colonna**.
+4. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione, dal gruppo **Gestisci colonne** fare clic sulla freccia rivolta verso il basso **Scegli colonne** e quindi selezionare **Vai a colonna**.
 
     ![Immagine 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
@@ -156,7 +151,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
     *Ogni trasformazione creata comporta una logica di passaggio aggiuntiva. È possibile modificare o eliminare passaggi. È anche possibile selezionare un passaggio per visualizzare un'anteprima dei risultati della query in quella fase della trasformazione.*
 
-10. Per rimuovere colonne, nella scheda **Home** della barra multifunzione, fare clic sul gruppo **Gestisci colonne** e quindi fare clic sull'icona **Scegli colonne**.
+10. Per rimuovere colonne, nella scheda **Home** della barra multifunzione, dall'interno del gruppo **Gestisci colonne** fare clic sull'icona **Scegli colonne**.
 
     ![Immagine 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
@@ -216,7 +211,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
 23. Usare i passaggi precedenti per rinominare la colonna **EmailAddress** in **UPN**.
 
-    *UPN è l'acronimo di User Principal Name, ovvero nome dell'entità utente.*
+    *UPN è l'acronimo di User Principal Name, ovvero nome dell'entità utente. I valori in questa colonna verranno usati quando si configurerà la sicurezza a livello di riga nel lab **Modellare i dati in Power BI Desktop - Parte 2**.*
 
 24. Nella parte inferiore sinistra della barra di stato verificare che la query includa cinque colonne e 18 righe.
 
@@ -349,6 +344,7 @@ In questa attività verrà configurata la query **Reseller**.
     ![Figura 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
+‎ 
 
 6. Fare clic con il pulsante destro del mouse sull'intestazione di colonna **Business Type** e quindi scegliere **Sostituisci valori**.
 
@@ -647,7 +643,7 @@ In questa attività verrà aggiornata la query **Product** tramite il merge dell
 
     ![Immagine 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. Per eseguire il merge della query **ColorFormats**, nella scheda della barra multifunzione **Home** fare clic sulla freccia rivolta verso il basso **Combina** e quindi fare clic su **Merge di query**.
+2. Per eseguire il merge della query **ColorFormats**, nella scheda della barra multifunzione **Home** fare clic su **Merge di query** nel gruppo **Combina**.
 
     ![Immagine 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -705,7 +701,7 @@ In questa attività si aggiornerà la query **ColorFormats** per disabilitarne i
 
     ![Immagine 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    La disabilitazione del caricamento significa che non verrà caricata come tabella nel modello di dati. Questa operazione è necessaria perché è stato eseguito il merge della query con la query **Product**, abilitata per il caricamento nel modello di dati.
+    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
 
 4. Fare clic su **OK**.
 
@@ -747,4 +743,4 @@ In questa attività si completerà il lab.
 
 5. Se si intende iniziare il lab successivo, lasciare aperto Power BI Desktop.
 
-    *Le tabelle e le relazioni del modello di dati verranno configurate nel lab **Modellare i dati in Power BI Desktop**.*
+    *Le tabelle e le relazioni del modello di dati verranno configurate nel lab **Modellare i dati in Power BI Desktop - Parte 1**.*
