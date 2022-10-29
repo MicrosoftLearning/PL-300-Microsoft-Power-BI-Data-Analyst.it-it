@@ -9,7 +9,7 @@ lab:
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In this lab you will create a many-to-many relationship between the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. You will also enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
+In questo lab verrà creata una relazione molti-a-molti tra la tabella **Salesperson** e la tabella **Sales**. Verrà anche applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati di vendita per le rispettive aree assegnate.
 
 Contenuto del lab:
 
@@ -19,7 +19,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -91,7 +91,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Salva**.
+1. Fare clic su **Save** (Salva).
 
     ![Figura 2](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image8.png)
 
@@ -133,7 +133,7 @@ In questa attività si applicherà la sicurezza a livello di riga per assicurars
 
     *USERPRINCIPALNAME() è una funzione DAX (Data Analysis Expressions) che restituisce il nome dell'utente autenticato. La tabella **Salesperson (Performance)** verrà quindi filtrata in base al nome dell'entità utente (UPN) dell'utente che esegue una query sul modello.*
 
-10. Fare clic su **Salva**.
+10. Fare clic su **Save** (Salva).
 
     ![Immagine 5706](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image26.png)
 
@@ -177,7 +177,7 @@ In questa attività si applicherà la sicurezza a livello di riga per assicurars
 
 20. Quando viene richiesto di confermare l'eliminazione, fare clic su **Sì, elimina**.
 
-21. Fare clic su **Salva**.
+21. Fare clic su **Save** (Salva).
 
     ![Figura 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 

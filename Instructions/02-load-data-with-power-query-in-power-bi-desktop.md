@@ -8,7 +8,7 @@ lab:
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
+In questo lab si inizieranno ad applicare trasformazioni a ognuna delle query create nel lab precedente. Le query verranno quindi applicate per caricare ognuna come tabella nel modello di dati.
 
 Contenuto del lab:
 
@@ -18,7 +18,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -99,7 +99,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Salva**.
+1. Fare clic su **Save** (Salva).
 
     ![Immagine 15](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image9.png)
 
@@ -665,7 +665,7 @@ In questa attività verrà aggiornata la query **Product** tramite il merge dell
 
     *È possibile configurare i livelli di privacy per l'origine dati per determinare se i dati possono essere condivisi tra le origini. L'impostazione di ogni origine dati come **Azienda** consente la condivisione dei dati, se necessario. Si noti che le origini dati private non possono mai essere condivise con altre origini dati. Questo non significa che i dati privati non possono essere condivisi, ma che il motore di Power Query non può condividere i dati tra le origini.*
 
-7. Fare clic su **Salva**.
+7. Fare clic su **Save** (Salva).
 
     ![Immagine 5692](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image75.png)
 
@@ -701,7 +701,7 @@ In questa attività si aggiornerà la query **ColorFormats** per disabilitarne i
 
     ![Immagine 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-    Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the <bpt id="p1">**</bpt>Product<ept id="p1">**</ept> query, which is enabled to load to the data model.
+    La disabilitazione del caricamento significa che non verrà caricata come tabella nel modello di dati. Questa operazione è necessaria perché è stato eseguito il merge della query con la query **Product**, abilitata per il caricamento nel modello di dati.
 
 4. Fare clic su **OK**.
 

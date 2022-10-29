@@ -23,7 +23,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -135,7 +135,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
 15. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-16. Fare clic su **Salva**.
+16. Fare clic su **Save** (Salva).
 
     ![Figura 2](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image12.png)
 
@@ -175,7 +175,7 @@ In questa attività verranno sincronizzati i filtri dei dati **Year** e **Region
 
 ## <a name="exercise-2-configure-drill-through"></a>**Esercizio 2: Configurare il drill-through**
 
-In this exercise you will create a new page and configure it as a drill through page. When you’ve completed the design, the page will look like the following:
+In questo esercizio si creerà una nuova pagina che verrà configurata come pagina di drill-through. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine della nuova pagina, che comprende un oggetto visivo scheda e un oggetto visivo tabella.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
@@ -247,7 +247,7 @@ In questa attività si creerà una nuova pagina che verrà configurata come pagi
 
 ## <a name="exercise-3-add-conditional-formatting"></a>**Esercizio 3: Aggiungere la formattazione condizionale**
 
-In this exercise you will enhance the drill through page with conditional formatting. When you’ve completed the design, the page will look like the following:
+In questo esercizio la pagina di drill-through verrà ottimizzata con la formattazione condizionale. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine di una pagina aggiornata che mostra icone e valori con formattazione a colori.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
@@ -321,7 +321,7 @@ In questa attività la pagina di drill-through verrà ottimizzata con la formatt
 
 ## <a name="exercise-4-add-bookmarks-and-buttons"></a>**Esercizio 4: Aggiungere segnalibri e pulsanti**
 
-In this exercise you will enhance the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> page with buttons, allowing the report user to select the visual type to display. When you’ve completed the design, the page will look like the following:
+In questo esercizio la pagina **My Performance** viene ottimizzata con pulsanti che consentono all'utente del report di selezionare il tipo di oggetto visivo da visualizzare. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine di una pagina aggiornata 3, che mostra due pulsanti e solo due oggetti visivi.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 

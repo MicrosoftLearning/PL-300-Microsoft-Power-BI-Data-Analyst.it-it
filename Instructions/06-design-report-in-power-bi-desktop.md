@@ -9,7 +9,7 @@ lab:
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
+In questo lab si creerà un report di tre pagine. Il report verrà quindi pubblicato in Power BI e qui sarà possibile aprirlo e interagire con esso.
 
 Contenuto del lab:
 
@@ -19,7 +19,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -88,7 +88,7 @@ In questa attività si abiliteranno gli oggetti visivi della mappa e della mappa
 
     ![Immagine 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
+1. Scorrere la pagina verso il basso fino a Impostazioni di integrazione. Fare clic sulla freccia per espandere l'opzione Oggetti visivi della mappa e della mappa colorata.
 
     ![Immagine 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
@@ -159,13 +159,13 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
 15. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-16. Fare clic su **Salva**.
+16. Fare clic su **Save** (Salva).
 
     ![Immagine 4](Linked_image_Files/07-design-report-in-power-bi-desktop_image11.png)
 
 ### <a name="task-4-design-page-1"></a>**Attività 4: Progettare la pagina 1**
 
-In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
+In questa attività si progetterà la prima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine della pagina 1, che comprende un logo, due filtri dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
 
@@ -328,7 +328,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 ### <a name="task-5-design-page-2"></a>**Attività 5: Progettare la pagina 2**
 
-In questo lab si creerà un report di tre pagine.
+In questa attività si progetterà la seconda pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine della pagina 2, che comprende un filtro dei dati e una matrice.](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
@@ -403,7 +403,7 @@ In questo lab si creerà un report di tre pagine.
 
 ### <a name="task-6-design-page-3"></a>**Attività 6: Progettare la pagina 3**
 
-Il report verrà quindi pubblicato in Power BI e qui sarà possibile aprirlo e interagire con esso.
+In questa attività si progetterà la terza e ultima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine della pagina 3, che comprende un filtro dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -413,7 +413,7 @@ Il report verrà quindi pubblicato in Power BI e qui sarà possibile aprirlo e i
     
     ![Immagine del campo Salesperson nel riquadro dei filtri.](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
-1. Select <bpt id="p1">**</bpt>Michael Blythe<ept id="p1">**</ept>. Data on the <bpt id="p1">**</bpt>My Performance<ept id="p1">**</ept> report page will now be filtered to display data for Michael Blythe only.
+1. Selezionare **Michael Blythe**. I dati nella pagina del report **My Performance** verranno ora filtrati per visualizzare solo i dati di Michael Blythe.
 
 1. Aggiungere un filtro dei dati a discesa basato sul campo **Date \| Year**, quindi ridimensionarlo e posizionarlo nell'angolo in alto a sinistra della pagina.
 

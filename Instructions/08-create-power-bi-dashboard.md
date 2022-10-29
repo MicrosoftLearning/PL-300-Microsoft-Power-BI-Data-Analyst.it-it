@@ -19,7 +19,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -43,7 +43,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-a-dashboard"></a>**Esercizio 1: Creare un dashboard**
 
-In this exercise you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. The completed dashboard will look like the following:
+In questo esercizio si creerà il dashboard **Sales Monitoring**. Il dashboard completato sarà simile al seguente:
 
 ![Immagine del dashboard completato, che comprende tre riquadri.](Linked_image_Files/09-create-power-bi-dashboard_image1.png)
 
@@ -133,7 +133,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
 15. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-16. Fare clic su **Salva**.
+16. Fare clic su **Save** (Salva).
 
     ![Figura 9](Linked_image_Files/09-create-power-bi-dashboard_image13.png)
 
@@ -163,7 +163,7 @@ In questa attività si creerà un set di dati per configurare l'ambiente per il 
 
 ### <a name="task-4-create-a-dashboard"></a>**Attività 4: Creare un dashboard**
 
-In this task you will create the <bpt id="p1">**</bpt>Sales Monitoring<ept id="p1">**</ept> dashboard. You will pin a visual from the report, and add a tile based on an image data URI, and use Q&amp;A to create a tile.
+In questa attività verrà creato il dashboard **Sales Monitoring**. Si aggiungerà un oggetto visivo dal report e si aggiungerà un riquadro in base a un URI di dati dell'immagine e si userà Domande e risposte per creare un riquadro.
 
 1. Nella finestra del browser Microsoft Edge aprire il report **Sales Analysis** nel servizio Power BI.
 
@@ -307,7 +307,7 @@ In questa attività verranno modificati i dettagli di due riquadri.
 
 ## <a name="exercise-2-refresh-the-dataset"></a>**Esercizio 2: Aggiornare il set di dati**
 
-In this exercise you will first load sales order data for June 2020 into the <bpt id="p1">**</bpt>AdventureWorksDW2020<ept id="p1">**</ept> database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
+In questo esercizio si caricheranno prima i dati degli ordini di vendita per giugno 2020 nel database **AdventureWorksDW2020**. Si aprirà quindi il file di Power BI Desktop, si eseguirà un aggiornamento dei dati e si caricherà il file nell'area di lavoro.
 
 ### <a name="task-1-update-the-lab-database"></a>**Attività 1: Aggiornare il database del lab**
 

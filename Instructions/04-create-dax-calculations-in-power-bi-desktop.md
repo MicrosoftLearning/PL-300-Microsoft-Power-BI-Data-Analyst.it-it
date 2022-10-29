@@ -21,7 +21,7 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
@@ -45,7 +45,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 ## <a name="exercise-1-create-calculated-tables"></a>**Esercizio 1: Creare tabelle calcolate**
 
-In this exercise you will create two calculated tables. The first will be the <bpt id="p1">**</bpt>Salesperson<ept id="p1">**</ept> table, to allow a direct relationship between it and the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> table. The second will be the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table.
+In questo esercizio si creeranno due tabelle calcolate. La prima sarà la tabella **Salesperson** per consentire una relazione diretta tra la tabella e la tabella **Sales**. La seconda sarà la tabella **Date**.
 
 ### <a name="task-1-get-started"></a>**Attività 1: Operazioni preliminari**
 
@@ -93,7 +93,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Salva**.
+1. Fare clic su **Save** (Salva).
 
     ![Immagine 13](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image8.png)
 
@@ -202,7 +202,7 @@ In questa attività verrà creata la tabella **Date**.
 
 ### <a name="task-4-create-calculated-columns"></a>**Attività 4:** **Creare colonne calcolate**
 
-In this task you will add additional columns to enable filtering and grouping by different time periods. You will also create a calculated column to control the sort order of other columns.
+In questa attività verranno aggiunte altre colonne per abilitare filtri e raggruppamenti basati su periodi di tempo diversi. Verrà creata anche una colonna calcolata per controllare l'ordinamento delle altre colonne.
 
 *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file di frammenti disponibile in **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
 
@@ -302,7 +302,7 @@ In this task you will add additional columns to enable filtering and grouping by
 
 ### <a name="task-5-complete-the-date-table"></a>**Attività 5:** **Completare la tabella Date**
 
-In this task you will complete the design of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> table by hiding a column and creating a hierarchy. You will then create relationships to the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Targets<ept id="p2">**</ept> tables.
+In questa attività verrà completata la progettazione della tabella **Date** nascondendo una colonna e creando una gerarchia. Si creeranno quindi relazioni con le tabelle **Sales** e **Targets**.
 
 1. Passare alla vista Modello.
 
@@ -363,7 +363,7 @@ In questo esercizio si creeranno e si formatteranno diverse misure.
 
 ### <a name="task-1-create-simple-measures"></a>**Attività 1: Creare misure semplici**
 
-In this task you will create simple measures. Simple measures aggregate values in a single column or count rows of a table.
+In questa attività verranno create misure semplici. Le misure semplici aggregano i valori in una singola colonna o conteggiano le righe di una tabella.
 
 1. Nella vista Report nella **Pagina 2** nel riquadro **Campi** trascinare il campo **Sales \| Unit Price** nell'oggetto visivo matrice.
 
