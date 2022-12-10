@@ -99,7 +99,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
 
-1. Fare clic su **Save** (Salva).
+1. Fare clic su **Salva**.
 
     ![Immagine 15](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image9.png)
 
