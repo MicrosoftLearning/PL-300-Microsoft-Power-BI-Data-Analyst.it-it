@@ -1,7 +1,7 @@
 ---
 lab:
   title: Applicare la sicurezza a livello di riga
-  module: Module 13 - Row-Level Security
+  module: 12 - Row-Level Security
 ---
 
 
@@ -9,37 +9,35 @@ lab:
 
 **Il tempo stimato per il completamento del lab è di 45 minuti**
 
-In questo lab verrà creata una relazione molti-a-molti tra la tabella **Salesperson** e la tabella **Sales**. Verrà anche applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati di vendita per le rispettive aree assegnate.
+In questo lab verrà applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati di vendita per le rispettive aree assegnate.
 
 Contenuto del lab:
-
-- Configurare relazioni molti-a-molti
 
 - Applicare la sicurezza a livello di riga
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
 2. Caricare i dati in Power BI Desktop
 
-3. Modellare i dati in Power BI Desktop
+3. Progettare un modello di dati in Power BI
 
-5. Creare calcoli DAX in Power BI Desktop - Parte 1
+4. Creare calcoli DAX in Power BI Desktop - Parte 1
 
-6. Creare calcoli DAX in Power BI Desktop - Parte 2
+5. Creare calcoli DAX in Power BI Desktop - Parte 2
 
-7. Progettare un report in Power BI Desktop - Parte 1
+6. Progettare un report in Power BI Desktop - Parte 1
 
-8. Progettare un report in Power BI Desktop - Parte 2
+7. Progettare un report in Power BI Desktop - Parte 2
+
+8. Analizzare i dati con oggetti visivi di intelligenza artificiale
 
 9. Creare un dashboard di Power BI
 
-10. Eseguire l'analisi dei dati in Power BI Desktop
-
-11. **Applicare la sicurezza a livello di riga**
+10. **Applicare la sicurezza a livello di riga**
 
 ## <a name="exercise-1-enforce-row-level-security"></a>**Esercizio 1: Applicare la sicurezza a livello di riga**
 
@@ -69,7 +67,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Figura 5](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image4.png)
 
-1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\12-row-level-security\Starter**.
+1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\10-row-level-security\Starter**.
 
 1. Selezionare il file **Sales Analysis**.
 
@@ -181,7 +179,7 @@ In questa attività si applicherà la sicurezza a livello di riga per assicurars
 
     ![Figura 18](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image35.png)
 
-### <a name="task-2-finish-up"></a>**Attività 2: Completare il lab**
+### <a name="task-3-finish-up"></a>**Attività 3: Completare il lab**
 
 In questa attività si completerà il lab.
 
