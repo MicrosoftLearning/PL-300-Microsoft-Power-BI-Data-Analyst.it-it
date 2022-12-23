@@ -111,7 +111,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Immagine 34](Linked_image_Files/09-create-power-bi-dashboard_image9.png)
 
-8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\08-create-power-bi-dashboard\Starter**.
+8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\09-create-power-bi-dashboard\Starter**.
 
 9. Selezionare il file **Sales Analysis**.
 
