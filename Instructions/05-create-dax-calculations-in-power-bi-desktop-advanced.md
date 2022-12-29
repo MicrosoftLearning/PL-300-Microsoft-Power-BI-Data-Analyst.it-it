@@ -1,13 +1,13 @@
 ---
 lab:
   title: Creare calcoli DAX in Power BI Desktop - Parte 2
-  module: Module 5 - Create Model Calculations using DAX in Power BI
+  module: 5 - Create Model Calculations using DAX in Power BI
 ---
 
 
-# <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>**Creare calcoli DAX in Power BI Desktop - Parte 2**
+# <a name="create-dax-calculations-in-power-bi-desktop-part-2"></a>Creare calcoli DAX in Power BI Desktop - Parte 2
 
-**Il tempo stimato per il completamento del lab è di 45 minuti**
+**Il tempo stimato per il completamento del lab è di 45 minuti.**
 
 In questo lab si creeranno misure con espressioni DAX che implicano la modifica del contesto di filtro.
 
@@ -19,27 +19,27 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
 2. Caricare i dati in Power BI Desktop
 
-3. Modellare i dati in Power BI Desktop
+3. Progettare un modello di dati in Power BI
 
-5. Creare calcoli DAX in Power BI Desktop - Parte 1
+4. Creare calcoli DAX in Power BI Desktop - Parte 1
 
-6. **Creare calcoli DAX in Power BI Desktop - Parte 2**
+5. **Creare calcoli DAX in Power BI Desktop - Parte 2**
 
-7. Progettare un report in Power BI Desktop - Parte 1
+6. Progettare un report in Power BI Desktop - Parte 1
 
-8. Progettare un report in Power BI Desktop - Parte 2
+7. Progettare un report in Power BI Desktop - Parte 2
+
+8. Analizzare i dati con oggetti visivi di intelligenza artificiale
 
 9. Creare un dashboard di Power BI
 
-10. Eseguire l'analisi dei dati in Power BI Desktop
-
-11. Applicare la sicurezza a livello di riga
+10. Applicare la sicurezza a livello di riga
 
 ## <a name="exercise-1-work-with-filter-context"></a>**Esercizio 1: Usare il contesto di filtro**
 
@@ -69,7 +69,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Figura 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
 
-1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
+1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter**.
 
 1. Selezionare il file **Sales Analysis**.
 
@@ -121,13 +121,11 @@ In questa attività verrà creato un oggetto visivo matrice per supportare il te
 
     *Si ricorderà che la gerarchia **Regions** include i livelli **Group**, **Country** e **Region**.*
 
-7. Per formattare l'oggetto visivo, sotto il riquadro **Visualizzazioni** selezionare il riquadro **Formato**.
+7. Per formattare l'oggetto visivo, nel riquadro **Visualizzazioni** selezionare il riquadro **Formato**.
 
     ![Immagine 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
 8. Nella casella **Cerca** immettere **Con rientri**.
-
-    ![Immagine 15](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image13.png)
 
 9. Impostare la proprietà **Layout con rientri** su **Disattivato**.
 
@@ -147,7 +145,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 1. Aggiungere una misura alla tabella **Sales** basata sull'espressione seguente:
 
-    *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file **D:\PL300\Labs\06-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt**.*
+    *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt**.*
 
 
     **DAX**
