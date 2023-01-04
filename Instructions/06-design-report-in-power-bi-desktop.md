@@ -1,13 +1,13 @@
 ---
 lab:
   title: Progettare un report in Power BI Desktop - Parte 1
-  module: Module 7 - Create Reports
+  module: 7 - Create Reports
 ---
 
 
-# <a name="design-a-report-in-power-bi-desktop-part-1"></a>**Progettare un report in Power BI Desktop - Parte 1**
+# <a name="design-a-report-in-power-bi-desktop-part-1"></a>Progettare un report in Power BI Desktop - Parte 1
 
-**Il tempo stimato per il completamento del lab è di 45 minuti**
+**Il tempo stimato per il completamento del lab è di 45 minuti.**
 
 In questo lab si creerà un report di tre pagine. Il report verrà quindi pubblicato in Power BI e qui sarà possibile aprirlo e interagire con esso.
 
@@ -19,27 +19,27 @@ Contenuto del lab:
 
 ### <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
 2. Caricare i dati in Power BI Desktop
 
-3. Modellare i dati in Power BI Desktop
+3. Progettare un modello di dati in Power BI
 
-5. Creare calcoli DAX in Power BI Desktop - Parte 1
+4. Creare calcoli DAX in Power BI Desktop - Parte 1
 
-6. Creare calcoli DAX in Power BI Desktop - Parte 2
+5. Creare calcoli DAX in Power BI Desktop - Parte 2
 
-7. **Progettare un report in Power BI Desktop - Parte 1**
+6. **Progettare un report in Power BI Desktop - Parte 1**
 
-8. Progettare un report in Power BI Desktop - Parte 2
+7. Progettare un report in Power BI Desktop - Parte 2
+
+8. Analizzare i dati con oggetti visivi di intelligenza artificiale
 
 9. Creare un dashboard di Power BI
 
-10. Eseguire l'analisi dei dati in Power BI Desktop
-
-11. Applicare la sicurezza a livello di riga
+10. Applicare la sicurezza a livello di riga
 
 ## <a name="exercise-1-create-a-report"></a>**Esercizio 1: Creare un report**
 
@@ -55,19 +55,13 @@ In questa attività si accederà a Power BI per configurare l'ambiente per il la
 
     ![Immagine 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
 
-1. Nella finestra del browser Microsoft Edge passare a **https://powerbi.com**.
+1. Nella finestra del browser Microsoft Edge passare a **https://powerbi.microsoft.com**.
 
     *Suggerimento: è anche possibile usare l'elemento preferito Servizio Power BI sulla barra dei preferiti di Microsoft Edge.*
 
 1. Fare clic su **Accedi** (nell'angolo in alto a destra).
 
     ![Immagine 63](Linked_image_Files/07-design-report-in-power-bi-desktop_image2.png)
-
-1. Immettere i dettagli dell'account ricevuti (controllare la cartella **Resources**).
-
-1. Se viene chiesto di aggiornare la password, immettere di nuovo la password ricevuta e quindi immettere e confermare una nuova password.
-
-    *Importante: assicurarsi di registrare la nuova password.*
 
 1. Completare il processo di accesso.
 
@@ -77,35 +71,36 @@ In questa attività si accederà a Power BI per configurare l'ambiente per il la
 
 ### <a name="task-2-get-started--enable-map-and-filled-map-visuals"></a>**Attività 2: Operazioni preliminari - Abilitare gli oggetti visivi della mappa e della mappa colorata**
 
-In questa attività si abiliteranno gli oggetti visivi della mappa e della mappa colorata nell'ambiente del lab aggiornando le impostazioni di integrazione nel portale di amministrazione di Power BI. 
+In questa attività si abiliteranno gli oggetti visivi della mappa e della mappa colorata nell'ambiente del lab aggiornando le impostazioni globali in Power BI Desktop e le impostazioni di integrazione nel portale di amministrazione di Power BI.
 
+1. In Power BI Desktop passare a **Opzioni > Opzioni e impostazioni > Globale** e selezionare la casella **Utilizza oggetti visivi della mappa e della mappa colorata**.
 
-1. Per aprire il portale di amministrazione di Power BI, fare clic sull'icona **Impostazioni** nell'angolo in alto a destra del browser.
+![Picture103b](Linked_image_Files/07-design-report-in-power-bi-desktop_image103b.png)
+
+2. Per aprire il portale di amministrazione di Power BI, fare clic sull'icona **Impostazioni** nell'angolo in alto a destra del browser Edge.
 
     ![Immagine 101](Linked_image_Files/07-design-report-in-power-bi-desktop_image101.png)
 
-1. Selezionare **Portale di amministrazione**.
+3. Selezionare **Portale di amministrazione**.
 
     ![Immagine 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
 
-1. Scorrere la pagina verso il basso fino a Impostazioni di integrazione. Fare clic sulla freccia per espandere l'opzione Oggetti visivi della mappa e della mappa colorata.
+4. Scorrere la pagina verso il basso fino a Impostazioni di integrazione. Fare clic sulla freccia per espandere l'opzione Oggetti visivi della mappa e della mappa colorata.
 
     ![Immagine 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
 
-1. Impostare l'opzione Oggetti visivi della mappa e della mappa colorata su **Abilitato**.
+5. Impostare l'opzione Oggetti visivi della mappa e della mappa colorata su **Abilitato**.
 
-1. Fare clic su **Applica** per applicare le modifiche. 
+6. Fare clic su **Applica** per applicare le modifiche. 
 
     ![Immagine 104](Linked_image_Files/07-design-report-in-power-bi-desktop_image104.png)
 
-1. Nell'angolo in alto a destra nel browser verrà visualizzato il messaggio Le modifiche alle impostazioni del tenant verranno applicate entro i prossimi 15 minuti. 
+7. Nell'angolo in alto a destra nel browser verrà visualizzato il messaggio Le modifiche alle impostazioni del tenant verranno applicate entro i prossimi 15 minuti.
 
 
     ![Immagine 105](Linked_image_Files/07-design-report-in-power-bi-desktop_image105.png)
 
-
-
-1. Lasciare aperta la finestra del browser Microsoft Edge.
+8. Lasciare aperta la finestra del browser Microsoft Edge.
 
 ### <a name="task-3-get-started--open-report"></a>**Attività 3: Operazioni preliminari - Aprire il report**
 
@@ -137,7 +132,7 @@ In questa attività si aprirà il report iniziale per configurare l'ambiente per
 
     ![Immagine 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\07-design-report-in-power-bi-desktop\Starter**.
+8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter**.
 
 9. Selezionare il file **Sales Analysis**.
 
@@ -226,21 +221,6 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     ![Figura 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
-17. Per formattare il filtro dei dati, aprire il riquadro **Formato** sotto il riquadro **Visualizzazioni**.
-
-    ![Immagine 50](Linked_image_Files/07-design-report-in-power-bi-desktop_image23.png)
-
-18. Espandere quindi il gruppo **Comandi di selezione**.
-
-    ![Figura 23](Linked_image_Files/07-design-report-in-power-bi-desktop_image24.png)
-
-19. Impostare **Mostra l'opzione "Seleziona tutto"** su **Sì**.
-
-    ![Figura 24](Linked_image_Files/07-design-report-in-power-bi-desktop_image25.png)
-
-20. Nel filtro dei dati **Region** si noti che il primo elemento è ora **Seleziona tutto**.
-
-    *Se selezionata, questa opzione seleziona tutti gli elementi e in caso contrario, li deseleziona. Consente agli utenti del report di impostare gli elementi dei filtri dei dati necessari.*
 
 21. Deselezionare il filtro dei dati facendo clic su un'area vuota della pagina del report.
 
@@ -258,13 +238,13 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     - Sales \| Sales
 
-25. Nel riquadro dei campi dell'oggetto visivo (non nel riquadro **Campi**: il riquadro dei campi dell'oggetto visivo è sotto il riquadro **Visualizzazioni**) si noti che i campi sono assegnati alle aree **Asse condiviso** e **Valori colonna**.
+25. Nel riquadro dei campi dell'oggetto visivo (non nel riquadro **Campi**: il riquadro dei campi dell'oggetto visivo è sotto il riquadro **Visualizzazioni**) si noti che i campi sono assegnati alle aree **Asse X** e **Colonna asse y**.
 
-    ![Figura 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28.png)
+    ![Figura 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
     *Se trascinati in un oggetto visivo, i campi vengono aggiunti alle aree predefinite. Per una maggiore precisione, è possibile trascinare i campi direttamente nelle aree, come mostrato di seguito.*
 
-26. Dal riquadro **Campi** trascinare il campo **Sales \| Profit Margin** nell'area **Valori riga**.
+26. Dal riquadro **Campi** trascinare il campo **Vendite \| Profit Margin** nell'area **Linea asse y**.
 
     ![Immagine 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -272,7 +252,7 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     *L'ultimo mese dell'anno, giugno 2020, non presenta (ancora) alcuna vendita. Per impostazione predefinita, l'oggetto visivo ha eliminato i mesi con vendite VUOTE. Ora l'oggetto visivo verrà configurato in modo da visualizzare tutti i mesi.*
 
-28. Nell'area **Asse condiviso** del riquadro dei campi dell'oggetto visivo fare clic sulla freccia rivolta verso il basso in corrispondenza del campo **Month**, quindi selezionare **Mostra elementi senza dati**.
+28. Nell'area **Asse X** del riquadro dei campi dell'oggetto visivo fare clic sulla freccia rivolta verso il basso in corrispondenza del campo **Month** e quindi selezionare **Mostra elementi senza dati**.
 
     ![Immagine 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
@@ -316,7 +296,7 @@ In questa attività si progetterà la prima pagina del report. Completata la pro
 
     ![Immagine 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-39. Espandere il gruppo **Colori dati**, quindi impostare la proprietà **Colore predefinito** su un colore appropriato, a complemento del grafico a linee o dell'istogramma.
+39. Espandere il gruppo **Barre** e quindi il gruppo **Colori**, quindi impostare la proprietà **Colore predefinito** su un colore appropriato, a complemento del grafico a linee o dell'istogramma.
 
 40. **Attivare** la proprietà **Etichette dati**.
 
@@ -343,11 +323,10 @@ In questa attività si progetterà la seconda pagina del report. Completata la p
     ![Immagine 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
 
   
-‎ 
 
 3. Aggiungere un filtro dei dati basato sul campo **Region \| Region**.
 
-4. Usare il riquadro **Formato** per abilitare l'opzione "Seleziona tutto" (nel gruppo **Comandi di selezione**).
+4. Usare il riquadro **Formato** per abilitare l'opzione "Seleziona tutto" (nel gruppo **Selezione**).
 
 5. Ridimensionare e posizionare il filtro dei dati in modo che si trovi sul lato sinistro della pagina del report, a circa metà altezza della pagina.
 
@@ -441,7 +420,7 @@ In questa attività si progetterà la terza e ultima pagina del report. Completa
 
 1. Formattare l'oggetto visivo:
 
-    - Nel gruppo **Etichette dati** aumentare la proprietà **Dimensione testo** a **28pt**
+    - Nel gruppo **Valori callout** aumentare la proprietà **Dimensione testo** a **28pt**
 
     - Nel gruppo **Sfondo** impostare il **Colore** su un colore grigio chiaro
 
@@ -455,9 +434,9 @@ In questa attività si progetterà la terza e ultima pagina del report. Completa
 
 1. Aggiungere i campi seguenti nelle aree dell'oggetto visivo:
 
-    - Asse: **Date \| Month**
+    - Asse Y: **Date \| Month**
 
-    - Valore: **Sales \| Sales** e **Targets \| Target**
+    - Asse X: **Sales \| Sales** e **Targets \| Target**
 
     ![Immagine 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
 
@@ -523,7 +502,9 @@ In questa attività si esplorerà il report pubblicato in Power BI.
 
 3. Per aprire il report, fare clic sul report **Sales Analysis**.
 
-4. A sinistra, nel riquadro **Pagine** selezionare la pagina **Overview**. 
+4. A sinistra, nel riquadro **Pagine** selezionare la pagina **Overview**.
+ 
+    ***Nota**: se viene visualizzato un errore che indica che l'oggetto visivo mappa è disabilitato, aggiornare il browser.*
 
 5. Nel filtro dei dati **Regions** tenendo premuto il tasto **CTRL** selezionare più aree.
 

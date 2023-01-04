@@ -4,7 +4,7 @@ Questo repository contiene gli esercizi dell'esercitazione pratica per il corso 
 
 - **Si è un Microsoft Certified Trainer?** - Esaminare la [guida per utenti di GitHub per Microsoft Certified Trainer](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **È necessario compilare manualmente le istruzioni del lab?** - Le istruzioni sono disponibili nel repository [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build)
-- **Per sapere quali sono i lab associati ai moduli,** vedere la [pagina GitHub](https://microsoftlearning.github.io/DA-100-Analyzing-Data-with-Power-BI/)
+- **Per sapere quali sono i lab associati alla presentazione del corso,** vedere la [pagina GitHub](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/)
 
 ## <a name="what-are-we-doing"></a>Quali attività vengono svolte?
 
