@@ -1,17 +1,12 @@
 ---
 lab:
   title: Preparare i dati in Power BI Desktop
-  module: Module 2 - Get Data in Power BI
-ms.openlocfilehash: deaa403224e029a08c91ed5137693d51ac30fcab
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139839947"
+  module: 2 - Get Data in Power BI
 ---
-# <a name="prepare-data-in-power-bi-desktop"></a>**Preparare i dati in Power BI Desktop**
 
-**Il tempo stimato per il completamento del lab è di 45 minuti**
+# <a name="prepare-data-in-power-bi-desktop"></a>Preparare i dati in Power BI Desktop
+
+**Il tempo stimato per il completamento del lab è di 45 minuti.**
 
 In questo lab si avvia lo sviluppo di una soluzione di Power BI Desktop per l'azienda Adventure Works. Si esaminerà come connettersi ai dati di origine, come visualizzare in anteprima i dati e come usare le tecniche di anteprima dei dati per comprendere le caratteristiche e la qualità dei dati di origine.
 
@@ -27,29 +22,29 @@ Contenuto del lab:
 
 - Usare le tecniche di anteprima dei dati per comprendere meglio i dati
 
-### <a name="lab-story"></a>**Presentazione del lab**
+## <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. **Preparare i dati in Power BI Desktop**
 
 2. Caricare i dati in Power BI Desktop
 
-3. Modellare i dati in Power BI Desktop
+3. Progettare un modello di dati in Power BI
 
-5. Creare calcoli DAX in Power BI Desktop - Parte 1
+4. Creare calcoli DAX in Power BI Desktop - Parte 1
 
-6. Creare calcoli DAX in Power BI Desktop - Parte 2
+5. Creare calcoli DAX in Power BI Desktop - Parte 2
 
-7. Progettare un report in Power BI Desktop - Parte 1
+6. Progettare un report in Power BI Desktop - Parte 1
 
-8. Progettare un report in Power BI Desktop - Parte 2
+7. Progettare un report in Power BI Desktop - Parte 2
+
+8. Analizzare i dati con oggetti visivi di intelligenza artificiale
 
 9. Creare un dashboard di Power BI
 
-10. Eseguire l'analisi dei dati in Power BI Desktop
-
-11. Applicare la sicurezza a livello di riga
+10. Applicare la sicurezza a livello di riga
 
 ## <a name="exercise-1-prepare-data"></a>**Esercizio 1: Preparare i dati**
 
@@ -83,7 +78,7 @@ In questa attività verrà innanzitutto salvato il file di Power BI Desktop.
 
     ![Figura 17](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image5.png)
 
-    Suggerimento: È anche possibile salvare il file facendo clic sull'icona **Salva** in alto a sinistra.
+    Suggerimento: è anche possibile salvare il file facendo clic sull'icona **Salva** in alto a sinistra.
 
     ![Figura 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image6.png)
 
@@ -132,6 +127,8 @@ In questa attività verranno create query basate sulle tabelle di SQL Server.
 3. Fare clic su **OK**.
 
     ![Figura 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
+
+4. Se richiesto per le credenziali, nella finestra **SQL Server Database** selezionare **Usa le credenziali correnti**. A questo punto, fare clic su **Connetti**.
 
 4. Nella finestra **Strumento di navigazione**, a sinistra, espandere il database **AdventureWorksDW2020**.
 
@@ -213,13 +210,13 @@ In questa attività verranno visualizzati in anteprima i dati delle query di SQL
 
     ![Immagine 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    Quando il numero di valori distinti corrisponde a quello di valori univoci, significa che la colonna contiene valori univoci. Quando si esegue la modellazione, è importante che alcune tabelle del modello contengano colonne univoche. Queste colonne univoche possono essere usate per creare relazioni uno-a-molti, attività che verrà eseguita nel lab **Modellare i dati in Power BI Desktop - Parte 1**.
+    Quando il numero di valori distinti corrisponde a quello di valori univoci, significa che la colonna contiene valori univoci. Quando si esegue la modellazione, è importante che alcune tabelle del modello contengano colonne univoche. Queste colonne univoche possono essere usate per creare relazioni uno-a-molti, attività che verrà eseguita nel lab **Modellare i dati in Power BI Desktop**.
 
 11. Nel riquadro **Query** selezionare la query **DimEmployeeSalesTerritory**.
 
     ![Immagine 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
 
-    La tabella **DimEmployeeSalesTerritory** archivia una riga per ogni dipendente e le aree dei territori di vendita gestite. La tabella supporta la correlazione di diverse aree a un singolo dipendente. Alcuni dipendenti gestiscono una, due o più aree. Quando si modellano i dati, sarà necessario definire una relazione molti-a-molti, attività che verrà eseguita nel lab **Modellare i dati in Power BI Desktop - Parte 2**.
+    La tabella **DimEmployeeSalesTerritory** archivia una riga per ogni dipendente e le aree dei territori di vendita gestite. La tabella supporta la correlazione di diverse aree a un singolo dipendente. Alcuni dipendenti gestiscono una, due o più aree. Quando si modellano i dati, sarà necessario definire una relazione molti-a-molti.
 
 12. Nel riquadro **Query** selezionare la query **DimProduct**.
 
@@ -261,7 +258,7 @@ In questa attività verranno visualizzati in anteprima i dati delle query di SQL
 
     ![Immagine 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
 
-    La tabella **DimSalesTerritory** contiene una riga per ogni area di vendita, tra cui **Corporate HQ** (sede centrale). Le aree sono assegnate a un paese e i paesi sono assegnati ai gruppi. Nel lab **Modellare i dati in Power BI Desktop - Parte 1**, si creerà una gerarchia per consentire l'analisi a livello di area, paese o gruppo.
+    La tabella **DimSalesTerritory** contiene una riga per ogni area di vendita, tra cui **Corporate HQ** (sede centrale). Le aree sono assegnate a un paese e i paesi sono assegnati ai gruppi. Nel lab **Modellare i dati in Power BI Desktop** si creerà una gerarchia per consentire l'analisi a livello di area, paese o gruppo.
 
 23. Nel riquadro **Query** selezionare la query **FactResellerSales**.
 
@@ -274,6 +271,7 @@ In questa attività verranno visualizzati in anteprima i dati delle query di SQL
     ![Immagine 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
 
     I valori mancanti nella colonna **TotalProductCost** rappresentano un problema di qualità dei dati. Per risolvere il problema, nel lab **Caricare i dati in Power BI Desktop** si applicheranno le trasformazioni per inserire i valori mancanti usando il costo standard dei prodotti, archiviato nella tabella **DimProduct** correlata.
+
 
 ### <a name="task-5-get-data-from-a-csv-file"></a>**Attività 5: Recuperare i dati da un file CSV**
 
@@ -292,9 +290,7 @@ In questa attività verrà creata una query basata su un file CSV.
 5. Fare clic su **OK**.
 
     ![Immagine 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
-
-  
-‎ 
+ 
 
 6. Nel riquadro **Query** osservare l'aggiunta della query **ResellerSalesTargets**.
 

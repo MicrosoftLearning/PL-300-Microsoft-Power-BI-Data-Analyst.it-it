@@ -1,17 +1,12 @@
 ---
 lab:
   title: Caricare i dati in Power BI Desktop
-  module: Module 3 - Clean, Transform, and Load Data in Power BI
-ms.openlocfilehash: 8a19b8b1b243cc4c04bee3375f161098287dbf9d
-ms.sourcegitcommit: 3520e7d016e94549d408464207c1b91cd47867c2
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "139840056"
+  module: '3 - Clean, Transform, and Load Data in Power BI'
 ---
-# <a name="load-data-in-power-bi-desktop"></a>**Caricare i dati in Power BI Desktop**
 
-**Il tempo stimato per il completamento del lab è di 45 minuti**
+# <a name="load-data-in-power-bi-desktop"></a>Caricare i dati in Power BI Desktop
+
+**Il tempo stimato per il completamento del lab è di 45 minuti.**
 
 In questo lab si inizieranno ad applicare trasformazioni a ognuna delle query create nel lab precedente. Le query verranno quindi applicate per caricare ognuna come tabella nel modello di dati.
 
@@ -21,30 +16,29 @@ Contenuto del lab:
 
 - Applicare query per caricarle nel modello di dati
 
-### <a name="lab-story"></a>**Presentazione del lab**
+## <a name="lab-story"></a>**Presentazione del lab**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, per i primi 10 è consigliabile procedere in questo ordine:
+Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
 
 2. **Caricare i dati in Power BI Desktop**
 
-3. Modellare i dati in Power BI Desktop
+3. Progettare un modello di dati in Power BI
 
+4. Creare calcoli DAX in Power BI Desktop - Parte 1
 
-5. Creare calcoli DAX in Power BI Desktop - Parte 1
+5. Creare calcoli DAX in Power BI Desktop - Parte 2
 
-6. Creare calcoli DAX in Power BI Desktop - Parte 2
+6. Progettare un report in Power BI Desktop - Parte 1
 
-7. Progettare un report in Power BI Desktop - Parte 1
+7. Progettare un report in Power BI Desktop - Parte 2
 
-8. Progettare un report in Power BI Desktop - Parte 2
+8. Analizzare i dati con oggetti visivi di intelligenza artificiale
 
 9. Creare un dashboard di Power BI
 
-10. Eseguire l'analisi dei dati in Power BI Desktop
-
-11. Applicare la sicurezza a livello di riga
+10. Applicare la sicurezza a livello di riga
 
 ## <a name="exercise-1-load-data"></a>**Esercizio 1: Caricare i dati**
 
@@ -70,7 +64,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Immagine 10](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image3.png)
 
-1. Fare clic su **Esplora report**.
+1. Fare clic su **Sfoglia report**.
 
     ![Immagine 11](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image4.png)
 
@@ -130,11 +124,11 @@ In questa attività verrà configurata la query **Salesperson**.
 
     *È ora possibile filtrare le righe della query per recuperare solo i dipendenti che sono venditori.*
 
-4. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione, dal gruppo **Gestisci colonne** fare clic sulla freccia rivolta verso il basso **Scegli colonne** e quindi selezionare **Vai a colonna**.
+4. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione fare clic sulla freccia rivolta verso il basso **Gestisci colonne**, fare clic sulla freccia rivolta verso il basso **Scegli colonne** e quindi selezionare **Vai a colonna**.
 
     ![Immagine 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
-    *Suggerimento: Questa tecnica è utile quando una query contiene molte colonne. Se le colonne non sono troppe, è possibile scorrere semplicemente in orizzontale per trovare la colonna a cui si è interessati.*
+    *Suggerimento: questa tecnica è utile quando una query contiene molte colonne. Se le colonne non sono troppe, è possibile scorrere semplicemente in orizzontale per trovare la colonna a cui si è interessati.*
 
 5. Nella finestra **Vai a colonna**, per ordinare l'elenco in base al nome della colonna, fare clic sul pulsante di ordinamento **AZ** e quindi selezionare **Nome**.
 
@@ -156,15 +150,15 @@ In questa attività verrà configurata la query **Salesperson**.
 
     *Ogni trasformazione creata comporta una logica di passaggio aggiuntiva. È possibile modificare o eliminare passaggi. È anche possibile selezionare un passaggio per visualizzare un'anteprima dei risultati della query in quella fase della trasformazione.*
 
-10. Per rimuovere colonne, nella scheda **Home** della barra multifunzione, dall'interno del gruppo **Gestisci colonne** fare clic sull'icona **Scegli colonne**.
+10. Per rimuovere colonne, nella scheda **Home** della barra multifunzione, fare clic sul gruppo **Gestisci colonne** e quindi fare clic sull'icona **Scegli colonne**.
 
     ![Immagine 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
 
-11. Nella finestra **Scegli colonne**, per deselezionare tutte le colonne, deselezionare l'opzione **(Seleziona tutte le colonne)** .
+11. Nella finestra **Scegli colonne**, per deselezionare tutte le colonne, deselezionare l'opzione **(Seleziona tutte le colonne)**.
 
     ![Immagine 102](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image19.png)
 
-12. Per includere colonne, selezionare le sei colonne seguenti:
+12. Per includere colonne, selezionare le 6 colonne seguenti:
 
     - EmployeeKey
 
@@ -216,7 +210,7 @@ In questa attività verrà configurata la query **Salesperson**.
 
 23. Usare i passaggi precedenti per rinominare la colonna **EmailAddress** in **UPN**.
 
-    *UPN è l'acronimo di User Principal Name, ovvero nome dell'entità utente. I valori in questa colonna verranno usati quando si configurerà la sicurezza a livello di riga nel lab **Modellare i dati in Power BI Desktop - Parte 2**.*
+    *UPN è l'acronimo di User Principal Name, ovvero nome dell'entità utente.*
 
 24. Nella parte inferiore sinistra della barra di stato verificare che la query includa cinque colonne e 18 righe.
 
@@ -300,7 +294,7 @@ In questa attività verrà configurata la query **Product**.
 
 12. Espandere la colonna **DimProductCategory** e quindi introdurre solo la colonna **EnglishProductCategoryName**.
 
-13. Rinominare le quattro colonne seguenti:
+13. Rinominare le 4 colonne seguenti:
 
     - **EnglishProductName** in **Product**
 
@@ -310,7 +304,7 @@ In questa attività verrà configurata la query **Product**.
 
     - **EnglishProductCategoryName** in **Category**
 
-14. Nella barra di stato verificare che la query includa sei colonne e 397 righe.
+14. Nella barra di stato verificare che la query includa 6 colonne e 397 righe.
 
     ![Immagine 5651](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image35.png)
 
@@ -349,7 +343,6 @@ In questa attività verrà configurata la query **Reseller**.
     ![Figura 2](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image38.png)
 
   
-‎ 
 
 6. Fare clic con il pulsante destro del mouse sull'intestazione di colonna **Business Type** e quindi scegliere **Sostituisci valori**.
 
@@ -367,7 +360,7 @@ In questa attività verrà configurata la query **Reseller**.
 
     ![Immagine 6](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image41.png)
 
-9. Rinominare le quattro colonne seguenti:
+9. Rinominare le 4 colonne seguenti:
 
     - **BusinessType** in **Business Type** (includere uno spazio)
 
@@ -377,7 +370,7 @@ In questa attività verrà configurata la query **Reseller**.
 
     - **EnglishCountryRegionName** in **Country-Region**
 
-10. Nella barra di stato verificare che la query includa sei colonne e 701 righe.
+10. Nella barra di stato verificare che la query includa 6 colonne e 701 righe.
 
     ![Immagine 5657](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image42.png)
 
@@ -391,11 +384,7 @@ In questa attività verrà configurata la query **Region**.
 
 2. Rinominare la query in **Region**.
 
-3. Applicare un filtro alla colonna **SalesTerritoryAlternateKey** per rimuovere il valore 0 (zero).
-
-    ![Immagine 5660](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image44.png)
-
-4. Rimuovere tutte le colonne, ad eccezione delle seguenti:
+3. Rimuovere tutte le colonne, ad eccezione delle seguenti:
 
     - SalesTerritoryKey
 
@@ -405,7 +394,7 @@ In questa attività verrà configurata la query **Region**.
 
     - SalesTerritoryGroup
 
-5. Rinominare le tre colonne seguenti:
+4. Rinominare le tre colonne seguenti:
 
     - **SalesTerritoryRegion** in **Region**
 
@@ -413,7 +402,7 @@ In questa attività verrà configurata la query **Region**.
 
     - **SalesTerritoryGroup** in **Group**
 
-6. Nella barra di stato verificare che la query includa quattro colonne e 10 righe.
+5. Nella barra di stato verificare che la query includa 4 colonne e 10 righe.
 
     ![Immagine 5661](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image45.png)
 
@@ -463,30 +452,28 @@ In questa attività verrà configurata la query **Sales**.
 
     ![Immagine 5665](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image48.png)
 
-7. Nella casella **Formula colonna personalizzata** immettere l'espressione seguente (dopo il simbolo di uguale):
+7. Nella casella **Formula colonna personalizzata** immettere l'espressione seguente (dopo il simbolo di uguale).
 
-8. Per praticità, è possibile copiare l'espressione dal file **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt**.
-
-
-   **Power Query**
-   ```
+   `
    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
-   ```
-
+   `
 
 *Questa espressione verifica se manca il valore **TotalProductCost**. In caso affermativo, produce un valore moltiplicando il valore di **OrderQuantity** per il valore di **StandardCost**. In caso contrario, viene usato il valore **TotalProductCost** esistente.*
 
-9. Fare clic su **OK**.
+Per praticità, è possibile copiare l'espressione dal file **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt**.
+
+8. Fare clic su **OK**.
 
     ![Immagine 5666](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image49.png)
 
-10. Rimuovere le due colonne seguenti:
+
+9. Rimuovere le due colonne seguenti:
 
     - TotalProductCost
 
     - StandardCost
 
-11. Rinominare le tre colonne seguenti:
+10. Rinominare le tre colonne seguenti:
 
     - **OrderQuantity** in **Quantity**
 
@@ -494,13 +481,13 @@ In questa attività verrà configurata la query **Sales**.
 
     - **SalesAmount** in **Sales**
 
-12. Per modificare il tipo di dati della colonna, nell'intestazione di colonna **Quantity**, a sinistra del nome della colonna, fare clic sull'icona **1.2** e quindi selezionare **Numero intero**.
+11. Per modificare il tipo di dati della colonna, nell'intestazione di colonna **Quantity**, a sinistra del nome della colonna, fare clic sull'icona **1.2** e quindi selezionare **Numero intero**.
 
     ![Immagine 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
     *La configurazione del tipo di dati corretto è importante. Anche quando la colonna contiene un valore numerico è importante scegliere il tipo corretto se si prevede di eseguire calcoli matematici.*
 
-13. Modificare i tipi di dati delle tre colonne seguenti in **Numero decimale fisso**.
+12. Modificare i tipi di dati delle tre colonne seguenti in **Numero decimale fisso**.
 
     - Unit Price
 
@@ -512,7 +499,7 @@ In questa attività verrà configurata la query **Sales**.
 
     *Il tipo di dati Numero decimale fisso archivia i valori con la massima precisione, quindi richiede più spazio di archiviazione rispetto al tipo Numero decimale. È importante usare il tipo Numero decimale fisso per i valori finanziari o i tassi, ad esempio i tassi di cambio.*
 
-14. Nella barra di stato verificare che la query includa 10 colonne e più di 999 righe.
+13. Nella barra di stato verificare che la query includa 10 colonne e più di 999 righe.
 
     ![Immagine 5669](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image52.png)
 
@@ -570,7 +557,7 @@ In questa attività verrà configurata la query **Targets**.
 
 13. Si noti che la prima riga è relativa all'anno **2017** e al numero del mese **7**.
 
-14. Nella colonna **Column1**, nella prima cella della griglia, immettere **7/1/2017** e quindi premere **INVIO**.
+14. Nella colonna **Column1**, nella prima cella della griglia, immettere **01/07/2017** e quindi premere **INVIO**.
 
     *La macchina virtuale usa le impostazioni internazionali degli Stati Uniti, quindi questa data è in effetti il 1° luglio 2017.*
 
@@ -648,7 +635,7 @@ In questa attività verrà aggiornata la query **Product** tramite il merge dell
 
     ![Immagine 5690](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image70.png)
 
-2. Per eseguire il merge della query **ColorFormats**, nella scheda della barra multifunzione **Home** fare clic su **Merge di query** nel gruppo **Combina**.
+2. Per eseguire il merge della query **ColorFormats**, nella scheda della barra multifunzione **Home** fare clic sulla freccia rivolta verso il basso **Combina** e quindi fare clic su **Merge di query**.
 
     ![Immagine 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
@@ -748,4 +735,4 @@ In questa attività si completerà il lab.
 
 5. Se si intende iniziare il lab successivo, lasciare aperto Power BI Desktop.
 
-    *Le tabelle e le relazioni del modello di dati verranno configurate nel lab **Modellare i dati in Power BI Desktop - Parte 1**.*
+    *Le tabelle e le relazioni del modello di dati verranno configurate nel lab **Modellare i dati in Power BI Desktop**.*
