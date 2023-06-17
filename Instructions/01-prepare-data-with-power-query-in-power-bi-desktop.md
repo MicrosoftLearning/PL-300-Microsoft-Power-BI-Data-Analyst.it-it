@@ -4,346 +4,215 @@ lab:
   module: 2 - Get Data in Power BI
 ---
 
-# <a name="prepare-data-in-power-bi-desktop"></a>Preparare i dati in Power BI Desktop
+# Preparare i dati in Power BI Desktop
 
-**Il tempo stimato per il completamento del lab è di 45 minuti.**
-
-In questo lab si avvia lo sviluppo di una soluzione di Power BI Desktop per l'azienda Adventure Works. Si esaminerà come connettersi ai dati di origine, come visualizzare in anteprima i dati e come usare le tecniche di anteprima dei dati per comprendere le caratteristiche e la qualità dei dati di origine.
-
-Contenuto del lab:
-
-- Aprire Power BI Desktop
-
-- Impostare le opzioni di Power BI Desktop
-
-- Connettersi all'origine dati
-
-- Visualizzare in anteprima i dati di origine
-
-- Usare le tecniche di anteprima dei dati per comprendere meglio i dati
-
-## <a name="lab-story"></a>**Presentazione del lab**
+**Il tempo stimato per completare il lab è di 30 minuti.**
 
 Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. **Preparare i dati in Power BI Desktop**
+1. Caricare i dati in Power BI Desktop
+1. Progettare un modello di dati in Power BI
+1. Creare calcoli DAX in Power BI Desktop
+1. Creare calcoli DAX avanzati in Power BI Desktop
+1. Progettare un report in Power BI Desktop
+1. Migliorare un report in Power BI Desktop
+1. Eseguire l'analisi dei dati in Power BI
+1. Creare un dashboard di Power BI
+1. Applicare la sicurezza a livello di riga
 
-2. Caricare i dati in Power BI Desktop
+## **Presentazione del lab**
 
-3. Progettare un modello di dati in Power BI
+Questo lab è progettato per introdurre l'applicazione Power BI Desktop e come connettersi ai dati e come usare le tecniche di anteprima dei dati per comprendere le caratteristiche e la qualità dei dati di origine. Gli obiettivi di apprendimento sono:
 
-4. Creare calcoli DAX in Power BI Desktop - Parte 1
+- Aprire Power BI Desktop
+- Connettersi all'origine dati
+- Visualizzare in anteprima i dati di origine
+- Usare gli strumenti del profilo dati
 
-5. Creare calcoli DAX in Power BI Desktop - Parte 2
+## **Esercizio 1: Preparare i dati**
 
-6. Progettare un report in Power BI Desktop - Parte 1
+In questo esercizio verranno create otto query Power BI Desktop. Per sei query verranno usati dati di origine di SQL Server e per due i dati di file CSV.
 
-7. Progettare un report in Power BI Desktop - Parte 2
+### **Attività 1: Introduzione all'Power BI Desktop**
 
-8. Analizzare i dati con oggetti visivi di intelligenza artificiale
+In questa attività si inizia aprendo un file power BI iniziale (con estensione pbix). Il file iniziale non contiene dati, ma è stato configurato appositamente per completare il lab. Le impostazioni a livello di report seguenti sono state disabilitate nel file di avvio:
 
-9. Creare un dashboard di Power BI
+- Caricamento dati > Importa relazioni da origini dati al primo caricamento
+- Caricamento dati > Autodetect nuove relazioni dopo il caricamento dei dati
 
-10. Applicare la sicurezza a livello di riga
+*Nota: durante lo sviluppo di un modello di dati è possibile abilitare queste due opzioni, è possibile disabilitarle in precedenza per supportare l'esperienza del lab. Quando si creano relazioni nel lab **Load Data in Power BI Desktop** lab, si apprenderà perché si aggiungeranno ognuna di esse.*
 
-## <a name="exercise-1-prepare-data"></a>**Esercizio 1: Preparare i dati**
+<br/>
 
-In questo esercizio verranno create otto query di Power BI Desktop. Per sei query verranno usati dati di origine di SQL Server e per due i dati di file CSV.
+1. Aprire Power BI Desktop.
 
-### <a name="task-1-save-the-power-bi-desktop-file"></a>**Attività 1: Salvare il file di Power BI Desktop**
+    ![icona Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-In questa attività verrà innanzitutto salvato il file di Power BI Desktop.
+    *Suggerimento: per impostazione predefinita, la finestra di dialogo Introduzione viene aperta davanti a Power BI Desktop. È possibile scegliere di accedere e quindi chiudere il popup.*
 
-1. Per aprire Power BI Desktop, sulla barra delle applicazioni fare clic sul collegamento Microsoft Power BI Desktop.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare il file **> Apri report > Sfoglia report**.
 
-    ![Figura 2](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image1.png)
+1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter** .
 
-1. Per chiudere la finestra introduttiva, fare clic su **X** nella parte superiore destra della finestra.
+1. Selezionare il file **Sales Analysis**.
 
-    ![Immagine 3](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image2.png)
+1. Salvare una copia del file con **Salva con nome** nella cartella **D:\PL300\MySolution** .
 
-1. Per salvare il file, fare clic sulla scheda della barra multifunzione **File** per aprire la visualizzazione Backstage.
+### **Attività 2: Ottenere dati da SQL Server**
 
-1. Selezionare **Salva**.
+Questa attività illustra come connettersi a un database SQL Server e importare tabelle, che creano query in Power Query.
 
-    ![Immagine 4](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image3.png)
+1. Nella scheda **Home** della barra multifunzione selezionare **SQL Server** all'interno del gruppo **Dati**.
 
-1. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
+     ![SQL Server Ottenere dati icona](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
 
-1. Nella casella **Nome file** immettere **Sales Analysis**.
+1. Nella finestra **SQL Server Database** immettere **localhost** nella casella **Server**, quindi selezionare **OK**.
+    
+    *Nota: in questo lab si connetterà al database SQL Server usando **localhost** perché le origini dati del gateway non possono risolvere **localhost**. Questa non è una procedura consigliata durante la creazione di soluzioni personalizzate.*
 
-    ![Immagine 14](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image4.png)
+1. Se richiesto per le credenziali, nella finestra **SQL Server Database** selezionare **Usa le credenziali correnti** e quindi **Connetti**.
 
-1. Fare clic su **Save** (Salva).
+1. Nella finestra **Strumento di navigazione**, a sinistra, espandere il database **AdventureWorksDW2020**.
+    
+    *Nota: il database **AdventureWorksDW2020** si basa sul database di esempio **AdventureWorksDW2017** . È stata modificata per supportare gli obiettivi di apprendimento dei laboratori del corso.*
 
-    ![Figura 17](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image5.png)
+1. Selezionare, ma non controllare la tabella **DimEmployee**
 
-    Suggerimento: è anche possibile salvare il file facendo clic sull'icona **Salva** in alto a sinistra.
+     ![Database AdventureWorksDW2020 con DimEmployee indicato](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
 
-    ![Figura 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image6.png)
+1. Nel riquadro a destra osservare un'anteprima dei dati della tabella. I dati di anteprima consentono di visualizzare le colonne e un esempio di righe.
 
-### <a name="task-2-set-power-bi-desktop-options"></a>**Attività 2: Impostare le opzioni di Power BI Desktop**
-
-In questa attività si imposteranno le opzioni di Power BI Desktop.
-
-1. In Power BI Desktop fare clic sulla scheda **File** della barra multifunzione per aprire la visualizzazione Backstage.
-
-1. A sinistra selezionare **Opzioni e impostazioni** e quindi **Opzioni**.
-
-    ![Immagine 1](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image7.png)
-
-1. Nella finestra **Opzioni**, a sinistra, nel gruppo **File corrente** selezionare **Caricamento dati**.
-
-    ![Figura 5](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image8.png)
-
-    Le impostazioni di **Caricamento dati** per il file corrente consentono di impostare le opzioni che determinano i comportamenti predefiniti durante la modellazione.
-
-1. Nel gruppo **Relazioni** deselezionare le due opzioni già selezionate.
-
-    ![Immagine 7](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image9.png)
-
-    Sebbene queste due opzioni possano essere utili durante lo sviluppo di un modello di dati, sono state disabilitate a supporto dell'esperienza nel lab. Quando si creano le relazioni nel lab **Caricare i dati in Power BI Desktop**, si capirà perché vengono aggiunte.
-
-1. Fare clic su **OK**.
-
-    ![Figura 9](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image10.png)
-
-1. Salvare il file di Power BI Desktop.
-
-### <a name="task-3-get-data-from-sql-server"></a>**Attività 3: Recuperare i dati da SQL Server**
-
-In questa attività verranno create query basate sulle tabelle di SQL Server.
-
-1. Nella scheda **Home** della barra multifunzione fare clic su **SQL Server** nel gruppo **Dati**.
-
-    ![Figura 19](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image11.png)
-
-2. Nella finestra **Database SQL Server** immettere **localhost** nella casella **Server**.
-
-    ![Figura 21](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image12.png)
-
-    In questo lab ci si connetterà al database di SQL Server usando **localhost**. Questa procedura non è consigliata quando si creano soluzioni personalizzate. Le origini dati del gateway non possono infatti risolvere **localhost**.
-
-3. Fare clic su **OK**.
-
-    ![Figura 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image13.png)
-
-4. Se richiesto per le credenziali, nella finestra **SQL Server Database** selezionare **Usa le credenziali correnti**. A questo punto, fare clic su **Connetti**.
-
-4. Nella finestra **Strumento di navigazione**, a sinistra, espandere il database **AdventureWorksDW2020**.
-
-    Il database **AdventureWorksDW2020** è basato sul database di esempio **AdventureWorksDW2017**. È stato modificato per supportare gli obiettivi di apprendimento dei lab del corso.
-
-    ![Immagine 28](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image17.png)
-
-5. Selezionare la tabella **DimEmployee**, ma non la relativa casella di controllo.
-
-    ![Figura 29](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image18.png)
-
-6. Nel riquadro a destra osservare un'anteprima dei dati della tabella.
-
-    I dati di anteprima consentono di determinare le colonne e un campione di righe.
-
-7. Per creare query, selezionare la casella di controllo accanto alle sei tabelle seguenti:
+1. Per creare query, selezionare la casella di controllo accanto alle sei tabelle seguenti:
 
     - DimEmployee
-
     - DimEmployeeSalesTerritory
-
     - DimProduct
-
     - DimReseller
-
     - DimSalesTerritory
-
     - FactResellerSales
 
-8. Per applicare le trasformazioni ai dati delle tabelle selezionate, fare clic su **Trasforma dati**.
+1. Completare questa attività facendo clic su **Trasforma dati**, che aprirà editor di Power Query.
+    1. *Questo lab è destinato solo a connettersi e profilare i dati, ma non **trasformare i dati**.*
 
-    In questo lab i dati non verranno trasformati. Gli obiettivi del lab sono l'esplorazione e la profilatura dei dati nella finestra **Editor di Power Query**.
+### **Attività 3: Visualizzare in anteprima i dati in editor di Power Query**
 
-    ![Immagine 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image19.png)
+Questa attività introduce la editor di Power Query e consente di esaminare e profilare i dati. Ciò consente di determinare come pulire e trasformare i dati in un secondo momento.
 
-### <a name="task-4-preview-sql-server-queries"></a>**Attività 4: Visualizzare in anteprima le query di SQL Server**
+1. Nella finestra **Editor di Power Query**, a sinistra, osservare il riquadro **Query**. Il riquadro **Query** contiene una query per ogni tabella selezionata.
 
-In questa attività verranno visualizzati in anteprima i dati delle query di SQL Server. Si apprenderanno innanzitutto le informazioni rilevanti sui dati. Si useranno inoltre gli strumenti relativi a qualità, distribuzione e profilo delle colonne per comprendere i dati e valutarne la qualità.
+     ![Elenco di query caricate](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image20.png)
 
-1. Nella finestra **Editor di Power Query**, a sinistra, osservare il riquadro **Query**.
+1. Selezionare la prima query **DimEmployee**.
 
-    ![Figura 31](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image20.png)
+    *La tabella **DimEmployee** nel database di SQL Server archivia una riga per ogni dipendente. Un subset delle righe di questa tabella rappresenta i venditori, che saranno rilevanti per il modello che si svilupperà.*
 
-    Il riquadro **Query** contiene una query per ogni tabella selezionata.
+1. Nell'angolo inferiore sinistro della barra di stato vengono fornite alcune statistiche della tabella: la tabella contiene 33 colonne e 296 righe.
 
-2. Selezionare la prima query **DimEmployee**.
+     ![Numero di 33 colonne, 296 righe](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image22.png)
 
-    ![Immagine 33](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image21.png)
+1. Nel riquadro di anteprima dei dati scorrere orizzontalmente per esaminare tutte le colonne. Si noti che le ultime cinque colonne contengono i collegamenti **Table** o **Value**.
+    
+    *Queste cinque colonne rappresentano relazioni con altre tabelle nel database. Possono essere usati per unire le tabelle insieme. Si aggiungeranno tabelle **nel lab Carica dati in Power BI Desktop** lab.*
 
-    La tabella **DimEmployee** nel database di SQL Server archivia una riga per ogni dipendente. Un subset delle righe da questa tabella rappresenta i venditori, che saranno rilevanti per il modello che verrà sviluppato.
+1. Per valutare la qualità delle colonne, nella scheda **Visualizza** della barra multifunzione selezionare **Colonna qualità** nel gruppo **Anteprima dati**. La qualità della colonna consente di determinare facilmente la percentuale di valori validi, con errori o vuoti rilevata nelle colonne.
 
-3. In basso a sinistra, nella barra di stato, osservare le statistiche per la tabella, che contiene 33 colonne e 296 righe.
+     ![Selezione qualità colonna nella barra multifunzione](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
 
-    ![Figura 36](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image22.png)
+1. Si noti che la colonna **Position** ha righe vuote (null) del 94%.
 
-4. Nel riquadro di anteprima dei dati scorrere orizzontalmente per esaminare tutte le colonne.
+     ![Qualità della colonna che mostra le righe vuote del 94%](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
 
-5. Si noti che le ultime cinque colonne contengono i collegamenti **Table** o **Value**.
+1. Per valutare la distribuzione delle colonne, nella scheda **Visualizza** della barra multifunzione selezionare **Colonna distribuzione** nel gruppo **Anteprima dati**.
 
-    Queste cinque colonne rappresentano le relazioni con altre tabelle del database. Possono essere usate per unire le tabelle. Le tabelle verranno unite nel lab **Caricare i dati in Power BI Desktop**.
+1. Esaminare di nuovo la colonna **Position** e osservare che sono presenti quattro valori distinti e un valore univoco.
 
-6. Per valutare la qualità delle colonne, nella scheda **Visualizza** della barra multifunzione selezionare **Colonna qualità** nel gruppo **Anteprima dati**.
+1. Esaminare la distribuzione della colonna per la colonna **EmployeeKey** , sono presenti 296 valori distinti e 296 valori univoci.
+    
+    *Quando i conteggi distinti e univoci sono uguali, significa che la colonna contiene valori univoci. Quando si esegue la modellazione, è importante che alcune tabelle di modello dispongano di colonne univoce. Queste colonne univoce possono essere usate per creare relazioni uno-a-molti, che verranno eseguite nel lab **Dati modello in Power BI Desktop** lab.*
 
-    ![Figura 35](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image23.png)
+     ![Distribuzione delle colonne che mostra 296 valori distinti, 296 valori univoci](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
 
-    La qualità della colonna consente di determinare facilmente la percentuale di valori validi, con errori o vuoti rilevata nelle colonne.
+1. Nel riquadro **Query** selezionare la query **DimEmployeeSalesTerritory**.
+    
+    *La tabella **DimEmployeeSalesTerritory** archivia una riga per ogni dipendente e le aree del territorio di vendita gestite. La tabella supporta la correlazione di molte aree a un singolo dipendente. Alcuni dipendenti gestiscono uno, due o forse più aree. Quando si modellano questi dati, è necessario definire una relazione molti-a-molti.*
 
-7. Per la colonna **Position** (sestultima colonna), si noti che il 94% delle righe è vuoto (null).
+1. Nel riquadro **Query** selezionare la query **DimProduct**. La tabella **DimProduct** contiene una riga per ogni prodotto venduto dall'azienda.
 
-    ![Immagine 38](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image24.png)
+1. Scorrere orizzontalmente per visualizzare le ultime colonne. Osservare la colonna **DimProductSubcategory**.
+    
+    *Quando si aggiungono trasformazioni a questa query nel lab **Load Data in Power BI Desktop** lab, si userà la colonna **DimProductSubcategory** per aggiungere tabelle.*
 
-8. Per valutare la distribuzione delle colonne, nella scheda **Visualizza** della barra multifunzione selezionare **Colonna distribuzione** nel gruppo **Anteprima dati**.
+1. Nel riquadro **Query** selezionare la query **DimReseller**.
+    
+    *La tabella **DimReseller** contiene una riga per rivenditore. I rivenditori vendono, distribuiscono o aggiungono valore ai prodotti Adventure Works.*
 
-    ![Immagine 40](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image25.png)
+1. Per visualizzare i valori delle colonne, nella scheda **Visualizza** della barra multifunzione selezionare **Profilo colonna** nel gruppo **Anteprima dati**.
 
-9. Esaminare di nuovo la colonna **Position** e osservare che sono presenti quattro valori distinti e un valore univoco.
+1. Selezionare l'intestazione di colonna **BusinessType** e notare il nuovo riquadro sotto il riquadro di anteprima dei dati.
 
-10. Esaminare la distribuzione della colonna **EmployeeKey** (prima colonna), dove sono presenti 296 valori distinti e 296 valori univoci.
+1. Esaminare le statistiche delle colonne e la distribuzione dei valori nel riquadro di anteprima dei dati.
+    
+    *Si noti il problema di qualità dei dati: esistono due etichette per il warehouse (**Warehouse** e **il Ware House** non corretto).*
 
-    ![Immagine 43](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image26.png)
+     ![Distribuzione dei valori per la colonna BusinessType](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
 
-    Quando il numero di valori distinti corrisponde a quello di valori univoci, significa che la colonna contiene valori univoci. Quando si esegue la modellazione, è importante che alcune tabelle del modello contengano colonne univoche. Queste colonne univoche possono essere usate per creare relazioni uno-a-molti, attività che verrà eseguita nel lab **Modellare i dati in Power BI Desktop**.
+1. Passare il puntatore sulla barra relativa a **Ware House** e osservare che sono presenti cinque righe con questo valore.
+    
+    *Si applicherà una trasformazione per riassegnare la etichetta a queste cinque righe nel lab **Load Data in Power BI Desktop** lab.*
 
-11. Nel riquadro **Query** selezionare la query **DimEmployeeSalesTerritory**.
+1. Nel riquadro **Query** selezionare la query **DimSalesTerritory**.  
+    
+    *La tabella **DimSalesTerritory** contiene una riga per area di vendita, inclusa la sede centrale **aziendale**. Le aree vengono assegnate a un paese e i paesi vengono assegnati ai gruppi. Nel lab **Dati modello in Power BI Desktop** si creerà una gerarchia per supportare l'analisi a livello di area, paese o gruppo.*
 
-    ![Immagine 44](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image27.png)
+1. Nel riquadro **Query** selezionare la query **FactResellerSales**.
+    
+    *La tabella **FactResellerSales** contiene una riga per riga dell'ordine di vendita, un ordine di vendita contiene uno o più elementi della riga.*
 
-    La tabella **DimEmployeeSalesTerritory** archivia una riga per ogni dipendente e le aree dei territori di vendita gestite. La tabella supporta la correlazione di diverse aree a un singolo dipendente. Alcuni dipendenti gestiscono una, due o più aree. Quando si modellano i dati, sarà necessario definire una relazione molti-a-molti.
+1. Verificare la qualità della colonna **TotalProductCost** e osservare che l'8% delle righe è vuoto.
+    
+    *I valori di colonna **TotalProductCost** mancanti sono un problema di qualità dei dati. Per risolvere il problema, nel lab **Load Data in Power BI Desktop** si applicano trasformazioni per compilare i valori mancanti usando il costo standard del prodotto archiviato nella tabella **DimProduct** correlata.*
 
-12. Nel riquadro **Query** selezionare la query **DimProduct**.
+### **Attività 4: Ottenere dati da un file CSV**
 
-    ![Immagine 46](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image28.png)
+In questa attività verrà creata una nuova query in base ai file CSV.
 
-    La tabella **DimProduct** contiene una riga per ogni prodotto venduto dall'azienda.
+1. Per aggiungere una nuova query, nella finestra **editor di Power Query**, nella scheda **Home** della barra multifunzione selezionare la freccia verso **** il basso **Nuova origine** e quindi **selezionare Testo/CSV**.
 
-13. Scorrere orizzontalmente per visualizzare le ultime colonne.
+1. Nella finestra **Apri** passare alla cartella **D:\PL300\Resources** e selezionare il file **ResellerSalesTargets.csv**. Selezionare **Open** (Apri).
 
-14. Osservare la colonna **DimProductSubcategory**.
+1. Nella finestra **ResellerSalesTargets.csv** esaminare i dati in anteprima. Selezionare **OK**.
 
-    Quando si aggiungono trasformazioni a questa query nel lab **Caricare i dati in Power BI Desktop**, si userà la colonna **DimProductSubcategory** per unire le tabelle.
+1. Nel riquadro **Query** osservare l'aggiunta della query **ResellerSalesTargets**.
+    
+    *Il file CSV **ResellerSalesTargets** contiene una riga per venditore, all'anno. Ogni riga registra 12 destinazioni mensili di vendita (espresse in migliaia). L'anno lavorativo dell'azienda Adventure Works inizia il 1 luglio.*
 
-15. Nel riquadro **Query** selezionare la query **DimReseller**.
+1. Notare anche che nessuna colonna contiene valori vuoti.  Quando non è presente un obiettivo di vendita mensile, viene invece archiviato un trattino.
 
-    ![Immagine 49](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image29.png)
+1. Esaminare le icone in ogni intestazione di colonna, a sinistra del nome della colonna. Le icone rappresentano il tipo di dati della colonna. **123** indica un numero intero e **ABC** indica il testo.
 
-    La tabella **DimReseller** contiene una riga per rivenditore. I rivenditori vendono, distribuiscono o aggiungono valore ai prodotti Adventure Works.
+     ![Immagine 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
 
-16. Per visualizzare i valori delle colonne, nella scheda **Visualizza** della barra multifunzione selezionare **Profilo colonna** nel gruppo **Anteprima dati**.
+1. Ripetere i passaggi per creare una query in base al file ** diD:\PL300\Resources\ColorFormats.csv** .
+    
+    *Il file **CSV ColorFormats** contiene una riga per colore del prodotto. Ogni riga registra i codici HEX per formattare i colori di sfondo e carattere.*
 
-    ![Figura 41](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image30.png)
+*È ora necessario disporre di due nuove query, **ResellerSalesTargets** e **ColorFormats**.*
 
-17. Selezionare l'intestazione di colonna **BusinessType**.
+ ![Elenco query](Linked_image_Files/01-all-queries-loaded.png)
 
-18. Notare il nuovo riquadro aperto sotto il riquadro di anteprima dei dati.
-
-19. Esaminare le statistiche delle colonne e la distribuzione dei valori nel riquadro di anteprima dei dati.
-
-20. Si noti il problema relativo alla qualità dei dati: sono presenti due etichette per il magazzino (**Warehouse** e la versione con un errore di ortografia **Ware House**).
-
-    ![Immagine 51](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image31.png)
-
-21. Passare il puntatore sulla barra relativa a **Ware House** e osservare che sono presenti cinque righe con questo valore.
-
-    Verrà applicata una trasformazione per rietichettare queste cinque righe nel lab **Caricare i dati in Power BI Desktop**.
-
-22. Nel riquadro **Query** selezionare la query **DimSalesTerritory**.
-
-    ![Immagine 52](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image32.png)
-
-    La tabella **DimSalesTerritory** contiene una riga per ogni area di vendita, tra cui **Corporate HQ** (sede centrale). Le aree sono assegnate a un paese e i paesi sono assegnati ai gruppi. Nel lab **Modellare i dati in Power BI Desktop** si creerà una gerarchia per consentire l'analisi a livello di area, paese o gruppo.
-
-23. Nel riquadro **Query** selezionare la query **FactResellerSales**.
-
-    ![Immagine 54](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image33.png)
-
-    La tabella **FactResellerSales** contiene una riga per ogni riga dell'ordine di vendita. Un ordine di vendita contiene uno o più articoli.
-
-24. Verificare la qualità della colonna **TotalProductCost** e osservare che l'8% delle righe è vuoto.
-
-    ![Immagine 63](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image34.png)
-
-    I valori mancanti nella colonna **TotalProductCost** rappresentano un problema di qualità dei dati. Per risolvere il problema, nel lab **Caricare i dati in Power BI Desktop** si applicheranno le trasformazioni per inserire i valori mancanti usando il costo standard dei prodotti, archiviato nella tabella **DimProduct** correlata.
-
-
-### <a name="task-5-get-data-from-a-csv-file"></a>**Attività 5: Recuperare i dati da un file CSV**
-
-In questa attività verrà creata una query basata su un file CSV.
-
-1. Per aggiungere una nuova query nella finestra **Editor di Power Query**, nella scheda **Home** della barra multifunzione fare clic sulla freccia a discesa **Nuova origine** nel gruppo **Nuova query** e quindi selezionare **Testo/CSV**.
-
-    ![Immagine 70](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image35.png)
-
-2. Nella finestra **Apri** passare alla cartella **D:\PL300\Resources** e selezionare il file **ResellerSalesTargets.csv**.
-
-3. Fare clic su **Apri**.
-
-4. Nella finestra **ResellerSalesTargets.csv** esaminare i dati in anteprima.
-
-5. Fare clic su **OK**.
-
-    ![Immagine 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image36.png)
- 
-
-6. Nel riquadro **Query** osservare l'aggiunta della query **ResellerSalesTargets**.
-
-    ![Immagine 72](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image37.png)
-
-    Il file CSV **ResellerSalesTargets** contiene una riga per ogni venditore, per anno. Ogni riga registra 12 obiettivi di vendita mensili (espressi in migliaia). Si noti che l'anno fiscale dell'azienda Adventure Works inizia il 1° luglio.
-
-7. Notare anche che nessuna colonna contiene valori vuoti.
-
-    Quando non è presente un obiettivo di vendita mensile, viene invece archiviato un trattino.
-
-8. Esaminare le icone in ogni intestazione di colonna, a sinistra del nome della colonna.
-
-    ![Immagine 74](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image38.png)
-
-    Le icone rappresentano il tipo di dati della colonna. **123** indica un numero intero e **ABC** indica il testo.
-
-    Nel lab **Caricare i dati in Power BI Desktop** si applicheranno molte trasformazioni per ottenere un risultato di tipo diverso costituito solo da tre colonne: **Date**, **EmployeeKey** e **TargetAmount**.
-
-### <a name="task-6-get-additional-data-from-a-csv-file"></a>**Attività 6: Recuperare dati aggiuntivi da un file CSV**
-
-In questa attività verrà creata una query aggiuntiva basata su un file CSV diverso.
-
-1. Usare la procedura descritta nell'attività precedente per creare una query basata sul file **D:\PL300\Resources\ColorFormats.csv**.
-
-    ![Immagine 75](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image39.png)
-
-    Il file CSV **ColorFormats** contiene una riga per ogni colore di prodotto. Ogni riga registra i codici esadecimali per formattare i colori di sfondo e dei caratteri. Questi dati verranno integrati con i dati della query **DimProduct** nel lab **Caricare i dati in Power BI Desktop**.
-
-### <a name="task-7-finish-up"></a>**Attività 7: Completare il lab**
+### **Attività 5: Fine**
 
 In questa attività si completerà il lab.
 
 1. Nella scheda **Visualizza** della barra multifunzione, nel gruppo **Anteprima dati** deselezionare le tre opzioni di anteprima dei dati abilitate in precedenza in questo lab:
 
     - Colonna qualità
-
     - Colonna distribuzione
-
     - Profilo colonna
 
-    ![Immagine 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image40.png)
+     ![Immagine 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image40.png)
 
-2. Per salvare il file di Power BI Desktop, nella finestra **Editor di Power Query** selezionare **Salva** nella visualizzazione Backstage **File**.
-
-    ![Immagine 77](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image41.png)
-
-3. Quando viene richiesto di applicare le query, fare clic su **Applica più tardi**.
-
-    ![Immagine 86](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image42.png)
-
-    Applicando le query, i dati vengono caricati nel modello di dati. Non si è pronti per eseguire questa operazione, in quanto è prima necessario applicare molte trasformazioni.
-
-4. Se si intende iniziare il lab successivo, lasciare aperto Power BI Desktop.
-
-    Nel lab **Caricare i dati in Power BI Desktop** verranno eseguite varie trasformazioni delle query e quindi si applicheranno le query per caricarle nel modello di dati.
+1. **Salvare** il file Power BI Desktop. Quando viene richiesto di applicare le modifiche in sospeso, selezionare **Applica successivamente**.
+    
+    *Suggerimento: l'applicazione delle query caricherà i dati nel modello di dati. Non è possibile eseguire questa operazione, poiché sono necessarie molte trasformazioni che devono essere applicate prima.*

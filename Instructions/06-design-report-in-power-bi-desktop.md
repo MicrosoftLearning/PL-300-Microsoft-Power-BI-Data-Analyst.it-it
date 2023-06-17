@@ -1,587 +1,419 @@
 ---
 lab:
-  title: Progettare un report in Power BI Desktop - Parte 1
+  title: Progettare un report in Power BI Desktop
   module: 7 - Create Reports
 ---
 
 
-# <a name="design-a-report-in-power-bi-desktop-part-1"></a>Progettare un report in Power BI Desktop - Parte 1
+# Progettare un report in Power BI Desktop
 
 **Il tempo stimato per il completamento del lab è di 45 minuti.**
 
-In questo lab si creerà un report di tre pagine. Il report verrà quindi pubblicato in Power BI e qui sarà possibile aprirlo e interagire con esso.
+In questo lab verrà creato un report di tre pagine. Il report verrà quindi pubblicato in Power BI dove sarà possibile aprirlo e interagire con esso.
 
 Contenuto del lab:
 
 - Progettare un report
-
 - Configurare campi visivi e proprietà del formato
 
-### <a name="lab-story"></a>**Presentazione del lab**
+### **Presentazione del lab**
 
 Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
 
 1. Preparare i dati in Power BI Desktop
+1. Caricare i dati in Power BI Desktop
+1. Progettare un modello di dati in Power BI
+1. Creare calcoli DAX in Power BI Desktop
+1. Creare calcoli DAX avanzati in Power BI Desktop
+1. **Progettare un report in Power BI Desktop**
+1. Migliorare un report in Power BI Desktop
+1. Eseguire l'analisi dei dati in Power BI
+1. Creare un dashboard di Power BI
+1. Applicare la sicurezza a livello di riga
 
-2. Caricare i dati in Power BI Desktop
+## **Esercizio 1: Creare un report**
 
-3. Progettare un modello di dati in Power BI
+In questo esercizio verrà creato un report a tre pagine denominato **Report vendite**.
 
-4. Creare calcoli DAX in Power BI Desktop - Parte 1
+### **Attività 1: Introduzione - Apri report**
 
-5. Creare calcoli DAX in Power BI Desktop - Parte 2
+In questa attività verrà configurato l'ambiente per il lab aprendo il report iniziale.
 
-6. **Progettare un report in Power BI Desktop - Parte 1**
+1. Da Power BI Desktop passare a **File** > **Apri report** > **Sfoglia report**.
 
-7. Progettare un report in Power BI Desktop - Parte 2
+1. Aprire il file **Sales Analysis** nella cartella  **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter** .
 
-8. Analizzare i dati con oggetti visivi di intelligenza artificiale
+1. Creare una copia del file passando a **Salva** > **con** nome e salvando la copia nella cartella **D:\PL300\MySolution** .
 
-9. Creare un dashboard di Power BI
+### **Attività 2: Pagina progettazione 1**
 
-10. Applicare la sicurezza a livello di riga
+In questa attività verrà progettata la prima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
-## <a name="exercise-1-create-a-report"></a>**Esercizio 1: Creare un report**
+![Immagine della pagina 1, che comprende un logo, due filtri dei dati e tre oggetti visivi.](Linked_image_Files/06-finished-report-page.png)
 
-In questo esercizio si creerà un report di tre pagine denominato **Sales Report**.
-
-### <a name="task-1-get-started--sign-in"></a>**Attività 1: Operazioni preliminari - Accesso**
-
-In questa attività si accederà a Power BI per configurare l'ambiente per il lab.
-
-*Importante: se l'accesso a Power BI è già stato effettuato, passare all'attività successiva.*
-
-1. Per aprire Microsoft Edge, sulla barra delle applicazioni fare clic sul collegamento al programma Microsoft Edge.
-
-    ![Immagine 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
-
-1. Nella finestra del browser Microsoft Edge passare a **https://powerbi.microsoft.com**.
-
-    *Suggerimento: è anche possibile usare l'elemento preferito Servizio Power BI sulla barra dei preferiti di Microsoft Edge.*
-
-1. Fare clic su **Accedi** (nell'angolo in alto a destra).
-
-    ![Immagine 63](Linked_image_Files/07-design-report-in-power-bi-desktop_image2.png)
-
-1. Completare il processo di accesso.
-
-1. Se in Microsoft Edge viene chiesto se restare connessi, fare clic su **Sì**.
-
-1. Lasciare aperta la finestra del browser Microsoft Edge.
-
-### <a name="task-2-get-started--enable-map-and-filled-map-visuals"></a>**Attività 2: Operazioni preliminari - Abilitare gli oggetti visivi della mappa e della mappa colorata**
-
-In questa attività si abiliteranno gli oggetti visivi della mappa e della mappa colorata nell'ambiente del lab aggiornando le impostazioni globali in Power BI Desktop e le impostazioni di integrazione nel portale di amministrazione di Power BI.
-
-1. In Power BI Desktop passare a **Opzioni > Opzioni e impostazioni > Globale** e selezionare la casella **Utilizza oggetti visivi della mappa e della mappa colorata**.
-
-![Picture103b](Linked_image_Files/07-design-report-in-power-bi-desktop_image103b.png)
-
-2. Per aprire il portale di amministrazione di Power BI, fare clic sull'icona **Impostazioni** nell'angolo in alto a destra del browser Edge.
-
-    ![Immagine 101](Linked_image_Files/07-design-report-in-power-bi-desktop_image101.png)
-
-3. Selezionare **Portale di amministrazione**.
-
-    ![Immagine 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
-
-4. Scorrere la pagina verso il basso fino a Impostazioni di integrazione. Fare clic sulla freccia per espandere l'opzione Oggetti visivi della mappa e della mappa colorata.
-
-    ![Immagine 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
-
-5. Impostare l'opzione Oggetti visivi della mappa e della mappa colorata su **Abilitato**.
-
-6. Fare clic su **Applica** per applicare le modifiche. 
-
-    ![Immagine 104](Linked_image_Files/07-design-report-in-power-bi-desktop_image104.png)
-
-7. Nell'angolo in alto a destra nel browser verrà visualizzato il messaggio Le modifiche alle impostazioni del tenant verranno applicate entro i prossimi 15 minuti.
-
-
-    ![Immagine 105](Linked_image_Files/07-design-report-in-power-bi-desktop_image105.png)
-
-8. Lasciare aperta la finestra del browser Microsoft Edge.
-
-### <a name="task-3-get-started--open-report"></a>**Attività 3: Operazioni preliminari - Aprire il report**
-
-In questa attività si aprirà il report iniziale per configurare l'ambiente per il lab.
-
-*Importante: se si sta continuando dal lab precedente (e il lab è stato completato correttamente), non completare questa attività, ma passare a quella successiva.*
-
-1. Per aprire Power BI Desktop, sulla barra delle applicazioni fare clic sul collegamento Microsoft Power BI Desktop.
-
-    ![Immagine 48](Linked_image_Files/07-design-report-in-power-bi-desktop_image3.png)
-
-2. Per chiudere la finestra introduttiva, fare clic su **X** nella parte superiore sinistra della finestra.
-
-    ![Immagine 47](Linked_image_Files/07-design-report-in-power-bi-desktop_image4.png)
-
-3. Per accedere al servizio Power BI, fare clic su **Accedi** in alto a destra.
-
-    ![Immagine 66](Linked_image_Files/07-design-report-in-power-bi-desktop_image5.png)
-
-4. Completare il processo di accesso con lo stesso account usato per accedere al servizio Power BI.
-
-5. Per aprire il file di avvio di Power BI Desktop, selezionare la scheda della barra multifunzione **File** per aprire la visualizzazione Backstage.
-
-6. Selezionare **Apri report**.
-
-    ![Figura 31](Linked_image_Files/07-design-report-in-power-bi-desktop_image6.png)
-
-7. Fare clic su **Sfoglia report**.
-
-    ![Immagine 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
-
-8. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter**.
-
-9. Selezionare il file **Sales Analysis**.
-
-10. Fare clic su **Apri**.
-
-    ![Immagine 16](Linked_image_Files/07-design-report-in-power-bi-desktop_image8.png)
-
-11. Chiudere eventuali finestre aperte di carattere informativo.
-
-12. Per creare una copia del file, fare clic sulla scheda della barra multifunzione **File** per aprire la visualizzazione Backstage.
-
-13. Selezionare **Salva con nome**.
-
-    ![Immagine 8](Linked_image_Files/07-design-report-in-power-bi-desktop_image9.png)
-
-14. Se viene richiesto di applicare le modifiche, fare clic su **Applica**.
-
-    ![Figura 5](Linked_image_Files/07-design-report-in-power-bi-desktop_image10.png)
-
-15. Nella finestra **Salva con nome** passare alla cartella **D:\PL300\MySolution**.
-
-16. Fare clic su **Save** (Salva).
-
-    ![Immagine 4](Linked_image_Files/07-design-report-in-power-bi-desktop_image11.png)
-
-### <a name="task-4-design-page-1"></a>**Attività 4: Progettare la pagina 1**
-
-In questa attività si progetterà la prima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
-
-![Immagine della pagina 1, che comprende un logo, due filtri dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image12.png)
-
-1. Per rinominare la pagina, in basso a sinistra in Power BI Desktop fare clic con il pulsante destro del mouse su **Pagina 1** e quindi scegliere **Rinomina**.
-
-    ![Figura 36](Linked_image_Files/07-design-report-in-power-bi-desktop_image13.png)
+1. In Power BI Desktop rinominare la pagina, in basso a sinistra fare clic con il pulsante destro del mouse su **Pagina 1**, quindi **rinominare** la pagina come **Panoramica**.
 
     *Suggerimento: è anche possibile fare doppio clic sul nome della pagina per rinominarla.*
 
-2. Rinominare la pagina come **Panoramica**, quindi premere **INVIO**.
-
-    ![Figura 37](Linked_image_Files/07-design-report-in-power-bi-desktop_image14.png)
-
-3. Per aggiungere un'immagine, nella scheda della barra multifunzione **Inserisci** fare clic su **Immagine** nel gruppo **Elementi**.
+1. Per aggiungere un'immagine, nella scheda della barra multifunzione **Inserisci** selezionare **Immagine** all'interno del gruppo **Elementi**.
 
     ![Immagine 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-4. Nella finestra **Apri** passare alla cartella **D:\PL300\Resources**.
+1. Nella finestra **Apri** passare alla cartella **D:\PL300\Resources**.
 
-5. Selezionare il file **AdventureWorksLogo.jpg** e fare clic su **Apri**.
+1. Selezionare il file **AdventureWorksLogo.jpg** e quindi **Apri**.
 
-    ![Immagine 11](Linked_image_Files/07-design-report-in-power-bi-desktop_image16.png)
+1. Trascinare l'immagine per posizionarla nell'angolo superiore sinistro, quindi trascinare anche i marcatori per ridimensionarla.
 
-6. Trascinare l'immagine per posizionarla nell'angolo superiore sinistro, quindi trascinare anche i marcatori per ridimensionarla.
+     ![Figura 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
 
-    ![Figura 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
+1. Per aggiungere un filtro dei dati, selezionare prima di tutto l'immagine facendo clic su un'area vuota della pagina del report, quindi selezionare il **filtro** dei dati nel riquadro **Visualizzazioni** .
 
-7. Per aggiungere un filtro dei dati, per prima cosa deselezionare l'immagine facendo clic su un'area vuota della pagina del report.
-8. Nel riquadro **Campi** selezionare il campo **Date \| Year** (non il livello **Year** della gerarchia).
+     ![Immagine 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
+
+1. Nel riquadro **Campi** trascinare il campo **Data \| Year** (non il livello **Anno** della gerarchia) nel campo filtro dei **dati nel riquadro** Visualizzazioni.
     
     *Nei lab viene usata una notazione abbreviata per fare riferimento a un campo, simile al seguente: **Date \| Year**. In questo esempio **Date** è il nome della tabella e **Year** è il nome del campo.*
 
-9. Si noti che alla pagina del report è stata aggiunta una tabella di valori relativi all'anno.
+1. Per convertire il filtro dei dati da un elenco a discesa, passare a **Visualizzazioni > Formato visivo > Visual > Impostazioni** filtro dei dati > Stile e quindi selezionare **Elenco a** discesa dal menu a discesa.
 
-10. Per convertire l'oggetto visivo da tabella in filtro dei dati, nel riquadro **Visualizzazioni** selezionare **Filtro dei dati**.
+    ![Stile filtro dei dati](Linked_image_Files/06_slicer_style.png)
 
-    ![Immagine 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
+1. Ridimensionare e posizionare il filtro dei dati in modo che si trovi sotto l'immagine e abbia la stessa larghezza dell'immagine.
 
-11. Per convertire il filtro dei dati da elenco in elenco a discesa, in alto a destra nel filtro dei dati fare clic sulla freccia giù e quindi selezionare **Elenco a discesa**.
+     ![Figura 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
 
-    ![Figura 18](Linked_image_Files/07-design-report-in-power-bi-desktop_image19.png)
+1. Nel filtro dei dati **Year** aprire l'elenco a discesa, selezionare **FY2020** e quindi comprimere l'elenco a discesa.
+    1. *La pagina del report è ora filtrata in base all'anno **FY2020**.*
 
-12. Ridimensionare e posizionare il filtro dei dati in modo che si trovi sotto l'immagine e abbia la stessa larghezza dell'immagine.
+     ![Figura 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
 
-    ![Figura 19](Linked_image_Files/07-design-report-in-power-bi-desktop_image20.png)
+1. Deselezionare il filtro dei dati facendo clic su un'area vuota della pagina del report.
 
-13. Nel filtro dei dati **Year** aprire l'elenco a discesa, selezionare **FY2020** e quindi comprimere l'elenco a discesa.
+1. Creare un secondo filtro dei dati in base al campo **Region \| Region** (non in base al livello **Region** della gerarchia).
 
-    ![Figura 20](Linked_image_Files/07-design-report-in-power-bi-desktop_image21.png)
+1. Lasciare il filtro dei dati come elenco, quindi ridimensionarlo e posizionarlo sotto il filtro dei dati **Year**.
 
-    *La pagina del report è ora filtrata in base all'anno **FY2020**.*
+     ![Figura 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
 
-14. Deselezionare il filtro dei dati facendo clic su un'area vuota della pagina del report.
+1. Deselezionare il filtro dei dati facendo clic su un'area vuota della pagina del report.
 
-15. Creare un secondo filtro dei dati in base al campo **Region \| Region** (non in base al livello **Region** della gerarchia).
+1. Per aggiungere un grafico alla pagina, nel riquadro **Visualizzazioni** selezionare il tipo di oggetto visivo **Grafico a linee e istogramma in pila**.
 
-16. Lasciare il filtro dei dati come elenco, quindi ridimensionarlo e posizionarlo sotto il filtro dei dati **Year**.
+     ![Immagine 51](Linked_image_Files/07-design-report-in-power-bi-desktop_image26.png)
 
-    ![Figura 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
+1. Ridimensionare e posizionare l'oggetto visivo in modo che si trovi a destra del logo, riempiendo la pagina del report in larghezza.
 
+     ![Immagine 26](Linked_image_Files/07-design-report-in-power-bi-desktop_image27.png)
 
-21. Deselezionare il filtro dei dati facendo clic su un'area vuota della pagina del report.
+1. Trascinare i campi seguenti nell'oggetto visivo:
 
-22. Per aggiungere un grafico alla pagina, nel riquadro **Visualizzazioni** fare clic sul tipo di oggetto visivo **Grafico a linee e istogramma a colonne in pila**.
+     - Date \| Month
+     - Sales \| Sales
 
-    ![Immagine 51](Linked_image_Files/07-design-report-in-power-bi-desktop_image26.png)
+1. Nel riquadro dei campi dell'oggetto visivo (non nel riquadro **Campi**: il riquadro dei campi dell'oggetto visivo è sotto il riquadro **Visualizzazioni**) si noti che i campi sono assegnati alle aree **Asse X** e **Colonna asse y**.
+    
+    *Trascinando i campi in un oggetto visivo, verranno aggiunti a ben/aree predefinite. Per precisione, è possibile trascinare i campi direttamente nei pozzi/aree, come si farà successivamente.*
 
-23. Ridimensionare e posizionare l'oggetto visivo in modo che si trovi a destra del logo, riempiendo la pagina del report in larghezza.
+     ![Figura 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
-    ![Immagine 26](Linked_image_Files/07-design-report-in-power-bi-desktop_image27.png)
+1. Dal riquadro **Campi** trascinare il campo **Vendite \| Profit Margin** nell'area **Linea asse y**.
 
-24. Trascinare i campi seguenti nell'oggetto visivo:
+     ![Immagine 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
-    - Date \| Month
+1. Si noti che l'oggetto visivo ha solo 11 mesi.
+    
+    *L'ultimo mese dell'anno, 2020 giugno, non ha ancora vendite (ancora). Per impostazione predefinita, l'oggetto visivo ha eliminato mesi con vendite BLANK. L'oggetto visivo verrà ora configurato per visualizzare tutti i mesi.*
 
-    - Sales \| Sales
+1. Nel riquadro campi visivi, nell'area asse **X** selezionare la freccia giù e quindi **** mostra **elementi senza dati**.
+    
+    *Si noti che il mese **2020 giugno** ora viene visualizzato.*
 
-25. Nel riquadro dei campi dell'oggetto visivo (non nel riquadro **Campi**: il riquadro dei campi dell'oggetto visivo è sotto il riquadro **Visualizzazioni**) si noti che i campi sono assegnati alle aree **Asse X** e **Colonna asse y**.
+     ![Immagine 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
 
-    ![Figura 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
+1. Deselezionare il grafico facendo clic su un'area vuota della pagina del report.
 
-    *Se trascinati in un oggetto visivo, i campi vengono aggiunti alle aree predefinite. Per una maggiore precisione, è possibile trascinare i campi direttamente nelle aree, come mostrato di seguito.*
+1. Per aggiungere un grafico alla pagina, nel riquadro **Visualizzazioni** selezionare il tipo di oggetto **visivo Grafico colonna in pila** .
 
-26. Dal riquadro **Campi** trascinare il campo **Vendite \| Profit Margin** nell'area **Linea asse y**.
+     ![Immagine 53](Linked_image_Files/07-stacked-column-chart.png)
 
-    ![Immagine 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
+1. Ridimensionare e posizionare l'oggetto visivo in modo che si trovi sotto l'istogramma o grafico a linee, riempiendo per metà il grafico al di sopra.
 
-27. Si noti che l'oggetto visivo ha solo 11 mesi.
+     ![Immagine 33](Linked_image_Files/07-design-report-in-power-bi-desktop_image32.png)
 
-    *L'ultimo mese dell'anno, giugno 2020, non presenta (ancora) alcuna vendita. Per impostazione predefinita, l'oggetto visivo ha eliminato i mesi con vendite VUOTE. Ora l'oggetto visivo verrà configurato in modo da visualizzare tutti i mesi.*
+1. Aggiungere i campi seguenti nelle aree dell'oggetto visivo:
 
-28. Nell'area **Asse X** del riquadro dei campi dell'oggetto visivo fare clic sulla freccia rivolta verso il basso in corrispondenza del campo **Month** e quindi selezionare **Mostra elementi senza dati**.
+     - Asse X: **Paese dell'area \|**
+     - Asse Y: **Sales \| Sales**
+     - Legenda: **Product \| Category**
 
-    ![Immagine 52](Linked_image_Files/07-design-report-in-power-bi-desktop_image30.png)
+1. Deselezionare il grafico facendo clic su un'area vuota della pagina del report.
 
-29. Si noti che adesso è visualizzato il mese di **giugno 2020**.
+1. Per aggiungere un grafico alla pagina, nel riquadro **Visualizzazioni** fare clic sul tipo di oggetto visivo **Grafico a barre in pila**.
 
-30. Deselezionare il grafico facendo clic su un'area vuota della pagina del report.
+     ![Immagine 54](Linked_image_Files/07-design-report-in-power-bi-desktop_image33.png)
 
-31. Per aggiungere un grafico alla pagina, nel riquadro **Visualizzazioni** fare clic sul tipo di oggetto visivo **Mappa**.
+1. Ridimensionare e posizionare l'oggetto visivo in modo da riempire lo spazio rimanente della pagina del report.
 
-    ![Immagine 53](Linked_image_Files/07-design-report-in-power-bi-desktop_image31.png)
+     ![Figura 35](Linked_image_Files/07-design-report-in-power-bi-desktop_image34.png)
 
-32. Ridimensionare e posizionare l'oggetto visivo in modo che si trovi sotto l'istogramma o grafico a linee, riempiendo per metà il grafico al di sopra.
+1. Aggiungere i campi seguenti nelle aree dell'oggetto visivo:
 
-    ![Immagine 33](Linked_image_Files/07-design-report-in-power-bi-desktop_image32.png)
+     - Asse Y: **Categoria di prodotti \|**
+     - Asse X: **Quantità vendite \|**
 
-33. Aggiungere i campi seguenti nelle aree dell'oggetto visivo:
+1. Per formattare l'oggetto visivo, aprire il riquadro **Formato**.
 
-    - Posizione: **Region \| Country**
+     ![Immagine 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
 
-    - Legenda: **Product \| Category**
+1. Espandere il gruppo **Barre** e quindi il gruppo **Colori**, quindi impostare la proprietà **Colore predefinito** su un colore appropriato, a complemento del grafico a linee o dell'istogramma.
 
-    - Dimensioni: **Sales \| Sales**
+1. **Attivare** la proprietà **Etichette dati**.
 
-34. Deselezionare il grafico facendo clic su un'area vuota della pagina del report.
+     ![Figura 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
 
-35. Per aggiungere un grafico alla pagina, nel riquadro **Visualizzazioni** fare clic sul tipo di oggetto visivo **Grafico a barre in pila**.
+1. Salvare il file di Power BI Desktop.
 
-    ![Immagine 54](Linked_image_Files/07-design-report-in-power-bi-desktop_image33.png)
+*La progettazione della prima pagina è ora completa.*
 
-36. Ridimensionare e posizionare l'oggetto visivo in modo da riempire lo spazio rimanente della pagina del report.
+### **Attività 3: Pagina progettazione 2**
 
-    ![Figura 35](Linked_image_Files/07-design-report-in-power-bi-desktop_image34.png)
+In questa attività verrà progettata la seconda pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
-37. Aggiungere i campi seguenti nelle aree dell'oggetto visivo:
-
-    - Asse: **Product \| Category**
-
-    - Valore: **Sales \| Quantity**
-
-38. Per formattare l'oggetto visivo, aprire il riquadro **Formato**.
-
-    ![Immagine 3](Linked_image_Files/07-design-report-in-power-bi-desktop_image35.png)
-
-39. Espandere il gruppo **Barre** e quindi il gruppo **Colori**, quindi impostare la proprietà **Colore predefinito** su un colore appropriato, a complemento del grafico a linee o dell'istogramma.
-
-40. **Attivare** la proprietà **Etichette dati**.
-
-    ![Figura 2](Linked_image_Files/07-design-report-in-power-bi-desktop_image36.png)
-
-41. Salvare il file di Power BI Desktop.
-
-    *La progettazione della prima pagina è ora completa.*
-
-### <a name="task-5-design-page-2"></a>**Attività 5: Progettare la pagina 2**
-
-In questa attività si progetterà la seconda pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
-
-![Immagine della pagina 2, che comprende un filtro dei dati e una matrice.](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
+ ![Immagine della pagina 2, che comprende un filtro dei dati e una matrice.](Linked_image_Files/07-design-report-in-power-bi-desktop_image37.png)
 
 *Importante: nei casi in cui siano già state fornite istruzioni dettagliate nelle altre attività del lab, i passaggi presenteranno indicazioni più concise. Se sono necessarie istruzioni dettagliate, tornare a fare riferimento alle altre attività in questo lab.*
 
-1. Per creare una nuova pagina, fare clic sull'icona con il segno più in basso a sinistra.
+1. Per creare una nuova pagina, in basso a sinistra selezionare l'icona più e rinominare la nuova pagina in **Profit**.
 
-    ![Figura 42](Linked_image_Files/07-design-report-in-power-bi-desktop_image38.png)
+1. Aggiungere un filtro dei dati basato sul campo **Region \| Region**.
 
-2. Rinominare la pagina in **Profit**.
+1. Usare il riquadro **Formato** per abilitare l'opzione "Seleziona tutto" (nel gruppo **Selezione**).
 
-    ![Immagine 43](Linked_image_Files/07-design-report-in-power-bi-desktop_image39.png)
+1. Ridimensionare e posizionare il filtro dei dati in modo che si trovi sul lato sinistro della pagina del report, a circa metà altezza della pagina.
 
-  
+     ![Immagine 44](Linked_image_Files/07-design-report-in-power-bi-desktop_image40.png)
 
-3. Aggiungere un filtro dei dati basato sul campo **Region \| Region**.
+1. Aggiungere un oggetto visivo matrice, ridimensionarlo e posizionarlo in modo da riempire lo spazio rimanente della pagina del report.
 
-4. Usare il riquadro **Formato** per abilitare l'opzione "Seleziona tutto" (nel gruppo **Selezione**).
+     ![Immagine 45](Linked_image_Files/07-design-report-in-power-bi-desktop_image41.png)
 
-5. Ridimensionare e posizionare il filtro dei dati in modo che si trovi sul lato sinistro della pagina del report, a circa metà altezza della pagina.
+1. Aggiungere la gerarchia **Date \| Fiscal** all'area **Righe** della matrice.
 
-    ![Immagine 44](Linked_image_Files/07-design-report-in-power-bi-desktop_image40.png)
+     ![Immagine 46](Linked_image_Files/07-design-report-in-power-bi-desktop_image42.png)
 
-6. Aggiungere un oggetto visivo matrice, ridimensionarlo e posizionarlo in modo da riempire lo spazio rimanente della pagina del report.
+1. Aggiungere i cinque campi seguenti della tabella **Sales** all'area **Valori**:
 
-    ![Immagine 45](Linked_image_Files/07-design-report-in-power-bi-desktop_image41.png)
+     - Orders (dalla cartella **Counts**)
+     - Sales
+     - Cost
+     - Profit
+     - Profit Margin
 
-7. Aggiungere la gerarchia **Date \| Fiscal** all'area **Righe** della matrice.
+     ![Immagine 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
-    ![Immagine 46](Linked_image_Files/07-design-report-in-power-bi-desktop_image42.png)
+1. Nel riquadro **Filtri** (situato a sinistra del riquadro **Visualizzazioni**) osservare l'area **Filtri in questa pagina** (potrebbe essere necessario scorrere verso il basso).
 
-8. Aggiungere i cinque campi seguenti della tabella **Sales** all'area **Valori**:
+     ![Immagine 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
-    - Orders (dalla cartella **Counts**)
-
-    - Sales
-
-    - Cost
-
-    - Profit
-
-    - Profit Margin
-
-    ![Immagine 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
-
-9. Nel riquadro **Filtri** (situato a sinistra del riquadro **Visualizzazioni**) osservare l'area **Filtri in questa pagina** (potrebbe essere necessario scorrere verso il basso).
-
-    ![Immagine 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
-
-10. Dal riquadro **Campi** trascinare il campo **Product \| Category** nell'area **Filtri in questa pagina**.
-
-11. All'interno della scheda Filtro, in alto a destra, fare clic sulla freccia per comprimere la scheda.
-
-    ![Immagine 58](Linked_image_Files/07-design-report-in-power-bi-desktop_image45.png)
-
+1. Dal riquadro **Campi** trascinare il campo **Product \| Category** nell'area **Filtri in questa pagina**.
+    
     *I campi aggiunti al riquadro **Filtri** permettono di ottenere lo stesso risultato di un filtro dei dati. Una differenza consiste nel fatto che non occupano spazio nella pagina del report. Un'altra differenza è che possono essere configurati per soddisfare requisiti di filtro più avanzati.*
 
-12. Aggiungere ognuno dei campi seguenti della tabella **Product** all'area **Filtri in questa pagina**, comprimendoli tutti, direttamente sotto la scheda **Category**:
+1. All'interno della scheda Filtro in alto a destra selezionare la freccia per comprimere la scheda.
 
-    - Subcategory
+1. Aggiungere ognuno dei campi seguenti della tabella **Product** all'area **Filtri in questa pagina**, comprimendoli tutti, direttamente sotto la scheda **Category**:
 
-    - Product
+     - Subcategory
+     - Product
+     - Color
 
-    - Color
+     ![Immagine 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
 
-    ![Immagine 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
+1. Salvare il file di Power BI Desktop.
 
-13. Salvare il file di Power BI Desktop.
+ *La progettazione della seconda pagina è ora completa.*
 
-    *La progettazione della seconda pagina è ora completa.*
+### **Attività 4: Pagina progettazione 3**
 
-### <a name="task-6-design-page-3"></a>**Attività 6: Progettare la pagina 3**
+In questa attività si progettano la terza pagina e la pagina finale del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
-In questa attività si progetterà la terza e ultima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
-
-![Immagine della pagina 3, che comprende un filtro dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
+ ![Immagine della pagina 3, che comprende un filtro dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
 1. Creare una nuova pagina, quindi rinominarla **My Performance**.
 
 1. Per simulare le prestazioni dei filtri di sicurezza a livello di riga, trascinare il campo **Salesperson (Performance) \| Salesperson** nei filtri a livello di pagina nel riquadro dei filtri.
-    
-    ![Immagine del campo Salesperson nel riquadro dei filtri.](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
+
+     ![Immagine del campo Salesperson nel riquadro dei filtri.](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png)
 
 1. Selezionare **Michael Blythe**. I dati nella pagina del report **My Performance** verranno ora filtrati per visualizzare solo i dati di Michael Blythe.
 
 1. Aggiungere un filtro dei dati a discesa basato sul campo **Date \| Year**, quindi ridimensionarlo e posizionarlo nell'angolo in alto a sinistra della pagina.
 
-    ![Immagine 70](Linked_image_Files/07-design-report-in-power-bi-desktop_image49.png)
+     ![Immagine 70](Linked_image_Files/07-design-report-in-power-bi-desktop_image49.png)
 
 1. Nel filtro dei dati impostare la pagina in modo da filtrare in base a **FY2019**.
 
-    ![Immagine 71](Linked_image_Files/07-design-report-in-power-bi-desktop_image50.png)
+     ![Immagine 71](Linked_image_Files/07-design-report-in-power-bi-desktop_image50.png)
 
 1. Aggiungere un oggetto visivo **Scheda con più righe**, quindi ridimensionarlo e riposizionarlo in modo che si trovi a destra del filtro dei dati e riempia la larghezza rimanente della pagina.
 
-    ![Immagine 56](Linked_image_Files/07-design-report-in-power-bi-desktop_image51.png)
+     ![Immagine 56](Linked_image_Files/07-design-report-in-power-bi-desktop_image51.png)
 
-    ![Immagine 74](Linked_image_Files/07-design-report-in-power-bi-desktop_image52.png)
+     ![Immagine 74](Linked_image_Files/07-design-report-in-power-bi-desktop_image52.png)
 
 1. Aggiungere i quattro campi seguenti all'oggetto visivo:
 
-    - Sales \| Sales
-
-    - Targets \| Target
-
-    - Targets \| Variance
-
-    - Targets \| Variance Margin
+     - Sales \| Sales
+     - Targets \| Target
+     - Targets \| Variance
+     - Targets \| Variance Margin
 
 1. Formattare l'oggetto visivo:
 
-    - Nel gruppo **Valori callout** aumentare la proprietà **Dimensione testo** a **28pt**
+     - Nel gruppo **Valori callout** aumentare la proprietà **Dimensione testo** a **28pt**
 
-    - Nel gruppo **Sfondo** impostare il **Colore** su un colore grigio chiaro
+     - Nel gruppo **Effetti > generale > Sfondo** impostare **Color** su un colore grigio chiaro (ad esempio "Bianco, 20% più scuro) per dare contrasto
 
-    ![Immagine 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
+         ![Immagine 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
 
 1. Aggiungere un oggetto visivo **Grafico a barre raggruppate**, quindi ridimensionarlo e posizionarlo in modo che si trovi sotto l'oggetto visivo Scheda con più righe e riempia l'altezza rimanente della pagina e metà della larghezza dell'oggetto visivo scheda con più righe.
 
-    ![Immagine 59](Linked_image_Files/07-design-report-in-power-bi-desktop_image54.png)
+     ![Immagine 59](Linked_image_Files/07-design-report-in-power-bi-desktop_image54.png)
 
-    ![Immagine 78](Linked_image_Files/07-design-report-in-power-bi-desktop_image55.png)
+     ![Immagine 78](Linked_image_Files/07-design-report-in-power-bi-desktop_image55.png)
 
 1. Aggiungere i campi seguenti nelle aree dell'oggetto visivo:
 
-    - Asse Y: **Date \| Month**
+     - Asse Y: **Data \| Mese**
+     - Asse X: **Sales Sales \|** and **Targets \| Target**
 
-    - Asse X: **Sales \| Sales** e **Targets \| Target**
-
-    ![Immagine 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
+         ![Immagine 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
 
 1. Per creare una copia dell'oggetto visivo, premere **CTRL + C**, quindi premere **CTRL + V**.
 
 1. Posizionare il nuovo oggetto visivo a destra dell'oggetto visivo originale.
 
-    ![Immagine 82](Linked_image_Files/07-design-report-in-power-bi-desktop_image57.png)
+     ![Immagine 82](Linked_image_Files/07-design-report-in-power-bi-desktop_image57.png)
 
 1. Per modificare il tipo di visualizzazione, nel riquadro **Visualizzazioni** selezionare **Istogramma a colonne raggruppate**.
 
-    ![Immagine 61](Linked_image_Files/07-design-report-in-power-bi-desktop_image58.png)
+     ![Immagine 61](Linked_image_Files/07-design-report-in-power-bi-desktop_image58.png)
 
-    *È ora possibile visualizzare gli stessi dati espressi da due tipi di visualizzazione diversi. Questo non è un uso ottimale del layout di pagina. Sarà tuttavia possibile migliorarlo nel lab **Progettare un report in Power BI Desktop - Parte 2** sovrapponendo gli oggetti visivi. Aggiungendo pulsanti alla pagina, si consentirà all'utente del report di determinare quale dei due oggetti visivi deve essere visibile.*
+ *È ora possibile visualizzare gli stessi dati espressi da due tipi di visualizzazione diversi. Questo non è un buon uso del layout di pagina, ma verrà migliorato nel lab **Migliorare un report in Power BI Desktop** lab sovrapponendo gli oggetti visivi. Aggiungendo pulsanti alla pagina, si consentirà all'utente del report di determinare quale dei due oggetti visivi è visibile.*
 
-    *La progettazione della terza e ultima pagina è ora completa.*
+ *La progettazione della terza e ultima pagina è ora completa.*
 
-### <a name="task-7-publish-the-report"></a>**Attività 7: Pubblicare il report**
+## **Esercizio 2: Esplorare il report**
 
-In questa attività si pubblicherà il report.
+In questo esercizio si pubblicherà il report nel servizio Power BI ed si esaminerà il report consumer di sola lettura.
 
-1. Selezionare la pagina di **panoramica**.
+### **Attività 1: Pubblicare il report**
 
-2. Salvare il file di Power BI Desktop.
+In questa attività si pubblicherà il report nel servizio Power BI.
 
-3. Nella scheda della barra multifunzione **Home** fare clic su **Pubblica** nel gruppo **Condividi**.
+1. Selezionare la pagina **Panoramica** e quindi salvare il file Power BI Desktop.
 
-    ![Immagine 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
+1. Nella scheda della barra multifunzione **Home** selezionare **Pubblica** all'interno del gruppo **Condividi**.
+    
+    *Se non è già stato eseguito l'accesso a Power BI Desktop, è necessario eseguire l'accesso per la pubblicazione.*
 
-4. Nella finestra **Pubblica in Power BI** si noti che l'opzione **Area di lavoro** è selezionata.
+     ![Immagine 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
 
-5. Per pubblicare il report, fare clic su **Seleziona**.
+1. Nella finestra **Pubblica in Power BI** si noti che l'opzione **Area di lavoro** è selezionata.
+    
+    *In questo lab non verranno illustrati in dettaglio i diversi elementi all'interno del servizio Power BI.*
 
-    ![Immagine 75](Linked_image_Files/07-design-report-in-power-bi-desktop_image60.png)
+1. Per pubblicare il report, **selezionare Seleziona**. L'operazione potrebbe richiedere alcuni istanti. 
+1. Al termine della pubblicazione, fare clic su **Chiudi**.
 
-6. Al termine della pubblicazione, fare clic su **Chiudi**.
+### **Attività 2: Esplorare il report**
 
-    ![Immagine 76](Linked_image_Files/07-design-report-in-power-bi-desktop_image61.png)
+In questa attività si esaminerà il report pubblicato in Power BI.
 
-7. Lasciare aperto Power BI Desktop.
-
-    *Nell'esercizio successivo si esplorerà il report nel servizio Power BI.*
-
-## <a name="exercise-2-explore-the-report"></a>**Esercizio 2: Esplorare il report**
-
-In questo esercizio si esplorerà il report pubblicato in Power BI.
-
-### <a name="task-1-explore-the-report"></a>**Attività 1: Esplorare il report**
-
-In questa attività si esplorerà il report pubblicato in Power BI.
+1. Aprire un browser Microsoft Edge, quindi accedere all'indirizzo **https://app.powerbi.com**.
 
 1. Nella finestra del browser Microsoft Edge nel servizio Power BI espandere **Area di lavoro personale** nel **riquadro di spostamento** (a sinistra, potrebbe essere compresso).
 
-    ![Immagine 93](Linked_image_Files/07-design-report-in-power-bi-desktop_image62.png)
+    ![Immagine 93](Linked_image_Files/06-my-workspace-new.png)
 
-2. Esaminare il contenuto dell'area di lavoro, notando il report **Sales Analysis** e il set di dati.
+1. Esaminare il contenuto dell'area di lavoro. Si notino le opzioni di spostamento di Tutti, Contenuto e Set di dati + flussi di dati.
+    1. *Esistono quattro tipi di elementi che possono esistere in un'area di lavoro e verranno descritti **report** e set di **dati**.*
+    1. *Potrebbe essere necessario aggiornare il browser Microsoft Edge se il set di dati non è visibile.*
+    1. *Quando è stato pubblicato il file di Power BI Desktop, il modello di dati è stato pubblicato come set di dati.*
 
-    *Quando è stato pubblicato il file di Power BI Desktop, il modello di dati è stato pubblicato come set di dati.*
+1. Per esplorare il report, selezionare il report **Sales Analysis** .
 
-    *Se non viene visualizzato, premere **F5** per ricaricare il browser e quindi espandere di nuovo l'area di lavoro.*
+1. A sinistra, nel riquadro **Pagine** selezionare la pagina **Overview**.
 
-    ![Immagine 94](Linked_image_Files/07-design-report-in-power-bi-desktop_image63.png)
+1. Nel filtro dei dati **Regions** tenendo premuto il tasto **CTRL** selezionare più aree.
 
-3. Per aprire il report, fare clic sul report **Sales Analysis**.
+1. Nel grafico a linee o nell'istogramma selezionare una colonna del mese per applicare un filtro incrociato alla pagina.
 
-4. A sinistra, nel riquadro **Pagine** selezionare la pagina **Overview**.
- 
-    ***Nota**: se viene visualizzato un errore che indica che l'oggetto visivo mappa è disabilitato, aggiornare il browser.*
+1. Quando si preme **CTRL** , selezionare un altro mese.
 
-5. Nel filtro dei dati **Regions** tenendo premuto il tasto **CTRL** selezionare più aree.
+     *Nota: per impostazione predefinita, il filtro incrociato filtra tutti gli altri oggetti visivi nella pagina.*
 
-6. Nel grafico a linee o nell'istogramma selezionare una colonna del mese per applicare un filtro incrociato alla pagina.
+1. Si noti che il grafico a barre è filtrato ed evidenziato e che la parte in grassetto delle barre rappresenta i mesi filtrati.
 
-7. Tenendo premuto il tasto **CTRL** selezionare un mese aggiuntivo.
-
-    *Per impostazione predefinita, il filtro incrociato filtra tutti gli altri oggetti visivi nella pagina.*
-
-8. Si noti che il grafico a barre è filtrato ed evidenziato e che la parte in grassetto delle barre rappresenta i mesi filtrati.
-
-9. Passare il puntatore del mouse sull'oggetto visivo grafico a barre e quindi sull'icona del filtro in alto a destra.
-
-    ![Immagine 95](Linked_image_Files/07-design-report-in-power-bi-desktop_image64.png)
-
+1. Passare il puntatore del mouse sull'oggetto visivo grafico a barre e quindi sull'icona del filtro in alto a destra. 
+    
     *L'icona del filtro consente di comprendere tutti i filtri applicati all'oggetto visivo, inclusi i filtri dei dati e i filtri incrociati di altri oggetti visivi.*
 
-10. Passare il cursore su una barra, quindi osservare le informazioni della descrizione comando.
+1. Passare il cursore su una barra, quindi osservare le informazioni della descrizione comando.
 
-11. Per annullare il filtro incrociato, fare clic su un'area vuota dell'oggetto visivo nel grafico a linee o nell'istogramma.
+1. Per annullare il filtro incrociato, fare clic su un'area vuota dell'oggetto visivo nel grafico a linee o nell'istogramma.
 
-12. Passare il puntatore del mouse sull'oggetto visivo mappa e fare clic sull'icona **Modalità messa a fuoco** in alto a destra.
-
-    ![Immagine 96](Linked_image_Files/07-design-report-in-power-bi-desktop_image65.png)
-
+1. Passare il cursore sull'oggetto visivo grafico a colonne in pila e quindi in alto a destra selezionare l'icona **Modalità** messa a fuoco.
+    
     *In modalità messa a fuoco l'oggetto visivo viene ingrandito fino a occupare l'intera pagina.*
 
-13. Passare il puntatore del mouse su segmenti diversi dei grafici a barre per visualizzare le descrizioni comando.
+     ![Immagine 96](Linked_image_Files/07-published-report-visual-filter.png)
 
-14. Per tornare alla pagina del report, fare clic su **Torna al report** in alto a sinistra.
+1. Passare il puntatore del mouse su segmenti diversi dei grafici a barre per visualizzare le descrizioni comando.
 
-    ![Immagine 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
+1. Per tornare alla pagina del report, fare clic su **Torna al report** in alto a sinistra.
 
-15. Passare nuovamente il puntatore del mouse sull'oggetto visivo mappa, quindi fare clic sui puntini di sospensione (...) in alto a destra e osservare le opzioni di menu.
+     ![Immagine 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
-    ![Immagine 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
+1. Passare di nuovo il cursore su uno degli oggetti visivi, quindi in alto a destra selezionare i puntini di sospensione (...), quindi notare le opzioni di menu. Provare ognuna delle opzioni, ad eccezione di **Chat in Teams**.
 
-16. Provare ognuna delle opzioni, ad eccezione di **Chat in Teams**.
+     ![Immagine 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
 
-17. A sinistra, nel riquadro **Pagine** selezionare la pagina **Profit**.
+1. A sinistra, nel riquadro **Pagine** selezionare la pagina **Profit**.
 
-    ![Immagine 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
+     ![Immagine 84](Linked_image_Files/07-design-report-in-power-bi-desktop_image68.png)
 
-18. Si noti che il filtro dei dati **Region** ha una selezione diversa rispetto al filtro dei dati **Region** nella pagina **Overview**.
+1. Si noti che il filtro dei dati **Region** ha una selezione diversa rispetto al filtro dei dati **Region** nella pagina **Overview**.
+    
+    *I filtri dei dati non vengono sincronizzati. La progettazione del report verrà modificata per assicurarsi che si sincronizzano tra pagine nel lab **Migliorare un report in Power BI Desktop** lab.*
 
-    *I filtri dei dati non sono sincronizzati. La progettazione del report verrà modificata per garantire la sincronizzazione tra le pagine nel lab **Progettare un report in Power BI Desktop - Parte 2**.*
-
-19. Nel riquadro **Filtri** a destra espandere una scheda filtro e applicare alcuni filtri.
-
+1. Nel riquadro **Filtri** a destra espandere una scheda filtro e applicare alcuni filtri.
+    
     *Il riquadro **Filtri** consente di definire più filtri che potrebbero adattarsi a una pagina come filtri dei dati.*
 
-20. Nell'oggetto visivo matrice usare il pulsante più (+) per esaminare la gerarchia **Fiscal**.
+1. Nell'oggetto visivo matrice usare il pulsante più (+) per esaminare la gerarchia **Fiscal**.
 
-21. Selezionare la pagina **My Performance**.
+1. Selezionare la pagina **My Performance**.
 
-    ![Immagine 89](Linked_image_Files/07-design-report-in-power-bi-desktop_image69.png)
+     ![Immagine 89](Linked_image_Files/07-design-report-in-power-bi-desktop_image69.png)
 
-22. In alto a destra nella barra dei menu fare clic su **Vista**, quindi selezionare **Schermo intero**.
+1. In alto a destra nella barra dei menu fare clic su **Visualizza** e quindi selezionare **Schermo intero**.
 
-    ![Immagine 98](Linked_image_Files/07-design-report-in-power-bi-desktop_image70.png)
+     ![Immagine 98](Linked_image_Files/07-design-report-in-power-bi-desktop_image70.png)
 
-23. Interagire con la pagina modificando il filtro dei dati e applicando un filtro incrociato alla pagina.
+1. Interagire con la pagina modificando il filtro dei dati e applicando un filtro incrociato alla pagina.
 
-24. Nella parte inferiore della finestra notare i comandi per cambiare pagina, spostarsi avanti o indietro tra le pagine o uscire dalla modalità schermo intero.
+1. Nella parte inferiore della finestra notare i comandi per cambiare pagina, spostarsi avanti o indietro tra le pagine o uscire dalla modalità schermo intero.
 
-25. Fare clic sull'icona a sinistra per uscire dalla modalità schermo intero.
+1. Selezionare l'icona a destra per uscire dalla modalità schermo intero.
 
-    ![Immagine 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
+     ![Immagine 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
 
-### <a name="task-2-finish-up"></a>**Attività 2: Completare il lab**
+### **Attività 3: Completare il lab**
 
 In questa attività si completerà il lab.
 
-1. Per tornare all'area di lavoro, nel banner della pagina Web della finestra fare clic su **Area di lavoro personale**.
+Per tornare a "Area di lavoro personale", selezionare **Area di lavoro** personale nel banner nella pagina Web della finestra.
 
-    ![Immagine 99](Linked_image_Files/07-design-report-in-power-bi-desktop_image72.png)
-
-2. Lasciare aperta la finestra del browser Microsoft Edge.
-
-    *È possibile migliorare la progettazione dei report con le funzionalità avanzate mostrate nel lab **Progettare un report in Power BI Desktop - Parte 2**.*
+ *Si migliorerà la progettazione del report con funzionalità avanzate nel lab **Migliorare un report in Power BI Desktop** lab.*
