@@ -1,13 +1,13 @@
 ---
 lab:
-  title: Eseguire l'analisi dei dati in Power BI
-  module: 8 - Perform Data Analysis in Power BI
+  title: Eseguire Analisi avanzate in Power BI
+  module: Perform Data Analysis in Power BI
 ---
 
 
 # **Eseguire l'analisi dei dati in Power BI**
 
-**Il tempo stimato per il completamento del lab è di 45 minuti**
+## **Presentazione del lab**
 
 In questo lab verrà creato il report **Sales Exploration**.
 
@@ -16,26 +16,9 @@ Contenuto del lab:
 - Creare grafici a dispersione animati
 - Usare un oggetto visivo per prevedere valori
 
-### **Presentazione del lab**
+**Questo lab deve richiedere circa 30 minuti.**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
-
-1. Preparare i dati in Power BI Desktop
-1. Caricare i dati in Power BI Desktop
-1. Modellare i dati in Power BI Desktop
-1. Creare calcoli DAX in Power BI Desktop
-1. Creare calcoli DAX avanzati in Power BI Desktop
-1. Progettare un report in Power BI Desktop
-1. Migliorare un report in Power BI Desktop
-1. **Eseguire l'analisi dei dati in Power BI**
-1. Creare un dashboard di Power BI
-1. Applicare la sicurezza a livello di riga
-
-## **Esercizio 1: Creare il report**
-
-In questo esercizio si creerà il report **Sales Exploration** .
-
-### **Attività 1: Operazioni preliminari - Accesso**
+## **Introduzione - Accedere**
 
 In questa attività verrà configurato l'ambiente per il lab accedendo a Power BI.
 
@@ -55,7 +38,7 @@ In questa attività verrà configurato l'ambiente per il lab accedendo a Power B
 
      ![Figura 22](Linked_image_Files/07-my-workspace-new.png)
 
-### **Attività 2: Operazioni preliminari - Creare un set di dati**
+## **Introduzione: creare un set di dati**
 
 In questa attività verrà configurato l'ambiente per il lab creando un set di dati. *Se il set di dati è già stato pubblicato, passare all'attività successiva.*
 
@@ -71,7 +54,7 @@ In questa attività verrà configurato l'ambiente per il lab creando un set di d
 
 *Questo metodo creerà un report e un set di dati. Verrà usato solo il set di dati per creare un nuovo report in questo esercizio. Questo stesso processo può essere eseguito con un set di dati esistente da un report diverso anziché caricare nuovo. Inoltre, se non si usa il report, le procedure consigliate per l'area di lavoro suggeriscono di eliminare il file non necessario.*
 
-### **Attività 3: Creare il report**
+## **Creare il report**
 
 In questa attività si creerà una connessione dinamica al set di dati di Power BI creato nell'ultima attività e quindi si creerà un nuovo report di **esplorazione vendite** .
 
@@ -91,11 +74,7 @@ In questa attività si creerà una connessione dinamica al set di dati di Power 
 
 *È ora possibile creare due pagine del report e in ogni pagina verrà usato un oggetto visivo diverso per analizzare ed esplorare i dati.*
 
-## **Esercizio 2: Creare un grafico a dispersione**
-
-In questo esercizio verrà creato un grafico a dispersione che può essere animato.
-
-### **Attività 1: Creare un grafico a dispersione animato**
+## **Creare un grafico a dispersione animato**
 
 In questa attività verrà creato un grafico a dispersione che può essere animato.
 
@@ -141,11 +120,8 @@ In questa attività verrà creato un grafico a dispersione che può essere anima
 
 1. Salvare il file di Power BI Desktop.
 
-## **Esercizio 3: Creare una previsione**
 
-In questo esercizio si creerà una previsione per determinare i possibili ricavi delle vendite future.
-
-### **Attività 1: Creare una previsione**
+## **Creare una previsione**
 
 In questa attività si creerà una previsione per determinare i possibili ricavi delle vendite future.
 
@@ -197,7 +173,7 @@ In questa attività si creerà una previsione per determinare i possibili ricavi
 
 1. Nel riquadro **Filtri** filtrare solo per **Clothing** e osservare che si ottiene un risultato diverso.
 
-### **Attività 2: Completare il lab**
+### **Completare il lab**
 
 In questa attività si completerà il lab in Power BI Desktop.
 
@@ -209,4 +185,4 @@ In questa attività si completerà il lab in Power BI Desktop.
 
     ![Figura 23](Linked_image_Files/10-perform-data-analysis-in-power-bi-desktop_image46.png)
 
-1.  Chiudere Power BI Desktop.
+1. Chiudere Power BI Desktop.

@@ -1,15 +1,15 @@
 ---
 lab:
   title: Migliorare un report in Power BI Desktop
-  module: 7 - Create Reports
+  module: Create Reports in Power BI desktop
 ---
 
 
 # Migliorare un report in Power BI Desktop
 
-**Il tempo stimato per il completamento del lab è di 45 minuti.**
+## **Presentazione del lab**
 
-In questo lab si migliorerà **l'analisi vendite** con funzionalità di progettazione avanzate.
+In questo lab si migliorerà **l'analisi delle vendite** con funzionalità di progettazione avanzate.
 
 Contenuto del lab:
 
@@ -18,30 +18,13 @@ Contenuto del lab:
 - Applicare la formattazione condizionale
 - Creare e usare i segnalibri
 
-### **Presentazione del lab**
+**Questo lab richiede circa 45 minuti.**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
+## **Introduzione: accedere**
 
-1. Preparare i dati in Power BI Desktop
-1. Caricare i dati in Power BI Desktop
-1. Progettare un modello di dati in Power BI
-1. Creare calcoli DAX in Power BI Desktop
-1. Creare calcoli DAX avanzati in Power BI Desktop
-1. Progettare un report in Power BI Desktop
-1. **Migliorare un report in Power BI Desktop**
-1. Eseguire l'analisi dei dati in Power BI
-1. Creare un dashboard di Power BI
-1. Applicare la sicurezza a livello di riga
+In questa attività si configurerà l'ambiente per il lab accedendo a Power BI.
 
-## **Esercizio 1: Configurare i filtri dei dati sincronizzati**
-
-In questo esercizio si sincronizzano i filtri dei dati della pagina del report.
-
-### Attività 1: Operazioni preliminari - Accesso
-
-In questa attività verrà configurato l'ambiente per il lab accedendo a Power BI.
-
-*Nota: se si è già eseguito l'accesso a Power BI, passare all'attività successiva.*
+*Nota: se è già stato eseguito l'accesso a Power BI, passare all'attività successiva.*
 
 1. Per aprire Microsoft Edge, sulla barra delle applicazioni selezionare il collegamento al programma Microsoft Edge.
 
@@ -57,27 +40,27 @@ In questa attività verrà configurato l'ambiente per il lab accedendo a Power B
 
      ![Figura 22](Linked_image_Files/07-my-workspace-new.png)
 
-### Attività 2: Operazioni preliminari - Aprire il report
+## **Introduzione: aprire il report**
 
-In questa attività verrà configurato l'ambiente per il lab aprendo il report iniziale.
+In questa attività si configurerà l'ambiente per il lab aprendo il report iniziale.
 
-*Importante: se si continua dal lab precedente (e il lab è stato completato correttamente), non completare questa attività; passare invece all'attività successiva.*
+*Importante: se si continua dal lab precedente (e il lab è stato completato correttamente), non completare questa attività; Passare invece all'attività successiva.*
 
 1. Aprire Power BI Desktop.
 
     ![icona Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Suggerimento: per impostazione predefinita, la finestra di dialogo Introduzione viene aperta davanti a Power BI Desktop. È possibile scegliere di accedere e quindi chiudere il popup.*
+    *Suggerimento: per impostazione predefinita, la finestra di dialogo Introduzione viene visualizzata davanti a Power BI Desktop. È possibile scegliere di eseguire l'accesso e quindi chiudere il popup.*
 
-1. Per aprire il file di Power BI Desktop iniziale, selezionare il file **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare file **> Apri report > Sfoglia report**.
 
-1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e aprire il file **Di analisi vendite** .
+1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e aprire il file **Sales Analysis** .
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione. 
+1. Si noti il messaggio di avviso giallo sotto la barra multifunzione.
 
-    *Questo messaggio avvisa il fatto che le query non sono state applicate al caricamento come tabelle modello. Le query verranno applicate più avanti in questo lab.*
+    *Questo messaggio avvisa il fatto che le query non sono state applicate al caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
 
     *Per ignorare il messaggio di avviso, a destra del messaggio di avviso giallo selezionare **X**.*
 
@@ -85,15 +68,15 @@ In questa attività verrà configurato l'ambiente per il lab aprendo il report i
 
 1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 
-### **Attività 3: Sincronizzare i filtri dei dati**
+## **Sincronizzare i filtri dei dati**
 
-In questa attività si sincronizzano i filtri dei dati **Year** and **Region**, continuando lo sviluppo del report creato nel lab **Design a Report in Power BI Desktop** lab.
+In questa attività verranno sincronizzati i filtri dei dati **Year** e **Region**, continuando lo sviluppo del report creato nel lab **Progettazione di un report in Power BI Desktop** lab.
 
 1. In Power BI Desktop, nella pagina **Overview** impostare il filtro dei dati **Year** su **FY2018**.
 
 1. Passare alla pagina **My Performance** e osservare che il filtro dei dati **Year** è un valore diverso.
-    
-    *Quando i filtri dei dati non vengono sincronizzati, può contribuire alla rappresentazione errata dei dati e alla frustrazione per gli utenti del report. A questo punto si sincronizzano i filtri dei dati del report.*
+
+    *Quando i filtri dei dati non vengono sincronizzati, possono contribuire alla rappresentazione errata dei dati e alla frustrazione per gli utenti del report. A questo punto si sincronizzano i filtri dei dati del report.*
 
 1. Tornare alla pagina **Overview** e quindi selezionare il filtro dei dati **Year**.
 
@@ -115,24 +98,24 @@ In questa attività si sincronizzano i filtri dei dati **Year** and **Region**, 
 
 1. Per chiudere la pagina **Sincronizza filtri dei dati**, selezionare la **X** in alto a destra nel riquadro.
 
-## **Esercizio 2: Configurare il drill-through**
+## **Configurare il drill-through**
 
-In questo esercizio verrà creata una nuova pagina e configurata come pagina di drill-through. Completata la progettazione, la pagina sarà simile alla seguente:
+In questo esercizio si creerà una nuova pagina e la si configurerà come pagina drill-through. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine della nuova pagina, che comprende un oggetto visivo scheda e un oggetto visivo tabella.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image17.png)
 
-### **Attività 1: Creare una pagina di drill-through**
+## **Creare una pagina di drill-through**
 
-In questa attività verrà creata una nuova pagina e configurata come pagina di drill-through.
+In questa attività verrà creata una nuova pagina e configurata come pagina drill-through.
 
 1. Aggiungere una nuova pagina del report denominata **Product Details**.
 
 1. Fare clic con il pulsante destro del mouse sulla scheda della pagina **Product Details**, quindi selezionare **Nascondi pagina**.
-    
+
     *Gli utenti del report non potranno accedere direttamente alla pagina di drill-through. Dovranno accedervi dagli oggetti visivi in altre pagine. Si apprenderà come eseguire il drill-through fino alla pagina nell'esercizio finale di questo lab.*
 
 1. Sotto il riquadro **Visualizzazioni**, nella sezione **Drill-through** aggiungere il campo **Product \| Category** alla casella **Aggiungere i campi di drill-through qui**.
-    
+
     *Nei lab viene usata una notazione abbreviata per fare riferimento a un campo, simile al seguente: **Product \| Category**. In questo esempio **Product** è il nome della tabella e **Category** è il nome del campo.*
 
      ![Immagine 96](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image20.png)
@@ -142,8 +125,8 @@ In questa attività verrà creata una nuova pagina e configurata come pagina di 
      ![Immagine 99](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image21.png)
 
 1. Si noti il pulsante freccia in alto a sinistra nella pagina del report.
-    
-    *Un pulsante freccia viene aggiunto automaticamente quando un campo viene aggiunto al drill-through well/area. Consente agli utenti del report di tornare alla pagina da cui hanno eseguito il drill-through.*
+
+    *Un pulsante freccia viene aggiunto automaticamente quando un campo viene aggiunto all'area/area di drill-through. Consente agli utenti del report di tornare alla pagina da cui è stato eseguito il drill-through.*
 
 1. Aggiungere un oggetto visivo **Scheda** alla pagina, quindi ridimensionarlo e posizionarlo in modo che si trovi a destra del pulsante e riempia la larghezza rimanente della pagina.
 
@@ -157,7 +140,7 @@ In questa attività verrà creata una nuova pagina e configurata come pagina di 
 
      ![Immagine 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image36b.png)
 
-1. Impostare la proprietà **Effetti > colore di sfondo** su un colore chiaro di grigio, ad esempio *Bianco, 20% più scuro*.
+1. Impostare la proprietà **Effetti > colore di sfondo** su una sfumatura chiara di grigio, ad esempio *Bianco, 20% più scuro*.
 
      ![Immagine 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image36c.png)
 
@@ -179,17 +162,17 @@ In questa attività verrà creata una nuova pagina e configurata come pagina di 
 
 *La progettazione della pagina di drill-through è quasi completa. Nell'esercizio successivo si apporteranno miglioramenti alla pagina con la formattazione condizionale.*
 
-## **Esercizio 3: Aggiungere la formattazione condizionale**
+## **Aggiungere la formattazione condizionale**
 
-In questo esercizio verrà migliorato il drill-through della pagina con la formattazione condizionale. Completata la progettazione, la pagina sarà simile alla seguente:
+In questo esercizio si migliorerà la pagina di drill-through con la formattazione condizionale. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine di una pagina aggiornata che mostra icone e valori con formattazione a colori.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image28.png)
 
-### **Attività 1: Aggiungere la formattazione condizionale**
+## **Aggiungere la formattazione condizionale**
 
-In questa attività verrà migliorato il drill-through della pagina con la formattazione condizionale.
+In questa attività si migliorerà la pagina di drill-through con la formattazione condizionale.
 
-1. Selezionare l'oggetto visivo tabella. Nel riquadro di visualizzazione selezionare la freccia giù sul valore **Profit Margin** e quindi selezionare **Icone di \| formattazione condizionale**.
+1. Selezionare l'oggetto visivo tabella. Nel riquadro di visualizzazione selezionare la freccia giù sul valore **Profit Margin** e quindi selezionare **Icone di formattazione \| condizionale**.
 
     ![Immagine 107](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image29.png)
 
@@ -209,7 +192,7 @@ In questa attività verrà migliorato il drill-through della pagina con la forma
     - Nel sesto controllo selezionare **Numero**
 
 1. Configurare la seconda regola (cerchio verde) come indicato di seguito, quindi selezionare **OK**:
-    
+
     *Le regole possono essere interpretate come segue: visualizzare un rombo rosso se il valore del margine di profitto è minore di 0, in caso contrario, se il valore è maggiore o uguale a zero, visualizzare un cerchio verde.*
 
      - Nel secondo controllo immettere **0**
@@ -227,7 +210,7 @@ In questa attività verrà migliorato il drill-through della pagina con la forma
 
 1. Nella finestra **Colore di sfondo - Colore** selezionare **Valore campo** nell'elenco a discesa **Stile formato**.
 
-1. Nell'elenco a discesa **Quale campo dovremmo basarci su?** selezionare **Formato colore sfondo formattazione \| prodotto\|**, quindi **OK**.
+1. Nell'elenco a discesa **What field should we base this on? (Quale campo è necessario basare su?** selezionare **Product Formatting Background Color Format (Formato colore sfondo formattazione \| prodotto\|**), quindi **OK**.
 
      ![Immagine 114](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image36.png)
 
@@ -235,15 +218,15 @@ In questa attività verrà migliorato il drill-through della pagina con la forma
 
 *Si ricorderà che i colori dello sfondo e del tipo di carattere sono stati originati dal file **ColorFormats.csv** nel lab **Preparare i dati in Power BI Desktop** e quindi integrati con la query **Product** nel lab **Caricare i dati in Power BI Desktop**.*
 
-## **Esercizio 4: Aggiungere segnalibri e pulsanti**
+## **Aggiungere segnalibri e pulsanti**
 
 In questo esercizio si migliorerà la pagina **Prestazioni** personali con i pulsanti, consentendo all'utente del report di selezionare il tipo di oggetto visivo da visualizzare. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Immagine di una pagina aggiornata 3, che mostra due pulsanti e solo due oggetti visivi.](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image38.png)
 
-### **Attività 1: Aggiungere segnalibri**
+## **Aggiungere segnalibri**
 
-In questa attività si aggiungeranno due segnalibri, uno per visualizzare ognuno degli oggetti visivi mensili di vendita/destinazioni.
+In questa attività verranno aggiunti due segnalibri, uno per visualizzare ognuno degli oggetti visivi mensili di vendite/destinazioni.
 
 1. Passare alla pagina **My Performance**. Nella scheda della barra multifunzione **Visualizza** selezionare **Segnalibri** all'interno del gruppo **Mostra riquadri**.
 
@@ -256,7 +239,7 @@ In questa attività si aggiungeranno due segnalibri, uno per visualizzare ognuno
      ![Immagine 120](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image41.png)
 
 1. Nel riquadro **Segnalibri** selezionare **Aggiungi**.
-    
+
     *Fare doppio clic sul segnalibro per rinominarlo.*
 
      ![Immagine 121](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image42.png)
@@ -270,11 +253,11 @@ In questa attività si aggiungeranno due segnalibri, uno per visualizzare ognuno
      ![Immagine 16](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image43.png)
 
 1. Per aggiornare il segnalibro, selezionare di nuovo i puntini di sospensione e quindi selezionare **Aggiorna**.
-     
+
      *Nei passaggi seguenti si creerà e si configurerà un secondo segnalibro per visualizzare il secondo oggetto visivo.*
 
 1. Nel riquadro **Selezione** attivare e disattivare la visibilità dei due elementi **Sales and Target by Month**.
-     
+
      *In altre parole, nascondere l'oggetto visivo visibile e rendere visibile l'oggetto visivo nascosto.*
 
      ![Immagine 122](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image45.png)
@@ -288,7 +271,7 @@ In questa attività si aggiungeranno due segnalibri, uno per visualizzare ognuno
 1. Nel riquadro **Selezione** è sufficiente visualizzare l'oggetto visivo nascosto per rendere visibili entrambi gli oggetti visivi.
 
 1. Ridimensionare e riposizionare entrambi gli oggetti visivi in modo che riempiano la pagina sotto l'oggetto visivo a più schede e si sovrappongano completamente l'uno all'altro.
-    
+
     *Per selezionare l'oggetto visivo coperto, selezionarlo nel riquadro **Selezione** .*
 
     ![Immagine 124](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image47.png)
@@ -297,9 +280,9 @@ In questa attività si aggiungeranno due segnalibri, uno per visualizzare ognuno
 
 *La fase successiva della progettazione prevede l'aggiunta di due pulsanti alla pagina, in modo da consentire all'utente del report di selezionare i segnalibri.*
 
-### **Attività 2: Aggiungere pulsanti**
+## **Aggiungere i pulsanti**
 
-In questa attività si aggiungeranno due pulsanti e si assegnano azioni segnalibro a ognuna.
+In questa attività si aggiungeranno due pulsanti e si assegneranno azioni segnalibro a ognuna.
 
 1. Sulla barra multifunzione **Inserisci** selezionare **Pulsante** all'interno del gruppo **Elementi** e quindi selezionare **Vuoto**.
 
@@ -307,15 +290,15 @@ In questa attività si aggiungeranno due pulsanti e si assegnano azioni segnalib
 
 1. Posizionare il pulsante direttamente sotto il filtro dei dati **Year**.
 
-1. Selezionare il pulsante e quindi nel riquadro Pulsante **Formato** selezionare **Pulsante**, espandere **La sezione Stile** e attivare la proprietà **Text****.**
+1. Selezionare il pulsante e quindi nel riquadro del **pulsante Formato** selezionare **Pulsante**, espandere **La sezione Stile** e impostare la proprietà **Testo** **su Sì**.
 
      ![Immagine 126](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image49b.png)
 
-1. Espandere la sezione **Testo** e quindi nella casella **Di testo** immettere **Grafico a barre**.
+1. Espandere la sezione **Testo** e quindi nella casella **Testo** immettere **Grafico a barre**.
 
 1. Espandere la sezione **Riempimento** e quindi impostare un colore di riempimento usando un colore complementare.
 
-1. Selezionare **Pulsante** e attivare la proprietà **Action****.**
+1. Selezionare **Pulsante** e impostare la proprietà **Action** **su Sì**.
 
     ![Immagine 127](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image50.png)
 
@@ -334,9 +317,9 @@ In questa attività si aggiungeranno due pulsanti e si assegnano azioni segnalib
 
 *La progettazione del report Sales Analysis è stata completata.*
 
-### **Attività 3: Pubblicare il report**
+## **Pubblicare il report**
 
-In questa attività verrà pubblicato il report.
+In questa attività si pubblicherà il report.
 
 1. Selezionare la pagina di **panoramica**.
 
@@ -345,7 +328,7 @@ In questa attività verrà pubblicato il report.
 1. Nel filtro dei dati **Region** selezionare **Select All**.
 
 1. Salvare il file di Power BI Desktop.
-    
+
     *Il file deve essere sempre salvato prima della pubblicazione nel servizio Power BI.*
 
 1. Nella scheda della barra multifunzione **Home** selezionare **Pubblica** all'interno del gruppo **Condividi**.
@@ -362,17 +345,13 @@ In questa attività verrà pubblicato il report.
 
 *Nell'esercizio successivo si esplorerà il report nel servizio Power BI.*
 
-## **Esercizio 5: Esplorare il report**
+## **Esplorare il report**
 
-In questo esercizio si esaminerà il report nella servizio Power BI.
+In questa attività si esaminerà il report nel servizio Power BI.
 
-### **Attività 1: Esplorare il report**
+1. In una finestra del browser Microsoft Edge passare alla servizio Power BI > **Area di lavoro personale** e quindi selezionare il report **Analisi vendite**.
 
-In questa attività si esaminerà il report nella servizio Power BI.
-
-1. In una finestra del browser Microsoft Edge passare alla servizio Power BI > Area **di lavoro** personale e quindi selezionare il report **Analisi vendite**.
-
-1. Per testare la funzionalità di drill-through, passare alla pagina **Panoramica** > **Quantità per** oggetto visivo Categoria. Fare quindi clic con il pulsante destro del mouse sulla barra **abbigliamento** e selezionare **Drill-Through Product Details (Dettagli prodotto drill-through\|**).
+1. Per testare la funzionalità di drill-through, passare alla pagina **Panoramica** **>'oggetto visivo Quantità per categoria** . Fare quindi clic con il pulsante destro del mouse sulla barra **Abbigliamento** e scegliere **Drill-Through Product Details (Dettagli prodotto drill-through\|**).
 
      ![Immagine 130](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image55.png)
 
@@ -381,13 +360,13 @@ In questa attività si esaminerà il report nella servizio Power BI.
 1. Per tornare alla pagina di origine, nell'angolo superiore sinistro della pagina selezionare il pulsante freccia.
 
 1. Selezionare la pagina **My Performance**.
-    
+
     *Selezionare ognuno dei pulsanti e verificare che venga visualizzato un oggetto visivo diverso.*
 
-### **Attività 2: Completare il lab**
+### **Completare il lab**
 
 In questa attività si completerà il lab.
 
 Per tornare all'area di lavoro, nel banner nella pagina Web della finestra selezionare **Area di lavoro personale**.
 
- ![Figura 23](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image56.png)
+![Figura 23](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image56.png)

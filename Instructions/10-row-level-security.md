@@ -1,40 +1,24 @@
 ---
 lab:
   title: Applicare la sicurezza a livello di riga
-  module: 12 - Row-Level Security
+  module: Enforce Row-Level Security
 ---
 
 
 # **Applicare la sicurezza a livello di riga**
 
-**Il tempo stimato per il completamento del lab è di 45 minuti**
+## **Presentazione del lab**
 
 In questo lab verrà applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati delle vendite per le aree assegnate.
 
 Contenuto del lab:
 
 - Applicare la sicurezza a livello di riga
+- Scegliere tra metodi dinamici e statici
 
-### **Presentazione del lab**
+**Questo lab richiede circa 45 minuti.**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
-
-1. Preparare i dati in Power BI Desktop
-1. Caricare i dati in Power BI Desktop
-1. Progettare un modello di dati in Power BI
-1. Creare calcoli DAX in Power BI Desktop
-1. Creare calcoli DAX avanzati in Power BI Desktop
-1. Progettare un report in Power BI Desktop
-1. Migliorare un report in Power BI Desktop
-1. Eseguire l'analisi dei dati in Power BI Desktop
-1. Creare un dashboard di Power BI
-1. **Applicare la sicurezza a livello di riga**
-
-## **Esercizio 1: Applicare la sicurezza a livello di riga**
-
-In questo esercizio verrà applicata la sicurezza a livello di riga per garantire che un venditore possa visualizzare solo le vendite effettuate nelle aree assegnate.
-
-### **Attività 1: Operazioni preliminari**
+## **Operazioni preliminari**
 
 In questa attività si configurerà l'ambiente per il lab.
 
@@ -60,7 +44,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 
-### **Attività 2: Applicare la sicurezza a livello di riga**
+## **Applicare la sicurezza a livello di riga**
 
 In questa attività verrà applicata la sicurezza a livello di riga per garantire che un venditore possa visualizzare solo le vendite effettuate nelle aree assegnate.
 
@@ -68,7 +52,7 @@ In questa attività verrà applicata la sicurezza a livello di riga per garantir
 
    ![Immagine 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
-1. Nel riquadro **Campi** selezionare la tabella **Salesperson (Performance)**.
+1. Nel riquadro **Dati** selezionare la tabella **Salesperson (Performance).**
 
 
 1. Esaminare i dati. Si noti che il valore UPN di Michael Blythe (EmployeeKey 281) è: **michael-blythe@adventureworks.com**.
@@ -126,6 +110,10 @@ In questa attività verrà applicata la sicurezza a livello di riga per garantir
 1. Nella finestra **Gestisci ruoli** selezionare **Elimina**. Quando viene richiesto di confermare l'eliminazione, selezionare **Sì, Elimina**.
 
    ![Figura 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+
+### **Completare il lab**
+
+In questa attività si completerà il lab.
 
 1. Selezionare **Salva**, quindi salvare il file Power BI Desktop per terminare il lab.
 
