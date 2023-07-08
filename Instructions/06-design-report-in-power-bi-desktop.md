@@ -1,41 +1,24 @@
 ---
 lab:
   title: Progettare un report in Power BI Desktop
-  module: 7 - Create Reports
+  module: Create Reports in Power BI Desktop
 ---
 
 
 # Progettare un report in Power BI Desktop
 
-**Il tempo stimato per il completamento del lab è di 45 minuti.**
+## **Presentazione del lab**
 
-In questo lab verrà creato un report di tre pagine. Il report verrà quindi pubblicato in Power BI dove sarà possibile aprirlo e interagire con esso.
+In questo lab verrà creato un report di tre pagine. Verrà quindi pubblicato in Power BI, in cui si aprirà e si interagisce con il report.
 
 Contenuto del lab:
 
 - Progettare un report
 - Configurare campi visivi e proprietà del formato
 
-### **Presentazione del lab**
+**Questo lab deve richiedere circa 45 minuti.**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
-
-1. Preparare i dati in Power BI Desktop
-1. Caricare i dati in Power BI Desktop
-1. Progettare un modello di dati in Power BI
-1. Creare calcoli DAX in Power BI Desktop
-1. Creare calcoli DAX avanzati in Power BI Desktop
-1. **Progettare un report in Power BI Desktop**
-1. Migliorare un report in Power BI Desktop
-1. Eseguire l'analisi dei dati in Power BI
-1. Creare un dashboard di Power BI
-1. Applicare la sicurezza a livello di riga
-
-## **Esercizio 1: Creare un report**
-
-In questo esercizio verrà creato un report a tre pagine denominato **Report vendite**.
-
-### **Attività 1: Introduzione - Apri report**
+## **Creare un report**
 
 In questa attività verrà configurato l'ambiente per il lab aprendo il report iniziale.
 
@@ -45,7 +28,7 @@ In questa attività verrà configurato l'ambiente per il lab aprendo il report i
 
 1. Creare una copia del file passando a **Salva** > **con** nome e salvando la copia nella cartella **D:\PL300\MySolution** .
 
-### **Attività 2: Pagina progettazione 1**
+## **Progettazione della pagina 1**
 
 In questa attività verrà progettata la prima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
@@ -71,7 +54,7 @@ In questa attività verrà progettata la prima pagina del report. Completata la 
 
      ![Immagine 49](Linked_image_Files/07-design-report-in-power-bi-desktop_image18.png)
 
-1. Nel riquadro **Campi** trascinare il campo **Data \| Year** (non il livello **Anno** della gerarchia) nel campo filtro dei **dati nel riquadro** Visualizzazioni.
+1. Nel riquadro **Dati** trascinare il campo **Data \| Year** (non il livello **Anno** della gerarchia) nel campo filtro dei **dati nel riquadro** Visualizzazioni.
     
     *Nei lab viene usata una notazione abbreviata per fare riferimento a un campo, simile al seguente: **Date \| Year**. In questo esempio **Date** è il nome della tabella e **Year** è il nome del campo.*
 
@@ -111,13 +94,13 @@ In questa attività verrà progettata la prima pagina del report. Completata la 
      - Date \| Month
      - Sales \| Sales
 
-1. Nel riquadro dei campi dell'oggetto visivo (non nel riquadro **Campi**: il riquadro dei campi dell'oggetto visivo è sotto il riquadro **Visualizzazioni**) si noti che i campi sono assegnati alle aree **Asse X** e **Colonna asse y**.
+1. Nel riquadro campi visivi (situato sotto il riquadro **Visualizzazioni** ), si noti che i campi vengono assegnati all'asse X e alle aree **dell'asse X** e **dell'asse y della colonna** .
     
     *Trascinando i campi in un oggetto visivo, verranno aggiunti a ben/aree predefinite. Per precisione, è possibile trascinare i campi direttamente nei pozzi/aree, come si farà successivamente.*
 
      ![Figura 27](Linked_image_Files/07-design-report-in-power-bi-desktop_image28_N.png)
 
-1. Dal riquadro **Campi** trascinare il campo **Vendite \| Profit Margin** nell'area **Linea asse y**.
+1. Nel riquadro **Dati** trascinare il campo Sales **Profit Margin nell'asse \|** **y linea**/area.
 
      ![Immagine 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -176,7 +159,7 @@ In questa attività verrà progettata la prima pagina del report. Completata la 
 
 *La progettazione della prima pagina è ora completa.*
 
-### **Attività 3: Pagina progettazione 2**
+## **Progettazione della pagina 2**
 
 In questa attività verrà progettata la seconda pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
@@ -216,7 +199,7 @@ In questa attività verrà progettata la seconda pagina del report. Completata l
 
      ![Immagine 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
-1. Dal riquadro **Campi** trascinare il campo **Product \| Category** nell'area **Filtri in questa pagina**.
+1. Nel riquadro **Dati** trascinare il campo **Categoria prodotto \|** nell'area **Filtro in questa pagina**.
     
     *I campi aggiunti al riquadro **Filtri** permettono di ottenere lo stesso risultato di un filtro dei dati. Una differenza consiste nel fatto che non occupano spazio nella pagina del report. Un'altra differenza è che possono essere configurati per soddisfare requisiti di filtro più avanzati.*
 
@@ -234,9 +217,9 @@ In questa attività verrà progettata la seconda pagina del report. Completata l
 
  *La progettazione della seconda pagina è ora completa.*
 
-### **Attività 4: Pagina progettazione 3**
+## **Progettazione della pagina 3**
 
-In questa attività si progettano la terza pagina e la pagina finale del report. Completata la progettazione, la pagina sarà simile alla seguente:
+In questa attività verrà progettata la terza pagina del report e finale. Completata la progettazione, la pagina sarà simile alla seguente:
 
  ![Immagine della pagina 3, che comprende un filtro dei dati e tre oggetti visivi.](Linked_image_Files/07-design-report-in-power-bi-desktop_image47.png)
 
@@ -273,7 +256,7 @@ In questa attività si progettano la terza pagina e la pagina finale del report.
 
      - Nel gruppo **Valori callout** aumentare la proprietà **Dimensione testo** a **28pt**
 
-     - Nel gruppo **Effetti > generale > Sfondo** impostare **Color** su un colore grigio chiaro (ad esempio "Bianco, 20% più scuro) per dare contrasto
+     - Nel gruppo **Generale > Effetti > sfondo** impostare **il colore** su un colore grigio chiaro (ad esempio "Bianco, 20% Scuro) per dare contrasto
 
          ![Immagine 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
 
@@ -286,7 +269,7 @@ In questa attività si progettano la terza pagina e la pagina finale del report.
 1. Aggiungere i campi seguenti nelle aree dell'oggetto visivo:
 
      - Asse Y: **Data \| Mese**
-     - Asse X: **Sales Sales \|** and **Targets \| Target**
+     - Asse X: **Sales Sales \|** and **Target Target \|**
 
          ![Immagine 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
 
@@ -300,34 +283,30 @@ In questa attività si progettano la terza pagina e la pagina finale del report.
 
      ![Immagine 61](Linked_image_Files/07-design-report-in-power-bi-desktop_image58.png)
 
- *È ora possibile visualizzare gli stessi dati espressi da due tipi di visualizzazione diversi. Questo non è un buon uso del layout di pagina, ma verrà migliorato nel lab **Migliorare un report in Power BI Desktop** lab sovrapponendo gli oggetti visivi. Aggiungendo pulsanti alla pagina, si consentirà all'utente del report di determinare quale dei due oggetti visivi è visibile.*
+ *È ora possibile visualizzare gli stessi dati espressi da due tipi di visualizzazione diversi. Questo non è un buon uso del layout di pagina, tuttavia, lo si migliorerà nel lab **Migliorare un report in Power BI Desktop** lab sovrapponendo gli oggetti visivi. Aggiungendo pulsanti alla pagina, è possibile consentire all'utente del report di determinare quale dei due oggetti visivi è visibile.*
 
  *La progettazione della terza e ultima pagina è ora completa.*
 
-## **Esercizio 2: Esplorare il report**
+## **Pubblicare il report**
 
-In questo esercizio si pubblicherà il report nel servizio Power BI ed si esaminerà il report consumer di sola lettura.
+In questa attività verrà pubblicato il report nel servizio Power BI.
 
-### **Attività 1: Pubblicare il report**
-
-In questa attività si pubblicherà il report nel servizio Power BI.
-
-1. Selezionare la pagina **Panoramica** e quindi salvare il file Power BI Desktop.
+1. Selezionare la pagina **Panoramica**, quindi salvare il file di Power BI Desktop.
 
 1. Nella scheda della barra multifunzione **Home** selezionare **Pubblica** all'interno del gruppo **Condividi**.
     
-    *Se non è già stato eseguito l'accesso a Power BI Desktop, è necessario eseguire l'accesso per la pubblicazione.*
+    *Se non si è connessi Power BI Desktop già, è necessario eseguire l'accesso per pubblicare.*
 
      ![Immagine 67](Linked_image_Files/07-design-report-in-power-bi-desktop_image59.png)
 
 1. Nella finestra **Pubblica in Power BI** si noti che l'opzione **Area di lavoro** è selezionata.
     
-    *In questo lab non verranno illustrati in dettaglio i diversi elementi all'interno del servizio Power BI.*
+    *Non verranno illustrati in dettaglio i diversi elementi all'interno del servizio Power BI in questo lab.*
 
 1. Per pubblicare il report, **selezionare Seleziona**. L'operazione potrebbe richiedere alcuni istanti. 
 1. Al termine della pubblicazione, fare clic su **Chiudi**.
 
-### **Attività 2: Esplorare il report**
+## **Esplorare il report**
 
 In questa attività si esaminerà il report pubblicato in Power BI.
 
@@ -342,7 +321,7 @@ In questa attività si esaminerà il report pubblicato in Power BI.
     1. *Potrebbe essere necessario aggiornare il browser Microsoft Edge se il set di dati non è visibile.*
     1. *Quando è stato pubblicato il file di Power BI Desktop, il modello di dati è stato pubblicato come set di dati.*
 
-1. Per esplorare il report, selezionare il report **Sales Analysis** .
+1. Per esplorare il report, selezionare il report **Analisi vendite** .
 
 1. A sinistra, nel riquadro **Pagine** selezionare la pagina **Overview**.
 
@@ -352,7 +331,7 @@ In questa attività si esaminerà il report pubblicato in Power BI.
 
 1. Quando si preme **CTRL** , selezionare un altro mese.
 
-     *Nota: per impostazione predefinita, il filtro incrociato filtra tutti gli altri oggetti visivi nella pagina.*
+     *Nota: per impostazione predefinita, filtri incrociati filtra tutti gli altri oggetti visivi nella pagina.*
 
 1. Si noti che il grafico a barre è filtrato ed evidenziato e che la parte in grassetto delle barre rappresenta i mesi filtrati.
 
@@ -410,10 +389,10 @@ In questa attività si esaminerà il report pubblicato in Power BI.
 
      ![Immagine 91](Linked_image_Files/07-design-report-in-power-bi-desktop_image71.png)
 
-### **Attività 3: Completare il lab**
+### **Completare il lab**
 
 In questa attività si completerà il lab.
 
 Per tornare a "Area di lavoro personale", selezionare **Area di lavoro** personale nel banner nella pagina Web della finestra.
 
- *Si migliorerà la progettazione del report con funzionalità avanzate nel lab **Migliorare un report in Power BI Desktop** lab.*
+ *Si migliorerà la progettazione del report con funzionalità avanzate nel lab **Migliorare un report in Power BI Desktop**.*

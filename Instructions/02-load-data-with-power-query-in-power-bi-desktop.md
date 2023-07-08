@@ -1,47 +1,30 @@
 ---
 lab:
-  title: Caricare i dati in Power BI Desktop
-  module: '3 - Clean, Transform, and Load Data in Power BI'
+  title: Caricare dati trasformati in Power BI Desktop
+  module: 'Clean, Transform, and Load Data in Power BI'
 ---
 
-# Caricare i dati in Power BI Desktop
+# Caricare dati trasformati in Power BI Desktop
 
-**Il tempo stimato per il completamento del lab è di 45 minuti.**
+## **Presentazione del lab**
 
-In questo lab verranno applicate trasformazioni a ognuna delle query create nel lab precedente. Le query verranno quindi applicate per caricare ognuna come tabella nel modello di dati.
+In questo lab si useranno tecniche di pulizia e trasformazione dei dati per iniziare a modellare il modello di dati. Le query verranno quindi applicate per caricare ognuna come tabella nel modello di dati.
 
 Contenuto del lab:
 
 - Applicare varie trasformazioni
-- Applicare query per caricarle nel modello di dati
+- Caricare le query nel modello di dati
 
-## **Presentazione del lab**
+**Questo lab richiede circa 45 minuti.**
 
-Questo lab fa parte di una serie che comprende molti lab progettati come attività completa, dalla preparazione dei dati alla pubblicazione come report e dashboard. È possibile completare i lab nell'ordine desiderato. Se tuttavia si intende seguire più lab, è consigliabile procedere in questo ordine:
-
-1. Preparare i dati in Power BI Desktop
-1. **Caricare i dati in Power BI Desktop**
-1. Progettare un modello di dati in Power BI
-1. Creare calcoli DAX in Power BI Desktop
-1. Creare calcoli DAX avanzati in Power BI Desktop
-1. Progettare un report in Power BI Desktop
-1. Migliorare un report in Power BI Desktop
-1. Eseguire l'analisi dei dati in Power BI
-1. Creare un dashboard di Power BI
-1. Applicare la sicurezza a livello di riga
-
-## **Esercizio 1: Caricare i dati**
-
-In questo esercizio si applicheranno trasformazioni a ognuna delle query create nel lab precedente.
-
-### **Attività 1: Operazioni preliminari**
+## **Operazioni preliminari**
 
 In questa attività si configurerà l'ambiente per il lab.
 
 *Importante: se il lab precedente è stato completato nella stessa macchina virtuale, passare all'attività successiva.*
 
 1. Aprire Power BI Desktop.
-    
+
     *Suggerimento: per impostazione predefinita, la finestra di dialogo Introduzione viene visualizzata davanti a Power BI Desktop. È possibile scegliere di eseguire l'accesso e quindi chiudere il popup.*
 
     ![icona Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
@@ -52,17 +35,17 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione. 
+1. Si noti il messaggio di avviso giallo sotto la barra multifunzione.
 
     *Questo messaggio avvisa il fatto che le query non sono state applicate al caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
-    
+
     Per ignorare il messaggio di avviso giallo, selezionare **X** a destra.
 
 1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella cartella **D:\PL300\MySolution** .
 
 1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 
-### **Attività 2: Configurare la query Salesperson**
+## **Configurare la query Salesperson**
 
 In questa attività si userà editor di Power Query per configurare la query **Salesperson**.
 
@@ -77,11 +60,11 @@ In questa attività si userà editor di Power Query per configurare la query **S
      ![Immagine 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
 1. Per rinominare la query, nel riquadro **Impostazioni query** (situato a destra), nella casella **Nome** sostituire il testo con **Salesperson** e quindi premere **INVIO**. Verificare quindi che il nome sia stato aggiornato nel riquadro **Query** .
-    
+
     *Il nome della query determina il nome della tabella del modello. È consigliabile definire nomi concisi e descrittivi.*
 
 1. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione selezionare la freccia giù **Gestisci colonne** , selezionare la freccia giù **Scegli colonne** e quindi selezionare **Vai a colonna**.
-    
+
     *Passare a Colonna è una funzionalità utile con molte colonne. In caso contrario, è possibile scorrere orizzontalmente le colonne.*
 
      ![Gestisci colonne > Scegliere colonne > Vai alla colonna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
@@ -90,12 +73,10 @@ In questa attività si userà editor di Power Query per configurare la query **S
 
      ![Passare alle opzioni di ordinamento delle colonne](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
-1. Selezionare l'intestazione di colonna **SalesPersonFlag** , quindi selezionare la freccia giù, quindi **FALSE** e fare clic su **OK**.
-    
-    *Questa azione filtra le righe per recuperare solo i dipendenti che sono venditori.*
+1. Individuare la colonna **SalesPersonFlag** , quindi filtrare la colonna per selezionare solo Salespeople (vale a dire **TRUE**) e fare clic su **OK**.
 
 1. Nel riquadro **Impostazioni query**, nell'elenco **Passaggi applicati**, notare l'aggiunta del passaggio **Filtrate righe**.
-    
+
     *Ogni trasformazione creata genera risultati in un'altra logica di passaggio. È possibile modificare o eliminare i passaggi. È anche possibile selezionare un passaggio per visualizzare in anteprima i risultati della query in tale fase della trasformazione della query.*
 
      ![Passaggi applicati](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
@@ -122,7 +103,7 @@ In questa attività si userà editor di Power Query per configurare la query **S
      ![Selezione multipla di due colonne per creare una singola colonna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
 1. Fare clic con il pulsante destro del mouse su una delle intestazioni di colonna selezionate e quindi scegliere **Merge di colonne** dal menu di scelta rapida.
-    
+
     *Molte trasformazioni comuni possono essere applicate facendo clic con il pulsante destro del mouse sull'intestazione di colonna e scegliendo quindi la trasformazione desiderata dal menu di scelta rapida. Si noti, tuttavia, che sono disponibili altre trasformazioni nella barra multifunzione.*
 
 1. Nella finestra **Merge di colonne** selezionare **Spazio** nell'elenco a discesa **Separatore**.
@@ -132,12 +113,12 @@ In questa attività si userà editor di Power Query per configurare la query **S
 1. Per rinominare la colonna **EmployeeNationalIDAlternateKey** , fare doppio clic sull'intestazione di colonna **EmployeeNationalIDAlternateKey** e sostituire il testo con **EmployeeID**, quindi premere **INVIO**.
 
 1. Usare i passaggi precedenti per rinominare la colonna **EmailAddress** in **UPN**.
-    
+
     *UPN è l'acronimo di User Principal Name, ovvero nome dell'entità utente.*
 
 1. Nella parte inferiore sinistra della barra di stato verificare che la query includa cinque colonne e 18 righe.
 
-### **Attività 3: Configurare la query SalespersonRegion**
+## **Configurare la query SalespersonRegion**
 
 In questa attività verrà configurata la query **SalespersonRegion**.
 
@@ -153,7 +134,7 @@ In questa attività verrà configurata la query **SalespersonRegion**.
 
 1. Nella barra di stato verificare che la query includa due colonne e 39 righe.
 
-### **Attività 4: Configurare la query Product**
+## **Configurare la query Product**
 
 In questa attività verrà configurata la query **Product**.
 
@@ -179,9 +160,9 @@ In questa attività verrà configurata la query **Product**.
 
 1. Vedere l'elenco completo delle colonne, quindi selezionare la casella **Seleziona tutte le** colonne per deselezionare tutte le colonne.
 2. Selezionare **EnglishProductSubcategoryName** e **DimProductCategory** e deselezionare la casella di controllo **Usa nome colonna originale come prefisso** prima di selezionare **OK**.
-    
+
     *Selezionando queste due colonne verrà applicata una trasformazione per creare un join con la tabella **DimProductSubcategory** e quindi includere tali colonne. La colonna **DimProductCategory** è in realtà un'altra tabella correlata nell'origine dati.*
-    
+
     *I nomi delle colonne di query devono essere sempre univoci. Se questa casella di controllo rimane selezionata, a ogni colonna viene aggiunto il nome della colonna espanso come prefisso (in questo caso **DimProductSubcategory**). Poiché è noto che i nomi delle colonne selezionate non sono in conflitto con i nomi delle colonne nella query **Product**, l'opzione è deselezionata.*
 
 1. Si noti che la trasformazione ha determinato l'aggiunta di due colonne e che la colonna **DimProductSubcategory** è stata rimossa.
@@ -197,7 +178,7 @@ In questa attività verrà configurata la query **Product**.
 
 1. Nella barra di stato verificare che la query includa 6 colonne e 397 righe.
 
-### **Attività 5: Configurare la query Reseller**
+## **Configurare la query Reseller**
 
 In questa attività si configurerà la query **Reseller** .
 
@@ -236,14 +217,14 @@ In questa attività si configurerà la query **Reseller** .
 
 1. Nella barra di stato verificare che la query includa 6 colonne e 701 righe.
 
-### **Attività 6: Configurare la query Region**
+## **Configurare la query Region**
 
 In questa attività verrà configurata la query **Region**.
 
 1. Selezionare la query **DimSalesTerritory** e rinominare la query in **Region**.
 
 1. Applicare un filtro alla colonna **SalesTerritoryAlternateKey** per rimuovere il valore 0 (zero).
-    
+
     *Verrà rimossa una riga.*
 
 1. Rimuovere tutte le colonne, **ad eccezione** delle seguenti:
@@ -261,7 +242,7 @@ In questa attività verrà configurata la query **Region**.
 
 1. Nella barra di stato verificare che la query includa 4 colonne e 10 righe.
 
-### **Attività 7: Configurare la query Sales**
+## **Configurare la query Sales**
 
 In questa attività verrà configurata la query **Sales** .
 
@@ -280,7 +261,7 @@ In questa attività verrà configurata la query **Sales** .
     - TotalProductCost
     - SalesAmount
     - DimProduct
-        
+
         *Nota: è possibile ricordare nel lab **Prepare Data in Power BI Desktop** che una piccola percentuale di righe **FactResellerSales** contiene valori **TotalProductCost** mancanti. La colonna **DimProduct** è stata inclusa per recuperare la colonna costo standard del prodotto per facilitare la correzione dei valori mancanti.*
 
 1. Espandere la colonna **DimProduct**, deselezionare tutte le colonne e quindi includere la colonna **StandardCost**.
@@ -294,7 +275,7 @@ In questa attività verrà configurata la query **Sales** .
 1. Nella casella **Formula colonna personalizzata** immettere l'espressione seguente (dopo il simbolo di uguale).
     - *È possibile copiare l'espressione dal file **D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** .*
     - *Questa espressione verifica se il valore **TotalProductCost** non è presente. Se mancante, produce un valore moltiplicando il valore **OrderQuantity** per il valore **StandardCost** ; in caso contrario, usa il valore **TotalProductCost** esistente.*
-    
+
 
     `
     if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
@@ -312,13 +293,13 @@ In questa attività verrà configurata la query **Sales** .
     - **SalesAmount** in **Sales**
 
 1. Per modificare il tipo di dati della colonna, nell'intestazione **di colonna Quantity** , a sinistra del nome della colonna selezionare l'icona **1.2** e quindi selezionare **Numero intero**.
-    
+
     *La configurazione del tipo di dati corretto è importante. Anche quando la colonna contiene un valore numerico è importante scegliere il tipo corretto se si prevede di eseguire calcoli matematici.*
 
      ![Immagine 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
 1. Modificare i tipi di dati delle tre colonne seguenti in **Numero decimale fisso**.
-    
+
     *Il tipo di dati numerico decimale fisso consente 19 cifre e consente una maggiore precisione per evitare errori di arrotondamento. È importante usare il tipo di numero decimale fisso per i valori finanziari o i tassi ,ad esempio i tassi di cambio.*
 
     - Unit Price
@@ -326,10 +307,10 @@ In questa attività verrà configurata la query **Sales** .
     - Cost
 
 1. Nella barra di stato verificare che la query includa 10 colonne e più di 999 righe.
-    
+
     *Un massimo di 1000 righe verrà caricato come dati di anteprima per ogni query.*
 
-### **Attività 8: Configurare la query Targets**
+## **Configurare la query Targets**
 
 In questa attività verrà configurata la query **Targets**.
 
@@ -347,30 +328,30 @@ In questa attività verrà configurata la query **Targets**.
 
 1. Rinominare le due colonne seguenti:
 
-    - **Attributo** a **MonthNumber** (non è disponibile spazio)
+    - **Attributo** a **MonthNumber** (non c'è spazio)
     - **Value** in **Target**
 
 1. Per preparare i valori della colonna **MonthNumber**, fare clic con il pulsante destro del mouse sull'intestazione di colonna **MonthNumber** e quindi scegliere **Sostituisci valori**.
-        
+
     *Verranno ora applicate le trasformazioni per produrre una colonna della data. La data verrà derivata dalle colonne **Year** e **MonthNumber**. La colonna verrà creata usando la funzionalità **Colonna da esempi**.*
 
-1. Nella finestra **Sostituisci valori** immettere **M** e lasciare **la casella** **Sostituisci con** vuoto.
+1. Nella finestra **Sostituisci valori** immettere **M** nella casella **Valore da trovare** e lasciare vuoto **Sostituisci con**.
 
 1. Modificare il tipo di dati della colonna **MonthNumber** in **Numero intero**.
 
-1. Nella scheda **Aggiungi** barra multifunzione Colonna selezionare l'icona **Colonna da esempi** all'interno del gruppo **Generale**.
+1. Nella scheda **Aggiungi colonna** della barra multifunzione selezionare l'icona **Colonna da esempi** all'interno del gruppo **Generale**.
 
     ![Immagine 5675](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image59.png)
 
 1. Si noti che la prima riga è relativa all'anno **2017** e al numero del mese **7**.
 
 1. Nella colonna **Column1**, nella prima cella della griglia, immettere **7/1/2017** e quindi premere **INVIO**.
-    
-    *La macchina virtuale usa le impostazioni regionali degli Stati Uniti, quindi questa data è infatti il 1 luglio 2017. Altre impostazioni internazionali possono richiedere **un valore 0** prima della data.*
+
+    *La macchina virtuale usa le impostazioni internazionali degli Stati Uniti, quindi questa data è il 1° luglio 2017. Altre impostazioni internazionali possono richiedere **un valore 0** prima della data.*
 
 1. Si noti che le celle della griglia vengono aggiornate con i valori stimati.
-    
-    *La funzionalità ha previsto in modo accurato che si stanno combinando i valori dalle colonne **Year** e **MonthNumber** .*
+
+    *La funzionalità ha stimato con precisione che si combinano valori dalle colonne **Year** e **MonthNumber** .*
 
 1. Si noti anche la formula visualizzata sopra la griglia della query.
 
@@ -389,7 +370,7 @@ In questa attività verrà configurata la query **Targets**.
     - **TargetMonth** come data
 
 1. Per moltiplicare i valori di **destinazione** per 1000, selezionare l'intestazione Di colonna di destinazione e quindi nella scheda **Trasforma** barra multifunzione, dall'interno del gruppo **Numero colonna** selezionare **Standard** e quindi **Moltiplica**.****
-    
+
     *Si ricorderà che i valori di destinazione sono stati archiviati come migliaia.*
 
      ![Immagine 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
@@ -398,7 +379,7 @@ In questa attività verrà configurata la query **Targets**.
 
 1. Nella barra di stato verificare che la query includa tre colonne e 809 righe.
 
-### **Attività 9: Configurare la query ColorFormats**
+## **Configurare la query ColorFormats**
 
 In questa attività verrà configurata la query **ColorFormats**.
 
@@ -410,14 +391,14 @@ In questa attività verrà configurata la query **ColorFormats**.
 
 1. Nella barra di stato verificare che la query includa tre colonne e 10 righe.
 
-### **Attività 10: Aggiornare la query Product**
+## **Aggiornare la query Product**
 
 In questa attività verrà aggiornata la query **Product** tramite l'unione della query **ColorFormats**.
 
 1. Selezionare la query **Product**.
 
 1. Per unire la query **ColorFormats** , nella scheda **Barra** multifunzione Home selezionare **la freccia** combinata verso il basso e quindi selezionare **Merge Query**.
-    
+
     *Il merge delle query consente l'integrazione di dati, in questo caso da origini dati diverse (SQL Server e un file CSV).*
 
      ![Immagine 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
@@ -433,7 +414,7 @@ In questa attività verrà aggiornata la query **Product** tramite l'unione dell
 1. Nella griglia della query **ColorFormats** selezionare l'intestazione di colonna **Color**.
 
 1. Quando viene visualizzata la finestra **Livelli di privacy** , per ognuna delle due origini dati, nell'elenco a discesa corrispondente selezionare **Organizzazione**, quindi **Salva**.
-    
+
     *I livelli di privacy possono essere configurati per l'origine dati per determinare se i dati possono essere condivisi tra origini. Se necessario, l'impostazione di ogni origine dati come **organizzazione** consente loro di condividere i dati. Le origini dati private non possono mai essere condivise con altre origini dati. Non significa che i dati privati non possono essere condivisi; significa che il motore di Power Query non può condividere i dati tra le origini.*
 
      ![Immagine 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
@@ -447,7 +428,7 @@ In questa attività verrà aggiornata la query **Product** tramite l'unione dell
 
 1. Nella barra di stato verificare che la query includa ora otto colonne e 397 righe.
 
-### **Attività 11: Aggiornare la query ColorFormats**
+## **Aggiornare la query ColorFormats**
 
 In questa attività si aggiornerà la query **ColorFormats** per disabilitarne il caricamento.
 
@@ -458,12 +439,12 @@ In questa attività si aggiornerà la query **ColorFormats** per disabilitarne i
      ![Immagine 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
 1. Nella finestra **Proprietà query** deselezionare la casella di controllo **Abilita caricamento nel report**.
-    
+
     *La disabilitazione del carico significa che non verrà caricata come tabella nel modello di dati. Questa operazione viene eseguita perché la query è stata unita alla query **Product** , abilitata per il caricamento nel modello di dati.*
 
      ![Immagine 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
-### **Attività 12: Completare il lab**
+### **Completare il lab**
 
 In questa attività si completerà il lab.
 
@@ -479,12 +460,12 @@ In questa attività si completerà il lab.
     - ColorFormats (che non verrà caricata nel modello di dati)
 
 1. Per eseguire il caricamento nel modello di dati, nella visualizzazione Backstage **File** selezionare **Chiudi e applica**.
-    
+
     *Tutte le query abilitate per il caricamento sono ora caricate nel modello di dati.*
 
      ![Immagine 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-1. Nel riquadro **Campi** (a destra) si notino le sette tabelle caricate nel modello di dati.
+1. Nel riquadro **Dati** (situato a destra), si notino le sette tabelle caricate nel modello di dati.
 
      ![Immagine 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
