@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Eseguire Analisi avanzate in Power BI
+  title: Eseguire Advanced Analytics con oggetti visivi per intelligenza artificiale
   module: Perform Data Analysis in Power BI
 ---
 
