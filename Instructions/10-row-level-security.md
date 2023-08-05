@@ -16,7 +16,7 @@ Contenuto del lab:
 - Applicare la sicurezza a livello di riga
 - Scegliere tra metodi dinamici e statici
 
-**Questo lab richiede circa 45 minuti.**
+**Questo lab dovrebbe richiedere circa 20 minuti.**
 
 ## **Operazioni preliminari**
 
