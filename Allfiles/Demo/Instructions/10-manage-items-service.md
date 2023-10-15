@@ -1,8 +1,3 @@
----
-demo:
-    title: 'Manage files and datasets in Power BI'
-    module: 'Deploy and manage Power BI service items'
----
 # Manage files and datasets in Power BI
 
 ## Prepare for gateway data refresh

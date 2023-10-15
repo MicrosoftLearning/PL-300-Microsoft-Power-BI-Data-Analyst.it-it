@@ -1,9 +1,4 @@
----
-demo:
-    title: 'Create measures using DAX in Power BI'
-    module: 'Create measures using DAX in Power BI'
----
-# Create measures using DAX in Power BI
+# Create measures using dax in Power BI
 
 > **Tip**: All calculations can be copied from the D:\PL300\Demo\Resources\Snippets-Demo-05.txt file.
 

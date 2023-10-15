@@ -1,9 +1,3 @@
----
-demo:
-    title: 'Setup demo environment'
-    module: 'Setup demo environment'
----
-
 # Demo Setup
 
 ## VM Setup

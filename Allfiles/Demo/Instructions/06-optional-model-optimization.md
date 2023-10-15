@@ -1,9 +1,3 @@
----
-demo:
-    title: '(Optional) Optimize model performance in Power BI'
-    module: 'Optimize model performance in Power BI'
----
-
 # (Optional) Optimize model performance
 
 ## Review a DirectQuery model design
