@@ -1,50 +1,50 @@
 ---
 demo:
-    title: 'Get data in Power BI'
-    module: 'Get data in Power BI'
+  "\_\_ title": Get data in Power BI
+  "\_\_ module": Get data in Power BI
 ---
-# Get data in Power BI
+# Recuperare i dati in Power BI
 
-## Start the development of a Power BI report
+## Iniziare a sviluppare un report di Power BI
 
-1. Open Power BI Desktop, and then dismiss the getting started page.
+1. Aprire Power BI Desktop e ignorare la pagina introduttiva.
 
-1. Save the file to the D:\PL300\Demo folder as Sales Analysis.
+1. Salvare il file nella cartella D:\PL300\Demo con il nome Sales Analysis.
 
-## Connect to a SQL Server database
+## Connettersi a un database di SQL Server
 
-1. “Get data” from SQL Server.
+1. "Recuperare i dati" da SQL Server.
 
-1. Connect to the database server name found in the MySettings.txt file, using Windows authentication.
+1. Connettersi al nome del server del database reperibile nel file MySettings.txt mediante l'autenticazione di Windows.
 
-1. Expand the TailspinToys2020-US database.
+1. Espandere il database TailspinToys2020-US.
 
-## Create queries based on database tables
+## Creare query basate su tabelle di database
 
-1. Select the Product table to preview the data.
+1. Selezionare la tabella Product per visualizzare l'anteprima dei dati.
 
-1. Check the Product table to create query.
+1. Selezionare la tabella Product per creare una query.
 
-1. Repeat the Sales table.
+1. Ripetere la tabella Sales.
 
-1. Click Transform Data.
+1. Fare clic su Trasforma dati.
 
-## Preview data
+## Anteprima dati
 
-1. Describe the Power Query Editor window layout, including the Queries pane, the Query Settings pane, the ribbon, the preview grid, and the status bar.
+1. Descrivere il layout della finestra dell'editor di Power Query, compreso il riquadro Query, il riquadro Impostazioni query, la barra multifunzione, la griglia di anteprima e la barra di stato.
 
-1. Point out the quality bar beneath the column headers and hover the cursor over it to reveal statistics about the column values.
+1. Indicare la barra di qualità sotto le intestazioni di colonna e passarvi sopra il cursore per rivelare le statistiche sui valori delle colonne.
 
-1. On the View ribbon tab, turn on Column Quality.
+1. Nella scheda Visualizza della barra multifunzione attivare Colonna qualità.
 
-1. Turn on Column Distribution and point out columns like ProductID (unique values) and ProductCategory (several duplicate values).
+1. Attivare Colonna distribuzione e indicare colonne come ProductID (valori univoci) e ProductCategory (diversi valori duplicati).
 
-1. Turn on Column Profile, and then select the ProductCategory column.
+1. Attivare Profilo colonna e selezionare la colonna ProductCategory.
 
-1. Point out the column statistics and distribution.
+1. Indicare le statistiche e la distribuzione della colonna.
 
-1. Turn back off the three options.
+1. Disattivare nuovamente le tre opzioni.
 
-1. Save the Power BI Desktop file, but do not apply changes.
+1. Salvare il file di Power BI Desktop, ma non applicare le modifiche.
 
-1. Leave the Power BI Desktop file open for the next demo.
+1. Lasciare aperto il file di Power BI Desktop per la prossima demo.

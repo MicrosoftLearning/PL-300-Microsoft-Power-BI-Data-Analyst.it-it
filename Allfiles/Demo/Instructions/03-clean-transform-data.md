@@ -1,8 +1,3 @@
----
-demo:
-    title: 'Clean, transform, and load data in Power BI'
-    module: 'Clean, transform, and load data in Power BI'
----
 # Clean, transform, and load data in Power BI
 
 ## Apply query transformations

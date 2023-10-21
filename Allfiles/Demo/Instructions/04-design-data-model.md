@@ -1,52 +1,52 @@
 ---
 demo:
-    title: 'Design a data model in Power BI'
-    module: 'Design a data model in Power BI'
+  "\_\_ title": Design a data model in Power BI
+  "\_\_ module": Design a data model in Power BI
 ---
-# Design a data model in Power BI
+# Progettare un modello di dati in Power BI
 
-## Review the model
+## Esaminare il modello
 
-1. In the Data pane, expand all tables to reveal all fields.
+1. Nel riquadro Dati espandere tutte le tabelle per visualizzare tutti i campi.
 
-1. In the Sales table, point out the OrderDate hierarchy, which was created automatically.
+1. Nella tabella Sales indicare la gerarchia OrderDate, che è stata creata automaticamente.
 
-1. Explain that a Date table will be created in the next demo.
+1. Spiegare che nella prossima demo verrà creata una tabella Date.
 
-1. In Model view, hover over the automatically-created relationship between the two tables.
+1. Nella vista Modello, passare il mouse sulla relazione creata automaticamente tra le due tabelle.
 
-1. Explain how filters will propagate from the Product table to the Sales table.
+1. Spiegare in che modo i filtri si propagano dalla tabella Product alla tabella Sales.
 
-## Create a hierarchy
+## Creare una gerarchia
 
-1. Create a hierarchy based on the Product table Category column.
+1. Creare una gerarchia basata sulla tabella Product, colonna Category.
 
-1. Rename the hierarchy as Products.
+1. Rinominare la gerarchia in Products.
 
-1. Add the Product column as the second level.
+1. Aggiungere la colonna Product come secondo livello.
 
-## Set model properties
+## Impostare le proprietà dei modelli
 
-1. Hide both the ProductID columns.
+1. Nascondere entrambe le colonne ProductID.
 
-1. Format the Quantity column to use the thousands separator.
+1. Formattare la colonna Quantity per usare il separatore delle migliaia.
 
-1. Multi-select the Sales and Unit Price columns, and format them to use two decimal places.
+1. Selezionare contemporaneamente le colonne Sales e Unit Price e formattarle per usare due posizioni decimali.
 
-## Validate the model design with a matrix visual
+## Convalidare il progetto del modello con un oggetto visivo matrice
 
-1. In Report view, add a matrix visual to the page, and then size it to fill the entire page.
+1. Nella vista Report, aggiungere un oggetto visivo matrice alla pagina, quindi dimensionarlo per occupare l'intera pagina.
 
-1. Add the Products hierarchy to the rows, and then add the Quantity, Sales, and Unit Price fields.
+1. Aggiungere la gerarchia Products alle righe, quindi aggiungere i campi Quantity, Sales e Unit Price.
 
-1. Expand all levels of the Products hierarchy.
+1. Espandere tutti i livelli della gerarchia Products.
 
-1. Point out that the Unit Price values are the sum of prices, which is not correct.
+1. Specificare che i valori Unit Price sono la somma dei prezzi, il che non è corretto.
 
-1. In the Data pane, select the Unit Price field, and configure its summarization to use Average.
+1. Nel riquadro Dati selezionare il campo Unit Price e configurarne il riepilogo per l'uso della media.
 
-1. Remove the Sum of Unit Price column from the matrix visual, and then add the Unit Price field back again.
+1. Rimuovere la colonna Sum of Unit Price dall'oggetto visivo matrice, quindi aggiungere nuovamente il campo Unit Price.
 
-1. Save the Power BI Desktop file.
+1. Salvare il file di Power BI Desktop.
 
-1. Leave the Power BI Desktop file open for the next demo.
+1. Lasciare aperto il file di Power BI Desktop per la prossima demo.
