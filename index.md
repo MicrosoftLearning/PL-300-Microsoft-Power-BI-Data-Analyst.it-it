@@ -10,18 +10,16 @@ In basso sono elencati i collegamenti ipertestuali a tutte le demo e a tutti gli
 
 ## Lab
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions'" %}
+{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
 | Sezione | Lab |
-| --- | --- | 
+| --- | --- |
 {% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
-<!---
-## Demos
+## Demo
 
 {% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Section | Demo |
-| --- | --- | 
-{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
+| Sezione | Lab |
+| --- | --- |
+{% for activity in demos  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
----> 
