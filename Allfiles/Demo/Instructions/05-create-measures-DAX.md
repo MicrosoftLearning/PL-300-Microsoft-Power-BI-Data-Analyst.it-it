@@ -1,84 +1,79 @@
----
-demo:
-  "\_\_ title": Create measures using DAX in Power BI
-  "\_\_ module": Create measures using DAX in Power BI
----
-# Creare misure usando DAX in Power BI
+# Create measures using dax in Power BI
 
-> **Suggerimento**: tutti i calcoli possono essere copiati dal file di D:\PL300\Demo\Resources\Snippets-Demo-05.txt.
+> **Tip**: All calculations can be copied from the D:\PL300\Demo\Resources\Snippets-Demo-05.txt file.
 
-## Creare una tabella calcolata
+## Create a calculated table
 
-1. Creare una tabella calcolata usando l'espressione seguente:
+1. Create a calculated table by using the following expression:
 
 ```dax
 Date = CALENDARAUTO()
 ```
 
-1. Passare alla visualizzazione dati ed esaminare la tabella, che comprende una colonna a data singola.
+1. Switch to Data view, and review the table, which comprises a single date column.
 
-Creare colonne calcolate
+Create calculated columns
 
-1. Aggiungere una colonna calcolata alla tabella Date:
+1. Add a calculated column to the Date table:
 
 ```dax
 Year = "CY" & YEAR('Date'[Date])
 ```
 
-1. Aggiungere un'altra colonna calcolata alla tabella Date:
+1. Add an additional calculated column to the Date table:
 
 ```dax
 Month = FORMAT('Date'[Date], "YYYY-MM")
 ```
 
-1. Nella vista Modello creare una relazione trascinando la tabella Date, colonna Date sulla tabella Sales, colonna OrderDate.
+1. In Model view, create a relationship by dragging the Date table Date column to the Sales table OrderDate column.
 
-1. Nascondere la tabella Sales, colonna OrderDate.
+1. Hide the Sales table OrderDate column.
 
-1. Nella tabella Date creare la gerarchia Calendar, con i livelli Year e Month.
+1. In the Date table, create the Calendar hierarchy, with Year and Month levels.
 
-1. Nella vista Report contrassegnare la tabella Date come tabella delle date, usando la colonna Date.
+1. In Report view, mark the Date table as a date table using the Date column.
 
-1. Nell'oggetto visivo matrice rimuovere la gerarchia Products e sostituirla con la gerarchia Calendar.
+1. In the matrix visual, remove the Products hierarchy, and then replace it with the Calendar hierarchy.
 
-1. Aggiungere una colonna calcolata alla tabella Sales:
+1. Add a calculated column to the Sales table:
 
 ```dax
 Cost = 'Sales'[Quantity] * RELATED('Product'[Cost])
 ```
 
-1. Formattare la colonna Cost con due cifre decimali.
+1. Format the Cost column to two decimal places.
 
-## Creare una misura rapida
+## Create a Quick Measure
 
-1. Aggiungere una misura rapida alla tabella Sales, sottraendo la colonna Cost dalla colonna Profit.
+1. Add a quick measure to the Sales table, subtracting the Cost column from Profit column.
 
-1. Rinominare la misura Profit.
+1. Rename the measure as Profit.
 
-1. Spiegare che la misura non memorizza dati nel modello.
+1. Explain that the measure does not store data in the model.
 
-Creare misure regolari
+Create regular measures
 
-1. Aggiungere una misura alla tabella Sales:
+1. Add a measure to the Sales table:
 
 ```dax
 Profit Margin = DIVIDE([Profit], SUM('Sales'[Sales]))
 ```
 
-1. Formattare la colonna Profit Margin come percentuale.
+1. Format the Profit Margin column as a percentage.
 
-1. Aggiungere un'altra misura alla tabella Sales:
+1. Add another measure to the Sales table:
 
 ```dax
 Sales YTD = TOTALYTD(SUM('Sales'[Sales]), 'Date'[Date])
 ```
 
-1. Formattare la colonna Sales YTD con due cifre decimali.
+1. Format the Sales YTD column to two decimal places.
 
-## Convalidare i calcoli con l'oggetto visivo matrice
+## Validate the calculations with the matrix visual
 
-1. Aggiungere i campi Cost, Profit, Profit Margin e Sales YTD all'oggetto visivo matrice.
+1. Add the Cost, Profit, Profit Margin, and Sales YTD fields to the matrix visual.
 
-1. Salvare il file di Power BI Desktop.
+1. Save the Power BI Desktop file.
 
-1. Lasciare aperto il file di Power BI Desktop per una demo successiva.
+1. Leave the Power BI Desktop file open for a later demo.
