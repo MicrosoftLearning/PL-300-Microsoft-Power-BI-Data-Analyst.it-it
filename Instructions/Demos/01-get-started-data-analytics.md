@@ -11,7 +11,7 @@ lab:
 
 1. Fare clic su uno dei due riquadri per selezionare il report Sales Analysis.
 
-## Esplorare il report
+## Esplorazione del report
 
 1. Interagire con vari filtri dei dati e oggetti visivi nelle pagine.
 
@@ -27,4 +27,4 @@ lab:
 
 1. Tornare alla pagina iniziale del servizio Power BI e comprimere l'area di lavoro.
 
-> **Nota**: questa soluzione pre-sviluppata non verrà usata di nuovo.
+> **Nota**: questa soluzione pre-sviluppata non verrà più usata.

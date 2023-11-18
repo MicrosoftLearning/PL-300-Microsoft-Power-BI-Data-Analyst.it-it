@@ -25,7 +25,7 @@ lab:
 
 1. Nel servizio Power BI per l'istruttore, ricaricare (F5) la pagina delle impostazioni del set di dati.
 
-1. Espandere la sezione Connessione gateway e far notare che non è installato alcun gateway.
+1. Espandere la sezione Gateway Connessione ion e indicare che non è installato alcun gateway.
 
 1. Usare l'elenco a discesa dei download (situato in alto a destra) e selezionare Gateway dati.
 
@@ -47,10 +47,10 @@ lab:
 
 1. Prima di aggiornare il set di dati, aprire il dashboard **Sales Monitoring**.
 
-1. Modificare i dettagli del riquadro Sales, Profit Margin per visualizzare l'ora dell'ultimo aggiornamento.
+1. Modificare i dettagli del riquadro Sales, Profit Margin per visualizzare l'ora dell'ultimo aggiornamento.
 
-1. Fare clic con il pulsante destro del mouse sul `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` file e quindi eseguire con PowerShell. *Questo script caricherà i dati di vendita di dicembre 2020 nel database.*
+1. Fare clic con il pulsante destro del mouse sul `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` file e quindi eseguire con PowerShell. *Questo script caricherà i dati delle vendite di dicembre 2020 nel database.*
 
-1. Nel servizio Power BI per il docente, dal riquadro di spostamento aggiornare il set di dati **Sales Analysis**.
+1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aggiornare il **set di dati Sales Analysis**.
 
-1. Al termine dell'aggiornamento, indica come viene visualizzato il riquadro del dashboard **di dicembre 2020** e che l'ora di aggiornamento è **ORA**.
+1. Al termine dell'aggiornamento, indica come viene visualizzato il riquadro **del dashboard dicembre 2020** e che l'ora di aggiornamento è **ORA**.

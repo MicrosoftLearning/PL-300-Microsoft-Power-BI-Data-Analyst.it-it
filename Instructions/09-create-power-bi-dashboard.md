@@ -9,18 +9,18 @@ lab:
 
 ## **Presentazione del lab**
 
-In questo lab si creerà il dashboard **Sales Monitoring** nel servizio Power BI usando un report esistente.
+In questo lab si creerà il **dashboard Sales Monitoring** nel servizio Power BI usando un report esistente.
 
 Contenuto del lab:
 
 - Aggiungere oggetti visivi a un dashboard
 - Usare Domande e risposte per creare riquadri del dashboard
 
-**Questo lab deve richiedere circa 30 minuti.**
+**Questo lab dovrebbe richiedere circa 30 minuti.**
 
-## **Introduzione - Accedere**
+## **Introduzione: accedere**
 
-In questa attività verrà configurato l'ambiente per il lab accedendo a Power BI.
+In questa attività si configurerà l'ambiente per il lab accedendo a Power BI.
 
 *Nota: se si è già eseguito l'accesso a Power BI, passare all'attività successiva.*
 
@@ -30,7 +30,7 @@ In questa attività verrà configurato l'ambiente per il lab accedendo a Power B
 
 1. Nella finestra del browser Microsoft Edge passare a **https://app.powerbi.com**.
 
-    *Suggerimento: è anche possibile usare l'elemento preferito Servizio Power BI sulla barra dei preferiti di Microsoft Edge.*
+    *Suggerimento: è anche possibile usare il servizio Power BI preferito sulla barra preferiti di Microsoft Edge.*
 
 1. Completare il processo di accesso con le credenziali dell'organizzazione (o quelle fornite all'utente). Se in Microsoft Edge viene chiesto se restare connessi, selezionare **Sì**.
 
@@ -38,25 +38,25 @@ In questa attività verrà configurato l'ambiente per il lab accedendo a Power B
 
      ![Figura 22](Linked_image_Files/07-my-workspace-new.png)
 
-## **Introduzione: aprire il report**
+## **Introduzione : aprire il report**
 
-In questa attività verrà configurato l'ambiente per il lab aprendo il report iniziale.
+In questa attività si configurerà l'ambiente per il lab aprendo il report iniziale.
 
-*Importante: se si continua dal lab precedente (e il lab è stato completato correttamente), non completare questa attività; continuare invece dall'attività successiva.*
+*Importante: se si continua dal lab precedente (e il lab è stato completato correttamente), non completare questa attività; Continuare invece dall'attività successiva.*
 
-1. Aprire Power BI Desktop.
+1. Apri Power BI Desktop.
     
-    *Per impostazione predefinita, la finestra di dialogo Introduzione viene aperta davanti a Power BI Desktop. Accedere e quindi chiudere il popup.*
+    *Per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. Accedere e quindi chiudere il popup.*
 
-    ![icona Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+    ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. Per aprire il file di Power BI Desktop iniziale, selezionare il file **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
 
-1. Nella finestra **Apri** passare alla cartella **D:\PL300\Labs\09-create-power-bi-dashboard\Starter** e aprire il file **Sales Analysis** .
+1. **Nella finestra Apri** passare alla **cartella D:\PL300\Labs\09-create-power-bi-dashboard\Starter** e aprire il **file Sales Analysis**.
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione. *Questo messaggio avvisa il fatto che le query non sono state applicate al caricamento come tabelle modello. Le query verranno applicate più avanti nel lab.*
+1. Si noti il messaggio di avviso giallo sotto la barra multifunzione. *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti nel lab.*
     
     *Per ignorare il messaggio di avviso, a destra del messaggio di avviso giallo selezionare **X**.*
 
@@ -64,13 +64,13 @@ In questa attività verrà configurato l'ambiente per il lab aprendo il report i
 
 ## **Introduzione: pubblicare il report**
 
-In questa attività verrà configurato l'ambiente per il lab creando un set di dati. *Se il set di dati è già stato pubblicato, passare all'attività successiva.*
+In questa attività si configurerà l'ambiente per il lab creando un set di dati. *Se il set di dati è già stato pubblicato, passare all'attività successiva.*
 
-1. Nella finestra del browser Microsoft Edge, nella servizio Power BI passare a **Area di lavoro personale**.
+1. Nella finestra del browser Microsoft Edge, nella servizio Power BI, passare a **Area di lavoro** personale.
 
 1. Selezionare **Carica > Sfoglia**.
 
-1. Passare alla cartella **D:\PL300\Labs\09-create-power-bi-dashboard\Starter** .
+1. Passare alla **cartella D:\PL300\Labs\09-create-power-bi-dashboard\Starter** .
 
 1. Selezionare il file **Sales Analysis.pbix** e quindi selezionare **Apri**.
 
@@ -78,9 +78,9 @@ In questa attività verrà configurato l'ambiente per il lab creando un set di d
 
 ## **Creare un dashboard**
 
-In questa attività si creerà il dashboard **di Sales Monitoring** . Si aggiungerà un oggetto visivo dal report e si aggiungerà un riquadro in base a un URI di dati dell'immagine e si userà Domande e risposte per creare un riquadro.
+In questa attività si creerà il **dashboard Di monitoraggio** vendite. Si aggiungerà un oggetto visivo dal report e si aggiungerà un riquadro in base a un URI di dati dell'immagine e si userà Domande e risposte per creare un riquadro.
 
-1. Nella servizio Power BI aprire il report **Analisi vendite**.
+1. Nel servizio Power BI aprire il **report Sales Analysis**.
 
 1. Nella pagina **Overview** impostare il filtro dei dati **Year** su **FY2020**.
 
@@ -88,17 +88,17 @@ In questa attività si creerà il dashboard **di Sales Monitoring** . Si aggiung
 
 1. Impostare il filtro dei dati **Region** su **Select All**.
 
-    *Gli oggetti visivi aggiunti vengono impostati con il contesto di filtro al momento del pin. Se l'oggetto visivo sottostante cambia, è necessario aggiornare anche il riquadro del dashboard. Per i filtri basati sul tempo, è consigliabile usare un filtro dei dati di data relativo (o Q&A usando una domanda basata sul tempo relativa).*
+    *Gli oggetti visivi aggiunti vengono impostati con il contesto di filtro al momento del pin. Se l'oggetto visivo sottostante cambia, è necessario aggiornare anche il riquadro del dashboard. Per i filtri basati sul tempo, è consigliabile usare un filtro dei dati di data relativo (o Q&A usando una domanda relativa basata sul tempo).*
 
-1. Per creare un dashboard e aggiungere un oggetto visivo, passare il cursore sull'oggetto visivo **Sales and Profit Margin by Month** (colonna/riga) e selezionare il pushpin.
+1. Per creare un dashboard e aggiungere un oggetto visivo, passare il cursore sull'oggetto **visivo Sales and Profit Margin by Month** (colonna/riga) e selezionare la puntina da disegno.
 
     ![Immagine 43](Linked_image_Files/09-create-power-bi-dashboard_image18.png)
 
-1. Nella finestra **Aggiungi al dashboard** immettere **Sales Monitoring** nella casella **Nome dashboard** e quindi selezionare **Aggiungi**.
+1. **Nella finestra Aggiungi al dashboard** immettere **Sales Monitoring** nella **casella Nome** dashboard e quindi selezionare **Aggiungi**.
 
     ![Immagine 3](Linked_image_Files/09-create-power-bi-dashboard_image19.png)
 
-1. Aprire **l'area di lavoro personale** e aprire il dashboard **di Monitoraggio vendite** .
+1. Aprire **Area di lavoro** personale e aprire il **dashboard Di monitoraggio** vendite.
 
 1. Si noti che il dashboard ha un solo riquadro.
 
@@ -110,13 +110,13 @@ In questa attività si creerà il dashboard **di Sales Monitoring** . Si aggiung
 
     ![Immagine 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
-1. Selezionare una delle domande suggerite sotto la casella Q&A, in caselle blu e esaminare la risposta.
+1. Selezionare una qualsiasi delle domande suggerite sotto la casella Q&A, in caselle blu ed esaminare la risposta.
 
 1. Rimuovere tutto il testo dalla casella Q&A e immettere quanto segue: **Sales YTD**
 
-1. Si noti la risposta **(Vuoto)**.
+1. Si noti la risposta **(Blank)**.
     
-    *È possibile ricordare che è stata aggiunta la misura **Sales YTD** nel lab **Crea calcoli DAX avanzati in Power BI Desktop** lab. Questa misura è un'espressione di Time Intelligence e quindi richiede un filtro nella tabella **Date** per produrre un risultato.*
+    *È possibile ricordare di aver aggiunto la **misura Sales YTD** nel **lab Creare calcoli DAX avanzati in Power BI Desktop** . Questa misura è un'espressione di Business Intelligence per le gerarchie temporali e quindi richiede un filtro sulla **tabella Date** per produrre un risultato.*
 
     ![Immagine 14](Linked_image_Files/09-create-power-bi-dashboard_image25.png)
 
@@ -134,15 +134,15 @@ In questa attività si creerà il dashboard **di Sales Monitoring** . Si aggiung
 
 1. Per tornare al dashboard, nell'angolo superiore sinistro selezionare **Esci da Q&amp;A**.
 
-1. Per aggiungere il logo aziendale, nella barra dei menu selezionare **Modifica** e quindi selezionare **Aggiungi un riquadro**.
+1. Per aggiungere il logo aziendale, nella barra dei menu selezionare **Modifica** e quindi aggiungi **riquadro**.
     
     *L'uso di questa tecnica per aggiungere un riquadro del dashboard consente di migliorare il dashboard con contenuti multimediali, inclusi contenuti Web, immagini, caselle di testo formattate in modo avanzato e video (usando i collegamenti YouTube o Vimeo).*
 
-1. Nel riquadro **Aggiungi un** riquadro (situato a destra), selezionare il riquadro **Immagine** , quindi **Avanti**.
+1. **Nel riquadro Aggiungi riquadro riquadro** (situato a destra), selezionare il **riquadro Immagine** e quindi **Avanti**.
 
-1. Nel riquadro **Aggiungi riquadro immagine** immettere **l'URL** completo trovato nel file **D:\PL300\Resources\AdventureWorksLogo_DataURL.txt** e quindi **Applica**.
+1. **Nella casella URL** del **riquadro Aggiungi riquadro** immagine immettere l'URL completo trovato nel **file D:\PL300\Resources\AdventureWorksLogo_DataURL.txt** e quindi **applica**.
     
-    *È possibile incorporare un'immagine usando il relativo URL oppure usando un URL di dati, che incorpora il contenuto inline.*
+    *È possibile incorporare un'immagine usando il relativo URL oppure un URL di dati che incorpora il contenuto inline.*
 
 1. Per ridimensionare il riquadro del logo, trascinare l'angolo inferiore destro e ridimensionare il riquadro in modo che abbia una larghezza di un'unità e un'altezza di due unità.
     
@@ -160,25 +160,25 @@ In questa attività verranno modificati i dettagli di due riquadri.
 
     ![Immagine 50](Linked_image_Files/09-create-power-bi-dashboard_image36.png)
 
-1. Nel riquadro **Dettagli riquadro** (situato a destra), nella casella **Sottotitolo** immettere **FY2020** e quindi selezionare **Applica**.
+1. **Nel riquadro Dettagli** riquadro (situato a destra), nella **casella Sottotitolo** immettere **FY2020** e quindi selezionare **Applica**.
 
 1. Si noti che il riquadro **Sales YTD** visualizza un sottotitolo.
 
     ![Figura 21](Linked_image_Files/09-create-power-bi-dashboard_image39.png)
 
-1. Modificare i dettagli per il riquadro **Sales, Profit Margin**.
+1. Modificare i dettagli **del riquadro Vendite, Profit Margin** .
 
-1. Nel riquadro **Dettagli riquadro** , nella sezione **Funzionalità** **selezionare Visualizza l'ultima ora di aggiornamento** e quindi **Applica**.
+1. **Nel riquadro Dettagli** riquadro, nella **sezione Funzionalità**, selezionare **Visualizza ora ultimo aggiornamento** e quindi **Applica**.
 
     ![Figura 22](Linked_image_Files/09-create-power-bi-dashboard_image40.png)
 
 1. Si noti che il riquadro descrive l'ora dell'ultimo aggiornamento effettuato durante il caricamento del modello di dati in Power BI Desktop.
 
-*Si aggiornerà il set di dati nell'esercizio successivo. A seconda dei dati e del report, è possibile eseguire un aggiornamento dei dati adhoc in qualsiasi momento o impostare una pianificazione. Tuttavia, gli aggiornamenti pianificati richiedono i gateway che non sono in grado di configurare per questo lab. Quindi, da Power BI Desktop, si eseguirà un aggiornamento manuale dei dati e quindi si caricherà il file nell'area di lavoro.*
+*Il set di dati verrà aggiornato nell'esercizio successivo. A seconda dei dati e dei report, è possibile eseguire un aggiornamento dati ad hoc in qualsiasi momento o impostare una pianificazione. Tuttavia, gli aggiornamenti pianificati richiedono che i gateway non siano in grado di configurare per questo lab. Da Power BI Desktop si eseguirà quindi un aggiornamento manuale dei dati e quindi si caricherà il file nell'area di lavoro.*
 
 ## **Aggiornare il set di dati**
 
-In questo esercizio si caricheranno prima i dati degli ordini di vendita per giugno 2020 nel database **AdventureWorksDW2020**. Si aprirà quindi il file Power BI Desktop, si eseguirà un aggiornamento dei dati e quindi si caricherà il file nell'area di lavoro.
+In questo esercizio si caricheranno prima i dati degli ordini di vendita per giugno 2020 nel database **AdventureWorksDW2020**. Si aprirà quindi il file di Power BI Desktop, si eseguirà un aggiornamento dei dati e quindi si caricherà il file nell'area di lavoro.
 
 ## **Aggiornare il database del lab**
 
@@ -196,15 +196,15 @@ In questa attività verrà eseguito uno script di PowerShell per aggiornare i da
 
 ## **Aggiornare il file di Power BI Desktop**
 
-In questa attività si aprirà il file Sales **Analysis** Power BI Desktop, eseguire un aggiornamento dei dati e quindi caricare il file nell'area di lavoro **Analisi vendite**.
+In questa attività si aprirà il **file sales analysis** di Power BI Desktop, si eseguirà un aggiornamento dei dati e quindi si caricherà il file nell'area **di lavoro Sales Analysis** .
 
-1. Nel Power BI Desktop file, nel riquadro **Dati** fare clic con il pulsante destro del mouse sulla tabella **Sales** e quindi scegliere **Aggiorna dati**.
+1. Nel riquadro Dati del file di Power BI Desktop fare clic con il **pulsante destro del mouse sulla **tabella Sales** e quindi scegliere **Aggiorna dati**.**
 
     ![Immagine 55](Linked_image_Files/09-create-power-bi-dashboard_image47.png)
 
 1. Al termine dell'aggiornamento, salvare il file di Power BI Desktop.
 
-1. Per pubblicare il file nell'area di lavoro, nella scheda **Home** della barra multifunzione **** selezionare **Pubblica** e quindi selezionare **Seleziona** per pubblicare.
+1. Per pubblicare il file nell'area di lavoro, nella scheda Home della **barra multifunzione, dall'interno del **gruppo Condividi** selezionare **Pubblica** e quindi selezionare **Seleziona** per** pubblicare.
 
     ![Immagine 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
@@ -218,17 +218,17 @@ In questa attività si aprirà il file Sales **Analysis** Power BI Desktop, eseg
 
 In questa attività si esaminerà il dashboard per notare le vendite aggiornate.
 
-1. Nella finestra del browser Microsoft Edge aprire servizio Power BI e quindi esaminare il dashboard **di Monitoraggio vendite** **nell'area di lavoro personale**.
+1. Nella finestra del browser Microsoft Edge aprire servizio Power BI e quindi esaminare il **dashboard Monitoraggio** vendite in **Area di lavoro** personale.
 
-2. Nel riquadro **Sales, Profit Margin** , in linea con il sottotitolo, si noti che i dati sono **stati aggiornati: NOW**.
+2. **Nel riquadro Sales, Profit Margin**, in linea con il sottotitolo, si noti che i dati sono stati **Aggiornati: NOW**.
 
-3. Si noti anche che è presente una colonna per **il 2020 Jun**.
+3. Si noti anche che ora è presente una colonna per **jun** 2020.
     
     *Se i dati relativi a giugno 2020 non vengono visualizzati, potrebbe essere necessario premere **F5** per ricaricare il Web browser.*
 
     ![Immagine 33](Linked_image_Files/09-create-power-bi-dashboard_image50.png)
 
-### **Completare il lab**
+### **Fine**
 
 In questa attività si completerà il lab.
 

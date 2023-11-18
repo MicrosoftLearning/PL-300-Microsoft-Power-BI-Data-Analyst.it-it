@@ -3,9 +3,9 @@ lab:
   "\_\_ title": Create measures using DAX in Power BI
   "\_\_ module": Create measures using DAX in Power BI
 ---
-# Creare misure usando DAX in Power BI
+# Creare misure con DAX in Power BI
 
-> **Suggerimento**: tutti i calcoli possono essere copiati dal file di D:\PL300\Demo\Resources\Snippets-Demo-05.txt.
+> **Suggerimento**: tutti i calcoli possono essere copiati dal file D:\PL300\Demo\Resources\Snippets-Demo-05.txt.
 
 ## Creare una tabella calcolata
 

@@ -6,12 +6,12 @@ lab:
 
 # Configurazione della demo
 
-## Configurazione della macchina virtuale
+## Installazione della macchina virtuale
 
 1. Accedere all'ambiente della macchina virtuale usando l'account Studente.
 
-1. Aprire Microsoft Edge, quindi passare a <https://powerbi.com> e accedere usando l'account docente.
-    > **Suggerimento**: se viene richiesto di modificare la password, assicurarsi di registrarla nel file D:\PL300\Demo\Setup\MySettings.txt.
+1. Aprire Microsoft Edge, quindi passare a <https://powerbi.com> e accedere usando l'account dell'insegnante.
+    > **Suggerimento**: se viene richiesto di modificare la password, assicurarsi di registrarla nel file D:\PL300\Demo\Setup\My Impostazioni.txt.
 
 1. Nel servizio Power BI, accettare la versione di valutazione di Power BI Pro.
 
@@ -33,4 +33,4 @@ lab:
 
 1. Chiudere Power BI Desktop.
 
-> **Nota**: gli asset demo sono disponibili nel repository di Power BI PL-300 Analista dei dati [GitHub](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo).
+> **Nota**: gli asset demo sono disponibili in PL-300 Power BI Analista dei dati [Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo) GitHub.
