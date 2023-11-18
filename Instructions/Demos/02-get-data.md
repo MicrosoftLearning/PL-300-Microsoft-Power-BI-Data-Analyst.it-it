@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+demo:
+  title: Recuperare i dati in Power BI
+  module: Get data in Power BI
 ---
+
 # Recuperare i dati in Power BI
 
 ## Iniziare a sviluppare un report di Power BI

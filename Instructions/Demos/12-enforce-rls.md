@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Enforce Row-level security in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: Applicare la sicurezza a livello di riga in Power BI
+  module: Deploy and manage Power BI service items
 ---
+
 # Applicare la sicurezza a livello di riga in Power BI
 
 ## Aggiungere una tabella di sicurezza al modello
