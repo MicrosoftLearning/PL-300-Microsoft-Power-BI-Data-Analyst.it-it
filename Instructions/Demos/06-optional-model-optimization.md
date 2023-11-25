@@ -30,9 +30,9 @@ lab:
 
 1. Nella scheda Visualizza della barra multifunzione mostrare il riquadro Analizzatore prestazioni.
 
-1. Aggiornare gli oggetti visivi e quindi espandere l'oggetto visivo Filtro dei dati e Vendite per mese.
+1. Aggiornare gli oggetti visivi e quindi espandere l'oggetto visivo Sales by Month e Sales by Month.
 
-1. Indica che usavano la modalità DirectQuery (i dati sono stati richiesti dall'origine dati).
+1. Indicare che è stata usata la modalità DirectQuery (i dati sono stati richiesti dall'origine dati).
 
 ## Configurare le tabelle di archiviazione doppie
 
@@ -78,4 +78,4 @@ lab:
 
 1. Chiudere Power BI Desktop.
 
-> **Nota**: questa soluzione di Power BI Desktop non verrà usata di nuovo.
+> **Nota**: questa soluzione Power BI Desktop non verrà più usata.

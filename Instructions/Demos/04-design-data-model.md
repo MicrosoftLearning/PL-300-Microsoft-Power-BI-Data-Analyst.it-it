@@ -3,7 +3,7 @@ lab:
   "\_\_ title": Design a data model in Power BI
   "\_\_ module": Design a data model in Power BI
 ---
-# Progettare un modello di dati in Power BI
+# Progettazione di un modello di dati in Power BI
 
 ## Esaminare il modello
 
@@ -43,7 +43,7 @@ lab:
 
 1. Specificare che i valori Unit Price sono la somma dei prezzi, il che non è corretto.
 
-1. Nel riquadro Dati selezionare il campo Unit Price e configurarne il riepilogo per l'uso della media.
+1. Nel riquadro Dati selezionare il campo Prezzo unitario e configurarne il riepilogo in modo da usare Average.
 
 1. Rimuovere la colonna Sum of Unit Price dall'oggetto visivo matrice, quindi aggiungere nuovamente il campo Unit Price.
 

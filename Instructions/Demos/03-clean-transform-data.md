@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": 'Clean, transform, and load data in Power BI'
-  "\_\_ module": 'Clean, transform, and load data in Power BI'
+demo:
+  title: 'Pulire, trasformare e caricare i dati in Power BI'
+  module: 'Clean, transform, and load data in Power BI'
 ---
+
 # Pulire, trasformare e caricare i dati in Power BI
 
 ## Applicare trasformazioni alle query
@@ -33,7 +34,7 @@ lab:
 
     - ProductID
 
-    - Quantity
+    - Quantità
 
     - UnitPrice
 
@@ -55,7 +56,7 @@ lab:
 
 1. Selezionare la query Product, quindi unirla alla query ProductCost, collegando le colonne SKU.
 
-1. Nella finestra Livelli di privacy impostare il livello della privacy per D:\ su Aziendale.
+1. Nella finestra Livelli di privacy impostare il livello di privacy per D:\ su Organizzazione.
 
 1. Espandere la colonna ProductCost per includere la colonna ProductCost (dalla query ProductCost).
 
@@ -65,9 +66,9 @@ lab:
 
 1. Nel riquadro Query disabilitare la query ProductCost.
 
-1. Nella scheda Home della barra multifunzione fare clic sull'icona Chiudi & Applica.
+1. Nella scheda Home della barra multifunzione fare clic sull'icona Chiudi e applica.
 
-1. In Power BI Desktop, indicare le due tabelle nel riquadro Dati.
+1. In Power BI Desktop fare riferimento alle due tabelle nel riquadro Dati.
 
 1. Salvare il file di Power BI Desktop.
 

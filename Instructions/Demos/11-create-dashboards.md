@@ -1,21 +1,21 @@
 ---
-lab:
-  "\_\_ title": Create dashboards in the Power BI service
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: Creare dashboard nel servizio Power BI
+  module: Deploy and manage Power BI service items
 ---
-# Creazione di dashboard nel servizio Power BI
+# Creare dashboard nel servizio Power BI
 
 ## Creare un dashboard
 
 1. Prima di tutto, nella servizio Power BI creare una nuova area di lavoro.
 
-1. Selezionare l'immagine per l'icona dell'area `D:\PL300\Demo\Resources\Icon-Airplane.jpg` di lavoro.
+1. Selezionare l'immagine per l'icona `D:\PL300\Demo\Resources\Icon-Airplane.jpg` dell'area di lavoro.
 
 1. In Power BI Desktop pubblicare il report **Sales Analysis** nella nuova area di lavoro.
 
 1. Dopo la pubblicazione, tornare al servizio Power BI.
 
-1. Aprire il report **Sales Analysis** e assicurarsi che il filtro dei dati Year sia impostato su **CY2020**.
+1. Aprire il **report Analisi vendite** e quindi verificare che il filtro dei dati Year sia impostato su **CY2020**.
 
 ## Aggiungere oggetti visivi al report
 
@@ -25,7 +25,7 @@ lab:
 
 1. Aprire il dashboard **Sales Monitoring**.
 
-1. Modificare i dettagli del riquadro **Profit Margin** e modificare il testo del sottotitolo in modo da includere l'anno (**CY2020**).
+1. Modificare i dettagli del **riquadro Profit Margin** e modificare il testo del sottotitolo in modo da includere l'anno (**CY2020**).
 
 ## Aggiungere il riquadro Q&A
 

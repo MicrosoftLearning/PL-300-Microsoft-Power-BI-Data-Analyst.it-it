@@ -1,8 +1,9 @@
 ---
-lab:
-  "\_\_ title": Get data in Power BI
-  "\_\_ module": Get data in Power BI
+demo:
+  title: Recuperare i dati in Power BI
+  module: Get data in Power BI
 ---
+
 # Recuperare i dati in Power BI
 
 ## Iniziare a sviluppare un report di Power BI
@@ -29,7 +30,7 @@ lab:
 
 1. Fare clic su Trasforma dati.
 
-## Anteprima dati
+## Creare l'anteprima dei dati
 
 1. Descrivere il layout della finestra dell'editor di Power Query, compreso il riquadro Query, il riquadro Impostazioni query, la barra multifunzione, la griglia di anteprima e la barra di stato.
 
@@ -39,7 +40,7 @@ lab:
 
 1. Attivare Colonna distribuzione e indicare colonne come ProductID (valori univoci) e ProductCategory (diversi valori duplicati).
 
-1. Attivare Profilo colonna e selezionare la colonna ProductCategory.
+1. Attivare Profilo colonna e quindi selezionare la colonna ProductCategory.
 
 1. Indicare le statistiche e la distribuzione della colonna.
 

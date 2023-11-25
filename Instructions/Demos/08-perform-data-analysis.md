@@ -1,27 +1,27 @@
 ---
-lab:
-  "\_\_ title": Perform data analysis in Power BI
-  "\_\_ module": Perform data analysis in Power BI
+demo:
+  title: Eseguire l'analisi dei dati in Power BI
+  module: Perform data analysis in Power BI
 ---
 # Eseguire l'analisi dei dati
 
-## Aggiungere un gruppo
+## Aggiungi un gruppo
 
 1. Aggiungere un'altra pagina nuova al report denominata **Category Analysis**.
 
-1. Copiare, incollare e quindi sincronizzare il **filtro dei dati Year** dalla pagina **Analisi** profitto alla nuova pagina.
+1. Copiare, incollare e quindi sincronizzare il filtro dei dati **Year** dalla pagina **Profit Analysis** nella nuova pagina.
 
 1. Aggiungere un gruppo nuovo basato sulla tabella **Product**, colonna **Category**.
 
 1. Creare un gruppo basato sul valore Trainer.
 
-1. Selezionare la casella di controllo **Includi altro gruppo** .
+1. Selezionare la **casella di controllo Includi altro gruppo** .
 
 1. Aggiungere un oggetto visivo matrice, posizionarlo e dimensionarlo in modo da riempire la pagina.
 
 1. Configurare l'oggetto visivo matrice come segue:
 
-    - Righe: Product | Category (gruppi) e Product | Product
+    - Righe: Prodotto | Categoria (gruppi) e Prodotto | Prodotto
 
     - Valori: Quantity, Sales, Profit e Profit Margin dalla tabella Sales
 

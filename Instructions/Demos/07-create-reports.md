@@ -45,7 +45,7 @@ lab:
 
 1. Usare le opzioni di formattazione per selezionare un colore di dati contrastante.
 
-1. Aggiungere un oggetto visivo Q&A e immettere la domanda seguente: Vendite totali per dati demografici del prodotto
+1. Aggiungere un oggetto visivo Q&A e immettere la domanda seguente: Total sales by product demographic
 
 1. Salvare il file di Power BI Desktop.
 
