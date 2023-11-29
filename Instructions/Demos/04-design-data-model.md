@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": Design a data model in Power BI
-  "\_\_ module": Design a data model in Power BI
+demo:
+  title: Progettazione di un modello di dati in Power BI
+  module: Design a data model in Power BI
 ---
 # Progettazione di un modello di dati in Power BI
 
