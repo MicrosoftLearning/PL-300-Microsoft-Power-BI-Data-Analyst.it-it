@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": Create reports in Power BI
-  "\_\_ module": Create reports in Power BI
+demo:
+  title: Creazione dei report in Power BI
+  module: Create reports in Power BI
 ---
 # Creare report
 

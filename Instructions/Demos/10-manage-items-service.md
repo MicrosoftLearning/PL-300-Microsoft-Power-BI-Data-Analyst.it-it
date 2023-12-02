@@ -1,7 +1,7 @@
 ---
-lab:
-  "\_\_ title": Manage files and datasets in Power BI
-  "\_\_ module": Deploy and manage Power BI service items
+demo:
+  title: Gestire file e set di dati in Power BI
+  module: Deploy and manage Power BI service items
 ---
 # Gestire file e set di dati in Power BI
 
