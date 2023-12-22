@@ -338,7 +338,7 @@ In questa attività si pubblicherà il report.
 1. Nella finestra **Pubblica in Power BI** si noti che l'opzione **Area di lavoro** è selezionata.
 
 1. Per pubblicare il report, selezionare **Seleziona**.
-    1. Se viene richiesto di sostituire il set di dati, selezionare **Sostituisci**.
+    1. Se viene richiesto di sostituire il modello semantico, selezionare **Sostituisci**.
     1. Al termine della pubblicazione, fare clic su **Chiudi**.
 
 1. Chiudere Power BI Desktop.

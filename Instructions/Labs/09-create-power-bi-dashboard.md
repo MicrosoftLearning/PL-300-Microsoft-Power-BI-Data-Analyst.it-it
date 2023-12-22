@@ -38,33 +38,9 @@ In questa attività si configurerà l'ambiente per il lab accedendo a Power BI.
 
      ![Figura 22](Linked_image_Files/07-my-workspace-new.png)
 
-## **Introduzione : aprire il report**
-
-In questa attività si configurerà l'ambiente per il lab aprendo il report iniziale.
-
-*Importante: se si continua dal lab precedente (e il lab è stato completato correttamente), non completare questa attività; Continuare invece dall'attività successiva.*
-
-1. Apri Power BI Desktop.
-    
-    *Per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. Accedere e quindi chiudere il popup.*
-
-    ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
-
-1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
-
-1. **Nella finestra Apri** passare alla **cartella D:\PL300\Labs\09-create-power-bi-dashboard\Starter** e aprire il **file Sales Analysis**.
-
-1. Chiudere eventuali finestre aperte di carattere informativo.
-
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione. *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti nel lab.*
-    
-    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso giallo selezionare **X**.*
-
-1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
-
 ## **Introduzione: pubblicare il report**
 
-In questa attività si configurerà l'ambiente per il lab creando un set di dati. *Se il set di dati è già stato pubblicato, passare all'attività successiva.*
+In questa attività si configurerà l'ambiente per il lab creando un modello semantico. *Se il modello semantico è già stato pubblicato, passare all'attività successiva.*
 
 1. Nella finestra del browser Microsoft Edge, nella servizio Power BI, passare a **Area di lavoro** personale.
 
@@ -74,7 +50,7 @@ In questa attività si configurerà l'ambiente per il lab creando un set di dati
 
 1. Selezionare il file **Sales Analysis.pbix** e quindi selezionare **Apri**.
 
-*Se viene richiesto di sostituire il set di dati, selezionare **Sostituisci**.*
+*Se viene richiesto di sostituire il modello semantico, selezionare **Sostituisci**.*
 
 ## **Creare un dashboard**
 
@@ -174,9 +150,9 @@ In questa attività verranno modificati i dettagli di due riquadri.
 
 1. Si noti che il riquadro descrive l'ora dell'ultimo aggiornamento effettuato durante il caricamento del modello di dati in Power BI Desktop.
 
-*Il set di dati verrà aggiornato nell'esercizio successivo. A seconda dei dati e dei report, è possibile eseguire un aggiornamento dati ad hoc in qualsiasi momento o impostare una pianificazione. Tuttavia, gli aggiornamenti pianificati richiedono che i gateway non siano in grado di configurare per questo lab. Da Power BI Desktop si eseguirà quindi un aggiornamento manuale dei dati e quindi si caricherà il file nell'area di lavoro.*
+*Il modello semantico verrà aggiornato nell'esercizio successivo. A seconda dei dati e dei report, è possibile eseguire un aggiornamento dati ad hoc in qualsiasi momento o impostare una pianificazione. Tuttavia, gli aggiornamenti pianificati richiedono che i gateway non siano in grado di configurare per questo lab. Da Power BI Desktop si eseguirà quindi un aggiornamento manuale dei dati e quindi si caricherà il file nell'area di lavoro.*
 
-## **Aggiornare il set di dati**
+## **Aggiornare il modello semantico**
 
 In questo esercizio si caricheranno prima i dati degli ordini di vendita per giugno 2020 nel database **AdventureWorksDW2020**. Si aprirà quindi il file di Power BI Desktop, si eseguirà un aggiornamento dei dati e quindi si caricherà il file nell'area di lavoro.
 
@@ -208,11 +184,11 @@ In questa attività si aprirà il **file sales analysis** di Power BI Desktop, s
 
     ![Immagine 59](Linked_image_Files/09-create-power-bi-dashboard_image48.png)
 
-1. Se viene richiesto di sostituire il set di dati, selezionare **Sostituisci**.
+1. Quando viene richiesto di sostituire il modello semantico, selezionare **Sostituisci**.
 
 1. Chiudere Power BI Desktop.
 
-*Il set di dati nel servizio Power BI include ora i dati sulle vendite di giugno 2020.*
+*Il modello semantico nel servizio Power BI include ora i dati sulle vendite di giugno 2020.*
 
 ### **Esaminare il dashboard**
 

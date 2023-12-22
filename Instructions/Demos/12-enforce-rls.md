@@ -56,13 +56,13 @@ demo:
 
 1. Salvare il file di Power BI Desktop.
 
-1. Pubblicare il file di Power BI Desktop nell'area di lavoro, sovrascrivendo il set di dati e il report nel servizio.
+1. Pubblicare il file di Power BI Desktop nell'area di lavoro, sovrascrivendo il modello semantico e il report nel servizio.
 
 1. Chiudere Power BI Desktop.
 
-## Configurare la sicurezza del set di dati
+## Configurare la sicurezza del modello semantico
 
-1. Nel servizio Power BI per l'insegnante aprire la pagina sicurezza per il **set di dati Sales Analysis** dal riquadro di spostamento.
+1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aprire la pagina sicurezza per il **modello semantico Sales Analysis**.
 
 1. Nella sezione **Members** immettere l'account del destinatario (corrispondente a Ty Johnston).
 
