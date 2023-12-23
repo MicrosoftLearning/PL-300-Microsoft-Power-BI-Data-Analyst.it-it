@@ -1,9 +1,10 @@
 ---
-demo:
-  title: Gestire file e set di dati in Power BI
-  module: Deploy and manage Power BI service items
+lab:
+  "\_\_ title": Manage files and semantic models in Power BI
+  "\_\_ module": Deploy and manage Power BI service items
 ---
-# Gestire file e set di dati in Power BI
+
+# Gestire file e modelli semantici in Power BI
 
 ## Predisporre l'aggiornamento dati del gateway
 
@@ -19,11 +20,11 @@ demo:
 
 1. Salvare il file di Power BI Desktop.
 
-1. Pubblicare il file di Power BI Desktop nell'area di lavoro, sovrascrivendo il set di dati e il report nel servizio.
+1. Pubblicare il file di Power BI Desktop nell'area di lavoro, sovrascrivendo il modello semantico e il report nel servizio.
 
 ## Configurare il gateway (modalità personale)
 
-1. Nel servizio Power BI per l'istruttore, ricaricare (F5) la pagina delle impostazioni del set di dati.
+1. Nella servizio Power BI per l'insegnante ricaricare (F5) la pagina delle impostazioni del modello semantico.
 
 1. Espandere la sezione Gateway Connessione ion e indicare che non è installato alcun gateway.
 
@@ -35,7 +36,7 @@ demo:
 
 1. Completare la configurazione del gateway usando le credenziali dell'account dell'istruttore.
 
-1. Terminata la configurazione, tornare alla pagina delle impostazioni del set di dati e ricaricarla.
+1. Dopo l'installazione, tornare alla pagina delle impostazioni del modello semantico e ricaricarla.
 
 1. Assegnare il gateway personale e modificare le credenziali per le due origini dati.
 
@@ -43,14 +44,14 @@ demo:
 
 1. Facoltativamente, espandere la sezione **Aggiornamento pianificato** e mostrare come configurare una pianificazione ricorrente.
 
-## Aggiornare il set di dati
+## Aggiornare il modello semantico
 
-1. Prima di aggiornare il set di dati, aprire il dashboard **Sales Monitoring**.
+1. Prima di aggiornare il modello semantico, aprire il **dashboard Di monitoraggio** vendite.
 
 1. Modificare i dettagli del riquadro Sales, Profit Margin per visualizzare l'ora dell'ultimo aggiornamento.
 
 1. Fare clic con il pulsante destro del mouse sul `D:\PL300\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` file e quindi eseguire con PowerShell. *Questo script caricherà i dati delle vendite di dicembre 2020 nel database.*
 
-1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aggiornare il **set di dati Sales Analysis**.
+1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aggiornare il **modello semantico Sales Analysis**.
 
 1. Al termine dell'aggiornamento, indica come viene visualizzato il riquadro **del dashboard dicembre 2020** e che l'ora di aggiornamento è **ORA**.

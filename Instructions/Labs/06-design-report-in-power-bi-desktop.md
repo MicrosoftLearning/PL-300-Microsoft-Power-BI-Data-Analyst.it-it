@@ -209,7 +209,7 @@ In questa attività verrà progettata la seconda pagina del report. Completata l
 
      - Sottocategoria
      - Prodotto
-     - Color
+     - Colore
 
      ![Immagine 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
 
@@ -316,10 +316,10 @@ In questa attività si esaminerà il report pubblicato in Power BI.
 
     ![Immagine 93](Linked_image_Files/06-my-workspace-new.png)
 
-1. Esaminare il contenuto dell'area di lavoro. Si notino le opzioni di spostamento di Tutti, Contenuto e Set di dati + flussi di dati.
-    1. *Esistono quattro tipi di elementi che possono esistere in un'area di lavoro e verranno descritti **report** e **set di dati**.*
-    1. *Potrebbe essere necessario aggiornare il browser Microsoft Edge se il set di dati non è visibile.*
-    1. *Quando è stato pubblicato il file di Power BI Desktop, il modello di dati è stato pubblicato come set di dati.*
+1. Esaminare il contenuto dell'area di lavoro. Si notino le opzioni di spostamento di Tutti, Contenuto e Modelli semantici + flussi di dati.
+    1. *Esistono quattro tipi di elementi che possono esistere in un'area di lavoro e verranno descritti **i report** e **i modelli semantici**.*
+    1. *Potrebbe essere necessario aggiornare il browser Microsoft Edge se il modello semantico non è visibile.*
+    1. *Quando è stato pubblicato il file di Power BI Desktop, il modello di dati è stato pubblicato come modello semantico.*
 
 1. Per esplorare il report, selezionare il **report Sales Analysis** .
 
