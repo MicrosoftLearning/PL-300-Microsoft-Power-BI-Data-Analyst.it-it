@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Progettare un report in Power BI Desktop
   module: Create Reports in Power BI Desktop
 ---
@@ -24,9 +25,9 @@ In questa attività si configurerà l'ambiente per il lab aprendo il report iniz
 
 1. Da Power BI Desktop passare a **File > ****Apri report > ****Sfoglia report.**
 
-1. Aprire il **file Sales Analysis** nella  **cartella D:\PL300\Labs\06-design-report-in-power-bi-desktop\Starter** .
+1. Aprire il **file Sales Analysis** nella  **cartella D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** .
 
-1. Creare una copia del file passando a **File**** > Salva con** nome e salvare la copia nella **cartella D:\PL300\MySolution.**
+1. Creare una copia del file passando a **File**** > Salva con** nome e salvando la copia nella **cartella D:\Allfiles\MySolution.**
 
 ## **Pagina progettazione 1**
 
@@ -42,7 +43,7 @@ In questa attività verrà progettata la prima pagina del report. Completata la 
 
     ![Immagine 1](Linked_image_Files/07-design-report-in-power-bi-desktop_image15.png)
 
-1. Nella finestra **Apri** passare alla cartella **D:\PL300\Resources**.
+1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Resources**.
 
 1. Selezionare il file **AdventureWorksLogo.jpg** e quindi **Apri**.
 

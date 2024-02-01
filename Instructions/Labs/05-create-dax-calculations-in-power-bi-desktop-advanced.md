@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Creare calcoli DAX avanzati in Power BI Desktop
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -30,17 +31,17 @@ Contenuto del lab:
 
 1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
 
-1. **Nella finestra Apri** passare alla **cartella D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** e aprire il **file Sales Analysis**.
+1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** e aprire il **file Sales Analysis**.
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione. 
+1. Si noti il messaggio di avviso sotto la barra multifunzione. 
 
     *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
     
-    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso giallo selezionare **X**.*
+    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.*
 
-1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\PL300\MySolution** .
+1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
 
 ## **Creare un oggetto visivo matrice**
 
@@ -90,7 +91,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 1. Aggiungere una misura alla tabella **Sales** basata sull'espressione seguente:
     
-     *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file **D:\PL300\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt**.*
+     *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal **file D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** .*
 
 
     **DAX**

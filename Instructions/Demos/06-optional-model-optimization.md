@@ -1,5 +1,6 @@
 ---
 demo:
+  course: PL-300
   title: (Facoltativo) Ottimizzare le prestazioni del modello in Power BI
   module: Optimize model performance in Power BI
 ---
@@ -10,13 +11,13 @@ demo:
 
 > **Nota**: questa demo usa un file di Power BI Desktop diverso.
 
-1. Aprire il file D:\PL300\Demo\Resources\AW Sales Analysis.pbix.
+1. Aprire il file D:\Allfiles\Demo\Resources\AW Sales Analysis.pbix.
 
 1. Se viene richiesto di connettersi all'origine dati, fare clic su Connetti.
 
 1. Nell'angolo in basso a destra, fare notare che il modello di dati comprende tabelle DirectQuery.
 
-1. Salvare il file di Power BI Desktop nella cartella D:\PL300\Demo\MySolution.
+1. Salvare il file di Power BI Desktop nella cartella D:\Allfiles\Demo\MySolution.
 
 1. Nella vista Modello presentare il progetto del modello, che include due tabelle correlate.
 

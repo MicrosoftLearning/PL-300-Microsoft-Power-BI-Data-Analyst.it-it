@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Applicare la sicurezza a livello di riga
   module: Enforce Row-Level Security
 ---
@@ -18,7 +19,7 @@ Contenuto del lab:
 
 **Questo lab dovrebbe richiedere circa 20 minuti.**
 
-## **Per iniziare**
+## **Introduzione**
 
 In questa attività si configurerà l'ambiente per il lab.
 
@@ -32,15 +33,15 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
 
-1. **Nella finestra Apri** passare alla **cartella D:\PL300\Labs\10-row-level-security\Starter** e aprire il **file Sales Analysis**.
+1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\10-row-level-security\Starter** e aprire il **file Sales Analysis**.
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione. *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
+1. Si noti il messaggio di avviso sotto la barra multifunzione. *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
     
-    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso giallo selezionare **X**.*
+    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.*
 
-1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\PL300\MySolution** .
+1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
 
 1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 

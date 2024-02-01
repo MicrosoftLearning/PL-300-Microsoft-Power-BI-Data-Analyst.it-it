@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Caricare dati trasformati in Power BI Desktop
   module: 'Clean, Transform, and Load Data in Power BI'
 ---
@@ -17,7 +18,7 @@ Contenuto del lab:
 
 **Il lab dovrebbe richiedere circa 45 minuti.**
 
-## **Per iniziare**
+## **Introduzione**
 
 In questa attività si configurerà l'ambiente per il lab.
 
@@ -31,17 +32,17 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
 
-1. **Nella finestra Apri** passare alla **cartella D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** e aprire il **file Sales Analysis**.
+1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** e aprire il **file Sales Analysis**.
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione.
+1. Si noti il messaggio di avviso sotto la barra multifunzione.
 
     *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
 
-    Per ignorare il messaggio di avviso giallo, selezionare **X** a destra.
+    Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.
 
-1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\PL300\MySolution** .
+1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
 
 1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 
@@ -91,7 +92,7 @@ In questa attività si userà editor di Power Query per configurare la **query S
     - EmployeeNationalIDAlternateKey
     - FirstName
     - LastName
-    - Titolo
+    - Title
     - EmailAddress
 
 1. Nell'elenco **Passaggi applicati** si noti l'aggiunta di un altro passaggio della query.
@@ -149,7 +150,7 @@ In questa attività verrà configurata la query **Product**.
     - ProductKey
     - EnglishProductName
     - StandardCost
-    - Color
+    - Colore
     - DimProductSubcategory
 
 1. Si noti che la colonna **DimProductSubcategory** rappresenta una tabella correlata (contiene collegamenti a **Value**).
@@ -193,7 +194,7 @@ In questa attività verrà configurata la **query Reseller** .
 
 1. Espandere la **colonna DimGeography** per includere **solo** le tre colonne seguenti:
 
-    - City
+    - Città
     - StateProvinceName
     - EnglishCountryRegionName
 
@@ -251,7 +252,7 @@ In questa attività verrà configurata la **query Sales** .
 1. Rimuovere tutte le colonne, **ad eccezione** delle seguenti:
 
     - SalesOrderNumber
-    - OrderDate
+    - DataOrdine
     - ProductKey
     - ResellerKey
     - EmployeeKey
@@ -273,7 +274,7 @@ In questa attività verrà configurata la **query Sales** .
 1. Nella finestra **Colonna personalizzata** nella casella **Nome nuova colonna** sostituire il testo con **Cost**.
 
 1. Nella casella **Formula colonna personalizzata** immettere l'espressione seguente (dopo il simbolo di uguale):
-    - *È possibile copiare l'espressione dal **file D:\PL300\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** .*
+    - *È possibile copiare l'espressione dal **file D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** .*
     - *Questa espressione verifica se il **valore TotalProductCost** è mancante. Se mancante, produce un valore moltiplicando il **valore OrderQuantity** per il **valore StandardCost**. In caso contrario, usa il valore TotalProductCost** esistente**.*
 
 
@@ -361,7 +362,7 @@ In questa attività verrà configurata la query **Targets**.
 
 1. Rimuovere le colonne seguenti:
 
-    - Year
+    - Anno
     - MonthNumber
 
 1. Modificare i tipi di dati delle colonne seguenti:
@@ -454,9 +455,9 @@ In questa attività si completerà il lab.
     - SalespersonRegion
     - Prodotto
     - Reseller
-    - Region
+    - Area
     - Vendite
-    - Targets
+    - Target
     - ColorFormats (che non verrà caricata nel modello di dati)
 
 1. Per eseguire il caricamento nel modello di dati, nella visualizzazione Backstage **File** selezionare **Chiudi e applica**.

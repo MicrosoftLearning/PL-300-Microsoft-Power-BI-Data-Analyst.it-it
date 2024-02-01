@@ -1,11 +1,12 @@
 ---
 demo:
+  course: 'PL-300, DP-605'
   title: Creare misure con DAX in Power BI
   module: Create measures using DAX in Power BI
 ---
 # Creare misure con DAX in Power BI
 
-> **Suggerimento**: tutti i calcoli possono essere copiati dal file D:\PL300\Demo\Resources\Snippets-Demo-05.txt.
+> **Suggerimento**: tutti i calcoli possono essere copiati dal file D:\Allfiles\Demo\Resources\Snippets-Demo-05.txt.
 
 ## Creare una tabella calcolata
 
