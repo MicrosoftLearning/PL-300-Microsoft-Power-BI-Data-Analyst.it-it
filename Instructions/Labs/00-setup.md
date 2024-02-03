@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Configurare l'ambiente personale
   module: Set up your own environment
 ---
@@ -9,7 +10,7 @@ lab:
 Idealmente, è consigliabile completare questi lab in un ambiente lab ospitato. Se si intende completarli nel proprio computer, è possibile eseguire questa operazione installando il software seguente.
 
 - Tutti i file di installazione e risorse possono essere [scaricati da GitHub](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/AllfilesDownload.zip).
-  - Estrarre la cartella 'AllFiles' in D:/ e rinominarla in 'PL300'.
+  - Estrarre la cartella 'AllFiles' in D:/ e rinominarla in 'D:\Allfiles\'.
 
 ***È possibile che vengano visualizzate finestre di dialogo impreviste o si verifichino comportamenti diversi dal previsto quando si usa il proprio ambiente. A causa dell'ampia gamma di configurazioni locali possibili, il team del corso non può offrire supporto per i problemi che potrebbero verificarsi nell'ambiente specifico.***
 

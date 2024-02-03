@@ -1,5 +1,6 @@
 ---
 demo:
+  course: 'PL-300, DP-605'
   title: Recuperare i dati in Power BI
   module: Get data in Power BI
 ---
@@ -10,7 +11,7 @@ demo:
 
 1. Aprire Power BI Desktop e ignorare la pagina introduttiva.
 
-1. Salvare il file nella cartella D:\PL300\Demo con il nome Sales Analysis.
+1. Salvare il file nella cartella D:\Allfiles\Demo come Analisi vendite.
 
 ## Connettersi a un database di SQL Server
 
