@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Creare calcoli DAX in Power BI Desktop
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -33,17 +34,17 @@ In questo esercizio si creeranno due tabelle calcolate. La prima sarà la tabell
 
 1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
 
-1. **Nella finestra Apri** passare alla **cartella D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** e aprire il **file Sales Analysis**.
+1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** e aprire il **file Sales Analysis**.
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione.
+1. Si noti il messaggio di avviso sotto la barra multifunzione.
 
     *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
 
-    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso giallo selezionare **X**.*
+    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.*
 
-1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\PL300\MySolution** .
+1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
 
 1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 
@@ -61,7 +62,7 @@ La barra della formula supporta l'immissione di una formula DAX valida. Include 
 
 2. Nella barra della formula, che si apre direttamente sotto la barra multifunzione durante la creazione o la modifica dei calcoli, digitare **Salesperson =**, premere **MAIUSC+INVIO**, digitare **'Salesperson (Performance)'** e quindi premere **INVIO**.
 
-    *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file di frammenti disponibile in **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+    *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file di frammenti di codice, che si trova in **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
 
      ![Immagine 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -137,7 +138,7 @@ In questa attività verrà creata la tabella **Date**.
 
 In questa attività verranno aggiunte altre colonne per abilitare il filtro e il raggruppamento in base a periodi di tempo diversi. Verrà creata anche una colonna calcolata per controllare l'ordinamento delle altre colonne.
 
-*Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file di frammenti disponibile in **D:\PL300\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+*Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file di frammenti di codice, che si trova in **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
 
 1. Nella barra multifunzione contestuale **Strumenti tabella** nel gruppo **Calcoli** selezionare **Nuova colonna**.
 
@@ -269,7 +270,7 @@ In questa attività si contrassegnerà la tabella **Date** come tabella data.
 
     ![Immagine 8](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image32.png)
 
-1. Nella finestra **Contrassegna come tabella data** nell'elenco a discesa **Colonna data** selezionare **Data**. Selezionare **OK**.
+1. Nella finestra **Contrassegna come tabella data** nell'elenco a discesa **Colonna data** selezionare **Data**. Seleziona **OK**.
 
     ![Figura 37](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image33.png)
 

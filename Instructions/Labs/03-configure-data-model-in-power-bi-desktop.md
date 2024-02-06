@@ -1,5 +1,6 @@
 ---
 lab:
+  course: 'PL-300, DP-605'
   title: Progettare un modello di dati in Power BI
   module: Design a Data Model in Power BI
 ---
@@ -19,7 +20,7 @@ Contenuto del lab:
 
 **Il lab dovrebbe richiedere circa 45 minuti.**
 
-## **Per iniziare**
+## **Introduzione**
 
 In questa attività si configurerà l'ambiente per il lab.
 
@@ -31,11 +32,11 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
 
-1. Passare alla **cartella D:\PL300\Labs\03-configure-data-model-in-power-bi-desktop\Starter** e selezionare il **file Sales Analysis** .
+1. Passare alla **cartella D:\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter** e selezionare il **file Sales Analysis** .
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Passare a **File > Salva con** nome e salvare il file nella **cartella D:\PL300\MySolution** .
+1. Passare a **File > Salva con** nome e salvare il file nella **cartella D:\Allfiles\MySolution** .
 
 ## **Creare relazioni tra modelli**
 
@@ -189,8 +190,8 @@ In questa attività verrà configurata la **tabella Region** .
 1. Nella tabella **Region** creare una gerarchia denominata **Regions** con i tre livelli seguenti:
 
      - Raggruppa
-     - Paese
-     - Region
+     - Country
+     - Area
 
      ![Immagine 350](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image31.png)
 
@@ -215,7 +216,7 @@ In questa attività si configurerà la **tabella Reseller** .
 
      - Country-Region
      - State-Province
-     - City
+     - Città
      - Reseller
 
 1. Impostare la **Categoria dati** per le colonne **Country-Region**, **State-Province** e **City** (non il livello di gerarchia) su **Paese**, **Stato o provincia** e **Città** rispettivamente.
@@ -336,7 +337,7 @@ In questa attività verranno create due misure rapide per calcolare il profitto 
 
 1. Trascinare il campo **Sales** nella casella **Valore di base**.
 
-1. Trascinare il campo **Cost** nella casella **Valore da sottrarre**.
+1. Trascinare il **campo Costo** nella **casella Valore da sottrarre** e quindi selezionare **Aggiungi**.  
 
      ![Immagine 368](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image48.png)
 

@@ -1,5 +1,6 @@
 ---
 demo:
+  course: PL-300
   title: Creare dashboard nel servizio Power BI
   module: Deploy and manage Power BI service items
 ---
@@ -9,7 +10,7 @@ demo:
 
 1. Prima di tutto, nella servizio Power BI creare una nuova area di lavoro.
 
-1. Selezionare l'immagine per l'icona `D:\PL300\Demo\Resources\Icon-Airplane.jpg` dell'area di lavoro.
+1. Selezionare l'immagine per l'icona `D:\Allfiles\Demo\Resources\Icon-Airplane.jpg` dell'area di lavoro.
 
 1. In Power BI Desktop pubblicare il report **Sales Analysis** nella nuova area di lavoro.
 

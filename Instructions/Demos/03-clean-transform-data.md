@@ -1,5 +1,6 @@
 ---
 demo:
+  course: 'PL-300, DP-605'
   title: 'Pulire, trasformare e caricare i dati in Power BI'
   module: 'Clean, transform, and load data in Power BI'
 ---
@@ -30,7 +31,7 @@ demo:
 
 1. Rimuovere tutte le colonne, a eccezione di:
 
-    - OrderDate
+    - DataOrdine
 
     - ProductID
 
@@ -48,7 +49,7 @@ demo:
 
 ## Integrare le query
 
-1. Creare una nuova query usando il connettore di Excel, collegandosi al file D:\PL300\Demo\Data\ProductCost.xlsx.
+1. Creare una nuova query usando il connettore Excel, connettendosi al file D:\Allfiles\Demo\Data\ProductCost.xlsx.
 
 1. Rimuovere la colonna Product.
 

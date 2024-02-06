@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Eseguire Advanced Analytics con oggetti visivi di intelligenza artificiale
   module: Perform Data Analysis in Power BI
 ---
@@ -46,7 +47,7 @@ In questa attività si configurerà l'ambiente per il lab creando un modello sem
 
 1. Selezionare **Carica > Sfoglia**.
 
-1. Passare alla **cartella D:\PL300\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter** .
+1. Passare alla **cartella D:\Allfiles\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter** .
 
 1. Selezionare il file **Sales Analysis.pbix** e quindi selezionare **Apri**.
 
@@ -70,7 +71,7 @@ In questa attività si creerà una connessione dinamica al modello semantico di 
 
 1. **Nella finestra Hub** dati selezionare il **modello semantico Sales Analysis** in **Area di lavoro** personale e quindi **Connessione** o fare doppio clic per caricare il modello semantico.
 
-1. Passare a **File > Salva** e salvare il nome del file come **Sales Exploration** nella **cartella D:\PL300\MySolution** .
+1. Passare a **File > Salva** e salvare il nome del file come **Sales Exploration** nella **cartella D:\Allfiles\MySolution** .
 
 *È ora possibile creare due pagine del report e in ogni pagina verrà usato un oggetto visivo diverso per analizzare ed esplorare i dati.*
 
