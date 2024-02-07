@@ -1,5 +1,6 @@
 ---
 lab:
+  course: PL-300
   title: Migliorare un report in Power BI Desktop
   module: Create Reports in Power BI desktop
 ---
@@ -54,17 +55,17 @@ In questa attività si configurerà l'ambiente per il lab aprendo il report iniz
 
 1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
 
-1. **Nella finestra Apri** passare alla **cartella D:\PL300\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e aprire il **file Sales Analysis**.
+1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e aprire il **file Sales Analysis**.
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
-1. Si noti il messaggio di avviso giallo sotto la barra multifunzione.
+1. Si noti il messaggio di avviso sotto la barra multifunzione.
 
     *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
 
-    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso giallo selezionare **X**.*
+    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.*
 
-1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\PL300\MySolution** .
+1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
 
 1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 

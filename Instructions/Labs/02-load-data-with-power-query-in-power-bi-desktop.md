@@ -273,14 +273,14 @@ In questa attività verrà configurata la **query Sales** .
 
 1. Nella finestra **Colonna personalizzata** nella casella **Nome nuova colonna** sostituire il testo con **Cost**.
 
-1. Nella casella **Formula colonna personalizzata** immettere l'espressione seguente (dopo il simbolo di uguale):
-    - *È possibile copiare l'espressione dal **file D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** .*
-    - *Questa espressione verifica se il **valore TotalProductCost** è mancante. Se mancante, produce un valore moltiplicando il **valore OrderQuantity** per il **valore StandardCost**. In caso contrario, usa il valore TotalProductCost** esistente**.*
+1. **Nella casella Formula** colonna personalizzata immettere l'espressione seguente (dopo il simbolo di uguale), quindi salvare la nuova colonna:
 
+        `
+    se [TotalProductCost] = null, [OrderQuantity] * [StandardCost] else [TotalProductCost]  `
 
-    `
-    if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost]
-    `
+    *È possibile copiare l'espressione dal **file D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** .*
+
+    *Questa espressione verifica se il **valore TotalProductCost** è mancante. Se mancante, produce un valore moltiplicando il **valore OrderQuantity** per il **valore StandardCost**. In caso contrario, usa il valore TotalProductCost** esistente**.*
 
 1. Rimuovere le due colonne seguenti:
 

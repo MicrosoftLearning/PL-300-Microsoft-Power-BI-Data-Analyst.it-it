@@ -1,5 +1,6 @@
 ---
 demo:
+  course: PL-300
   title: Applicare la sicurezza a livello di riga in Power BI
   module: Deploy and manage Power BI service items
 ---
@@ -18,7 +19,7 @@ demo:
 
 1. Dividere la colonna **Category** con il delimitatore punto e virgola e dividerla in righe (opzioni avanzate).
 
-1. **Nella colonna Email** sostituire il valore **<ty-johnston@tailspintoys.com>** con l'account del destinatario (dal file My Impostazioni.txt).
+1. **Nella colonna Posta elettronica** sostituire il valore **<ty-johnston@tailspintoys.com>** con l'account del destinatario (dal file My Impostazioni.txt).
 
 1. Indicare che questo utente è in grado di visualizzare tre categorie di prodotti: **pitch collettivo, Trainer e Warbird**.
 
