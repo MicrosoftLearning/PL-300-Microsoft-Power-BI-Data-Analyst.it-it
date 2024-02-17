@@ -275,8 +275,7 @@ In questa attività verrà configurata la **query Sales** .
 
 1. **Nella casella Formula** colonna personalizzata immettere l'espressione seguente (dopo il simbolo di uguale), quindi salvare la nuova colonna:
 
-        `
-    se [TotalProductCost] = null, [OrderQuantity] * [StandardCost] else [TotalProductCost]  `
+   ` if [TotalProductCost] = null then [OrderQuantity] * [StandardCost] else [TotalProductCost] `
 
     *È possibile copiare l'espressione dal **file D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** .*
 
