@@ -19,7 +19,7 @@ Contenuto del lab:
 
 **Questo lab dovrebbe richiedere circa 20 minuti.**
 
-## **Introduzione**
+## **Operazioni preliminari**
 
 In questa attività si configurerà l'ambiente per il lab.
 
