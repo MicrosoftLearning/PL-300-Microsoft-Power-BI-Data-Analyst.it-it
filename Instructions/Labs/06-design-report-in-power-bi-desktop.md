@@ -23,9 +23,11 @@ Contenuto del lab:
 
 In questa attività si configurerà l'ambiente per il lab aprendo il report iniziale.
 
-1. Da Power BI Desktop passare a **File > ****Apri report > ****Sfoglia report.**
+1. Da Power BI Desktop passare a **Apri > Sfoglia questo dispositivo**.
 
 1. Aprire il **file Sales Analysis** nella  **cartella D:\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** .
+
+   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
 
 1. Creare una copia del file passando a **File**** > Salva con** nome e salvando la copia nella **cartella D:\Allfiles\MySolution.**
 
@@ -59,7 +61,7 @@ In questa attività verrà progettata la prima pagina del report. Completata la 
     
     *I lab usano una notazione abbreviata per fare riferimento a un campo. Sarà simile al seguente: **Data \| Anno**. In questo esempio Date **** è il nome della tabella e **Year** è il nome del campo.*
 
-1. Per convertire il filtro dei dati da un elenco a discesa, passare a **Visualizzazioni > Formato oggetto visivo > Visual > filtro dei dati Impostazioni > Stile** e quindi selezionare **Elenco a discesa** dal menu a discesa.
+1. Per convertire il filtro dei dati da un elenco a discesa, passare a **Visualizzazioni > Formato oggetto visivo > Impostazioni filtro dei dati di Visual > > Stile** e quindi selezionare **Elenco a discesa** dal menu a discesa.
 
     ![Stile filtro dei dati](Linked_image_Files/06_slicer_style.png)
 
@@ -172,7 +174,7 @@ In questa attività verrà progettata la seconda pagina del report. Completata l
 
 1. Aggiungere un filtro dei dati basato sul campo **Region \| Region**.
 
-1. Usare il riquadro **Formato** per abilitare l'opzione "Seleziona tutto" (nel gruppo **Selezione**).
+1. Usare il **riquadro Formato** per abilitare l'opzione "Seleziona tutto" (nelle impostazioni filtro dei **dati > gruppo Selezione** ).
 
 1. Ridimensionare e posizionare il filtro dei dati in modo che si trovi sul lato sinistro della pagina del report, a circa metà altezza della pagina.
 
@@ -191,8 +193,8 @@ In questa attività verrà progettata la seconda pagina del report. Completata l
      - Orders (dalla cartella **Counts**)
      - Vendite
      - Costo
-     - Margine
-     - Profit Margin
+     - Profitto (dalla **cartella Prezzi** )
+     - Profit Margin (dalla **cartella Pricing** )
 
      ![Immagine 55](Linked_image_Files/07-design-report-in-power-bi-desktop_image43.png)
 
@@ -210,7 +212,7 @@ In questa attività verrà progettata la seconda pagina del report. Completata l
 
      - Sottocategoria
      - Prodotto
-     - Colore
+     - Color
 
      ![Immagine 60](Linked_image_Files/07-design-report-in-power-bi-desktop_image46.png)
 
@@ -315,9 +317,9 @@ In questa attività si esaminerà il report pubblicato in Power BI.
 
 1. Nella finestra del browser Microsoft Edge nel servizio Power BI espandere **Area di lavoro personale** nel **riquadro di spostamento** (a sinistra, potrebbe essere compresso).
 
-    ![Immagine 93](Linked_image_Files/06-my-workspace-new.png)
+    ![Screenshot 2024-04-18 101424](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/346415bc-e559-4559-84b5-ef3a1f808461)
 
-1. Esaminare il contenuto dell'area di lavoro. Si notino le opzioni di spostamento di Tutti, Contenuto e Modelli semantici + flussi di dati.
+1. Esaminare il contenuto dell'area di lavoro.
     1. *Esistono quattro tipi di elementi che possono esistere in un'area di lavoro e verranno descritti **i report** e **i modelli semantici**.*
     1. *Potrebbe essere necessario aggiornare il browser Microsoft Edge se il modello semantico non è visibile.*
     1. *Quando è stato pubblicato il file di Power BI Desktop, il modello di dati è stato pubblicato come modello semantico.*

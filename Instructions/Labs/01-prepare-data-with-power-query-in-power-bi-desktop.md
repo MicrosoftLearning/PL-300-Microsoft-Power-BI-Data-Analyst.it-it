@@ -9,10 +9,10 @@ lab:
 
 ## **Presentazione del lab**
 
-Questo lab è progettato per presentare l'applicazione Power BI Desktop e come connettersi ai dati e come usare le tecniche di anteprima dei dati per comprendere le caratteristiche e la qualità dei dati di origine. Gli obiettivi di apprendimento sono:
+Questo lab è progettato per presentare l'applicazione Power BI Desktop, come connettersi ai dati e come usare le tecniche di anteprima dei dati per comprendere le caratteristiche e la qualità dei dati di origine. Gli obiettivi di apprendimento sono:
 
 - Aprire Power BI Desktop
-- Connessione a origini dati diverse
+- Connettersi a origini dati diverse
 - Visualizzare in anteprima i dati di origine con Power Query
 - Usare le funzionalità di profilatura dei dati in Power Query
 
@@ -31,15 +31,15 @@ Questo lab è progettato per presentare l'applicazione Power BI Desktop e come c
 
     ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Suggerimento: per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. È possibile scegliere di eseguire l'accesso e quindi chiudere il popup.*
-
-1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop di avvio, selezionare Apri **> Sfoglia questo dispositivo**.
 
 1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\01-prepare-data-with-power-query-in-power-bi-desktop\Starter**.
 
 1. Selezionare il file **Sales Analysis**.
 
-1. Salvare una copia del file con **Salva con** nome nella **cartella D:\Allfiles\MySolution** .
+    *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
+
+1. Salvare una copia del file con **File > Salva con** nome nella **cartella D:\Allfiles\MySolution** .
 
 ## **Ottenere dati da SQL Server**
 
@@ -53,7 +53,7 @@ Questa attività illustra come connettersi a un database di SQL Server e importa
 
     *Nota: in questo lab si connetterà al database di SQL Server usando **localhost** perché le origini dati del gateway non possono risolvere **localhost**. Questa non è una procedura consigliata quando si creano soluzioni personalizzate.*
 
-1. Se vengono richieste le credenziali, nella **finestra Database** di SQL Server selezionare **Usa le credenziali** correnti e quindi **Connessione**.
+1. Se vengono richieste le credenziali, nella **finestra Database** di SQL Server selezionare **Usa le credenziali** correnti e quindi **Connetti**.
 
 1. Nel riquadro Strumento di navigazione **** espandere il **database AdventureWorksDW2020**.
 
@@ -76,7 +76,7 @@ Questa attività illustra come connettersi a un database di SQL Server e importa
 
 1. Completare questa attività selezionando **Trasforma dati**, che verrà aperto editor di Power Query.
 
-I dati sono stati importati in Power BI e il editor di Power Query è aperto per l'attività successiva.
+A questo punto si è connessi ai dati e si ha il editor di Power Query aperto per l'attività successiva.
 
 ## **Anteprima dei dati in editor di Power Query**
 

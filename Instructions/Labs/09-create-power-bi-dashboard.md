@@ -87,7 +87,7 @@ In questa attività si creerà il **dashboard Di monitoraggio** vendite. Si aggi
 
     ![Immagine 7](Linked_image_Files/09-create-power-bi-dashboard_image23.png)
 
-1. Selezionare una qualsiasi delle domande suggerite sotto la casella Q&A, in caselle blu ed esaminare la risposta.
+1. Selezionare una delle domande suggerite sotto la casella domande e risposte ed esaminare la risposta.
 
 1. Rimuovere tutto il testo dalla casella Q&A e immettere quanto segue: **Sales YTD**
 
@@ -121,7 +121,7 @@ In questa attività si creerà il **dashboard Di monitoraggio** vendite. Si aggi
     
     *È possibile incorporare un'immagine usando il relativo URL oppure un URL di dati che incorpora il contenuto inline.*
 
-1. Per ridimensionare il riquadro del logo, trascinare l'angolo inferiore destro e ridimensionare il riquadro in modo che abbia una larghezza di un'unità e un'altezza di due unità.
+1. Per ridimensionare il riquadro del logo, trascinare l'angolo inferiore destro e ridimensionare il riquadro in modo che diventi un'unità larga e un'unità alta.
     
     *Le dimensioni dei riquadri sono limitate a una forma rettangolare.*
 

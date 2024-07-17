@@ -13,7 +13,7 @@ demo:
 1. Accedere all'ambiente della macchina virtuale usando l'account Studente.
 
 1. Aprire Microsoft Edge, quindi passare a <https://powerbi.com> e accedere usando l'account dell'insegnante.
-    > **Suggerimento**: se viene richiesto di modificare la password, assicurarsi di registrarla nel file D:\Allfiles\Demo\Setup\My Impostazioni.txt.
+    > **Suggerimento**: se viene richiesto di modificare la password, assicurarsi di registrarla nel file D:\Allfiles\Demo\Setup\MySettings.txt.
 
 1. Nel servizio Power BI, accettare la versione di valutazione di Power BI Pro.
 

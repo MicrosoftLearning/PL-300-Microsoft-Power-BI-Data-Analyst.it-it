@@ -26,13 +26,13 @@ In questa attività si configurerà l'ambiente per il lab.
 
 1. Apri Power BI Desktop.
 
-    *Suggerimento: per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. È possibile scegliere di eseguire l'accesso e quindi chiudere il popup.*
-
     ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare **Apri > Sfoglia questo dispositivo**.
 
 1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** e aprire il **file Sales Analysis**.
+
+   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
@@ -150,7 +150,7 @@ In questa attività verrà configurata la query **Product**.
     - ProductKey
     - EnglishProductName
     - StandardCost
-    - Colore
+    - Color
     - DimProductSubcategory
 
 1. Si noti che la colonna **DimProductSubcategory** rappresenta una tabella correlata (contiene collegamenti a **Value**).
@@ -454,7 +454,7 @@ In questa attività si completerà il lab.
     - SalespersonRegion
     - Prodotto
     - Reseller
-    - Area
+    - Paese
     - Vendite
     - Target
     - ColorFormats (che non verrà caricata nel modello di dati)

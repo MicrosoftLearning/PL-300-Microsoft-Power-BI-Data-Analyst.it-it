@@ -27,11 +27,11 @@ Contenuto del lab:
 
     ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Suggerimento: per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. È possibile scegliere di eseguire l'accesso e quindi chiudere il popup.*
-
-1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare **Apri > Sfoglia questo dispositivo**.
 
 1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** e aprire il **file Sales Analysis**.
+
+   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
@@ -42,6 +42,8 @@ Contenuto del lab:
     *Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.*
 
 1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
+
+1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
 
 ## **Creare un oggetto visivo matrice**
 
