@@ -29,11 +29,11 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Suggerimento: per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. **** Accedere e quindi chiudere il popup.*
-
-1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare **Apri > Sfoglia questo dispositivo**.
 
 1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\10-row-level-security\Starter** e aprire il **file Sales Analysis**.
+
+   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
@@ -49,7 +49,7 @@ In questa attività si configurerà l'ambiente per il lab.
 
 In questa attività verrà applicata la sicurezza a livello di riga per garantire che un venditore possa visualizzare solo le vendite effettuate nelle aree assegnate.
 
-1. Passa alla vista Dati.
+1. Passare alla visualizzazione Tabella.
 
    ![Immagine 5701](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image20.png)
 
@@ -60,27 +60,35 @@ In questa attività verrà applicata la sicurezza a livello di riga per garantir
     
     *È possibile ricordare che Michael Blythe è assegnato a tre aree di vendita: Stati Uniti nord-orientali, Stati Uniti centrali e Stati Uniti sud-orientali.*
 
-1. **Nella scheda Modellazione della barra multifunzione** selezionare **Gestisci ruoli** nel **gruppo Sicurezza**.
+1. Nella scheda Home** della **barra multifunzione selezionare **Gestisci ruoli** nel **gruppo Sicurezza**.
 
     ![Immagine 5700](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image21.png)
 
-1. Nella finestra **Gestisci ruoli** selezionare **Crea**.
+1. Nella sezione Ruoli** della ****finestra Gestisci ruoli** di sicurezza selezionare **Nuovo**.
 
 1. Nella casella sostituire il testo selezionato con il nome del ruolo Salespeople **** e quindi premere **INVIO**.
 
    ![Immagine 5703](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image23.png)
 
-1. Per assegnare un filtro, per la **tabella Salesperson (Performance),** selezionare il carattere con i puntini di sospensione (...) e quindi selezionare **Aggiungi filtro \| [UPN]**.
+1. Per assegnare un filtro, selezionare la **tabella Salesperson (Performance)** e quindi selezionare **Passa all'editor** DAX nella **sezione Filtra dati** .
 
-   ![Immagine 5704](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image24.png)
+   ![Screenshot 2024-04-18 144345](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/1308d47f-2cca-4f88-9237-b02b66b4cf1e)
 
-1. Nella **casella Espressione** DAX filtro tabella modificare l'espressione sostituendo **"Value"** con **U edizione Standard RPRINCIPALNAME()** e quindi **Salva**.
+1. Nella casella editor DAX immettere l'espressione seguente:
+
+    **DAX**
+
+    ```
+    [UPN] = USERPRINCIPALNAME()
+    ```
     
-    *U edizione Standard RPRINCIPALNAME() è una funzione DAX (Data Analysis Expressions) che restituisce il nome dell'utente autenticato. Significa che la **tabella Salesperson (Performance)** filtra in base al nome dell'entità utente (UPN) dell'utente che esegue una query sul modello.*
+    *USERPRINCIPALNAME() è una funzione DAX (Data Analysis Expressions) che restituisce il nome dell'utente autenticato. Significa che la **tabella Salesperson (Performance)** filtra in base al nome dell'entità utente (UPN) dell'utente che esegue una query sul modello.*
 
    ![Immagine 11](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image25.png)
 
-1. Per testare il ruolo di sicurezza, nella scheda della barra multifunzione **Modellazione**, nel gruppo **Sicurezza** selezionare **Visualizza come**.
+1. Selezionare **Salva** e **Chiudi**.
+
+1. Per testare il ruolo di sicurezza, nella scheda Home della **barra multifunzione selezionare **Visualizza come** all'interno del **gruppo Sicurezza**.**
 
    ![Immagine 5708](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image27.png)
 
@@ -104,13 +112,13 @@ In questa attività verrà applicata la sicurezza a livello di riga per garantir
 
    ![Picture 5712](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image32.png)
 
-1. Per eliminare il **ruolo Venditori**, nella scheda Modellazione della **barra multifunzione** selezionare **Gestisci ruoli** all'interno del **gruppo Sicurezza**.
+1. Per eliminare il **ruolo Venditori**, nella scheda Home** della **barra multifunzione selezionare **Gestisci ruoli** all'interno del **gruppo Sicurezza**.
 
    ![Immagine 16](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image33.png)
 
-1. Nella finestra **Gestisci ruoli** selezionare **Elimina**. Quando viene richiesto di confermare l'eliminazione, selezionare **Sì, Elimina**.
+1. **Nella finestra Gestisci ruoli** di sicurezza selezionare i puntini di sospensione (...) nel **ruolo Venditori** e selezionare **Elimina**. Quando viene richiesto di confermare l'eliminazione, selezionare **Sì, Elimina**.
 
-   ![Figura 17](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image34.png)
+   ![Screenshot 2024-04-18 145556](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/deeb4eac-b639-433d-a9d4-29c8e127008e)
 
 ### **Fine**
 

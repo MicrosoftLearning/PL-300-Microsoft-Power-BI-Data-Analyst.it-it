@@ -26,7 +26,7 @@ demo:
 
 1. Nella servizio Power BI per l'insegnante ricaricare (F5) la pagina delle impostazioni del modello semantico.
 
-1. Espandere la sezione Gateway Connessione ion e indicare che non è installato alcun gateway.
+1. Espandere la sezione Connessione gateway e indicare che non è installato alcun gateway.
 
 1. Usare l'elenco a discesa dei download (situato in alto a destra) e selezionare Gateway dati.
 

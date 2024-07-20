@@ -28,11 +28,11 @@ In questa attività si configurerà l'ambiente per il lab.
 
     ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Suggerimento: per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. È possibile scegliere di eseguire l'accesso e quindi chiudere il popup.*
-
-1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare **Apri > Sfoglia questo dispositivo**.
 
 1. Passare alla **cartella D:\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter** e selezionare il **file Sales Analysis** .
+
+   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
@@ -76,7 +76,7 @@ In questa attività verranno create le relazioni del modello. Il file è stato c
 
 1. Per creare una relazione, selezionare **Nuova**.
 
-1. Nella finestra **Crea relazione**, nel primo elenco a discesa selezionare la tabella **Product**.
+1. **Nella finestra Nuova relazione**, nel primo elenco a discesa, selezionare la **tabella Product**.
 
      ![Immagine 333](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image16.png)
 
@@ -191,7 +191,7 @@ In questa attività verrà configurata la **tabella Region** .
 
      - Raggruppa
      - Country
-     - Area
+     - Paese
 
      ![Immagine 350](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image31.png)
 
@@ -247,7 +247,7 @@ In questa attività si configurerà la **tabella Sales** .
 
 In questa attività verranno aggiornate più colonne usando singoli aggiornamenti in blocco. Questo approccio verrà usato per nascondere le colonne e formattare i valori delle colonne.
 
-1. **Nel riquadro Dati** selezionare la **colonna ProductKey ProductKey\|**.
+1. **Nel riquadro Dati** visualizzazione**** > modello selezionare la **colonna ProductKey ProductKey\|**.
 
 1. Tenendo premuto **CTRL** selezionare le 13 colonne seguenti (in più tabelle):
 
@@ -306,7 +306,7 @@ In questa attività si passerà alla visualizzazione Report e si esaminerà l'in
 
  A questo punto si disattiva questo comportamento automatico. **Nel lab Creare calcoli DAX in Power BI Desktop** si userà DAX per creare una tabella data e configurarla per definire il calendario di Adventure Works.
 
-1. Per disattivare l'ora automatica/data, passare a **Opzioni > file e opzioni Impostazioni > > gruppo di file** corrente e selezionare **Caricamento** dati.
+1. Per disattivare l'ora automatica/data, passare a **File > Opzioni e impostazioni > Opzioni > gruppo di file** corrente e selezionare **Caricamento** dati.
     1. Nella sezione **Funzionalità di Business Intelligence per le gerarchie temporali** deselezionare **Data/ora automatica**.
 
      ![Immagine 362](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image43.png)
@@ -378,8 +378,6 @@ In questa attività verranno create due misure rapide per calcolare il profitto 
 ## **Creare una relazione molti-a-molti**
 
 In questa attività si creerà una relazione molti-a-molti tra la **tabella Salesperson** e la **tabella Sales** .
-
- *I lab usano una notazione abbreviata per fare riferimento a un campo. Sarà simile al seguente: **Salesperson \| Salesperson** . In questo esempio Salesperson **** è il nome della tabella e **Salesperson** è il nome del campo.*
 
 1. In Power BI Desktop, nella visualizzazione Report, nel **riquadro Dati** selezionare i due campi seguenti per creare un **oggetto visivo tabella** .
 

@@ -51,11 +51,11 @@ In questa attività si configurerà l'ambiente per il lab aprendo il report iniz
 
     ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
 
-    *Suggerimento: per impostazione predefinita, viene visualizzata la finestra di dialogo Attività iniziali davanti a Power BI Desktop. È possibile scegliere di eseguire l'accesso e quindi chiudere il popup.*
-
-1. Per aprire il file di Power BI Desktop iniziale, selezionare File **> Apri report > Sfoglia report**.
+1. Per aprire il file di Power BI Desktop iniziale, selezionare **Apri > Sfoglia questo dispositivo**.
 
 1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** e aprire il **file Sales Analysis**.
+
+   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
 
 1. Chiudere eventuali finestre aperte di carattere informativo.
 
@@ -97,7 +97,7 @@ In questa attività si sincronizzeranno i **filtri dei dati Year** e **Region** 
 
 1. Testare i filtri dei dati sincronizzati selezionando altre opzioni di filtro e quindi verificando che i filtri dei dati sincronizzati vengano filtrati in base alla stessa selezione.
 
-1. Per chiudere la pagina **Sincronizza filtri dei dati**, selezionare la **X** in alto a destra nel riquadro.
+1. Per chiudere la **pagina Sincronizza filtro dei** dati, selezionare l'opzione **Sincronizza filtro** dei dati disponibile nella **scheda Visualizza** della barra multifunzione.
 
 ## **Configurare il drill-through**
 
@@ -194,7 +194,7 @@ In questa attività si migliorerà la pagina di drill-through con la formattazio
 
 1. Configurare la seconda regola (cerchio verde) come indicato di seguito, quindi selezionare **OK**:
 
-    *Le regole possono essere interpretate come segue: visualizzare un rombo rosso se il valore del margine di profitto è minore di 0, in caso contrario, se il valore è maggiore o uguale a zero, visualizzare un cerchio verde.*
+    *Le regole possono essere interpretate come segue: visualizzare un diamante rosso se il valore del margine di profitto è minore di 0; in caso contrario, se il valore è maggiore o uguale a zero, visualizzare un cerchio verde.*
 
      - Nel secondo controllo immettere **0**
      - Nel terzo controllo selezionare **Numero**
