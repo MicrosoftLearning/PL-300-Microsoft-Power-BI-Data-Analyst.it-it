@@ -1,6 +1,5 @@
 ---
 demo:
-  course: 'PL-300, DP-605'
   title: Recuperare i dati in Power BI
   module: Get data in Power BI
 ---

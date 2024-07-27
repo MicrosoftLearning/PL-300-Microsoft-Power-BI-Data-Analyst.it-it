@@ -1,6 +1,5 @@
 ---
 demo:
-  course: PL-300
   title: Applicare la sicurezza a livello di riga in Power BI
   module: Deploy and manage Power BI service items
 ---

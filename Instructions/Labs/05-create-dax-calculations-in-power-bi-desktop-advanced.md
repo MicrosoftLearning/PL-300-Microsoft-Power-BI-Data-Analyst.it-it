@@ -1,10 +1,8 @@
 ---
 lab:
-  course: PL-300
   title: Creare calcoli DAX avanzati in Power BI Desktop
   module: Create Model Calculations using DAX in Power BI
 ---
-
 
 # Creare calcoli DAX avanzati in Power BI Desktop
 
@@ -19,53 +17,38 @@ Contenuto del lab:
 
 **Il lab dovrebbe richiedere circa 45 minuti.**
 
-## **Usare il contesto di filtro**
+## Operazioni preliminari
 
-*Importante: se si continua dal lab precedente (e il lab è stato completato correttamente), non completare questa attività; Continuare invece dall'attività successiva.*
+Per completare questo esercizio, aprire prima un Web browser e immettere l'URL seguente per scaricare la cartella ZIP:
 
-1. Apri Power BI Desktop.
 
-    ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/05-create-dax-calculations-in-power-bi-desktop-advanced/05-advanced-dax.zip`
 
-1. Per aprire il file di Power BI Desktop iniziale, selezionare **Apri > Sfoglia questo dispositivo**.
+Estrarre la cartella nella **cartella C:\Users\Student\Downloads\05-advanced-dax** .
 
-1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** e aprire il **file Sales Analysis**.
+Aprire il **file 05-Starter-Sales Analysis.pbix** .
 
-   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
+> ***Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche.*
 
-1. Chiudere eventuali finestre aperte di carattere informativo.
-
-1. Si noti il messaggio di avviso sotto la barra multifunzione. 
-
-    *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
-    
-    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.*
-
-1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
-
-1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
-
-## **Creare un oggetto visivo matrice**
+## Creare un oggetto visivo matrice
 
 In questa attività si creerà un oggetto visivo matrice per supportare il test delle nuove misure.
 
-1. In Power BI Desktop nella vista Report creare una nuova pagina del report.
+1. In Power BI Desktop, **visualizzazione** Report creare una nuova pagina del report.
 
 1. In **Pagina 3** aggiungere un oggetto visivo matrice.
 
-    ![Immagine 13](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image10.png)
+    ![Immagine 13](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image23.png)
 
 1. Ridimensionare l'oggetto visivo matrice in modo da riempire l'intera pagina.
 
 1. Per configurare i campi visivi matrice, dal **riquadro Dati** trascinare la **gerarchia Aree \|** geografiche e rilasciarla all'interno dell'oggetto visivo.
-    
-    *I lab usano una notazione abbreviata per fare riferimento a un campo o a una gerarchia. Avrà un aspetto simile al seguente: **Aree \| geografiche**. In questo esempio Region **** è il nome della tabella e **Regions** è il nome della gerarchia.*
 
-1. Aggiungere anche il campo **Sales \| Sales**.
+    > *I lab usano una notazione abbreviata per fare riferimento a un campo o a una gerarchia. Avrà un aspetto simile al seguente: **Aree \| geografiche**. In questo esempio Region **** è il nome della tabella e **Regions** è il nome della gerarchia.*
+
+1. Aggiungere anche il **campo Sales Sales \|** all'area Valori.
 
 1. Per espandere l'intera gerarchia, nell'angolo superiore destro dell'oggetto visivo matrice fare clic sull'icona con la freccia con biforcazione.
-    
-    *Si ricorderà che la gerarchia **Regions** include i livelli **Group**, **Country** e **Region**.*
 
     ![Immagine 47](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image11.png)
 
@@ -73,44 +56,40 @@ In questa attività si creerà un oggetto visivo matrice per supportare il test 
 
     ![Immagine 14](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image12.png)
 
-1. Nella casella **Cerca** immettere **Con rientri**.
+1. **Nella casella Cerca** immettere **Layout**.
 
-1. Impostare la proprietà **Layout con rientri** su **Disattivato**.
+1. Impostare la **proprietà Layout** su **Tabulare**.
 
     ![Immagine 49](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image14.png)
 
-1. Verificare che l'oggetto visivo matrice ora includa quattro intestazioni di colonna.
+1. Verificare che l'oggetto visivo matrice disponga ora di 4 intestazioni di colonna.
 
     ![Immagine 50](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image15.png)
 
-    *In Adventure Works le aree di vendita sono organizzate in gruppi, paesi e aree geografiche. Tutti i paesi, ad eccezione del Stati Uniti, hanno solo un'area, denominata in base al paese. Poiché il Stati Uniti è un territorio di vendita così ampio, è suddiviso in cinque aree di vendita.*
+    > *In Adventure Works le aree di vendita sono organizzate in gruppi, paesi e aree geografiche. Tutti i paesi, ad eccezione del Stati Uniti, hanno solo un'area, denominata in base al paese. Poiché il Stati Uniti è un territorio di vendita così ampio, è suddiviso in cinque aree di vendita.*
 
-    *In questo esercizio verranno create diverse misure e quindi testarle aggiungendole all'oggetto visivo matrice.*
+In questo esercizio verranno create diverse misure che vengono quindi testate aggiungendole all'oggetto visivo matrice.
 
-## **Modificare il contesto di filtro**
+## Modificare il contesto di filtro
 
 In questa attività verranno create diverse misure con espressioni DAX che usano la funzione CALCULATE() per modificare il contesto di filtro.
 
+> *La funzione CALCULATE() è una funzione potente usata per modificare il contesto di filtro. Il primo argomento accetta un'espressione o una misura (una misura è semplicemente un'espressione denominata). Gli argomenti successivi consentono di modificare il contesto di filtro.*
+
 1. Aggiungere una misura alla tabella **Sales** basata sull'espressione seguente:
-    
-     *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal **file D:\Allfiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** .*
 
+    > **Nota**: *per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal **file C:\Users\Student\Downloads\05-advanced-dax\Snippets.txt** .*
 
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales All Region =
 
     CALCULATE(SUM(Sales[Sales]), REMOVEFILTERS(Region))
     ```
 
-
-    *La funzione CALCULATE() è una funzione potente usata per modificare il contesto di filtro. Il primo argomento accetta un'espressione o una misura (una misura è semplicemente un'espressione denominata). Gli argomenti successivi consentono di modificare il contesto di filtro.*
-
-    *La funzione REMOVEFILTERS() rimuove i filtri attivi. Non può accettare argomenti o una tabella, una colonna o più colonne come argomento.*
-
-    *In questa formula la misura calcola la somma della colonna **Sales** in un contesto di filtro modificato che rimuove tutti i filtri applicati alle colonne della tabella **Region**.*
+    >
+    > *La funzione REMOVEFILTERS() rimuove i filtri attivi. Non può accettare argomenti o una tabella, una colonna o più colonne come argomento.*
+    >
+    > *In questa formula la misura calcola la somma della colonna **Sales** in un contesto di filtro modificato che rimuove tutti i filtri applicati alle colonne della tabella **Region**.*
 
 1. Aggiungere la misura **Sales All Region** all'oggetto visivo matrice.
 
@@ -124,11 +103,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
     *Suggerimento: per sostituire la formula esistente, copiare prima il frammento di codice. Selezionare quindi all'interno della barra della formula e premere **CTRL+A** per selezionare tutto il testo. Premere **quindi CTRL+V** per incollare il frammento per sovrascrivere il testo selezionato. Quindi premere **INVIO**.*
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales % All Region =  
     DIVIDE(  
      SUM(Sales[Sales]),  
@@ -151,10 +126,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 1. Aggiungere un'altra misura alla tabella **Sales** basata sull'espressione seguente e formattata come percentuale:
 
-
-    **DAX**
-
-    ```
+    ```DAX
     Sales % Country =  
     DIVIDE(  
      SUM(Sales[Sales]),  
@@ -172,20 +144,14 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 1. Aggiungere la misura **Sales % Country** all'oggetto visivo matrice.
 
 1. Si noti che solo le aree Stati Uniti producono un valore che non è 100%.
-    
-    *È possibile ricordare che solo il Stati Uniti ha più aree. Tutti gli altri paesi comprendono una singola regione, che spiega perché sono tutti del 100%.*
 
     ![Immagine 54](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image18.png)
 
-    
+    > *È possibile ricordare che solo il Stati Uniti ha più aree. Tutti gli altri paesi comprendono una singola regione, che spiega perché sono tutti del 100%.*
 
 1. Per migliorare la leggibilità di questa misura nell'oggetto visivo, sovrascrivere la misura **Sales % Country** con questa formula migliorata.
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales % Country =  
     IF(  
      ISINSCOPE(Region[Region]),  
@@ -199,8 +165,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
     )
     ```
 
-
-    *La funzione IF() usa la funzione ISINSCOPE() per verificare se la colonna dell'area è il livello in una gerarchia di livelli. Se true, la funzione DIVIDE() viene valutata. Se false, viene restituito un valore vuoto perché la colonna dell'area non è nell'ambito.*
+    > *La funzione IF() usa la funzione ISINSCOPE() per verificare se la colonna dell'area è il livello in una gerarchia di livelli. Se true, la funzione DIVIDE() viene valutata. Se false, viene restituito un valore vuoto perché la colonna dell'area non è nell'ambito.*
 
 1. Si noti che la misura **Sales % Country** ora restituisce un valore solo quando un'area è nell'ambito.
 
@@ -208,11 +173,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 1. Aggiungere un'altra misura alla tabella **Sales** basata sull'espressione seguente e formattata come percentuale:
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales % Group =  
     DIVIDE(  
      SUM(Sales[Sales]),  
@@ -226,18 +187,13 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
     )
     ```
 
-
-    *Per ottenere le vendite come percentuale di gruppo, è possibile applicare due filtri per rimuovere in modo efficace i filtri su due colonne.*
+    > *Per ottenere le vendite come percentuale di gruppo, è possibile applicare due filtri per rimuovere in modo efficace i filtri su due colonne.*
 
 1. Aggiungere la misura **Sales % Group** all'oggetto visivo matrice.
 
 1. Per migliorare la leggibilità di questa misura nell'oggetto visivo, sovrascrivere la misura **Sales % Group** con questa formula migliorata.
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales % Group =  
     IF(  
      ISINSCOPE(Region[Region])  
@@ -255,7 +211,6 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
     )
     ```
 
-
 1. Si noti che la misura **Sales % Group** ora restituisce un valore solo quando un'area o un paese è nell'ambito.
 
 1. Nella vista Modello inserire le tre nuove misure in una cartella di visualizzazione denominata **Ratios**.
@@ -266,31 +221,22 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 *Le misure aggiunte alla tabella Sales** hanno modificato il **contesto di filtro per ottenere lo spostamento gerarchico. Si noti che il modello per ottenere il calcolo di un subtotale richiede la rimozione di alcune colonne dal contesto di filtro e per arrivare a un totale complessivo, è necessario rimuovere tutte le colonne.*
 
-## **Usare Business Intelligence per le gerarchie temporali**
+## Creare una misura YTD
 
-In questo esercizio si creerà una misura sales year-to-date (YTD) e una misura di crescita dell'anno di vendita (YoY).
-
-## **Creare una misura YTD**
-
-In questa attività si creerà una misura sales YTD.
+In questa attività si creerà una misura da inizio anno di vendita (YTD) usando le funzioni di Business Intelligence per le gerarchie temporali.
 
 1. Nella vista Report in **Pagina 2** osservare l'oggetto visivo matrice che visualizza varie misure con anni e mesi raggruppati nelle righe.
 
 2. Aggiungere una misura alla tabella **Sales** basata sull'espressione seguente e formattata con zero cifre decimali:
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales YTD =  
     TOTALYTD(SUM(Sales[Sales]), 'Date'[Date], "6-30")
     ```
 
-
-    *La funzione TOTALYTD() valuta un'espressione, in questo caso la somma della **colonna Sales** , su una determinata colonna di data. La colonna data deve appartenere a una tabella data contrassegnata come tabella data, come è stato fatto nel **lab Creare calcoli DAX in Power BI Desktop** .*
-
-    *La funzione può anche accettare un terzo argomento facoltativo che rappresenta l'ultima data di un anno. L'assenza di questa data indica che il 31 dicembre è l'ultima data dell'anno. Per Adventure Works, giugno nell'ultimo mese dell'anno e quindi viene usato "6-30".*
+    > *La funzione TOTALYTD() valuta un'espressione, in questo caso la somma della **colonna Sales** , su una determinata colonna di data. La colonna data deve appartenere a una tabella data contrassegnata come tabella data.*
+    >
+    > *La funzione può anche accettare un terzo argomento facoltativo che rappresenta l'ultima data di un anno. L'assenza di questa data indica che il 31 dicembre è l'ultima data dell'anno. Per Adventure Works, giugno nell'ultimo mese dell'anno e quindi viene usato "6-30".*
 
 3. Aggiungere il campo **Sales** e la misura **Sales YTD** all'oggetto visivo matrice.
 
@@ -298,21 +244,19 @@ In questa attività si creerà una misura sales YTD.
 
     ![Immagine 59](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image21.png)
 
-    *La funzione TOTALYTD() esegue la manipolazione dei filtri, in particolare la manipolazione del filtro temporale. Ad esempio, per calcolare le vendite YTD per settembre 2017 (il terzo mese dell'anno fiscale), tutti i filtri nella **tabella Date** vengono rimossi e sostituiti con un nuovo filtro di date che iniziano all'inizio dell'anno (1 luglio 2017) e si estendono fino all'ultima data del periodo di data nel contesto (30 settembre 2017)  2017).*
+*La funzione TOTALYTD() esegue la manipolazione dei filtri, in particolare la manipolazione del filtro temporale. Ad esempio, per calcolare le vendite YTD per settembre 2017 (il terzo mese dell'anno fiscale), tutti i filtri nella **tabella Date** vengono rimossi e sostituiti con un nuovo filtro di date che iniziano all'inizio dell'anno (1 luglio 2017) e si estendono fino all'ultima data del periodo di data nel contesto (30 settembre 2017)  2017).*
 
-    *Molte funzioni di Business Intelligence per le gerarchie temporali sono disponibili in DAX per supportare le manipolazioni comuni dei filtri temporali.*
+*Molte funzioni di Business Intelligence per le gerarchie temporali sono disponibili in DAX per supportare le manipolazioni comuni dei filtri temporali.*
 
-## **Creare una misura di crescita YoY**
+## Creare una misura di crescita YoY
 
-In questa attività si creerà una misura di crescita YoY di vendita.
+In questa attività si creerà una misura di crescita YoY di vendita usando una variabile.
+
+> *Le variabili consentono di semplificare la formula e sono più efficienti se si usa la logica più volte all'interno di una formula. Le variabili vengono dichiarate con un nome univoco e l'espressione di misura deve quindi essere restituita dopo la **parola chiave RETURN** . A differenza di altre variabili del linguaggio di codifica, le variabili DAX possono essere usate solo all'interno della singola formula.*
 
 1. Aggiungere un'altra misura alla **tabella Sales** , in base all'espressione seguente:
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales YoY Growth =  
     VAR SalesPriorYear =  
      CALCULATE(  
@@ -327,12 +271,7 @@ In questa attività si creerà una misura di crescita YoY di vendita.
      SalesPriorYear
     ```
 
-
-    *La **misura Sales YoY Growth** usa una variabile. Le variabili consentono di semplificare la formula e sono più efficienti se si usa la logica più volte all'interno di una formula.*
-
-    *Le variabili vengono dichiarate con un nome univoco e l'espressione di misura deve quindi essere restituita dopo la **parola chiave RETURN** . A differenza di altre variabili del linguaggio di codifica, le variabili DAX possono essere usate solo all'interno della singola formula.*
-
-    *Alla **variabile SalesPriorYear** viene assegnata un'espressione che calcola la somma della **colonna Sales** in un contesto modificato che usa la funzione PARALLELPERIOD() per spostare 12 mesi da ogni data nel contesto di filtro.*
+    > *Alla **variabile SalesPriorYear** viene assegnata un'espressione che calcola la somma della **colonna Sales** in un contesto modificato che usa la funzione PARALLELPERIOD() per spostare 12 mesi da ogni data nel contesto di filtro.*
 
 1. Aggiungere la misura **Sales YoY Growth** all'oggetto visivo matrice.
 
@@ -342,15 +281,11 @@ In questa attività si creerà una misura di crescita YoY di vendita.
 
     ![Immagine 61](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
 
-    *Ora che la "parte difficile" della formula è stata testata, è possibile sovrascrivere la misura con la formula finale che calcola il risultato della crescita.*
+    > *Ora che la "parte difficile" della formula è stata testata, è possibile sovrascrivere la misura con la formula finale che calcola il risultato della crescita.*
 
 1. Per completare la misura, sovrascrivere la misura **Sales YoY Growth** con questa formula e formattarla come percentuale con due cifre decimali:
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Sales YoY Growth =  
     VAR SalesPriorYear =  
      CALCULATE(  
@@ -368,31 +303,16 @@ In questa attività si creerà una misura di crescita YoY di vendita.
      )
     ```
 
-
 1. Nella formula nella clausola **RETURN** si noti che viene fatto riferimento due volte alla variabile.
 
 1. Osservare che la crescita YoY per **2018 Jul** è **392.83%**.
 
     ![Immagine 62](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image23.png)
 
-    *La misura di crescita YoY identifica quasi il 400% (o 4x) aumento delle vendite nello stesso periodo dell'anno precedente.*
+    > *La misura di crescita YoY identifica quasi il 400% (o 4x) aumento delle vendite nello stesso periodo dell'anno precedente.*
 
 1. Nella vista Modello inserire le due nuove misure in una cartella di visualizzazione denominata **Time Intelligence**.
 
     ![Immagine 63](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image24.png)
 
-### **Fine**
-
-In questa attività si completerà il lab.
-
-1. Per eseguire la pulizia della soluzione pronta per lo sviluppo di report, fare clic con il pulsante destro del mouse sulla scheda **Pagina 2** in basso a sinistra e quindi scegliere **Elimina pagina**. Quando viene richiesto di eliminare la pagina, selezionare **Elimina**.
-
-1. Eliminare anche la **pagina 3**.
-
-1. Nella pagina rimanente, per cancellare la pagina, selezionare l'oggetto visivo tabella e premere il tasto **CANC**.
-
-1. Salvare il file di Power BI Desktop.
-
-1. Se si intende iniziare il lab successivo, lasciare aperto Power BI Desktop.
-
-*Verrà creato un report basato sul modello di dati nel **lab Progettare un report in Power BI Desktop** .*
+## Lab completato
