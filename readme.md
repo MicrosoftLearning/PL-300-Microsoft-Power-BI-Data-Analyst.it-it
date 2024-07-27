@@ -10,7 +10,7 @@ Questo repository contiene gli esercizi pratici del lab per il corso [Microsoft 
 
 - Per supportare questo corso, occorrerà apportare di frequente aggiornamenti al contenuto per mantenerlo in linea con i servizi di Power BI usati nel corso.  Le istruzioni e i file dei lab sono pubblicati su GitHub per consentire contributi aperti tra gli autori del corso e gli MCT, in modo da mantenere aggiornato il contenuto con le modifiche della piattaforma Power BI.
 
-- L'auspicio è favorire un senso di collaborazione per i lab come mai prima d'ora. Quando si verificano modifiche in Power BI e vengono rilevate durante una distribuzione in tempo reale, è possibile apportare miglioramenti direttamente nell'origine del lab.  Aiutare i propri colleghi MCT.
+- L'auspicio è favorire un senso di collaborazione per i lab come mai prima d'ora. Quando si verificano modifiche in Power BI e vengono rilevate durante una distribuzione in tempo reale, è possibile apportare miglioramenti direttamente nell'origine del lab.  Collaborazione tra MCT.
 
 ## Come utilizzare questi file in relazione ai file MOC rilasciati?
 
@@ -28,7 +28,7 @@ Questo repository contiene gli esercizi pratici del lab per il corso [Microsoft 
 
 - Ogni MCT può inviare una richiesta pull al codice o al contenuto della repository di GitHub, Microsoft e l'autore del corso si occuperanno di verificare e includere le modifiche al contenuto e al codice del lab, se necessario.
 
-- È possibile inviare bug, modifiche, miglioramenti e idee.  Se si scopre in anteprima una nuova funzionalità di Power BI,  Inviare una nuova demo.
+- È possibile inviare bug, modifiche, miglioramenti e idee.  Se si scopre in anteprima una nuova funzionalità di Power BI,  inviare una nuova demo!
 
 ## Note
 

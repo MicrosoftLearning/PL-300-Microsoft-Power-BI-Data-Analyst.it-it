@@ -1,6 +1,5 @@
 ---
 lab:
-  course: 'PL-300, DP-605'
   title: Creare calcoli DAX in Power BI Desktop
   module: Create Model Calculations using DAX in Power BI
 ---
@@ -20,35 +19,19 @@ Contenuto del lab:
 
 **Il lab dovrebbe richiedere circa 45 minuti.**
 
-## **Creare tabelle calcolate**
+## Operazioni preliminari
 
-In questo esercizio si creeranno due tabelle calcolate. La prima sarà la tabella **Salesperson** per consentire una relazione diretta tra la tabella e la tabella **Sales**. La seconda sarà la tabella **Date**.
+Per completare questo esercizio, aprire prima un Web browser e immettere l'URL seguente per scaricare la cartella ZIP:
 
-*Importante: se si continua dal lab precedente (e il lab è stato completato correttamente), non completare questa attività; Continuare invece dall'attività successiva.*
+`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/04-create-dax-calculations-in-power-bi-desktop\04-intro-dax.zip`
 
-1. Apri Power BI Desktop.
+Estrarre la cartella nella **cartella C:\Users\Student\Downloads\04-intro-dax** .
 
-    ![Icona di Power BI Desktop](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+Aprire il **file 04-Starter-Sales Analysis.pbix** .
 
-1. Per aprire il file di Power BI Desktop iniziale, selezionare **Apri > Sfoglia questo dispositivo**.
+> ***Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche.*
 
-1. **Nella finestra Apri** passare alla **cartella D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** e aprire il **file Sales Analysis**.
-
-   *Nota: a questo punto, Power BI chiederà di accedere se non è già stato fatto. È possibile accedere o selezionare **Annulla** e continuare il lab.*
-
-1. Chiudere eventuali finestre aperte di carattere informativo.
-
-1. Si noti il messaggio di avviso sotto la barra multifunzione.
-
-    *Questo messaggio avvisa il fatto che le query non sono state applicate per il caricamento come tabelle del modello. Le query verranno applicate più avanti in questo lab.*
-
-    *Per ignorare il messaggio di avviso, a destra del messaggio di avviso selezionare **X**.*
-
-1. Per creare una copia del file, passare a **File > Salva con** nome e salvare nella **cartella D:\Allfiles\MySolution** .
-
-1. Se viene richiesto di applicare le modifiche, selezionare **Applica più tardi**.
-
-## **Creare la tabella Salesperson**
+## Creare la tabella calcolata Salesperson
 
 In questa attività si creerà la **tabella calcolata Salesperson** (relazione diretta con **Sales**).
 
@@ -62,21 +45,19 @@ La barra della formula supporta l'immissione di una formula DAX valida. Include 
 
 2. Nella barra della formula, che si apre direttamente sotto la barra multifunzione durante la creazione o la modifica dei calcoli, digitare **Salesperson =**, premere **MAIUSC+INVIO**, digitare **'Salesperson (Performance)'** e quindi premere **INVIO**.
 
-    *Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file di frammenti di codice, che si trova in **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+    > **Nota**: *per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file dei frammenti di codice, che si trova in **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
 
      ![Immagine 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
-     *Questa definizione di tabella crea una copia della **tabella Salesperson (Performance).** Copia solo i dati, ma le proprietà del modello, ad esempio visibilità, formattazione e così via, non vengono copiate.*
-
-     *Suggerimento: è consigliabile immettere "spazi vuoti", ovvero ritorni a capo e schede, per scrivere formule in un formato intuitivo e facile da leggere, soprattutto quando le formule sono lunghe e complesse. Per immettere un ritorno a capo, premere **MAIUSC+INVIO**. "Spazio vuoto" è facoltativo.*
+    > *Questa definizione di tabella crea una copia della **tabella Salesperson (Performance).** Copia solo i dati, ma le proprietà del modello, ad esempio visibilità, formattazione e così via, non vengono copiate.*
 
 1. **Nel riquadro Dati** si noti che l'icona della tabella dispone di un calcolatore aggiuntivo davanti a esso (denotando una tabella calcolata).
 
     ![Immagine 10](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image11.png)
 
-    *Nota: le tabelle calcolate vengono definite usando una formula DAX che restituisce una tabella. È importante comprendere che le tabelle calcolate aumentano le dimensioni del modello di dati perché materializzano e archiviano i valori. Vengono ricalcolate ogni volta che vengono aggiornate le dipendenze delle formule, come nel caso di questo modello di dati quando vengono caricati nuovi valori di data (futuri) nelle tabelle.*
-
-    *A differenza delle tabelle con origine Power Query, le tabelle calcolate non possono essere usate per caricare dati da origini dati esterne. Possono trasformare i dati solo in base a ciò che è già stato caricato nel modello di dati.*
+    > ***Nota**: le tabelle calcolate vengono definite usando una formula DAX che restituisce una tabella. È importante comprendere che le tabelle calcolate aumentano le dimensioni del modello di dati poiché vengono materializzate e archiviano i valori. Vengono ricalcolate ogni volta che vengono aggiornate le dipendenze delle formule, come nel caso di questo modello di dati quando vengono caricati nuovi valori di data (futuri) nelle tabelle.*
+    >
+    > *A differenza delle tabelle con origine Power Query, le tabelle calcolate non possono essere usate per caricare dati da origini dati esterne. Possono trasformare i dati solo in base a ciò che è già stato caricato nel modello di dati.*
 
 1. Passare alla visualizzazione Modello e notare che la tabella Salesperson** è disponibile (potrebbe essere necessario reimpostare la **visualizzazione per trovare la tabella).
 
@@ -94,13 +75,13 @@ La barra della formula supporta l'immissione di una formula DAX valida. Include 
 
 1. **Nel riquadro Proprietà**, nella **casella Descrizione** immettere: **Venditore correlato a Sales**
     
-    *È possibile ricordare che le descrizioni vengono visualizzate come descrizioni comando nel **riquadro Dati** quando l'utente passa il cursore su una tabella o un campo.*
+    > *È possibile ricordare che le descrizioni vengono visualizzate come descrizioni comando nel **riquadro Dati** quando l'utente passa il cursore su una tabella o un campo.*
 
 1. Per la **tabella Salesperson (Performance),** impostare la descrizione su: **Salesperson related to region(s)**
 
 *Il modello di dati offre ora due alternative per l'analisi dei venditori. La **tabella Salesperson** consente di analizzare le vendite effettuate da un venditore, mentre la **tabella Salesperson (Performance)** consente di analizzare le vendite effettuate nelle aree di vendita assegnate al venditore.*
 
-## **Creare la tabella Date**
+## Creare la tabella Date
 
 In questa attività verrà creata la tabella **Date**.
 
@@ -108,66 +89,54 @@ In questa attività verrà creata la tabella **Date**.
 
     ![Figura 5](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image15.png)
 
-1. Nella barra della formula immettere quanto segue:
+1. Nella barra della formula immettere il dax seguente:
 
-    **DAX**
-
-    ```
+    ```DAX
     Date =  
     CALENDARAUTO(6)
     ```
 
     ![Immagine 6](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image16.png)
 
+    > *La funzione CALENDARAUTO() restituisce una tabella a colonna singola costituita da valori di data. Il comportamento "automatico" analizza tutte le colonne di data del modello di dati per determinare i valori di data più recenti e meno recenti archiviati nel modello di dati. Crea quindi una riga per ogni data all'interno di questo intervallo, estendendo l'intervallo in entrambe le direzioni per garantire l'archiviazione completa di anni di dati.*
+    >
+    > *Questa funzione può accettare un singolo argomento facoltativo che corrisponde al numero dell'ultimo mese di un anno. Se omesso, il valore è 12, ovvero dicembre è l'ultimo mese dell'anno. In questo caso, viene immesso 6, vale a dire che giugno è l'ultimo mese dell'anno.*
 
-    *La funzione CALENDARAUTO() restituisce una tabella a colonna singola costituita da valori di data. Il comportamento "automatico" analizza tutte le colonne di data del modello di dati per determinare i valori di data più recenti e meno recenti archiviati nel modello di dati. Crea quindi una riga per ogni data all'interno di questo intervallo, estendendo l'intervallo in entrambe le direzioni per garantire l'archiviazione completa di anni di dati.*
-
-    *Questa funzione può accettare un singolo argomento facoltativo che corrisponde al numero dell'ultimo mese di un anno. Se omesso, il valore è 12, ovvero dicembre è l'ultimo mese dell'anno. In questo caso, viene immesso 6, vale a dire che giugno è l'ultimo mese dell'anno.*
-
-1. Si noti la colonna di valori data.
+1. Si noti la colonna di valori di data formattati usando le impostazioni internazionali degli Stati Uniti, ovvero mm/gg/aaaa.
 
     ![Immagine 7](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image17.png)
 
-    *Le date visualizzate vengono formattate usando le impostazioni internazionali degli Stati Uniti, ovvero mm/gg/aaaa.*
-
-5. Nell'angolo inferiore sinistro nella barra di stato osservare le statistiche della tabella: sono state generate 1826 righe di dati che rappresentano i dati di cinque anni completi.
+1. Nell'angolo inferiore sinistro nella barra di stato osservare le statistiche della tabella: sono state generate 1826 righe di dati che rappresentano i dati di cinque anni completi.
 
     ![Figura 9](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image18.png)
 
-## **Creare colonne calcolate**
+## Creare colonne calcolate
 
 In questa attività verranno aggiunte altre colonne per abilitare il filtro e il raggruppamento in base a periodi di tempo diversi. Verrà creata anche una colonna calcolata per controllare l'ordinamento delle altre colonne.
 
-*Per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file di frammenti di codice, che si trova in **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+> **Nota**: *per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal **file Snippets.txt** .*
 
 1. Nella barra multifunzione contestuale **Strumenti tabella** nel gruppo **Calcoli** selezionare **Nuova colonna**.
+
+    > *Una colonna calcolata viene creata immettendo prima il nome della colonna, seguita dal simbolo di uguale (=), seguita da una formula DAX che restituisce un risultato a valore singolo. Il nome della colonna non può esistere già nella tabella.*
 
     ![Immagine 11](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image19.png)
 
 1. Nella barra della formula digitare il comando seguente (o copiarlo dal file dei frammenti) e quindi premere **INVIO**:
 
+   ```DAX
+   Year =
+   "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
+   ```
 
-    **DAX**
-
-
-    ```
-    Year =
-    "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
-    ```
-
-
-    *Una colonna calcolata viene creata immettendo prima il nome della colonna, seguita dal simbolo di uguale (=), seguita da una formula DAX che restituisce un risultato a valore singolo. Il nome della colonna non può esistere già nella tabella.*
-
-    *La formula usa il valore dell'anno della data, ma ne aggiunge uno al valore dell'anno quando il mese è successivo a giugno. È il modo in cui vengono calcolati gli anni fiscali di Adventure Works.*
-
-1. Verificare che la nuova colonna sia stata aggiunta.
-
-    ![Figura 12](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image20.png)
+    > *La formula usa il valore dell'anno della data, ma ne aggiunge uno al valore dell'anno quando il mese è successivo a giugno. È il modo in cui vengono calcolati gli anni fiscali di Adventure Works.*
 
 1. Usare le definizioni di file dei frammenti di codice per creare le due colonne calcolate seguenti per la tabella **Date**:
 
     - Trimestre
     - Mese
+
+1. Verificare che le nuove colonne siano state aggiunte.
 
     ![Immagine 14](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image21.png)
 
@@ -179,7 +148,7 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
 1. Per aggiungere un oggetto visivo matrice alla nuova pagina del report, nel riquadro **Visualizzazioni** selezionare il tipo di oggetto visivo matrice.
 
-    *Suggerimento: è possibile passare il cursore su ogni icona per visualizzare una descrizione comando che descrive il tipo di oggetto visivo.*
+    > *Suggerimento: è possibile passare il cursore su ogni icona per visualizzare una descrizione comando che descrive il tipo di oggetto visivo.*
 
     ![Immagine 51](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image23.png)
 
@@ -189,8 +158,6 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
 1. Trascinare il campo **Month** nell'area **Rows** direttamente sotto il campo **Year**.
 
-    ![Figura 18](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image25.png)
-
 1. In alto a destra dell'oggetto visivo matrice (o in basso, a seconda della posizione dell'oggetto visivo), selezionare l'icona a forma di freccia doppia con fork (che espanderà tutti gli anni verso il basso di un livello).
 
     ![Figura 19](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image26.png)
@@ -199,29 +166,24 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
     ![Figura 20](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image27.png)
 
-    *Per impostazione predefinita, i valori di testo ordinano alfabeticamente, i numeri sono ordinati dal più piccolo al più grande e le date sono ordinate dal più recente al più recente.*
+    > *Per impostazione predefinita, i valori di testo ordinano alfabeticamente, i numeri sono ordinati dal più piccolo al più grande e le date sono ordinate dal più recente al più recente.*
 
 1. Per personalizzare l'ordinamento dei **campi Month** , passare alla visualizzazione Tabella.
 
 1. Aggiungere la colonna **MonthKey** alla tabella **Date**.
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     MonthKey =
     (YEAR('Date'[Date]) * 100) + MONTH('Date'[Date])
     ```
 
-
-    *Questa formula calcola un valore numerico per ogni combinazione di anno/mese.*
+    > *Questa formula calcola un valore numerico per ogni combinazione di anno/mese.*
 
 1. In Visualizzazione tabella verificare che la nuova colonna contenga valori numerici, ad esempio 201707 per luglio 2017 e così via.
 
     ![Figura 21](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image28.png)
 
-1. Tornare alla visualizzazione Report. **Nel riquadro Dati** assicurarsi che il **campo Mese** sia selezionato (se selezionato, avrà uno sfondo grigio scuro).
+1. Tornare alla visualizzazione Report. **Nel riquadro Dati** selezionare **Mese**.
 
 1. Nella barra multifunzione contestuale **Strumenti colonna** nel gruppo **Ordina** selezionare **Ordina per colonna** e quindi **MonthKey**.
 
@@ -231,14 +193,13 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
     ![Figura 23](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image30.png)
 
-## **Completare la tabella Date**
+## Completare la tabella Date
 
 In questa attività verrà completata la progettazione della tabella **Date** nascondendo una colonna e creando una gerarchia. Si creeranno quindi relazioni con le tabelle **Sales** e **Targets**.
 
 1. Passare alla visualizzazione Modello. Nella tabella **Date** nascondere la colonna **MonthKey** (impostare **È nascosta** su **Sì**).
 
-
-1. **Nel riquadro Dati** sul lato destro selezionare la tabella Data **, fare clic con il **pulsante destro del clic sulla **colonna Year** e selezionare **Crea gerarchia**. 
+1. **Nel riquadro Dati** sul lato destro selezionare la tabella Data **, fare clic con il **pulsante destro del clic sulla **colonna Year** e selezionare **Crea gerarchia**.
 
 1. Rinominare la gerarchia appena creata in **Fiscal selezionando e **Rinomina****.
 
@@ -254,14 +215,15 @@ In questa attività verrà completata la progettazione della tabella **Date** na
     - **Date \| Date** con **Sales \| OrderDate**
     - **Date \| Date** con **Targets \| TargetMonth**
 
-    *I lab usano una notazione abbreviata per fare riferimento a un campo. Sarà simile al seguente: **Sales \| Unit Price**. In questo esempio Sales **** è il nome della tabella e **Unit Price** è il nome del campo.*
+
+    > *I lab usano una notazione abbreviata per fare riferimento a un campo. Sarà simile al seguente: **Sales \| Unit Price**. In questo esempio Sales **** è il nome della tabella e **Unit Price** è il nome del campo.*
 
 1. Nascondere le due colonne seguenti:
 
     - Sales \| OrderDate
     - Targets \| TargetMonth
 
-## **Contrassegnare la tabella Date**
+## Contrassegnare la tabella Date
 
 In questa attività si contrassegnerà la tabella **Date** come tabella data.
 
@@ -271,15 +233,13 @@ In questa attività si contrassegnerà la tabella **Date** come tabella data.
 
 1. **Nella finestra Contrassegna come tabella** data scorrere la **proprietà Contrassegna come tabella** data su **Sì** e nell'elenco **a discesa Scegliere una colonna** data selezionare **Data**. Seleziona **Salva**.
 
-    ![Screenshot 2024-04-17 164626](https://github.com/afelix-95/PL-300-Microsoft-Power-BI-Data-Analyst/assets/148110824/f316c96a-404d-4618-9bee-f12b0868ad01)
+    ![Contrassegna come tabella data](Linked_image_Files/04-create-dax-calculations-in-power-bi-desktop_date-table.png)
 
 1. Salvare il file di Power BI Desktop.
 
-    *Power BI Desktop ora riconosce che questa tabella definisce la data (ora). È importante quando si basano sui calcoli di Business Intelligence per le gerarchie temporali. Si useranno calcoli di Business Intelligence per le **gerarchie temporali nel lab Creare calcoli DAX avanzati in Power BI Desktop** .*
+> *Power BI Desktop ora riconosce che questa tabella definisce la data (ora). Questo approccio progettuale per una tabella data è adatto quando non si dispone di una tabella data nell'origine dati. Se si dispone di un data warehouse, sarebbe opportuno caricare i dati di data dalla tabella delle dimensioni data anziché "ridefinire" la logica della data nel modello di dati.*
 
-    *Questo approccio progettuale per una tabella data è adatto quando non si dispone di una tabella data nell'origine dati. Se si dispone di un data warehouse, sarebbe opportuno caricare i dati di data dalla tabella delle dimensioni data anziché "ridefinire" la logica della data nel modello di dati.*
-
-## **Creare misure semplici**
+## Creare misure semplici
 
 In questa attività verranno create misure semplici. Le misure semplici aggregano i valori in una singola colonna o conteggiano le righe di una tabella.
 
@@ -287,40 +247,28 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
 
     ![Figura 27](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image35.png)
 
-    *È possibile ricordare che nel **lab Model Data in Power BI Desktop** è necessario impostare la **colonna Unit Price** per riepilogare in **base alla media**. Il risultato visualizzato nell'oggetto visivo matrice è il prezzo unitario medio mensile (somma dei valori di prezzo unitario diviso per il conteggio dei prezzi unitari).*
-
-1. Nel riquadro Campi dell'oggetto visivo sotto il riquadro **Visualizzazioni** nell'area **Valori** è possibile osservare che è presente **Unit Price**.
-
-    ![Immagine 28](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image36.png)
-
-1. Selezionare la freccia rivolta verso il basso per **Unit Price** e osservare le opzioni di menu disponibili.
+1. Nel riquadro campi visivi (che si trova sotto il **riquadro Visualizzazioni**), nel **campo Valori** area/area, si noti che **il **prezzo** unitario è elencato come Media prezzo** unitario. Selezionare la freccia rivolta verso il basso per **Unit Price** e osservare le opzioni di menu disponibili.
 
     ![Immagine 30](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image37.png)
 
-    *Le colonne numeriche visibili consentono agli autori di report in fase di progettazione del report di decidere in che modo i valori delle colonne riepilogeranno (o meno). Può comportare la segnalazione inappropriata. Alcuni modelli di dati non amano lasciare le cose per caso, tuttavia, e scegliere di nascondere queste colonne ed esporre invece la logica di aggregazione definita nelle misure. È l'approccio che verrà ora adottato in questo lab.*
+    > *Le colonne numeriche visibili consentono agli autori di report in fase di progettazione del report di decidere in che modo i valori delle colonne riepilogeranno (o meno). Può comportare la segnalazione inappropriata. Alcuni modelli di dati non amano lasciare le cose per caso, tuttavia, e scegliere di nascondere queste colonne ed esporre invece la logica di aggregazione definita nelle misure. È l'approccio che verrà ora adottato in questo lab.*
 
 1. Per creare una misura, nel riquadro Dati** fare clic con il **pulsante destro del mouse sulla **tabella Sales** e quindi scegliere **Nuova misura**.
 
 1. Nella barra della formula aggiungere la definizione di misura seguente:
 
-
-    **DAX**
-
-
-    ```
+    ```DAX
     Avg Price =  
     AVERAGE(Sales[Unit Price])
     ```
 
-1. Aggiungere la misura **Avg Price** all'oggetto visivo matrice.
-
-1. Si noti che viene prodotto lo stesso risultato della colonna **Unit Price** (ma con formattazione diversa).
+1. Aggiungere la **misura Avg Price** all'oggetto visivo matrice e notare che produce lo stesso risultato della **colonna Unit Price** (ma con formattazione diversa).
 
 1. Nell'area **Valori** aprire il menu di scelta rapida per il **campo Prezzo** medio e notare che non è possibile modificare la tecnica di aggregazione.
 
     ![Immagine 32](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image39.png)
 
-    *Non è possibile modificare il comportamento di aggregazione di una misura.*
+    > *Non è possibile modificare il comportamento di aggregazione di una misura.*
 
 1. Usare le definizioni di file dei frammenti di codice per creare le cinque misure seguenti per la tabella **Sales**:
 
@@ -330,11 +278,11 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
     - Ordini
     - Order Lines
 
-    *La funzione DISTINCTCOUNT() usata nella **misura Orders** conta solo gli ordini una sola volta (ignorando i duplicati). La funzione COUNTROWS() utilizzata nella **misura Order Lines** opera su una tabella.*
+    > *La funzione DISTINCTCOUNT() usata nella **misura Orders** conta solo gli ordini una sola volta (ignorando i duplicati). La funzione COUNTROWS() utilizzata nella **misura Order Lines** opera su una tabella.*
+    >
+    > *In questo caso il numero di ordini viene calcolato contando i singoli valori della colonna **SalesOrderNumber**, mentre il numero di righe di ordine è semplicemente il numero di righe della tabella (ogni riga è una riga di un ordine).*
 
-    *In questo caso il numero di ordini viene calcolato contando i singoli valori della colonna **SalesOrderNumber**, mentre il numero di righe di ordine è semplicemente il numero di righe della tabella (ogni riga è una riga di un ordine).*
-
-10. Passare alla visualizzazione Modello e quindi selezionare più misure di prezzo: **Avg Price**, **Max Price, **Median Price**** e **Min Price**.
+1. Passare alla visualizzazione Modello e quindi selezionare più misure di prezzo: **Avg Price**, **Max Price, **Median Price**** e **Min Price**.
 
 11. Per la selezione di più misure, configurare i requisiti seguenti:
 
@@ -346,7 +294,7 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
 
 12. Nascondere la colonna **Unit Price**.
 
-    *La **colonna Unit Price** non è ora disponibile per gli autori di report. Devono usare le misure di determinazione dei prezzi aggiunte al modello. Questo approccio di progettazione garantisce che gli autori di report non aggregano in modo inappropriato i prezzi, ad esempio sommandoli.*
+    > *La **colonna Unit Price** non è ora disponibile per gli autori di report. Devono usare le misure di determinazione dei prezzi aggiunte al modello. Questo approccio di progettazione garantisce che gli autori di report non aggregano in modo inappropriato i prezzi, ad esempio sommandoli.*
 
 13. Selezionare le misure **Order Lines** e **Orders** e quindi configurare i requisiti seguenti:
 
@@ -357,8 +305,6 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
     ![Figura 36](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image41.png)
 
 14. Nella visualizzazione Report, nell'area **Area** /area dell'oggetto visivo matrice, per il **campo Prezzo** unitario selezionare **X** per rimuoverlo.
-
-    ![Immagine 38](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image42.png)
 
 15. Aumentare le dimensioni dell'oggetto visivo matrice per riempire la larghezza e l'altezza della pagina.
 
@@ -374,7 +320,7 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
 
     ![Immagine 39](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image43.png)
 
-## **Creare misure aggiuntive**
+## Creare misure aggiuntive
 
 In questa attività verranno create più misure che usano formule più complesse.
 
@@ -382,41 +328,31 @@ In questa attività verranno create più misure che usano formule più complesse
 
     ![Figura 41](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image45.png)
 
-
 1. Selezionare l'oggetto visivo tabella e quindi nel riquadro **Visualizzazioni** rimuovere il campo **Target**.
 
 1. Rinominare la colonna **Targets \| Target** in **Targets \| TargetAmount**.
 
-    *Suggerimento: esistono diversi modi per rinominare la colonna nella visualizzazione Report: nel riquadro Dati** è possibile fare clic con il pulsante destro del **mouse sulla colonna e quindi scegliere **Rinomina** oppure fare doppio clic sulla colonna oppure premere **F2**.*
-
-    *Si sta per creare una misura denominata **Target**. Non è possibile avere una colonna e una misura nella stessa tabella con lo stesso nome.*
+    > *Suggerimento: esistono diversi modi per rinominare la colonna nella visualizzazione Report: nel riquadro Dati** è possibile fare clic con il pulsante destro del **mouse sulla colonna e quindi scegliere **Rinomina** oppure fare doppio clic sulla colonna oppure premere **F2**.*
 
 1. Creare la misura seguente nella tabella **Targets**:
 
-    **DAX**
-
-
-    ```
+    ```DAX
     Target =
-
     IF(
-
     HASONEVALUE('Salesperson (Performance)'[Salesperson]),
-
     SUM(Targets[TargetAmount])
-
     )
     ```
 
-    *La funzione HASONEVALUE() verifica se viene filtrato un singolo valore nella **colonna Salesperson** . Se true, l'espressione restituisce la somma degli importi di destinazione (solo per tale venditore). Se false, viene restituito BLANK.*
+    > *La funzione HASONEVALUE() verifica se viene filtrato un singolo valore nella **colonna Salesperson** . Se true, l'espressione restituisce la somma degli importi di destinazione (solo per tale venditore). Se false, viene restituito BLANK.*
 
 1. Formattare la misura **Target** per zero cifre decimali.
 
-    *Suggerimento: è possibile usare la **barra multifunzione contestuale Strumenti** misure.*
+    > *Suggerimento: è possibile usare la **barra multifunzione contestuale Strumenti** misure.*
 
 1. Nascondere la colonna **TargetAmount**.
 
-    *Suggerimento: è possibile fare clic con il pulsante destro del **mouse sulla colonna nel riquadro Dati** e quindi scegliere **Nascondi**.*
+    > *Suggerimento: è possibile fare clic con il pulsante destro del **mouse sulla colonna nel riquadro Dati** e quindi scegliere **Nascondi**.*
 
 1. Aggiungere la misura **Target** all'oggetto visivo tabella.
 
@@ -426,7 +362,7 @@ In questa attività verranno create più misure che usano formule più complesse
 
 1. Usare le definizioni di file dei frammenti di codice per creare le due misure seguenti per la tabella **Targets**:
 
-    - Scostamento
+    - Variance
     - Variance Margin
 
 1. Formattare la misura **Variance** per zero cifre decimali.
@@ -439,7 +375,11 @@ In questa attività verranno create più misure che usano formule più complesse
 
     ![Immagine 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
 
-    *Anche se appare che tutti i venditori non soddisfano la destinazione, tenere presente che l'oggetto visivo tabella non è ancora filtrato in base a un periodo di tempo specifico. Si produrranno report sulle prestazioni delle vendite che filtrano in base a un periodo di tempo selezionato dall'utente nel **lab Progettare un report in Power BI Desktop** .*
+    > *Anche se appare che tutti i venditori non soddisfano la destinazione, tenere presente che l'oggetto visivo tabella non è ancora filtrato in base a un periodo di tempo specifico. Si produrranno report sulle prestazioni delle vendite che filtrano in base a un periodo di tempo selezionato dall'utente nel **lab Progettare un report in Power BI Desktop** .*
+
+1. Nell'angolo superiore destro del **riquadro Dati** comprimere e quindi espandere il riquadro.
+
+    > *La compressione e la riapertura del riquadro reimpostano il contenuto.*
 
 1. Si noti che la tabella **Targets** è ora visualizzata nella parte superiore dell'elenco.
 
@@ -447,8 +387,4 @@ In questa attività verranno create più misure che usano formule più complesse
 
     *Le tabelle che comprendono solo le misure visibili vengono elencate automaticamente nella parte superiore dell'elenco.*
 
-### **Fine**
-
-Salvare il file di Power BI Desktop.
-
-*Il modello di dati verrà migliorato con calcoli più avanzati usando DAX nel **lab Creare calcoli DAX avanzati in Power BI Desktop** .*
+## Lab completato
