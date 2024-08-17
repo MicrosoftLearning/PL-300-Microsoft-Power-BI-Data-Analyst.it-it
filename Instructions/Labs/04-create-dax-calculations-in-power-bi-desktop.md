@@ -45,7 +45,7 @@ La barra della formula supporta l'immissione di una formula DAX valida. Include 
 
 2. Nella barra della formula, che si apre direttamente sotto la barra multifunzione durante la creazione o la modifica dei calcoli, digitare **Salesperson =**, premere **MAIUSC+INVIO**, digitare **'Salesperson (Performance)'** e quindi premere **INVIO**.
 
-    > **Nota**: *per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file dei frammenti di codice, che si trova in **D:\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.*
+    > **Nota**: *per praticità, tutte le definizioni DAX in questo lab possono essere copiate dal file dei frammenti di codice, che si trova in **04-intro-dax\Snippets.txt**.*
 
      ![Immagine 4](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image10.png)
 
@@ -123,13 +123,14 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
     ![Immagine 11](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image19.png)
 
 1. Nella barra della formula digitare il comando seguente (o copiarlo dal file dei frammenti) e quindi premere **INVIO**:
+    > *La formula usa il valore dell'anno della data, ma ne aggiunge uno al valore dell'anno quando il mese è successivo a giugno. È il modo in cui vengono calcolati gli anni fiscali di Adventure Works.*
 
    ```DAX
    Year =
    "FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
    ```
 
-    > *La formula usa il valore dell'anno della data, ma ne aggiunge uno al valore dell'anno quando il mese è successivo a giugno. È il modo in cui vengono calcolati gli anni fiscali di Adventure Works.*
+
 
 1. Usare le definizioni di file dei frammenti di codice per creare le due colonne calcolate seguenti per la tabella **Date**:
 
