@@ -43,6 +43,8 @@ In questa attività si userà editor di Power Query per configurare la **query S
 
      ![Immagine 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
+> **Nota:** se viene visualizzato un messaggio di avviso che chiede di specificare come connettersi, selezionare **Modifica credenziali**, connettersi usando le credenziali correnti e selezionare **OK** per usare una connessione non crittografata.
+ 
 1. Per rinominare la query, nel riquadro **Impostazioni query** (situato a destra), nella casella **Nome** sostituire il testo con **Salesperson** e quindi premere **INVIO**. Verificare quindi che il nome sia stato aggiornato nel **riquadro Query** .
 
     > *Il nome della query determina il nome della tabella del modello. È consigliabile definire nomi concisi e descrittivi.*
@@ -297,6 +299,8 @@ In questa attività verrà configurata la **query Sales** .
 In questa attività verrà configurata la query **Targets**.
 
 1. Selezionare la **query ResellerSalesTargets** e rinominare **Targets**.
+
+> **Nota:** se viene visualizzato un messaggio di avviso che chiede di specificare come connettersi, selezionare **Modifica credenziali** e usare l'accesso anonimo.
 
 1. Per trasformare tramite UnPivot le colonne dei 12 mesi (**M01**-**M12**), selezionare prima di tutto le intestazioni di colonna **Year** e **EmployeeID**.
 
