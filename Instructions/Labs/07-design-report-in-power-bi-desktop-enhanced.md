@@ -15,7 +15,7 @@ Contenuto del lab:
 - Sincronizzare i filtri dei dati
 - Creare una pagina di drill-through
 - Applicare la formattazione condizionale
-- Creare e usare i segnalibri
+- Creare e usare segnalibri e pulsanti
 
 **Il lab dovrebbe richiedere circa 45 minuti.**
 
