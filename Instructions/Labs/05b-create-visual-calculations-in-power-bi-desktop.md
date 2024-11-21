@@ -17,7 +17,7 @@ Contenuto del lab:
 - Usare il parametro Axis facoltativo durante la creazione di metriche di confronto.
 - Usare il parametro Facoltativo Reset per personalizzare i calcoli cumulativi in un asse multi-livellamento.
 
-**Il lab dovrebbe richiedere circa 45 minuti.**
+**Questo lab dovrebbe richiedere circa 30 minuti.**
 
 ## Operazioni preliminari
 
