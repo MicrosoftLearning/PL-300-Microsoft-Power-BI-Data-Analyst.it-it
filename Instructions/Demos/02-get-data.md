@@ -1,10 +1,10 @@
 ---
 demo:
-  title: Recuperare dati in Power BI
+  title: Recuperare i dati in Power BI
   module: Get data in Power BI
 ---
 
-# Recuperare dati in Power BI
+# Recuperare i dati in Power BI
 
 ## Iniziare a sviluppare un report di Power BI
 
