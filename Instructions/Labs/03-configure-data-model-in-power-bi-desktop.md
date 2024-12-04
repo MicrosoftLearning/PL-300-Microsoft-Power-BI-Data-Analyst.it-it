@@ -257,7 +257,7 @@ In questa attività si passerà alla visualizzazione Report, si esaminerà l'int
 
       ![Immagine 359](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image40.png)
 
-> *Importante**: *queste gerarchie non sono state create dall'utente. Sono stati creati automaticamente come impostazione predefinita. C'è però un problema. L'anno finanziario Adventure Works inizia il 1° luglio di ogni anno. Tuttavia, in queste gerarchie di date create automaticamente, la gerarchia di date inizia il 1° gennaio di ogni anno.*
+> **Importante**: *queste gerarchie non sono state create dall'utente. Sono stati creati automaticamente come impostazione predefinita. C'è però un problema. L'anno finanziario Adventure Works inizia il 1° luglio di ogni anno. Tuttavia, in queste gerarchie di date create automaticamente, la gerarchia di date inizia il 1° gennaio di ogni anno.*
 
 1. Per disattivare l'impostazione **Data/ora automatica** , passare a **Opzioni > file e Impostazioni > Opzioni**.
 
