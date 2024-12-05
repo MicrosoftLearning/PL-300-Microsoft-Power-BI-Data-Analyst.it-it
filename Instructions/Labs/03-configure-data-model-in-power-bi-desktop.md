@@ -178,7 +178,7 @@ In questa attività si configurerà la **tabella Reseller** per aggiungere una g
 
     - Country-Region to **Country/Region**
     - Stato-Provincia a **Stato o Provincia**
-    - Città** a **Città**
+    - Da città a **città**
 
 ## Configurare la tabella Sales
 
