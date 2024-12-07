@@ -31,8 +31,6 @@ Aprire il **file 05b-Starter-Sales Analysis.pbix** .
 
 > ***Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche.*
 
-In Power BI Desktop passare a **Opzioni > file e impostazioni > Opzioni > Funzionalità** di anteprima. Selezionare **Calcoli** visivi e selezionare **OK**. I calcoli visivi vengono abilitati dopo il riavvio di Power BI Desktop.
-
 ## Creare un oggetto visivo grafico a barre
 
 In questa attività verrà creato un grafico a barre che mostra l'importo delle vendite, il costo totale del prodotto e il profitto per anno fiscale, con le metriche di confronto come descrizioni comando.
@@ -128,7 +126,7 @@ In questa attività verrà creato un oggetto visivo matrice che confronta l'impo
 1. Nella finestra di modifica dei calcoli visivi digitare e salvare il calcolo seguente:
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales])
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales])
    ```
 
 > Si noti che la matrice mostra la differenza nell'importo delle vendite per ogni categoria rispetto alla prima categoria.
@@ -136,7 +134,7 @@ In questa attività verrà creato un oggetto visivo matrice che confronta l'impo
 1. Selezionare il campo **Rispetto prima** nell'area **Area/area Valori** e aggiornare il calcolo aggiungendo il valore ROWS per il parametro Axis a FIRST:
 
    ```DAX
-    Versus first = [Sales] - FIRST([Sales], ROWS)
+    Versus first = [Sum of Sales] - FIRST([Sum of Sales], ROWS)
    ```
 
 > Si noti che nulla cambia perché ROWS è il valore predefinito per il parametro Axis.
