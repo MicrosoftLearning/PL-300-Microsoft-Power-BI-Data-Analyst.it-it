@@ -37,13 +37,13 @@ In questa attività si userà editor di Power Query per configurare la **query S
 
 1. Per aprire la finestra **Editor di Power Query**, nella scheda della barra multifunzione **Home**, nel gruppo **Query** selezionare l'icona **Trasforma dati**.
 
-     ![Trasforma dati nella barra multifunzione Home](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
+    ![Trasforma dati nella barra multifunzione Home](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
 
 1. Nella finestra **Editor di Power Query**, nel riquadro **Query**, selezionare la query **DimEmployee**.
 
-     ![Immagine 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
+    ![Immagine 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
 
-> **Nota:** se viene visualizzato un messaggio di avviso che chiede di specificare come connettersi, selezionare **Modifica credenziali**, connettersi usando le credenziali correnti e selezionare **OK** per usare una connessione non crittografata.
+    > **Nota:** se viene visualizzato un messaggio di avviso che chiede di specificare come connettersi, selezionare **Modifica credenziali**, connettersi usando le credenziali correnti e selezionare **OK** per usare una connessione non crittografata.
  
 1. Per rinominare la query, nel riquadro **Impostazioni query** (situato a destra), nella casella **Nome** sostituire il testo con **Salesperson** e quindi premere **INVIO**. Verificare quindi che il nome sia stato aggiornato nel **riquadro Query** .
 
@@ -53,11 +53,11 @@ In questa attività si userà editor di Power Query per configurare la **query S
 
     > *Vai a Colonna è una funzionalità utile con molte colonne. In caso contrario, è possibile scorrere orizzontalmente le colonne.*
 
-     ![Gestire le colonne > Scegliere le colonne > Vai alla colonna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
+    ![Gestire le colonne > Scegliere le colonne > Vai alla colonna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
 
 1. **Nella finestra Vai a colonna**, per ordinare l'elenco in base al nome della colonna, selezionare il **pulsante az** sort e quindi selezionare **Nome** e **SalesPersonFlag**. Fare clic su **OK**.
 
-     ![Passare alle opzioni di ordinamento delle colonne](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
+    ![Passare alle opzioni di ordinamento delle colonne](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
 
 1. Individuare la **colonna SalesPersonFlag** , quindi filtrare la colonna per selezionare solo Salespeople (vale **a dire TRUE**) e fare clic su **OK**.
 
@@ -65,7 +65,7 @@ In questa attività si userà editor di Power Query per configurare la **query S
 
     > *Ogni trasformazione creata genera risultati in un altro passaggio logico. È possibile modificare o eliminare i passaggi. È anche possibile selezionare un passaggio per visualizzare in anteprima i risultati della query in tale fase della trasformazione della query.*
 
-     ![Passaggi applicati](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
+    ![Passaggi applicati](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
 
 1. Per rimuovere le colonne, nella scheda Home della barra multifunzione selezionare il **gruppo Gestisci colonne**, selezionare l'icona **Scegli colonne**.****
 
@@ -77,16 +77,16 @@ In questa attività si userà editor di Power Query per configurare la **query S
     - EmployeeNationalIDAlternateKey
     - FirstName
     - LastName
-    - Title
+    - Titolo
     - EmailAddress
 
 1. Nell'elenco **Passaggi applicati** si noti l'aggiunta di un altro passaggio della query.
 
-     ![Rimozione di altre colonne](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
+    ![Rimozione di altre colonne](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image21.png)
 
 1. Per creare una singola colonna del nome, selezionare prima l'intestazione di colonna **FirstName**. Tenendo premuto il tasto **CTRL** selezionare la colonna **LastName**.
 
-     ![Selezione multipla di due colonne per creare una singola colonna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
+    ![Selezione multipla di due colonne per creare una singola colonna](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
 1. Fare clic con il pulsante destro del mouse su una delle intestazioni di colonna selezionate e quindi scegliere **Merge di colonne** dal menu di scelta rapida.
 
@@ -149,7 +149,7 @@ In questa attività verrà configurata la query **Product**.
 1. Selezionare EnglishProductSubcategoryName e DimProductCategory** e deselezionare la **casella di controllo Usa nome colonna originale come prefisso** prima di selezionare **OK**.**** **
 
     > *Selezionando queste due colonne, verrà applicata una trasformazione per il join alla **tabella DimProductSubcategory** e quindi include queste colonne. La **colonna DimProductCategory** è, infatti, un'altra tabella correlata nell'origine dati.*
-    >
+
     > *I nomi delle colonne di query devono essere sempre univoci. Se selezionata, questa casella di controllo prefissi ogni colonna con il nome della colonna espansa (in questo caso **DimProductSubcategory**). Poiché è noto che i nomi di colonna selezionati non si scontrano con i nomi di colonna nella **query Product** , l'opzione è deselezionata.*
 
 1. Si noti che la trasformazione ha determinato l'aggiunta di due colonne e che la colonna **DimProductSubcategory** è stata rimossa.
@@ -193,7 +193,7 @@ In questa attività verrà configurata la **query Reseller** .
     - Nella casella **Valore da trovare** immettere **Ware House**
     - Nella casella **Sostituisci con** immettere **Warehouse**
 
-     ![Finestra di dialogo Sostituisci valori](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
+    ![Finestra di dialogo Sostituisci valori](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image40.png)
 
 1. Rinominare le quattro colonne seguenti:
 
@@ -255,7 +255,7 @@ In questa attività verrà configurata la **query Sales** .
 
 1. Per creare una colonna personalizzata, nella scheda **Aggiungi colonna** della barra multifunzione, nel gruppo **Generale** selezionare **Colonna personalizzata**.
 
-     ![Immagine 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
+    ![Immagine 5664](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image47.png)
 
 1. Nella finestra **Colonna personalizzata** nella casella **Nome nuova colonna** sostituire il testo con **Cost**.
 
@@ -282,7 +282,7 @@ In questa attività verrà configurata la **query Sales** .
 
     > *La configurazione del tipo di dati corretto è importante. Quando la colonna contiene un valore numerico, è anche importante scegliere il tipo corretto se si prevede di eseguire calcoli matematici.*
 
-     ![Immagine 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
+    ![Immagine 5667](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image50.png)
 
 1. Modificare i tipi di dati delle tre colonne seguenti in **Numero decimale fisso**.
 
@@ -300,7 +300,7 @@ In questa attività verrà configurata la query **Targets**.
 
 1. Selezionare la **query ResellerSalesTargets** e rinominare **Targets**.
 
-> **Nota:** se viene visualizzato un messaggio di avviso che chiede di specificare come connettersi, selezionare **Modifica credenziali** e usare l'accesso anonimo.
+    > **Nota:** se viene visualizzato un messaggio di avviso che chiede di specificare come connettersi, selezionare **Modifica credenziali** e usare l'accesso anonimo.
 
 1. Per trasformare tramite UnPivot le colonne dei 12 mesi (**M01**-**M12**), selezionare prima di tutto le intestazioni di colonna **Year** e **EmployeeID**.
 
@@ -341,7 +341,7 @@ In questa attività verrà configurata la query **Targets**.
 
 1. Si noti anche la formula visualizzata sopra la griglia della query.
 
-     ![Immagine 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
+    ![Immagine 5679](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image60.png)
 
 1. Per rinominare la nuova colonna, fare doppio clic sull'intestazione **di colonna Unita** e rinominare la colonna come **TargetMonth**.
 
@@ -359,7 +359,7 @@ In questa attività verrà configurata la query **Targets**.
 
     > *È possibile ricordare che i valori di destinazione sono stati archiviati come migliaia.*
 
-     ![Immagine 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
+    ![Immagine 5682](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image63.png)
 
 1. **Nella finestra Moltiplica** nella **casella Valore** immettere **1000** e selezionare **OK**.
 
@@ -373,7 +373,7 @@ In questa attività verrà configurata la query **ColorFormats**.
 
 1. Nella scheda **Home** della barra multifunzione selezionare **Usa prima riga come intestazioni** nel gruppo **Trasforma**.
 
-     ![Immagine 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
+    ![Immagine 5688](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image68.png)
 
 **Nella barra di stato verificare che la query abbia 3 colonne e 10 righe.**
 
@@ -387,15 +387,15 @@ In questa attività verrà aggiornata la query **Product** tramite l'unione dell
 
     > *Il merge delle query consente l'integrazione di dati, in questo caso da origini dati diverse (SQL Server e un file CSV).*
 
-     ![Immagine 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
+    ![Immagine 5654](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image71.png)
 
 1. Nella finestra **Merge** nella griglia della query **Product** selezionare l'intestazione di colonna **Color**.
 
-     ![Immagine 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
+    ![Immagine 5655](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image72.png)
 
 1. Nell'elenco a discesa della griglia della query **Product** selezionare la query **ColorFormats**.
 
-     ![Figura 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
+    ![Figura 21](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image73.png)
 
 1. Nella griglia della query **ColorFormats** selezionare l'intestazione di colonna **Color**.
 
@@ -403,7 +403,7 @@ In questa attività verrà aggiornata la query **Product** tramite l'unione dell
 
     > *I livelli di privacy possono essere configurati per l'origine dati per determinare se i dati possono essere condivisi tra origini. Se necessario, l'impostazione di ogni origine dati come **organizzazione** consente loro di condividere i dati. Le origini dati private non possono mai essere condivise con altre origini dati. Non significa che i dati privati non possono essere condivisi; significa che il motore di Power Query non può condividere i dati tra le origini.*
 
-     ![Immagine 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
+    ![Immagine 5691](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image74.png)
 
 1. **Nella finestra Merge** usare il tipo** di join predefinito**, mantenendo la selezione di Left Outer e selezionando **OK**.
 
@@ -422,33 +422,33 @@ In questa attività si aggiornerà la query **ColorFormats** per disabilitarne i
 
 1. Nel riquadro **Impostazioni query** selezionare il collegamento **Tutte le proprietà**.
 
-     ![Immagine 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
+    ![Immagine 322](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image80.png)
 
 1. Nella finestra **Proprietà query** deselezionare la casella di controllo **Abilita caricamento nel report**.
 
     > *La disabilitazione del carico significa che non verrà caricata come tabella nel modello di dati. Questa operazione viene eseguita perché la query è stata unita alla **query Product** , che è abilitata per il caricamento nel modello di dati.*
 
-     ![Immagine 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
+    ![Immagine 323](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image81.png)
 
 ### Rivedi il prodotto finale
 
-In editor di Power Query verificare che siano presenti **8 query, denominate** correttamente come indicato di seguito:
+1. In editor di Power Query verificare che siano presenti **8 query, denominate** correttamente come indicato di seguito:
 
-- Venditore
-- SalespersonRegion
-- Prodotto
-- Reseller
-- Paese
-- Vendite
-- Target
-- ColorFormats (che non verrà caricata nel modello di dati)
+    - Venditore
+    - SalespersonRegion
+    - Prodotto
+    - Reseller
+    - Paese
+    - Vendite
+    - Target
+    - ColorFormats (che non verrà caricata nel modello di dati)
 
-Selezionare **Chiudi &amp; applica** per caricare i dati nel modello e chiudere editor di Power Query finestra.
+1. Selezionare **Chiudi &amp; applica** per caricare i dati nel modello e chiudere editor di Power Query finestra.
 
-![Immagine 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
+    ![Immagine 326](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image83.png)
 
-È ora possibile visualizzare l'area di disegno in Power BI Desktop, con filtri, visualizzazioni e riquadri dati a destra. Nel riquadro Dati notare le **7 tabelle** caricate nel modello di dati.
+1. È ora possibile visualizzare l'area di disegno in Power BI Desktop, con filtri, visualizzazioni e riquadri dati a destra. Nel riquadro Dati notare le **7 tabelle** caricate nel modello di dati.
 
-![Immagine 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
+    ![Immagine 3](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image84.png)
 
 ## Lab completato
