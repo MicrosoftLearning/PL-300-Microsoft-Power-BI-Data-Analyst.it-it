@@ -31,7 +31,7 @@ In questa attività si configurerà l'ambiente per il lab creando un modello sem
 
 1. Nella finestra del browser Microsoft Edge, nella servizio Power BI, passare a **Area di lavoro** personale.
 
-1. Selezionare **Carica > Sfoglia**.
+1. Selezionare **Importa > Report o Report impaginato > da questo computer**.
 
 1. Passare alla **cartella C:\Users\Student\Downloads\09-create-dashboard** .
 
