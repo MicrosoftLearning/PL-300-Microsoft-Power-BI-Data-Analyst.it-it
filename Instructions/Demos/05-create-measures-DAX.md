@@ -51,7 +51,7 @@ Cost = 'Sales'[Quantity] * RELATED('Product'[Cost])
 
 ## Creare una misura rapida
 
-1. Aggiungere una misura rapida alla tabella Sales, sottraendo la colonna Cost dalla colonna Profit.
+1. Aggiungere una misura rapida alla tabella Sales, sottraendo la colonna Cost dalla colonna Sales.
 
 1. Rinominare la misura Profit.
 
