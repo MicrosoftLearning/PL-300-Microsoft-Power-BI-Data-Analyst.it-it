@@ -360,7 +360,7 @@ In questo esercizio si pubblicherà il report nel servizio Power BI ed si esamin
 
      ![Immagine 86](Linked_image_Files/07-design-report-in-power-bi-desktop_image66.png)
 
-1. Passare di nuovo il cursore su uno degli oggetti visivi, quindi in alto a destra selezionare i puntini di sospensione (...), quindi notare le opzioni di menu. Provare ognuna delle opzioni, ad eccezione di **Chat in Teams**.
+1. Passare di nuovo il cursore su uno degli oggetti visivi, quindi in alto a destra selezionare i puntini di sospensione (...), quindi notare le opzioni di menu. Provare ognuna delle opzioni, ad eccezione di quelle all'interno **di Condividi**.
 
      ![Immagine 97](Linked_image_Files/07-design-report-in-power-bi-desktop_image67.png)
 
