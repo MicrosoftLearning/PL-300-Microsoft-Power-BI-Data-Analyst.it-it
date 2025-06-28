@@ -1,7 +1,7 @@
 ---
 demo:
   title: Applicare la sicurezza a livello di riga in Power BI
-  module: Deploy and manage Power BI service items
+  module: Secure data access in Power BI
 ---
 
 # Applicare la sicurezza a livello di riga in Power BI
