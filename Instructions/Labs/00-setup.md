@@ -9,13 +9,13 @@ lab:
 Idealmente, è consigliabile completare questi lab in un ambiente lab ospitato. Se si intende completarli nel proprio computer, è possibile eseguire questa operazione installando il software seguente.
 
 - Tutti i file di installazione e risorse possono essere [scaricati da GitHub](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/AllfilesDownload.zip).
-  - Estrarre la cartella 'AllFiles' in D:/ e rinominarla in 'D:\Allfiles\'.
+  - Estrarre la cartella 'AllFilesDownload' in D:/ e rinominarla in 'D:\Allfiles\'.
 
 ***È possibile che vengano visualizzate finestre di dialogo impreviste o si verifichino comportamenti diversi dal previsto quando si usa il proprio ambiente. A causa dell'ampia gamma di configurazioni locali possibili, il team del corso non può offrire supporto per i problemi che potrebbero verificarsi nell'ambiente specifico.***
 
 ## Istruzioni riferite a Windows 11
 
-> &#128221; Le istruzioni seguenti sono relative a un computer Windows 11. Se ci si connette da un altro sistema operativo l'esperienza potrebbe essere diversa.
+> Le istruzioni seguenti sono relative a un computer Windows 11. Se ci si connette da un altro sistema operativo l'esperienza potrebbe essere diversa.
 
 ### Power BI Desktop
 
@@ -23,9 +23,9 @@ Idealmente, è consigliabile completare questi lab in un ambiente lab ospitato. 
 
     - Usare le opzioni predefinite nel programma di installazione.
 
-### Account per sviluppatore M365
+### Account sviluppatore di Microsoft 365
 
-Per alcuni degli esercizi, sarà necessario accedere a Power BI con un account aziendale. È possibile usare il proprio, ma se non si ha accesso, è possibile creare un [account per sviluppatore M365](https://developer.microsoft.com/en-us/microsoft-365/dev-program) gratuito.
+Per alcuni degli esercizi, sarà necessario accedere a Power BI con un account aziendale. È possibile usare il proprio account, ma se non si ha accesso, è possibile creare un account[ microsoft 365 Developer gratuito](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ### Motore di database di SQL Server
 
@@ -34,7 +34,7 @@ Per alcuni degli esercizi, sarà necessario accedere a Power BI con un account a
     - Scaricare la [copia gratuita per sviluppatori dei supporti di installazione](https://www.microsoft.com/sql-server/sql-server-downloads?SilentAuth=1&f=255&MSPPError=-2147217396&rtc=1)
     - [Installare SQL Server dall'Installazione guidata (programma di installazione)](https://learn.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup)
 
-> &#128221; È possibile usare un'istanza di SQL Server esistente se accessibile, anziché installare una versione locale. È tuttavia necessario modificare la stringa di connessione da "localhost" al nome dell'istanza.
+> Se si ha accesso, è possibile usare un'istanza di SQL Server esistente anziché installare una versione locale. È tuttavia necessario modificare la stringa di connessione da "localhost" al nome dell'istanza.
 
 ### Microsoft Edge
 

@@ -5,25 +5,9 @@ demo:
 ---
 # Gestire file e modelli semantici in Power BI
 
-## Predisporre l'aggiornamento dati del gateway
-
-> **Si noti** che i passaggi seguenti non sono necessari quando si usa il gateway dati in modalità personale. È possibile procedere direttamente al prossimo obiettivo (impostare il gateway).
-
-1. In Power BI Desktop aprire la finestra dell'editor di Power Query e selezionare la query **ProductCost**.
-
-1. Modificare il passaggio Origine e quindi modificare il percorso del file per usare la condivisione file, come indicato di seguito:
-
-    `\\DATA-AI\Data\ProductCost.xlsx`
-
-1. Chiudere e applicare la finestra dell'editor di Power Query.
-
-1. Salvare il file di Power BI Desktop.
-
-1. Pubblicare il file di Power BI Desktop nell'area di lavoro, sovrascrivendo il modello semantico e il report nel servizio.
-
 ## Configurare il gateway (modalità personale)
 
-1. Nella servizio Power BI per l'insegnante ricaricare (F5) la pagina delle impostazioni del modello semantico.
+1. Nella servizio Power BI ricaricare (F5) la pagina delle impostazioni del modello semantico.
 
 1. Espandere la sezione Connessione gateway e indicare che non è installato alcun gateway.
 
@@ -33,7 +17,7 @@ demo:
 
 1. Una volta scaricato il file, aprirlo.
 
-1. Completare la configurazione del gateway usando le credenziali dell'account dell'istruttore.
+1. Completare la configurazione del gateway usando l'account aziendale.
 
 1. Dopo l'installazione, tornare alla pagina delle impostazioni del modello semantico e ricaricarla.
 

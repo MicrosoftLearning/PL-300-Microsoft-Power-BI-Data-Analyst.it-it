@@ -7,22 +7,14 @@ demo:
 
 # Configurazione della demo
 
-## Installazione della macchina virtuale
-
-1. Accedere all'ambiente della macchina virtuale usando l'account Studente.
-
-1. Aprire Microsoft Edge, quindi passare a <https://powerbi.com> e accedere usando l'account dell'insegnante.
+1. Aprire Microsoft Edge, quindi passare a <https://powerbi.com> e accedere con un account aziendale o dell'istituto di istruzione (organizzazione).
     > **Suggerimento**: se viene richiesto di modificare la password, assicurarsi di registrarla nel file D:\Allfiles\Demo\Setup\MySettings.txt.
-
-1. Nel servizio Power BI, accettare la versione di valutazione di Power BI Pro.
-
-## Prima configurazione della demo
 
 1. Creare un'area di lavoro e usare l'immagine D:\Allfiles\Demo\Resources\Icon-Star.jpg come icona.
 
 1. Aprire il file D:\Allfiles\Demo\Setup\Sales Analysis.pbix in Power BI Desktop.
 
-1. In Power BI Desktop, accedere usando l'account dell'istruttore.
+1. In Power BI Desktop accedere con lo stesso account aziendale.
 
 1. Pubblicare il report nell'area di lavoro creata in precedenza.
 
