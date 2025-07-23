@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Creare dashboard in Power BI
+  title: (Facoltativo) Creare dashboard in Power BI
   module: Create dashboards in Power BI
 ---
 
@@ -24,6 +24,8 @@ Per completare questo esercizio, aprire prima un Web browser e immettere l'URL s
 `https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/12-create-power-bi-dashboard/12-create-dashboard.zip`
 
 Estrarre la cartella nella **cartella C:\Users\Student\Downloads\12-create-dashboard** .
+
+> _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge, quindi accedere all'indirizzo `https://app.powerbi.com`. Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser.
 
 ## **Pubblicare il report**
 
