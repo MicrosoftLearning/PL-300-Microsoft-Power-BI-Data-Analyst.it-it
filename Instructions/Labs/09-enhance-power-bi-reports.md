@@ -100,10 +100,6 @@ In questo esercizio si migliorerà la pagina drill-through con la formattazione 
 
     ![Figura 9](Linked_image_Files/09-enhance-power-bi-reports_image29.png)
 
-1. **Nella finestra Icone - Margine** profitto, nell'elenco **a discesa Applica a** selezionare **Valori e totali**.
-
-    ![Immagine 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
-
 1. Nella finestra **Icone - Profit Margin** selezionare **A destra dei dati** nell'elenco a discesa **Layout icona**.
 
     ![Immagine 11](Linked_image_Files/09-enhance-power-bi-reports_image30.png)
@@ -129,6 +125,10 @@ In questo esercizio si migliorerà la pagina drill-through con la formattazione 
     ![Immagine 13](Linked_image_Files/09-enhance-power-bi-reports_image32.png)
 
     > _Le regole possono essere interpretate come segue: visualizzare un diamante rosso se il valore del margine di profitto è minore di 0; in caso contrario, se il valore è maggiore o uguale a zero, visualizzare un cerchio verde._
+
+1. **Nella finestra Icone - Margine** profitto, nell'elenco **a discesa Applica a** selezionare **Valori e totali**.
+
+    ![Immagine 10](Linked_image_Files/09-enhance-power-bi-reports_image30a.png)
 
 1. Seleziona **OK**.
 
@@ -249,6 +249,8 @@ In questo esercizio si migliorerà la _pagina Prestazioni_ personali con i pulsa
 
 In questo esercizio si pubblicherà il report nel servizio Power BI ed si esaminerà il comportamento del report pubblicato.
 
+> _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge, quindi accedere all'indirizzo `https://app.powerbi.com`. Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser.
+
 > _**Nota**: è possibile esaminare il resto dell'esercizio, anche se non si ha accesso al servizio Power BI per eseguire direttamente le attività._
 
 1. Selezionare la pagina di _panoramica_.
@@ -277,7 +279,7 @@ In questo esercizio si pubblicherà il report nel servizio Power BI ed si esamin
 
 1. Nella finestra del browser, nella servizio Power BI, nel **riquadro di spostamento** (a sinistra e potrebbe essere compresso), selezionare **Area di lavoro** personale.
 
-1. Per esplorare il report, selezionare il _report 07-Starter-Sales Analysis_ .
+1. Per esplorare il report, selezionare il _report 09-Starter-Sales Analysis_ .
 
 1. Per testare la funzionalità di drill-through, nella pagina Panoramica, _nell'oggetto _visivo Somma quantità per categoria_ fare clic con il pulsante destro del mouse sulla _barra Abbigliamento_ e quindi scegliere **Drill-Through > Dettagli**_ prodotto.
 
