@@ -325,6 +325,8 @@ In questa attività si sincronizzeranno i _filtri dei dati Year_ e _Region_ .
 
 In questo esercizio si pubblicherà il report nel servizio Power BI. Si esaminerà quindi il comportamento del report pubblicato.
 
+> _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge, quindi accedere all'indirizzo `https://app.powerbi.com`. Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser.
+
 > _**Nota**: è possibile esaminare il resto dell'esercizio, anche se non si ha accesso al servizio Power BI per eseguire direttamente le attività._
 
 1. Selezionare la _pagina Panoramica_ e quindi salvare il file di Power BI Desktop.
