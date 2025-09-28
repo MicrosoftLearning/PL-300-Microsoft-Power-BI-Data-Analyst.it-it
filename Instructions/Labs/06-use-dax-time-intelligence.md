@@ -26,13 +26,13 @@ Estrarre il file nella **cartella C:\Users\Student\Downloads\06-time-intelligenc
 
 Aprire il **file 06-Starter-Sales Analysis.pbix** .
 
-> _**Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Creare una misura YTD
 
 In questa attività si creerà una misura da inizio anno di vendita (YTD) usando le funzioni di Business Intelligence per le gerarchie temporali.
 
-1. Nella visualizzazione Report di Power BI Desktop, **nella pagina 2**, si noti l'oggetto visivo matrice che visualizza varie misure con anni e mesi raggruppati sulle righe.
+1. Nella visualizzazione** Report di Power BI Desktop, **nella **pagina 2**, si noti l'oggetto visivo matrice che visualizza varie misure con anni e mesi raggruppati sulle righe.
 
 2. Aggiungere una misura alla tabella, in base all'espressione `Sales` seguente e formattata in zero cifre decimali:
 
@@ -122,10 +122,19 @@ In questa attività si creerà una misura di crescita YoY di vendita usando una 
 
     > _La misura di crescita YoY identifica quasi il 400% (o 4x) dell'aumento delle vendite nello stesso periodo dell'anno precedente._
 
-1. Nella visualizzazione Modello posizionare le due nuove misure in una cartella di visualizzazione denominata _Business Intelligence per le gerarchie_ temporali.
+1. Nella **visualizzazione** Modello posizionare le due nuove misure in una cartella di visualizzazione denominata _Business Intelligence per le gerarchie_ temporali.
 
     ![Immagine 4](Linked_image_Files/06-use-dax-time-intelligence-functions_image24.png)
 
 1. Salvare il file di Power BI Desktop.
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

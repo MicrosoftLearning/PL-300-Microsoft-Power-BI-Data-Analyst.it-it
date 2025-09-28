@@ -1,10 +1,10 @@
 ---
 lab:
-  title: Creare calcoli DAX nei modelli semantici
+  title: Creare calcoli DAX in modelli semantici
   module: Create DAX calculations in semantic models
 ---
 
-# Creare calcoli DAX nei modelli semantici
+# Creare calcoli DAX in modelli semantici
 
 ## Presentazione del lab
 
@@ -28,7 +28,7 @@ Estrarre il file nella **cartella C:\Users\Student\Downloads\04-dax-calculations
 
 Aprire il **file 04-Starter-Sales Analysis.pbix** .
 
-> _**Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Creare la tabella calcolata Salesperson
 
@@ -38,7 +38,7 @@ Una tabella calcolata viene creata immettendo prima il nome della tabella, segui
 
 Immettere una formula DAX valida nella barra_ della _formula. La barra della formula include funzionalità come il completamento automatico, IntelliSense e la codifica a colori, che consentono di immettere in modo rapido e accurato la formula.
 
-1. In Power BI Desktop nella vista Report nella barra multifunzione **Modellazione** all'interno del gruppo **Calcoli** selezionare **Nuova tabella**.
+1. In Power BI Desktop, nella **visualizzazione** Report, nella **barra multifunzione Modellazione** selezionare **Nuova tabella** all'interno del **gruppo Calcoli**.
 
     ![Immagine 1](Linked_image_Files/04-create-dax-calculations_image9.png)
 
@@ -58,7 +58,7 @@ Immettere una formula DAX valida nella barra_ della _formula. La barra della for
     >
     > _A differenza delle tabelle con origine Power Query, le tabelle calcolate non possono essere usate per caricare dati da origini dati esterne. Possono trasformare i dati solo in base a ciò che è già stato caricato nel modello di dati._
 
-1. Passare alla visualizzazione Modello e notare che la `Salesperson` tabella è disponibile.
+1. Passare alla **visualizzazione** Modello e notare che la `Salesperson` tabella è disponibile.
 
 1. Creare una relazione dalla `Salesperson | EmployeeKey` colonna alla `Sales | EmployeeKey` colonna.
 
@@ -86,7 +86,7 @@ Immettere una formula DAX valida nella barra_ della _formula. La barra della for
 
 In questa attività si creerà la `Date` tabella.
 
-1. Passare alla visualizzazione Tabella. Nella scheda **Home** della barra multifunzione nel gruppo **Calcoli** selezionare **Nuova tabella**.
+1. Passare alla **visualizzazione** Tabella. Nella scheda **Home** della barra multifunzione nel gruppo **Calcoli** selezionare **Nuova tabella**.
 
     ![Immagine 4](Linked_image_Files/04-create-dax-calculations_image15.png)
 
@@ -141,7 +141,7 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
     ![Figura 9](Linked_image_Files/04-create-dax-calculations_image21.png)
 
-1. Per convalidare i calcoli, passare alla vista Report.
+1. Per convalidare i calcoli, passare alla **visualizzazione** Report.
 
 1. Per creare una nuova pagina del report, selezionare l'icona con il segno più accanto alla **pagina 1**.
 
@@ -169,7 +169,7 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
     > _Per impostazione predefinita, i valori di testo ordinano alfabeticamente, i numeri sono ordinati dal più piccolo al più grande e le date sono ordinate dal più recente al più recente._
 
-1. Per personalizzare l'ordinamento dei `Month` campi, passare alla visualizzazione Tabella.
+1. Per personalizzare l'ordinamento dei `Month` campi, passare alla **visualizzazione** Tabella.
 
 1. Aggiungere la `MonthKey` colonna alla `Date` tabella.
 
@@ -180,11 +180,11 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
     > _Questa formula calcola un valore numerico per ogni combinazione di anno/mese._
 
-1. In Visualizzazione tabella verificare che la nuova colonna contenga valori numerici, ad esempio 201707 per luglio 2017 e così via.
+1. In **Visualizzazione** tabella verificare che la nuova colonna contenga valori numerici, ad esempio 201707 per luglio 2017 e così via.
 
     ![Immagine 15](Linked_image_Files/04-create-dax-calculations_image28.png)
 
-1. Tornare alla visualizzazione Report.
+1. Tornare alla **visualizzazione** Report.
 
 1. **Nel riquadro Dati** e selezionare il `Month` campo.
 
@@ -200,7 +200,7 @@ In questa attività verranno aggiunte altre colonne per abilitare il filtro e il
 
 In questa attività si completerà la progettazione della `Date` tabella nascondendo una colonna e creando una gerarchia. Si creeranno quindi relazioni con le `Sales` tabelle e `Targets` .
 
-1. Passare alla visualizzazione Modello.
+1. Passare alla **visualizzazione** Modello.
 
 1. `Date` Nella tabella nascondere la `MonthKey` colonna (impostare **Nascosto** su _Sì_).
 
@@ -230,7 +230,7 @@ In questa attività si completerà la progettazione della `Date` tabella nascond
 
 In questa attività si contrassegnerà la `Date` tabella come tabella data.
 
-1. Passare alla visualizzazione Report.
+1. Passare alla visualizzazione **Report**.
 
 1. **Nel riquadro Dati** selezionare la `Date` tabella (non il `Date` campo).
 
@@ -256,7 +256,7 @@ In questa attività si contrassegnerà la `Date` tabella come tabella data.
 
 In questa attività verranno create misure semplici. Le misure semplici aggregano i valori in una singola colonna o conteggiano le righe di una tabella.
 
-1. Nella visualizzazione Report, nella **pagina 2**, dal **riquadro Dati** trascinare il `Sales | Unit Price` campo nell'oggetto visivo matrice.
+1. Nella **visualizzazione** Report, nella **pagina 2**, dal **riquadro Dati** trascinare il `Sales | Unit Price` campo nell'oggetto visivo matrice.
 
     ![Figura 23](Linked_image_Files/04-create-dax-calculations_image35.png)
 
@@ -299,7 +299,7 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
     >
     > _In questo caso, il numero di ordini viene calcolato contando i valori di colonna distinti `SalesOrderNumber` , mentre il numero di righe di ordine è semplicemente il numero di righe di tabella (ogni riga è una riga di un ordine)._
 
-1. Passare alla visualizzazione Modello e quindi selezionare più misure di prezzo: `Avg Price`, `Max Price`, `Median Price`e `Min Price`.
+1. Passare alla **visualizzazione** Modello e quindi selezionare più misure di prezzo: `Avg Price`, `Max Price`, `Median Price`e `Min Price`.
 
 1. Per la selezione di più misure, configurare i requisiti seguenti:
 
@@ -319,7 +319,7 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
 
     ![Figura 27](Linked_image_Files/04-create-dax-calculations_image41.png)
 
-1. Nella visualizzazione Report, nell'area **Valori dell'oggetto visivo matrice, per **Media prezzo** unitario selezionare **X** per rimuoverlo**.
+1. Nella **visualizzazione** Report, nell'area **Valori** dell'oggetto visivo matrice, per **Media prezzo** unitario selezionare **X** per rimuoverlo.
 
     ![Immagine 28](Linked_image_Files/04-create-dax-calculations_image41a.png)
 
@@ -341,7 +341,7 @@ In questa attività verranno create misure semplici. Le misure semplici aggregan
 
 In questa attività verranno create più misure che usano formule più complesse.
 
-1. Nella visualizzazione Report selezionare **Pagina 1** ed esaminare l'oggetto visivo tabella dei venditori (a destra), notando il totale per la **colonna Somma destinazione** .
+1. Nella **visualizzazione** Report selezionare **Pagina 1** ed esaminare l'oggetto visivo tabella dei venditori (a destra), notando il totale per la **colonna Somma destinazione** .
 
     ![Immagine 30](Linked_image_Files/04-create-dax-calculations_image45.png)
 
@@ -349,7 +349,7 @@ In questa attività verranno create più misure che usano formule più complesse
 
 1. Rinominare la `Targets | Target` colonna come _TargetAmount_.
 
-    > _Suggerimento: esistono diversi modi per rinominare la colonna nella visualizzazione Report: nel riquadro Dati** è possibile fare clic con il pulsante destro del **mouse sulla colonna e quindi scegliere **Rinomina** oppure fare doppio clic sulla colonna oppure premere **F2**._
+    > _Suggerimento: esistono diversi modi per rinominare la colonna nella **visualizzazione** Report: nel riquadro Dati** è possibile fare clic con il pulsante destro del **mouse sulla colonna e quindi scegliere **Rinomina** oppure fare doppio clic sulla colonna oppure premere **F2**._
 
 1. Creare la misura seguente nella `Targets` tabella:
 
@@ -403,3 +403,12 @@ In questa attività verranno create più misure che usano formule più complesse
 1. Salvare il file di Power BI Desktop.
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

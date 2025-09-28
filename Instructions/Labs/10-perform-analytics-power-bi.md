@@ -27,7 +27,7 @@ Estrarre la cartella nella **cartella C:\Users\Student\Downloads\10-perform-anal
 
 1. Aprire il **file 10-Starter-Sales Analysis.pbix** .
 
-> ***Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche.*
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Creare un grafico a dispersione animato
 
@@ -128,3 +128,12 @@ In questa attività si creerà una previsione per determinare i possibili ricavi
 1. Nel riquadro **Filtri** filtrare solo per **Clothing** e notare che produce un risultato diverso.
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

@@ -27,7 +27,7 @@ Estrarre la cartella nella **cartella C:\Users\Student\Downloads\12-create-dashb
 
 > _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge, quindi accedere all'indirizzo `https://app.powerbi.com`. Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser.
 
-## **Pubblicare il report**
+## Pubblicare il report
 
 In questa attività si configurerà l'ambiente per il lab creando un modello semantico.
 
@@ -41,7 +41,7 @@ In questa attività si configurerà l'ambiente per il lab creando un modello sem
 
     > *Se viene richiesto di sostituire il modello semantico, selezionare **Sostituisci**.*
 
-## **Creare un dashboard**
+## Creare un dashboard
 
 In questa attività si creerà il **dashboard Di monitoraggio** vendite. Si aggiungerà un oggetto visivo dal report e si aggiungerà un riquadro in base a un URI di dati dell'immagine e si userà Domande e risposte per creare un riquadro.
 
@@ -119,7 +119,7 @@ In questa attività si creerà il **dashboard Di monitoraggio** vendite. Si aggi
 
     ![Immagine 52](Linked_image_Files/12-create-power-bi-dashboard_image35.png)
 
-## **Modificare i dettagli del riquadro**
+## Modificare i dettagli del riquadro
 
 In questa attività verranno modificati i dettagli di due riquadri.
 
@@ -143,13 +143,13 @@ In questa attività verranno modificati i dettagli di due riquadri.
 
 *Il modello semantico verrà aggiornato nell'esercizio successivo. A seconda dei dati e dei report, è possibile eseguire un aggiornamento dati ad hoc in qualsiasi momento o impostare una pianificazione. Tuttavia, gli aggiornamenti pianificati richiedono che i gateway non siano in grado di configurare per questo lab. Da Power BI Desktop si eseguirà quindi un aggiornamento manuale dei dati e quindi si caricherà il file nell'area di lavoro.*
 
-## **Aggiornare il modello semantico**
+## Aggiornare il modello semantico
 
 In questo esercizio si caricheranno prima i dati degli ordini di vendita per giugno 2020 nel database **AdventureWorksDW2020**. Si aprirà quindi il file di Power BI Desktop, si eseguirà un aggiornamento dei dati e quindi si caricherà il file nell'area di lavoro.
 
 > ***Nota**: se non è possibile connettersi al database, è possibile usare il **file 12-Solution-Sales-Analysis.pbix** . Anziché aggiornare il database e aggiornare il modello semantico, caricare il file **della soluzione nell'area di lavoro** personale e visualizzare le modifiche a cui si fa riferimento nelle attività seguenti.*
 
-## **Aggiornare il database del lab**
+## Aggiornare il database del lab
 
 In questa attività verrà eseguito uno script di PowerShell per aggiornare i dati nel database **AdventureWorksDW2020**.
 
@@ -163,7 +163,7 @@ In questa attività verrà eseguito uno script di PowerShell per aggiornare i da
 
 *Il database **AdventureWorksDW2020** include ora gli ordini di vendita effettuati a giugno 2020.*
 
-## **Aggiornare il file di Power BI Desktop**
+## Aggiornare il file di Power BI Desktop
 
 In questa attività si aprirà il **file di Power BI Desktop 12-Starter-Sales Analysis** , si eseguirà un aggiornamento dei dati e quindi si caricherà il file nell'area **di lavoro Analisi vendite** .
 
@@ -183,7 +183,7 @@ In questa attività si aprirà il **file di Power BI Desktop 12-Starter-Sales An
 
 *Il modello semantico nel servizio Power BI include ora i dati sulle vendite di giugno 2020.*
 
-### **Esaminare il dashboard**
+## Esaminare il dashboard
 
 In questa attività si esaminerà il dashboard per notare le vendite aggiornate.
 
@@ -198,3 +198,5 @@ In questa attività si esaminerà il dashboard per notare le vendite aggiornate.
     ![Immagine 33](Linked_image_Files/12-create-power-bi-dashboard_image50.png)
 
 ## Lab completato
+
+1. Chiudere la finestra del browser Microsoft Edge.

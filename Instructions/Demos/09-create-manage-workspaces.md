@@ -28,7 +28,7 @@ demo:
 
 1. Segnalare che il dashboard è di sola lettura.
 
-## Crea un'app
+## Creare un'app
 
 1. Passare alla finestra servizio Power BI dell'insegnante **** .
 

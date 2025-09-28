@@ -13,7 +13,7 @@ In questo lab si inizierà a sviluppare il modello di dati. Il processo includer
 Contenuto del lab:
 
 - Creare relazioni tra modelli.
-- Configurare le proprietà della tabella e della colonna.
+- Configurare le proprietà di tabelle e colonne.
 - Creare gerarchie.
 - Creare misure rapide.
 - Configurare una relazione molti-a-molti.
@@ -30,7 +30,7 @@ Estrarre il file nella **cartella C:\Users\Student\Downloads\03-model-data** .
 
 Aprire il **file 03-Starter-Sales Analysis.pbix** .
 
-> _**Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Creare le relazioni del modello
 
@@ -50,7 +50,7 @@ In questa attività verranno create le relazioni del modello. Il file è stato c
 
     > _Il problema è che la tabella si basa su campi di tabelle diverse. L'aspettativa è che ogni categoria di prodotti visualizzi le vendite per tale categoria. Tuttavia, poiché non esiste una relazione di modello tra queste tabelle, la `Sales` tabella non viene filtrata. A questo punto si aggiungerà una relazione per propagare i filtri tra le tabelle._
 
-1. Per passare a Progettazione modelli, a sinistra selezionare l'icona Visualizzazione modello.
+1. Per passare a Progettazione modelli, a sinistra selezionare l'icona **Visualizzazione modello** .
 
     ![Immagine 2](Linked_image_Files/03-configure-semantic-model-model-view.png)
 
@@ -89,17 +89,17 @@ In questa attività verranno create le relazioni del modello. Il file è stato c
     >
     > Suggerimento: se si passa il cursore sulla relazione per evidenziare il columns._ correlato
 
-1. Passare alla visualizzazione Report e quindi notare che l'oggetto visivo tabella aggiornato per visualizzare valori diversi per ogni categoria di prodotto.
+1. Passare alla **visualizzazione** Report e quindi notare che l'oggetto visivo tabella aggiornato per visualizzare valori diversi per ogni categoria di prodotto.
 
     > _I filtri applicati alla `Product` tabella ora vengono propagati alla `Sales` tabella._
 
     ![Immagine 7](Linked_image_Files/03-configure-semantic-model-table-with-relationship.png)
 
-### Creare relazioni aggiuntive
+## Creare relazioni aggiuntive
 
 Esiste un modo più semplice per creare una relazione. Nel diagramma del modello è possibile trascinare e rilasciare le colonne per creare una nuova relazione.
 
-1. Per creare una nuova relazione usando una tecnica diversa, passare alla visualizzazione Modello.
+1. Per creare una nuova relazione usando una tecnica diversa, passare alla **visualizzazione** Modello.
 
 1. `Reseller` Dalla tabella trascinare la `ResellerKey` colonna nella `ResellerKey` colonna della `Sales` tabella.
 
@@ -124,7 +124,7 @@ Esiste un modo più semplice per creare una relazione. Nel diagramma del modello
 
 In questa attività si configurerà la `Product` tabella con una gerarchia e una cartella di visualizzazione.
 
-1. Passare alla visualizzazione Modello.
+1. Passare alla **visualizzazione** Modello.
 
 1. **Nel riquadro Dati**, se necessario, espandere la `Product` tabella per visualizzare tutti i campi.
 
@@ -258,9 +258,9 @@ In questa attività verranno aggiornate più colonne usando singoli aggiornament
 
 ## Esplorare l'interfaccia del modello
 
-In questa attività si passerà alla visualizzazione Report, si esaminerà l'interfaccia del modello di dati e si configurerà l'impostazione di data/ora automatica.
+In questa attività si passerà alla **visualizzazione** Report, si esaminerà l'interfaccia del modello di dati e si configurerà l'impostazione di data/ora automatica.
 
-1. Passare alla visualizzazione Report.
+1. Passare alla visualizzazione **Report**.
 
 1. **Nel riquadro Dati** osservare quanto segue:
 
@@ -348,7 +348,7 @@ In questa attività verranno create due misure rapide per calcolare il profitto 
 
 In questa attività si creerà una relazione molti-a-molti tra la `Salesperson` tabella e la `Sales` tabella.
 
-1. Nella visualizzazione Report selezionare un'area vuota della pagina del report.
+1. Nella **visualizzazione** Report selezionare un'area vuota della pagina del report.
 
 1. Per creare un nuovo oggetto visivo tabella, nel **riquadro Dati** selezionare i due campi seguenti:
 
@@ -363,7 +363,7 @@ In questa attività si creerà una relazione molti-a-molti tra la `Salesperson` 
 
 1. Si noti che _Michael Blythe_ ha generato quasi 9 milioni di dollari di vendite.
 
-1. Passare alla visualizzazione Modello, quindi trascinare la `SalespersonRegion` tabella per posizionarla tra le `Region` tabelle e `Salesperson` .
+1. Passare alla **visualizzazione** Modello, quindi trascinare la `SalespersonRegion` tabella per posizionarla tra le `Region` tabelle e `Salesperson` .
 
 1. Usare la tecnica di trascinamento della selezione per creare le due relazioni tra modelli seguenti:
 
@@ -372,9 +372,9 @@ In questa attività si creerà una relazione molti-a-molti tra la `Salesperson` 
 
     > _La `SalespersonRegion` tabella può essere considerata una tabella di bridging._
 
-1. Passare alla visualizzazione Report e quindi notare che l'oggetto visivo non è stato aggiornato. Il risultato delle vendite per Michael Blythe non è stato modificato.
+1. Passare alla **visualizzazione** Report e quindi notare che l'oggetto visivo non è stato aggiornato. Il risultato delle vendite per Michael Blythe non è stato modificato.
 
-1. Tornare alla visualizzazione Modello e quindi seguire le direzioni del filtro delle relazioni (punta di freccia) dalla `Salesperson` tabella.
+1. Tornare alla **visualizzazione** Modello e quindi seguire le direzioni del filtro delle relazioni (punta di freccia) dalla `Salesperson` tabella.
 
     > _Si consideri che la `Salesperson` tabella filtra la `Sales` tabella. Filtra anche la `SalespersonRegion` tabella, ma non continua propagando i filtri alla `Region` tabella (la punta della freccia punta alla direzione errata)._
 
@@ -394,11 +394,11 @@ In questa attività si creerà una relazione molti-a-molti tra la `Salesperson` 
 
     ![Immagine 30](Linked_image_Files/03-configure-semantic-model_u_image14.png)
 
-1. Passare alla visualizzazione Report e notare che i valori delle vendite non sono ancora cambiati.
+1. Passare alla **visualizzazione** Report e quindi notare che i valori delle vendite non sono ancora stati modificati.
 
     > _Il problema si riferisce ora al fatto che esistono due possibili percorsi di propagazione dei filtri tra le `Salesperson` tabelle e `Sales` . Questa ambiguità viene risolta internamente, in base a una valutazione "numero minimo di tabelle". Per essere chiari, non è consigliabile progettare modelli con questo tipo di ambiguità. Il problema verrà risolto in parte più avanti in questo lab e al completamento del **lab Creare calcoli DAX nel lab di Power BI Desktop** ._
 
-1. Passare alla visualizzazione Modello.
+1. Passare alla **visualizzazione** Modello.
 
 1. Per forzare la propagazione dei filtri tramite la tabella di bridging, modificare (doppio clic) la relazione tra le `Salesperson` tabelle e `Sales` .
 
@@ -414,7 +414,7 @@ In questa attività si creerà una relazione molti-a-molti tra la `Salesperson` 
 
     ![Immagine 32](Linked_image_Files/03-configure-semantic-model_u_image17.png)
 
-1. Passare alla visualizzazione Report e quindi notare che le vendite per Michael Blythe sono ora quasi 22 milioni di dollari.
+1. Passare alla **visualizzazione** Report e quindi notare che le vendite per Michael Blythe sono ora quasi 22 milioni di dollari.
 
 1. Si noti anche che le vendite per ogni venditore, se sommate, sarebbero maggiori del totale della tabella.
 
@@ -422,7 +422,7 @@ In questa attività si creerà una relazione molti-a-molti tra la `Salesperson` 
      >
      > _Anche se la relazione molti-a-molti funziona, non è ora possibile analizzare le vendite effettuate da un venditore (perché la relazione è inattiva). Sarà possibile riattivare la relazione quando si introduce una tabella calcolata che consentirà di analizzare le vendite effettuate nelle aree di vendita assegnate al venditore (per l'analisi delle prestazioni) nel lab Creare calcoli DAX in **Power BI Desktop** ._
 
-1. Passare alla visualizzazione Modello e quindi nel diagramma del modello selezionare la `Salesperson` tabella.
+1. Passare alla **visualizzazione** Modello e quindi nel diagramma del modello selezionare la `Salesperson` tabella.
 
 1. Nella casella Nome del **riquadro **Proprietà** sostituire il testo con _Salesperson (Prestazioni)._**
 
@@ -434,7 +434,7 @@ In questa attività si creerà una relazione con la `Targets` tabella.
 
 1. Creare una relazione dalla `Salesperson (Performance) | EmployeeID` colonna e dalla `Targets | EmployeeID` colonna .
 
-1. Nella visualizzazione Report aggiungere il `Targets | Target` campo all'oggetto visivo tabella.
+1. Nella **visualizzazione** Report aggiungere il `Targets | Target` campo all'oggetto visivo tabella.
 
 1. Ridimensionare l'oggetto visivo tabella in modo che tutte le colonne siano visibili.
 
@@ -445,3 +445,12 @@ In questa attività si creerà una relazione con la `Targets` tabella.
 1. Salvare il file di Power BI Desktop.
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

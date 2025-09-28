@@ -1,16 +1,16 @@
 ---
 lab:
-  title: Modificare il contesto di filtro DAX in Power BI
+  title: Modificare il contesto del filtro DAX in Power BI
   module: Modify DAX filter context in Power BI
 ---
 
-# Modificare il contesto di filtro DAX in Power BI
+# Modificare il contesto del filtro DAX in Power BI
 
 ## Presentazione del lab
 
 In questo lab verranno create misure con espressioni DAX che comportano la manipolazione del contesto di filtro.
 
-Scopri come:
+Si apprenderà come:
 
  - Usare la funzione per modificare il `CALCULATE` contesto di filtro.
 
@@ -26,7 +26,7 @@ Estrarre il file nella **cartella C:\Users\Student\Downloads\05-modify-dax-filte
 
 Aprire il **file 05-Starter-Sales Analysis.pbix** .
 
-> _**Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Creare un oggetto visivo matrice
 
@@ -212,7 +212,7 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 
 1. Si noti che la `Sales % Group` misura restituisce ora solo un valore quando un'area o un paese si trova nell'ambito.
 
-1. Nella vista Modello inserire le tre nuove misure in una cartella di visualizzazione denominata _Ratios_.
+1. Nella **visualizzazione** Modello inserire le tre nuove misure in una cartella di visualizzazione denominata _Ratios_.
 
     ![Immagine 10](Linked_image_Files/05-modify-dax-filter-context_image20.png)
 
@@ -221,3 +221,12 @@ In questa attività verranno create diverse misure con espressioni DAX che usano
 > _Le misure aggiunte alla tabella hanno modificato il `Sales` contesto di filtro per ottenere lo spostamento gerarchico. Si noti che il modello per ottenere il calcolo di un subtotale richiede la rimozione di alcune colonne dal contesto di filtro e per arrivare a un totale complessivo, è necessario rimuovere tutte le colonne._
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

@@ -6,7 +6,7 @@ lab:
 
 # Recuperare i dati in Power BI
 
-## **Presentazione del lab**
+## Presentazione del lab
 
 Questo lab è progettato per presentare l'applicazione Power BI Desktop, come connettersi ai dati e come usare le tecniche di anteprima dei dati per comprendere le caratteristiche e la qualità dei dati di origine.
 
@@ -44,7 +44,7 @@ Questa attività illustra come connettersi a un database di SQL Server e importa
 
 1. **Nella finestra Database** di SQL Server, nella **casella Server** immettere **localhost** e lasciare **vuoto Database**, quindi selezionare **OK**.
 
-    > ***Nota**: in questo lab si connetterà al database di SQL Server usando **localhost**. Anche se questo approccio funziona qui, non è consigliabile per le proprie soluzioni perché le origini dati del gateway non possono risolvere **localhost**.*
+    > ***Nota**: in questo lab si connetterà al database di SQL Server usando **localhost**. Anche se questa operazione va bene per il lab, non è considerata una procedura consigliata per le soluzioni reali.*
 
 1. Se vengono richieste le credenziali, selezionare **Windows > Usa le credenziali** correnti e quindi **Connetti**.
 
@@ -60,7 +60,7 @@ Questa attività illustra come connettersi a un database di SQL Server e importa
 
     > ***Nota**: i dati di anteprima consentono di visualizzare le colonne e un esempio di righe.*
 
-1. Per importare i dati della tabella, **selezionare la casella** di controllo accanto alle tabelle seguenti:
+1. Selezionare le tabelle seguenti selezionando **le caselle** accanto ai relativi nomi.
 
     - DimEmployee
     - DimEmployeeSalesTerritory
@@ -73,7 +73,7 @@ Questa attività illustra come connettersi a un database di SQL Server e importa
 
 A questo punto si è connessi a sei tabelle da un database di SQL Server.
 
-## **Anteprima dei dati in editor di Power Query**
+## Anteprima dei dati in editor di Power Query
 
 Questa attività introduce il editor di Power Query e consente di esaminare e profilare i dati. Ciò consente di determinare come pulire e trasformare i dati in un secondo momento. Verranno inoltre esaminate entrambe le tabelle delle dimensioni precedute da "Dim" e dalle tabelle dei fatti precedute da "Fact".
 
@@ -81,7 +81,7 @@ Questa attività introduce il editor di Power Query e consente di esaminare e pr
 
      ![Elenco di query caricate](Linked_image_Files/01-get-data-in-power-bi_image20.png)
 
-1. Selezionare la prima query **DimEmployee**.
+1. Selezionare la **query DimEmployee** .
 
     > *La **tabella DimEmployee** nel database di SQL Server archivia una riga per ogni dipendente. Un subset delle righe di questa tabella rappresenta i venditori, che saranno rilevanti per il modello che verrà sviluppato.*
 
@@ -141,13 +141,13 @@ Questa attività introduce il editor di Power Query e consente di esaminare e pr
 
     > *I valori di colonna TotalProductCost** mancanti **sono un problema di qualità dei dati.*
 
-## **Ottenere dati da un file CSV**
+## Recuperare i dati da un file CSV
 
 In questa attività si creerà una nuova query basata su file CSV.
 
 1. Per aggiungere una nuova query nella finestra **Editor di Power Query**, nella scheda **Home** della barra multifunzione selezionare la freccia a discesa **Nuova origine** nel gruppo **Nuova query** e quindi selezionare **Testo/CSV**.
 
-1. Passare alla **cartella Download > 01-get-data** estratta in precedenza e selezionare il **file ResellerSalesTargets.csv** . Selezionare **Apri**.
+1. Passare alla **cartella Download > 01-get-data** estratta in precedenza e selezionare il **file ResellerSalesTargets.csv** . Selezionare **Open** (Apri).
 
 1. Nella finestra **ResellerSalesTargets.csv** esaminare i dati in anteprima. Seleziona **OK**.
 
@@ -155,7 +155,7 @@ In questa attività si creerà una nuova query basata su file CSV.
 
     > *Il **file CSV ResellerSalesTargets** contiene una riga per venditore, all'anno. Ogni riga registra 12 obiettivi di vendita mensili (espressi in migliaia). L'anno lavorativo della società Adventure Works inizia il 1° luglio.*
 
-1. Notare anche che nessuna colonna contiene valori vuoti.  Quando non è presente un obiettivo di vendita mensile, viene invece archiviato un trattino.
+1. Notare anche che nessuna colonna contiene valori vuoti.  Se manca una destinazione di vendita mensile, nella colonna viene visualizzato un trattino.
 
 1. Controllare le icone in ogni intestazione di colonna, a sinistra del nome della colonna. Le icone rappresentano il tipo di dati della colonna. **123** indica un numero intero e **ABC** indica il testo.
 
@@ -170,3 +170,12 @@ Ora dovrebbero essere presenti due nuove query, **ResellerSalesTargets** e **Col
  ![Elenco query](Linked_image_Files/01-get-data-in-power-bi_image43.png)
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.
