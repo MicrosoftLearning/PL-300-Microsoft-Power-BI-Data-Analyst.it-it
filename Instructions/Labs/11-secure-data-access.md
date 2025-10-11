@@ -8,12 +8,7 @@ lab:
 
 ## Presentazione del lab
 
-In questo lab verrà applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati delle vendite per le aree assegnate.
-
-Contenuto del lab:
-
-- Applicare la sicurezza a livello di riga.
-- Scegliere tra metodi dinamici e statici.
+In questo lab verrà applicata la sicurezza a livello di riga per garantire che un venditore possa analizzare solo i dati delle vendite per le aree assegnate. La sicurezza a livello di riga verrà applicata tramite il metodo dinamico.
 
 **Questo lab dovrebbe richiedere circa 20 minuti.**
 
@@ -27,13 +22,13 @@ Estrarre la cartella nella **cartella C:\Users\Student\Downloads\11-secure-data*
 
 Aprire il **file 11-Starter-Sales Analysis.pbix** .
 
-> ***Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche.*
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Applicare la sicurezza a livello di riga
 
 In questa attività verrà applicata la sicurezza a livello di riga per garantire che un venditore possa visualizzare solo le vendite effettuate nelle aree assegnate.
 
-1. Passare alla visualizzazione Tabella.
+1. Passare alla **visualizzazione** Tabella.
 
    ![Immagine 5701](Linked_image_Files/11-secure-data-access_image20.png)
 
@@ -104,3 +99,13 @@ In questa attività verrà applicata la sicurezza a livello di riga per garantir
 *Nota: quando il file di Power BI Desktop viene pubblicato nel servizio Power BI, è necessario completare un'attività post-pubblicazione per eseguire il mapping delle entità di sicurezza al **ruolo Venditori**. Questa operazione non verrà eseguita in questo lab.*
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. 
+
+1. Chiudere la finestra del browser Microsoft Edge.
+1. In Power BI Desktop passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

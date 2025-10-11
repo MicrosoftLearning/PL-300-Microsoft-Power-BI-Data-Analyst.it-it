@@ -30,7 +30,7 @@ demo:
 
 1. Rimuovere tutte le colonne, a eccezione di:
 
-    - DataOrdine
+    - OrderDate
 
     - ProductID
 

@@ -4,7 +4,7 @@ lab:
   module: Enhance Power BI report designs for the user experience
 ---
 
-# Migliorare la progettazione dei report di Power BI
+# Migliorare la progettazione di report Power BI
 
 ## Presentazione del lab
 
@@ -28,7 +28,7 @@ Estrarre il file nella **cartella C:\Users\Student\Downloads\09-enhanced-report*
 
 Aprire il **file 09-Starter-Sales Analysis.pbix** .
 
-> _**Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Configurare una pagina drill-through
 
@@ -249,7 +249,7 @@ In questo esercizio si migliorerà la _pagina Prestazioni_ personali con i pulsa
 
 In questo esercizio si pubblicherà il report nel servizio Power BI ed si esaminerà il comportamento del report pubblicato.
 
-> _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge, quindi accedere all'indirizzo `https://app.powerbi.com`. Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser.
+> _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge e passare a_ `https://app.powerbi.com`_.  Accedere con le credenziali per il tenant di Microsoft 365 fornito dall'host del lab autorizzato (ALH). Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser._
 
 > _**Nota**: è possibile esaminare il resto dell'esercizio, anche se non si ha accesso al servizio Power BI per eseguire direttamente le attività._
 
@@ -294,3 +294,6 @@ In questo esercizio si pubblicherà il report nel servizio Power BI ed si esamin
 1. Selezionare ognuno dei pulsanti e verificare che venga visualizzato un oggetto visivo diverso.
 
 ## Lab completato
+
+1. Chiudere il browser Microsoft Edge.
+1. Chiudere Power BI Desktop.

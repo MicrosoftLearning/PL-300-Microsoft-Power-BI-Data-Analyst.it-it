@@ -6,7 +6,7 @@ lab:
 
 # Creare calcoli visivi in Power BI Desktop
 
-## **Presentazione del lab**
+## Presentazione del lab
 
 In questo lab verranno creati calcoli visivi usando DAX (Data Analysis Expressions).
 
@@ -29,7 +29,7 @@ Estrarre la cartella nella **cartella C:\Users\Student\Downloads\07-visual-calcu
 
 Aprire il **file 07-Starter-Sales Analysis.pbix** .
 
-> ***Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche.*
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Creare un oggetto visivo grafico a barre
 
@@ -51,7 +51,7 @@ In questa attività verrà creato un grafico a barre che mostra l'importo delle 
 
     > È ora disponibile un grafico a barre che mostra la somma delle vendite e la somma dei costi per anno ordinati in ordine cronologico.
 
-### Aggiungere calcoli
+## Aggiungere calcoli
 
 1. Con il grafico a barre selezionato, selezionare **Nuovo calcolo** visivo nella barra multifunzione:
 
@@ -81,7 +81,7 @@ In questa attività verrà creato un grafico a barre che mostra l'importo delle 
 
 1. Selezionare **Sposta media** dal menu modelli e sostituire il `[Field]` segnaposto con `[Profit]` e il `WindowSize` segnaposto con 2. A questo ora dovrebbe essere configurato quanto segue:
 
-    > **La media** mobile calcola una media di un set di valori in una determinata finestra dividendo la somma dei valori in base alle dimensioni della finestra. Impostando la dimensione della finestra su 2, si calcola la media di due valori consecutivi. In questo esempio, i valori sono profitti annuali, quindi vediamo la media mobile per FY2019 è la media dei profitti per FY2018 e FY2019.
+    > La **media mobile** calcola una media di un set di valori in una determinata finestra dividendo la somma dei valori per le dimensioni della finestra. Impostando la dimensione della finestra su 2, si calcola la media di due valori consecutivi. In questo esempio, i valori sono profitti annuali, quindi vediamo la media mobile per FY2019 è la media dei profitti per FY2018 e FY2019.
 
    ![Immagine 06](Linked_image_Files/07-create-visual-calculations_image06.png)
 
@@ -119,7 +119,7 @@ In questa attività verrà creato un oggetto visivo matrice che confronta l'impo
 
     > *I lab usano una notazione abbreviata per fare riferimento a un campo. Sarà simile al seguente: **Data \| Anno**. In questo esempio Date **** è il nome della tabella e **Year** è il nome del campo.*
 
-### Aggiungere calcoli
+## Aggiungere calcoli
 
 1. Con la matrice selezionata, selezionare **Nuovo calcolo** visivo nella barra multifunzione.
 
@@ -160,7 +160,7 @@ In questa attività verrà creato un grafico a linee che mostra la somma in esec
     - Asse X: **Date \| Year** e **Date \| Quarter**
     - Asse Y: **Sales Sales \|**
 
-### Aggiungere la somma in esecuzione
+## Aggiungere la somma in esecuzione
 
 1. Con il grafico a linee selezionato, espandere il menu in **Nuovo calcolo** visivo e selezionare **Esecuzione somma** dalle opzioni del modello.
 
@@ -168,7 +168,7 @@ In questa attività verrà creato un grafico a linee che mostra la somma in esec
 
    ![Immagine 09](Linked_image_Files/07-create-visual-calculations_image09.png)
 
-### Aggiornare la somma in esecuzione per riavviare ogni nuovo anno fiscale
+## Aggiornare la somma in esecuzione per riavviare ogni nuovo anno fiscale
 
 1. Mentre è ancora nella finestra di modifica dei calcoli visivi, selezionare il **campo Somma in esecuzione** sotto **asse** Y e aggiornare l'espressione per questo calcolo aggiungendo il parametro di reimpostazione HIGHESTPARENT ed eseguendo il commit delle modifiche:
 
@@ -181,3 +181,12 @@ Verificare che la somma in esecuzione si riavvii per ogni nuovo anno fiscale:
    ![Immagine 10](Linked_image_Files/07-create-visual-calculations_image10.png)
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

@@ -27,7 +27,7 @@ Estrarre la cartella nella **cartella C:\Users\Student\Downloads\02-transform-da
 
 Aprire il **file 02-Starter-Sales Analysis.pbix** .
 
-> ***Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche.*
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Configurare la query Salesperson
 
@@ -51,11 +51,11 @@ In questa attività si userà editor di Power Query per configurare la **query S
 
 1. Per individuare una colonna specifica, nella scheda **Home** della barra multifunzione, dal gruppo **Gestisci colonne** selezionare la freccia rivolta verso il basso **Scegli colonne** e quindi selezionare **Vai a colonna**.
 
-    > *Vai a Colonna è una funzionalità utile con molte colonne. In caso contrario, è possibile scorrere orizzontalmente le colonne.*
+    > _**Vai a Colonna** è una funzionalità utile con molte colonne. In caso contrario, è possibile scorrere orizzontalmente per trovare le colonne._
 
     ![Gestire le colonne > Scegliere le colonne > Vai alla colonna](Linked_image_Files/02-transform-data-power-bi_image13.png)
 
-1. **Nella finestra Vai a colonna**, per ordinare l'elenco in base al nome della colonna, selezionare il **pulsante az** sort e quindi selezionare **Nome** e **SalesPersonFlag**. Fare clic su **OK**.
+1. **Nella finestra Vai a colonna**, per ordinare l'elenco in base al nome della colonna, selezionare il **pulsante az** sort e quindi selezionare **Nome**. 
 
     ![Passare alle opzioni di ordinamento delle colonne](Linked_image_Files/02-transform-data-power-bi_image14.png)
 
@@ -90,7 +90,7 @@ In questa attività si userà editor di Power Query per configurare la **query S
 
 1. Fare clic con il pulsante destro del mouse su una delle intestazioni di colonna selezionate e quindi scegliere **Merge di colonne** dal menu di scelta rapida.
 
-    > *È possibile applicare molte trasformazioni comuni facendo clic con il pulsante destro del mouse sull'intestazione di colonna e scegliendole dal menu di scelta rapida. Si noti, tuttavia, che nella barra multifunzione sono disponibili altre trasformazioni.*
+    > *È possibile applicare molte trasformazioni comuni facendo clic con il pulsante destro del mouse sull'intestazione di colonna e scegliendole dal menu di scelta rapida. Si noti che nella barra multifunzione sono disponibili trasformazioni aggiuntive.*
 
 1. Nella finestra **Merge di colonne** selezionare **Spazio** nell'elenco a discesa **Separatore**.
 
@@ -98,13 +98,13 @@ In questa attività si userà editor di Power Query per configurare la **query S
 
 1. Per rinominare la **colonna EmployeeNationalIDAlternateKey** , fare doppio clic sull'intestazione di **colonna EmployeeNationalIDAlternateKey** e sostituire il testo con **EmployeeID**, quindi premere **INVIO**.
 
-1. Usare i passaggi precedenti per rinominare la colonna **EmailAddress** in **UPN**.
+1. Rinominare la **colonna EmailAddress** in **UPN**.
 
     > *UPN è l'acronimo di User Principal Name.*
 
-**Nella barra di stato in basso a sinistra verificare che la query abbia 5 colonne e 18 righe.**
+**Nella barra di stato nell'angolo inferiore sinistro del editor di Power Query verificare che la query contenga 5 colonne e 18 righe.**
 
-## **Configurare la query SalespersonRegion**
+## Configurare la query SalespersonRegion
 
 In questa attività verrà configurata la query **SalespersonRegion**.
 
@@ -186,9 +186,9 @@ In questa attività verrà configurata la **query Reseller** .
     - StateProvinceName
     - EnglishCountryRegionName
 
-1. Nell'intestazione **di colonna Tipo di** business selezionare la freccia rivolta verso il basso e quindi esaminare i valori distinti delle colonne e notare entrambi i valori **Warehouse** e **Ware House**.
+1. Nell'intestazione **di colonna BusinessType** selezionare la freccia rivolta verso il basso e quindi esaminare i valori distinti delle colonne e notare entrambi i valori **Warehouse** e **Ware House**.
 
-1. Fare clic con il pulsante destro del mouse sull'intestazione di colonna **Business Type** e quindi scegliere **Sostituisci valori**.
+1. Fare clic con il pulsante destro del mouse sull'intestazione **di colonna BusinessType** e quindi scegliere **Sostituisci valori**.
 
 1. Nella **finestra Sostituisci valori** configurare i valori seguenti:
 
@@ -240,7 +240,7 @@ In questa attività verrà configurata la **query Sales** .
 1. Rimuovere tutte le colonne, **ad eccezione** delle seguenti:
 
     - SalesOrderNumber
-    - DataOrdine
+    - OrderDate
     - ProductKey
     - ResellerKey
     - EmployeeKey
@@ -432,7 +432,7 @@ In questa attività si aggiornerà la query **ColorFormats** per disabilitarne i
 
     ![Immagine 323](Linked_image_Files/02-transform-data-power-bi_image81.png)
 
-### Rivedi il prodotto finale
+## Rivedi il prodotto finale
 
 1. In editor di Power Query verificare che siano presenti **8 query, denominate** correttamente come indicato di seguito:
 
@@ -454,3 +454,12 @@ In questa attività si aggiornerà la query **ColorFormats** per disabilitarne i
     ![Immagine 3](Linked_image_Files/02-transform-data-power-bi_image84.png)
 
 ## Lab completato
+
+È possibile scegliere di salvare il report di Power BI, anche se non è necessario per questo lab. Nell'esercizio successivo si userà un file di avvio predefinito.
+
+1. Passare al **menu "File"** nell'angolo in alto a sinistra e selezionare **"Salva con nome".** 
+1. Selezionare **Esplora il dispositivo**
+1. Selezionare la cartella in cui si desidera salvare il file e assegnargli un nome descrittivo. 
+1. Selezionare il **pulsante Salva** per salvare il report come file con estensione pbix. 
+1. Se viene visualizzata una finestra di dialogo che richiede di applicare modifiche alle query in sospeso, selezionare **Applica**.
+1. Chiudere Power BI Desktop.

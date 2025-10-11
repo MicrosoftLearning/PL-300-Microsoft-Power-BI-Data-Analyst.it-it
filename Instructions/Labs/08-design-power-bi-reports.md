@@ -30,11 +30,11 @@ Estrarre il file nella **cartella C:\Users\Student\Downloads\08-design-report** 
 
 Aprire il **file 08-Starter-Sales Analysis.pbix** .
 
-> _**Nota**: è possibile ignorare l'accesso selezionando **Annulla**. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
+> _**Nota**: è possibile che venga visualizzata una finestra di dialogo di accesso durante il caricamento del file. Selezionare **Annulla** per chiudere la finestra di dialogo di accesso. Chiudere qualsiasi altra finestra informativa. Selezionare **Applica in seguito**, se richiesto di applicare le modifiche._
 
 ## Progettare la pagina 1
 
-In questo esercizio verrà progettata la prima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
+In questa attività verrà progettata la prima pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Screenshot della pagina 1, che comprende un logo, due filtri dei dati e tre oggetti visivi.](Linked_image_Files/06-finished-report-page.png)
 
@@ -62,7 +62,9 @@ In questo esercizio verrà progettata la prima pagina del report. Completata la 
 
     > _I lab usano una notazione abbreviata per fare riferimento a un campo. Sarà simile al seguente: `Date | Year`. In questo esempio, `Date` è il nome della tabella e `Year` è il nome del campo._
 
-1. Per convertire il filtro dei dati da un elenco a discesa, nel **riquadro Visualizzazioni** selezionare **Formatta l'oggetto visivo**. Espandere Impostazioni **** filtro dei dati e quindi impostare l'elenco **a discesa **Stile** su Elenco a discesa**.
+    ![Figura 17](Linked_image_Files/08-design-power-bi-reports_image16.png)
+
+1. Per convertire il filtro dei dati da un elenco a discesa, nel riquadro Visualizzazioni** selezionare **Formato oggetto visivo**.** Espandere Impostazioni **** filtro dei dati e quindi impostare l'elenco **a discesa **Stile** su Elenco a discesa**.
 
     ![Immagine 4](Linked_image_Files/08-design-power-bi-reports_slicer_style.png)
 
@@ -166,7 +168,7 @@ In questo esercizio verrà progettata la prima pagina del report. Completata la 
 
 ## Progettare la pagina 2
 
-In questo esercizio verrà progettata la seconda pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
+In questa attività verrà progettata la seconda pagina del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Screenshot della pagina 2, che comprende un filtro dei dati e una matrice.](Linked_image_Files/08-design-power-bi-reports_image37.png)
 
@@ -224,7 +226,7 @@ In questo esercizio verrà progettata la seconda pagina del report. Completata l
 
 ## Progettare la pagina 3
 
-In questo esercizio verrà progettata la terza pagina del report e la pagina finale. Completata la progettazione, la pagina sarà simile alla seguente:
+In questa attività verrà progettata la terza pagina del report e la pagina finale del report. Completata la progettazione, la pagina sarà simile alla seguente:
 
 ![Screenshot della pagina 3, che comprende un filtro dei dati e tre oggetti visivi.](Linked_image_Files/08-design-power-bi-reports_image47.png)
 
@@ -323,9 +325,9 @@ In questa attività si sincronizzeranno i _filtri dei dati Year_ e _Region_ .
 
 ## Pubblicare ed esplorare il report
 
-In questo esercizio si pubblicherà il report nel servizio Power BI. Si esaminerà quindi il comportamento del report pubblicato.
+In questa attività si pubblicherà il report nel servizio Power BI. Si esaminerà quindi il comportamento del report pubblicato.
 
-> _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge, quindi accedere all'indirizzo `https://app.powerbi.com`. Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser.
+> _**Nota**: per pubblicare il report sarà necessaria almeno una **licenza gratuita** di Power BI. Aprire il browser Microsoft Edge e passare a_ `https://app.powerbi.com`_.  Accedere con le credenziali per il tenant di Microsoft 365 fornito dall'host del lab autorizzato (ALH). Quando viene chiesto di risolvere un puzzle o di avviare una versione di valutazione gratuita di Fabric, è possibile ignorare questo e chiudere il browser._
 
 > _**Nota**: è possibile esaminare il resto dell'esercizio, anche se non si ha accesso al servizio Power BI per eseguire direttamente le attività._
 
@@ -345,7 +347,7 @@ In questo esercizio si pubblicherà il report nel servizio Power BI. Si esaminer
 
 1. Quando la pubblicazione ha esito positivo, selezionare **Recupera.**
 
-1. Aprire il browser Microsoft Edge, quindi accedere all'indirizzo `https://app.powerbi.com`.
+1. Aprire il browser Microsoft Edge, quindi passare a `https://app.powerbi.com`.
 
 1. Nella finestra del browser, nella servizio Power BI, nel **riquadro di spostamento** (a sinistra e potrebbe essere compresso), espandere **Area di lavoro** personale.
 
@@ -426,3 +428,6 @@ In questo esercizio si pubblicherà il report nel servizio Power BI. Si esaminer
     ![Immagine 48](Linked_image_Files/08-design-power-bi-reports_image71.png)
 
 ## Lab completato
+
+1. Chiudere il browser Microsoft Edge.
+1. Chiudere Power BI Desktop.
