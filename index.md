@@ -8,7 +8,7 @@ layout: home
 
 In basso sono elencati i collegamenti ipertestuali a tutti gli esercizi e alle demo del lab.
 
-> **Nota**: se si verificano bug con il contenuto, [creare un nuovo problema nel repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/issues/new/choose) GitHub.
+> **Nota**: se si verificano bug con il contenuto,[creare un nuovo problema nel repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/issues/new/choose) GitHub.
 
 ## Esercizi del lab
 

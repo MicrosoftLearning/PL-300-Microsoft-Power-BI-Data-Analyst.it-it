@@ -23,18 +23,18 @@ demo:
 
 1. Assegnare il gateway personale e modificare le credenziali per le due origini dati.
 
-1. Per entrambe le origini dati, impostare il metodo di autenticazione su **WindowsWithoutImpersonation** e impostare il livello di privacy su **Aziendale**.
+1. Per entrambe le origini dati, impostare il metodo di autenticazione su**WindowsWithoutImpersonation** e impostare il livello di privacy su**Aziendale**.
 
-1. Facoltativamente, espandere la sezione **Aggiornamento pianificato** e mostrare come configurare una pianificazione ricorrente.
+1. Facoltativamente, espandere la sezione**Aggiornamento pianificato** e mostrare come configurare una pianificazione ricorrente.
 
 ## Aggiornare il modello semantico
 
-1. Prima di aggiornare il modello semantico, aprire il **dashboard Di monitoraggio** vendite.
+1. Prima di aggiornare il modello semantico, aprire il**dashboard Di monitoraggio** vendite.
 
 1. Modificare i dettagli del riquadro Sales, Profit Margin per visualizzare l'ora dell'ultimo aggiornamento.
 
-1. Fare clic con il pulsante destro del mouse sul `D:\Allfiles\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` file e quindi eseguire con PowerShell. *Questo script caricherà i dati delle vendite di dicembre 2020 nel database.*
+1. Fare clic con il pulsante destro del mouse sul`D:\Allfiles\Demo\Resources\UpdateDatabase-LoadAdditionalSales.ps1` file e quindi eseguire con PowerShell. *Questo script caricherà i dati delle vendite di dicembre 2020 nel database.*
 
-1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aggiornare il **modello semantico Sales Analysis**.
+1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aggiornare il**modello semantico Sales Analysis**.
 
-1. Al termine dell'aggiornamento, indica come viene visualizzato il riquadro **del dashboard dicembre 2020** e che l'ora di aggiornamento è **ORA**.
+1. Al termine dell'aggiornamento, indica come viene visualizzato il riquadro**del dashboard dicembre 2020** e che l'ora di aggiornamento è**ORA**.
