@@ -10,31 +10,31 @@ demo:
 
 1. In Power BI Desktop aprire la finestra editor di Power Query.
 
-1. Aggiungere una nuova query in base al `D:\Demo\Data\**ManagerCategory**.xlsx` file.
+1. Aggiungere una nuova query in base al`D:\Demo\Data\**ManagerCategory**.xlsx` file.
 
-1. Usare la **tabella ManagerCategory** nel file .
+1. Usare la**tabella ManagerCategory** nel file .
 
-1. Rimuovere la colonna **Manager**.
+1. Rimuovere la colonna**Manager**.
 
-1. Dividere la colonna **Category** con il delimitatore punto e virgola e dividerla in righe (opzioni avanzate).
+1. Dividere la colonna**Category** con il delimitatore punto e virgola e dividerla in righe (opzioni avanzate).
 
-1. **Nella colonna Posta elettronica** sostituire il valore **<ty-johnston@tailspintoys.com>** con l'account del destinatario (dal file di MySettings.txt).
+1. **Nella colonna Posta elettronica** sostituire il valore**<ty-johnston@tailspintoys.com>** con l'account del destinatario (dal file di MySettings.txt).
 
-1. Indicare che questo utente è in grado di visualizzare tre categorie di prodotti: **pitch collettivo, Trainer e Warbird**.
+1. Indicare che questo utente è in grado di visualizzare tre categorie di prodotti:**pitch collettivo, Trainer e Warbird**.
 
 1. Chiudere e applicare le query.
 
-1. Nella visualizzazione Modello creare una relazione tra le **tabelle ManagerCategory** e Product correlate alla **colonna Category** .
+1. Nella visualizzazione Modello creare una relazione tra le**tabelle ManagerCategory** e Product correlate alla**colonna Category** .
 
 1. Impostare la direzione del filtro incrociato su Single (**ManagerCategory** filters Product).
 
-1. Nascondere la tabella **ManagerCategory**.
+1. Nascondere la tabella**ManagerCategory**.
 
 ## Aggiungere un ruolo
 
-1. Nella visualizzazione Report aprire Gestisci ruoli e quindi creare un ruolo denominato **Manager**.
+1. Nella visualizzazione Report aprire Gestisci ruoli e quindi creare un ruolo denominato**Manager**.
 
-1. Nel ruolo filtrare la colonna Indirizzo di posta elettronica della **tabella ManagerCategory** come indicato di seguito:
+1. Nel ruolo filtrare la colonna Indirizzo di posta elettronica della**tabella ManagerCategory** come indicato di seguito:
 
   ```dax
    [Email] = USERPRINCIPALNAME()
@@ -62,9 +62,9 @@ demo:
 
 ## Configurare la sicurezza del modello semantico
 
-1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aprire la pagina sicurezza per il **modello semantico Sales Analysis**.
+1. Nel servizio Power BI per l'insegnante, nel riquadro di spostamento aprire la pagina sicurezza per il**modello semantico Sales Analysis**.
 
-1. Nella sezione **Members** immettere l'account del destinatario (corrispondente a Ty Johnston).
+1. Nella sezione**Members** immettere l'account del destinatario (corrispondente a Ty Johnston).
 
 1. Aggiungere e salvare.
 

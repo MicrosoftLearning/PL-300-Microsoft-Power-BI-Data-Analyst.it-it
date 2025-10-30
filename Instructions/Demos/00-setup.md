@@ -7,7 +7,7 @@ demo:
 
 # Configurazione della demo
 
-1. Aprire Microsoft Edge, quindi passare a <https://powerbi.com> e accedere con un account aziendale o dell'istituto di istruzione (organizzazione).
+1. Aprire Microsoft Edge, quindi passare a<https://powerbi.com> e accedere con un account aziendale o dell'istituto di istruzione (organizzazione).
     > **Suggerimento**: se viene richiesto di modificare la password, assicurarsi di registrarla nel file D:\Allfiles\Demo\Setup\MySettings.txt.
 
 1. Creare un'area di lavoro e usare l'immagine D:\Allfiles\Demo\Resources\Icon-Star.jpg come icona.
@@ -26,4 +26,4 @@ demo:
 
 1. Chiudere Power BI Desktop.
 
-> **Nota**: gli asset demo sono disponibili in PL-300 Power BI Analista dei dati [Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo) GitHub.
+> **Nota**: gli asset demo sono disponibili in PL-300 Power BI Analista dei dati[Repository](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/tree/Main/Allfiles/Demo) GitHub.
